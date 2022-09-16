@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../online-zoo/refs/fonts/Roboto-Regular.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+  }
+
+.header {
+    width: 1600px;
+    height: 80px;
+    background-color: #000000;
+}
+
+    .logo {
+        position: relative;
+        display: inline-block;
+        width: 82px;
+        height: 52px;
+        background-image: url('../online-zoo/refs/icons/logo\ PetStory\ online.png');
+        top: 14px;
+        left: 220px;
+    }
