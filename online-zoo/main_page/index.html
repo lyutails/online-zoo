@@ -8,29 +8,36 @@
     <link rel="icon" type="image/x-icon" href="/refs/icons/banana-bamboo_icon.png">
     <title>Online Zoo</title>
 </head>
-<body>
-    <main id="first_screen" class="start_screen">        
-        <header class="header">
+<body>    
+    <main id="first_screen" class="start_screen">    
+        <div class="wrapper_wide">           
+            <header class="header">                
+                <div class="wrapper">
+                    <a href="#first_screen" class="logo">
+                        <!-- <div class="logo_frame"></div> -->
+                        <h1 class="logo_name">PetStory online</h1>
+                        <span class="logo_bamboo"></span>
+                    </a>
+                    <nav class="navigation">
+                        <ul class="navigation_menu">
+                            <li>About</li>
+                            <li>Map</li>
+                            <li>Zoos</li>
+                            <li>Contact Us</li>
+                            <li>Donate</li>
+                            <li>Designed by ©</li>
+                        </ul>
+                    </nav>
+                </div>            
+            </header>        
+        
             <div class="wrapper">
-                <a href="#first_screen" class="logo"></a>
-                <nav class="navigation">
-                    <ul class="navigation_menu">
-                        <li>About</li>
-                        <li>Map</li>
-                        <li>Zoos</li>
-                        <li>Contact Us</li>
-                        <li>Designed by</li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <section class="main_panda">
-            <div class="wrapper">
-                <h1 class="title_first_screen">Watch your favorite animal online</h1>
-                <span class="decoration_circle"></span>
-                <button class="button_round_corners">Watch Online</button>
-            </div>
-        </section>        
+                <h1 class="title_first_screen">Watch your <span class="title_colored">favorite</span> animal online</h1>
+                <!-- <span class="decoration_circle"></span> -->
+                <button class="button_round_corners">Watch Online</button>                
+            </div>            
+               
+        </div>        
     </main>
     <section class="goal">
         <div class="wrapper">
@@ -46,37 +53,37 @@
     <section class="animals_slider">
         <div class="wrapper">
             <div class="pandas">
-                <img class="pandas_pic">
+                <img class="pandas_pic" alt="pandas">
                 <p class="pandas_name">Giant Pandas</p>
                 <p class="pandas_habitation">Native to Southwest China</p>
                 <span class="food_vegetarian"></span>
             </div>
             <div class="eagles">
-                <img class="eagles_pic">
+                <img class="eagles_pic" alt="eagles">
                 <p class="eagles_name">Eagles</p>
                 <p class="pandas_habitation">Native to South America</p>
                 <span class="food_omnivores"></span>
             </div>
             <div class="gorillas">
-                <img class="gorillas_pic">
+                <img class="gorillas_pic" alt="gorillas">
                 <p class="gorillas_name">Gorillas</p>
                 <p class="pandas_habitation">Native to Congo</p>
                 <span class="food_vegetarian"></span>
             </div>
             <div class="sloth">
-                <img class="sloth_pic">
+                <img class="sloth_pic" alt="sloth">
                 <p class="sloth_name">Two-toed Sloth</p>
                 <p class="sloth_habitation">Mesoamerica, South America</p>
                 <span class="food_vegetarian"></span>
             </div>
             <div class="cheetahs">
-                <img class="cheetahs_pic">
+                <img class="cheetahs_pic" alt="cheetahs">
                 <p class="cheetahs_name">Cheetahs</p>
                 <p class="pandas_habitation">Native to Africa</p>
                 <span class="food_omnivores"></span>
             </div>
             <div class="penguins">
-                <img class="penguins_pic">
+                <img class="penguins_pic" alt="penguins">
                 <p class="penguins_name">Penguins</p>
                 <p class="penguins_habitation">Native to Africa</p>
                 <span class="food_omnivores"></span>
@@ -203,8 +210,12 @@
                         <p class="submit_button_content">Submit</p>
                     </button>
                 </div>
+                <div>
+                    <p class="design_author">Designed by Alisa Samborskaya</p>
+                    <p class="school_credits">©RSSchool & ©Yem Digital 2021</p>
+                </div>
             </div>
         </div>
-    </footer>
+    </footer>    
 </body>
 </html>
