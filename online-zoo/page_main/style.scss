@@ -1786,7 +1786,14 @@ body {
                 align-items: space-between;
             }
 
-                #radio_progress_bar_one:checked ~ .slider_progress_bar .progress_style {
+    input[type="radio"] {
+        border: 0px;
+        width: 50px;
+        height: 3em;
+        display: none;
+    }
+
+                #radio_progress_bar_one:checked ~ .slider_progress_bar .progress_style_1 {
                     //position: relative;
                     //width: 116px;
                     width: 120px;
@@ -1795,7 +1802,7 @@ body {
                     border-radius: 5px;
                 }
 
-                #radio_progress_bar_one:not(checked) ~ .slider_progress_bar .progress_style {
+                #radio_progress_bar_one:not(checked) ~ .slider_progress_bar .progress_style_1 {
                     //position: relative;
                     //width: 116px;
                     width: 120px;
@@ -1804,9 +1811,101 @@ body {
                     border-radius: 5px;
                 }
 
-            #radio_progress_bar {
-                //display: none;
-            }    
+                .progress_style_1:hover {
+                    cursor: pointer;
+                }
+
+                #radio_progress_bar_two:checked ~ .slider_progress_bar .progress_style_2 {
+                    //position: relative;
+                    //width: 116px;
+                    width: 120px;
+                    height: 6px;
+                    background-color: $orange;
+                    border-radius: 5px;
+                }                
+
+                #radio_progress_bar_two:not(checked) ~ .slider_progress_bar .progress_style_2 {
+                    //position: relative;
+                    //width: 116px;
+                    width: 120px;
+                    height: 6px;
+                    background-color: $light_grey;
+                    border-radius: 5px;
+                }
+
+                .progress_style_2:hover {
+                    cursor: pointer;
+                }
+                
+                #radio_progress_bar_three:checked ~ .slider_progress_bar .progress_style_3 {
+                    //position: relative;
+                    //width: 116px;
+                    width: 120px;
+                    height: 6px;
+                    background-color: $orange;
+                    border-radius: 5px;
+                }
+
+                #radio_progress_bar_three:not(checked) ~ .slider_progress_bar .progress_style_3 {
+                    //position: relative;
+                    //width: 116px;
+                    width: 120px;
+                    height: 6px;
+                    background-color: $light_grey;
+                    border-radius: 5px;
+                }
+                
+                .progress_style_3:hover {
+                    cursor: pointer;
+                }
+
+                #radio_progress_bar_four:checked ~ .slider_progress_bar .progress_style_4 {
+                    //position: relative;
+                    //width: 116px;
+                    width: 120px;
+                    height: 6px;
+                    background-color: $orange;
+                    border-radius: 5px;
+                }
+
+                #radio_progress_bar_four:not(checked) ~ .slider_progress_bar .progress_style_4 {
+                    //position: relative;
+                    //width: 116px;
+                    width: 120px;
+                    height: 6px;
+                    background-color: $light_grey;
+                    border-radius: 5px;
+                }
+                
+                .progress_style_4:hover {
+                    cursor: pointer;
+                }
+
+                #radio_progress_bar_five:checked ~ .slider_progress_bar .progress_style_5 {
+                    //position: relative;
+                    //width: 116px;
+                    width: 120px;
+                    height: 6px;
+                    background-color: $orange;
+                    border-radius: 5px;
+                }
+
+                #radio_progress_bar_five:not(checked) ~ .slider_progress_bar .progress_style_5 {
+                    //position: relative;
+                    //width: 116px;
+                    width: 120px;
+                    height: 6px;
+                    background-color: $light_grey;
+                    border-radius: 5px;
+                }
+                
+                .progress_style_5:hover {
+                    cursor: pointer;
+                }
+
+                
+
+
 
             .button_testimonials {
                 width: 298px;
