@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="donate.css">
+    <link rel="icon" type="image/x-icon" href="/refs/icons/banana-bamboo_icon.png">
+    <title>Zoo Donate</title>
+</head>
+<body>
+    <main id="first_screen" class="start_screen">    
+        <div class="wrapper_wide">
+            <header class="header">                
+                <div class="wrapper">
+                    <div class="header_content">
+                        <a href="../page_main/index.html" class="logo">                        
+                            <h1 class="logo_name">PetStory online<span class="logo_bamboo"></span></h1>                            
+                        </a>
+                        <nav class="navigation">
+                            <ul class="navigation_menu_one">
+                                <li class="navigation_item"><a class="navigation_link" href="../page_main/index.html">About</a></li>
+                                <li class="navigation_item"><a class="navigation_link" href="../page_map/map.html">Map</a></li>
+                                <li class="navigation_item"><a class="navigation_link" href="../page_zoos/3_panda.html">Zoos</a></li>
+                                <li class="navigation_item"><a class="navigation_link" id="active" href="../page_donate/donate.html">Donate</a></li>
+                                <li class="navigation_item"><a class="navigation_link" href="#footer">Contact Us</a></li>                                
+                            </ul>
+                            <ul class="navigation_menu_two">
+                                <li class="navigation_item"><a class="navigation_link" href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1">Designed by ©</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>            
+            </header>                       
+        </div>        
+    </main>
+    <section class="donation_info">
+        <div class="wrapper_donation">
+            <div class="help_info">
+                <h3 class="help_title">THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!</h3>
+                <p class="help_details">Even though the Zoo has been able to reopen, we are at a greatly reduced capacity with educational programs and public and private events cancelled or postponed for additional months. We need you now more than ever to help ensure that we overcome these challenges. We have been actively raising funds in the community, and we are grateful for the generosity.  But much more support is still needed, and we need your help! Please consider a gift today – no matter what size – to help us sustain our mission.</p>
+                <h3 class="donation_title">Donation Information</h3>
+            </div>            
+            <div class="donation_fill_form_frame">
+                <div class="donation_fill_form">
+                    <h2 class="donation_form_title">Pick and feed a friend</h2>
+                    <p class="donation_form_text">We know the animals bring you joy, and in these extraordinary times, we’re glad.</p>
+                    <div class="animals_counter">
+                        <div class="animals_amount_data">
+                            <span class="animals_number">4</span>
+                            <p class="number_meaning">Panda diet for the day.</p>
+                            <span class="multiplier"></span>
+                        </div>
+                        <span class="panda_icon_big"></span>
+                    </div>
+                    <!-- <p class="money_amount">Amount</p> -->
+                    <div class="money_input_grade">
+                        <div class="sum_circles">
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle circle_active"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+                        <div class="sum_line"></div>
+                    </div>
+                    <div class="money_sum">
+                        <div class="first_sum">
+                            <span class="dollar"></span>
+                            <p class="five_thousands">5000</p>
+                        </div>
+                        <div class="second_sum">
+                            <span class="dollar"></span>
+                            <p class="two_thousands">2000</p>
+                        </div>
+                        <div class="third_sum">
+                            <span class="dollar_thousand"></span>
+                            <p class="one_thousand">1000</p>
+                        </div>
+                        <div class="fourth_sum">
+                            <span class="dollar"></span>
+                            <p class="five_hundreds">500</p>
+                        </div>
+                        <div class="fifth_sum">
+                            <span class="dollar"></span>
+                            <p class="twofifty_hundreds">250</p>
+                        </div>
+                        <div class="sixth_sum">
+                            <span class="dollar"></span>
+                            <p class="one_hundred">100</p>
+                        </div>
+                        <div class="seventh_sum">
+                            <span class="dollar"></span>
+                            <p class="fifty">50</p>
+                        </div>
+                        <div class="eighth_sum">
+                            <span class="dollar"></span>
+                            <p class="twentyfive">25</p>
+                        </div>
+                    </div>  
+                    <div class="another_amount_wrapper">                 
+                        <label class="another_amount_sum" for="another_amount">
+                            <input type="number" onfocus="this.placeholder=''" onfocusout="this.placeholder='Another amount'" value="Another amount" 
+                            class="text_another_amount" placeholder="Another amount" id="another_amount"
+                            oninput="maxLengthCheck(this)" maxlength="4">
+                            <i>$</i>
+                        </label>
+                    </div>                     
+                    <div class="frequency_choice">
+                        <div class="monthly_payment">
+                            <label class="payment_choice" for="radiobutton">
+                                <input type="radio" id="radiobutton" name="choice" class="payment">
+                            </label>
+                            <p class="monthly">Monthly</p>
+                        </div>
+                        <div class="one_payment">
+                            <label class="payment_choice" for="radiobutton">
+                                <input type="radio" id="radiobutton" name="choice" class="payment">
+                            </label>
+                            <p class="once">Once</p>
+                        </div>
+                    </div>
+                    <button class="donation_payment_button">Feed a friend now</button>
+                    <p class="share_info">Share with your friends on social networks</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="wrapper_footer">
+            <div class="footer_content">
+                <div class="footer_left">
+                    <a href="#first_screen" class="logo_footer">                        
+                        <h1 class="logo_name">PetStory online<span class="logo_bamboo"></span></h1>                            
+                    </a>
+                    <button class="button_square_corners_footer">
+                        <p class="footer_button_content">donate for volunteers</p>
+                    </button>
+                    <div class="social_networks">
+                        <div class="facebook">
+                            <div class="network_icon">
+                                <span class="facebook_icon"></span>
+                                <span class="networks_circle_icon_background"></span>
+                            </div>
+                            <p class="network_name">Facebook</p>
+                        </div>
+                        <div class="twitter">
+                            <div class="network_icon">
+                                <span class="twitter_icon"></span>
+                                <span class="networks_circle_icon_background"></span>
+                            </div>
+                            <p class="network_name">Twitter</p>
+                        </div>
+                        <div class="instagram">
+                            <div class="network_icon">
+                                <span class="instagram_icon"></span>
+                                <span class="networks_circle_icon_background"></span>
+                            </div>
+                            <p class="network_name">Instagram</p>
+                        </div>
+                        <div class="youtube">
+                            <div class="network_icon">
+                                <span class="youtube_icon"></span>
+                                <span class="networks_circle_icon_background"></span>
+                            </div>
+                            <p class="network_name">YouTube</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_center">
+                    <nav class="navigation_footer">
+                        <ul class="navigation_menu_footer">
+                            <li class="navigation_footer_item_one">About</li>
+                            <li class="navigation_footer_item_two">Map</li>
+                            <li class="navigation_footer_item_three">Zoos</li>
+                            <li class="navigation_footer_item_four">Contact Us</li>                            
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer_right">
+                    <div class="upper_part">
+                        <p class="subscribe">Subscribe to our news</p>                    
+                        <div class="enter_email_block">                        
+                            <div class="enter_email_frame">
+                                <div class="enter_email">Enter your email</div>
+                            </div>
+                            <button class="submit_button">
+                                <p class="submit_button_content">Submit</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="wrapper_credentials">
+                        <div class="credentials">
+                            <p class="design_author">Designed by Alisa Samborskaya</p>
+                            <p class="school_credits">©RSSchool & ©Yem Digital 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="donate.js"></script>
+</body>
+</html>

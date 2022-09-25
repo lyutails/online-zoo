@@ -1,0 +1,523 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../refs/fonts/Roboto-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../refs/fonts/Roboto-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: bold;
+  }
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../refs/fonts/Roboto-Thin.woff") format("woff");
+    font-weight: 100;
+    font-style: thin;
+}
+
+
+  html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+    .header {
+        width: 100%;
+        height: 80px;
+        background-color: #000000;             
+    }
+
+    .wrapper_wide {
+        width: 100vw;
+        margin: auto;    
+    }
+    
+        .header {
+            width: 100%;
+            height: 80px;
+            background-color: #000000;                    
+        }
+    
+            .wrapper {
+                width: 1160px;
+                margin: auto;
+            }  
+    
+            .header_content {
+                width: 1160px;
+                height: 80px;
+                display: flex;
+                flex-direction: row;
+            }
+                
+                .logo {
+                    left: 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 82px;
+                    height: 52px;                
+                    margin: 14px 0px 14px 0px;   
+                    text-decoration: none; 
+                    border: 1.18841px solid #FFFFFF; 
+                    border-radius: 2px;          
+                }
+    
+                    .logo_name {
+                        color: #FFFFFF;
+                        display: inline-block;
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 19px;
+                        line-height: 120%;
+                        text-align: center;
+                        box-sizing: border-box;                    
+                        width: 72.49px;
+                        height: 44.91px;                    
+                        text-decoration: none;
+                        z-index: 16;
+                        position: absolute;
+                    }
+    
+                    .logo_bamboo {
+                        width: 12px;
+                        height: 28px;
+                        display: inline-block;
+                        background-image: url('../refs/icons/bamboo.svg');               
+                        position: absolute;
+                        box-sizing: border-box;                    
+                        left: 7px;
+                        top: 20px;
+                        background-repeat: no-repeat;
+                        z-index: 8;
+                    }
+    
+    
+                .navigation {
+                    margin-top: 29px;
+                    margin-left: 63px;
+                    width: 635px;
+                    height: 23px;
+                }
+    
+                .navigation_menu {                
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 140%;
+                    color: #ffffff;
+                    list-style: none;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    text-decoration: none;                
+                }     
+    
+                .navigation_item {
+                    text-decoration: none;
+                }
+                
+                .navigation_item:hover {
+                    cursor: pointer;                
+                }
+    
+                .navigation_item #active {
+                    color: #FB8736;
+                }
+    
+                .navigation_link {
+                    transition-duration: 0.4s;
+                }
+    
+                .navigation_link:not(#active):hover {
+                    color: #FB8736;
+                }
+    
+                .navigation_link {
+                    text-decoration: none;
+                    color: #FFFFFF;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 140%;
+                }            
+
+    .map {
+        width: 1084px;
+        height: 715px;
+        background-image: url('../refs/decoration_elements/colored_map.png');
+    }
+
+
+
+    
+    .footer {
+        width: 100vw;  
+        height: 443px;      
+        background: #111115;
+    }
+
+        .wrapper_footer {
+            width: 1160px;
+            margin: auto;            
+        }
+
+        .footer_content {
+            width: 1160px;
+            height: 352px;
+            display: flex; 
+            padding-top: 40px;     
+        }
+
+        .footer_left {
+            width: 298px;
+            height: 352px;
+        }
+
+            .logo_footer {
+                left: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 82px;
+                height: 52px;        
+                text-decoration: none; 
+                border: 1.18841px solid #FFFFFF; 
+                border-radius: 2px; 
+                margin-bottom: 68px;         
+            }
+
+            .logo_name {
+                color: #FFFFFF;
+                display: inline-block;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 19px;
+                line-height: 120%;
+                text-align: center;
+                box-sizing: border-box;                    
+                width: 72.49px;
+                height: 44.91px;                    
+                text-decoration: none;
+                z-index: 16;
+                position: absolute;
+            }
+
+            .logo_bamboo {
+                width: 12px;
+                height: 28px;
+                display: inline-block;
+                background-image: url('../refs/icons/bamboo.svg');               
+                position: absolute;
+                box-sizing: border-box;                    
+                left: 7px;
+                top: 20px;
+                background-repeat: no-repeat;
+                z-index: 8;
+            }
+
+            .button_square_corners_footer {
+                width: 298px;
+                height: 54px;
+                background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+                border-radius: 5px;
+                transition: all 0.4s ease-in-out;
+            }
+
+            .button_square_corners_footer:hover {                
+                background: #E47209;
+                cursor: pointer;
+            }
+
+                .footer_button_content {
+                    width: 298px;
+                    height: 22px;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 140%;
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                }
+
+            .social_networks {
+                width: 111px;
+                height: 134px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin-top: 44px;
+            }
+
+            .facebook {
+                width: 111px;
+                height: 26px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .twitter {
+                width: 89px;
+                height: 26px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .instagram {
+                width: 110px;
+                height: 26px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .youtube {
+                width: 101px;
+                height: 26px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .network_name {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                color: #FFFFFF;
+            }
+
+            .network_icon {
+                width: 26px;
+                height: 26px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                background: rgba(196, 196, 196, 0.5);
+            }
+
+                .facebook_icon {
+                    width: 8px;
+                    height: 16px; 
+                    background-image: url('../refs/icons/icon_facebook.png');
+                }
+
+                .twitter_icon {
+                    width: 16px;
+                    height: 14px;
+                    background-image: url('../refs/icons/icon_twitter.png');
+                }
+
+                .instagram_icon {
+                    width: 16px;
+                    height: 16px;
+                    background-image: url('../refs/icons/icon_instagram.png');
+                }
+
+                .youtube_icon {
+                    width: 18px;
+                    height: 12.99px;
+                    background-image: url('../refs/icons/icon_youtube.png');
+                }
+
+        .footer_center {
+            width: 362px;
+            height: 353px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        .navigation_footer {
+            width: 362px;
+            height: 22px;            
+        }
+
+        .navigation_menu_footer {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+        }
+
+            .navigation_footer_item_one {
+                width: 43px;
+                height: 22px; 
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                color: #FFFFFF;
+            }
+
+            .navigation_footer_item_two {
+                width: 32px;
+                height: 22px;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                color: #FFFFFF;
+            }
+
+            .navigation_footer_item_three {
+                width: 36px;
+                height: 22px;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                color: #FFFFFF;
+            }
+
+            .navigation_footer_item_four {
+                width: 79px;
+                height: 22px;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                color: #FFFFFF;
+            }
+
+        .footer_right {
+            width: 367px;
+            height: 353px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;                        
+        }
+
+            .subscribe {
+                width: 237px;
+                height: 29px;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 120%;
+                color: #FFFFFF;                
+            }
+
+            .enter_email_block {
+                width: 367px;
+                height: 42px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 14px;
+            }
+
+                .enter_email_frame {
+                    width: 228px;
+                    height: 42px;
+                    border: 1px solid #F9804B;
+                    border-radius: 2px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                    .enter_email {
+                        width: 208px;
+                        height: 22px;
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 140%;
+                        color: #BDBDBD;
+                    }
+
+                .submit_button {
+                    width: 129px;
+                    height: 42px;
+                    background: #F1F3F2;
+                    border: 1px solid #333B41;
+                    border-radius: 5px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .submit_button:hover {
+                    cursor: pointer;
+                    border: 1px solid #4B9200;                
+                }
+
+                    .submit_button_content {
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 140%;
+                        color: #000000;
+                        transition: all 0.4s ease-in;
+                    }
+
+                    .submit_button:hover .submit_button_content {
+                        cursor: pointer;                    
+                        color: #4B9200;
+                    }
+
+            .wrapper_credentials {
+                width: 367px;
+                height: 52px;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+            }        
+
+                .credentials {
+                    width: 228px;
+                    height: 52px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                }
+
+                    .design_author {
+                        width: 220px;
+                        height: 21px;
+                        font-family: 'Roboto';
+                        font-style: thin;
+                        font-weight: 100;
+                        font-size: 16px;
+                        line-height: 130%;
+                        color: #FFFFFF;
+                    }
+
+                    .school_credits {
+                        width: 228px;
+                        height: 21px;
+                        font-family: 'Roboto';
+                        font-style: thin;
+                        font-weight: 100;
+                        font-size: 16px;
+                        line-height: 130%;
+                        color: #FFFFFF;
+                    }
