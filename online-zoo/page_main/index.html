@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="/refs/icons/panda_icon_small.png">
+    <link rel="icon" type="image/x-icon" href="../refs/icons/panda_icon_small.png">
     <title>Online Zoo</title>
 </head>
 <body>    
@@ -191,9 +191,11 @@
                         <div class="testimonial_one">
                             <div class="user_info">
                                 <span class="user_icon"></span>
-                                <p class="user_name_one"></p>
-                                <p class="user_country"></p>
-                                <p class="testimonial_date"></p>
+                                <div class="user_name_location">
+                                    <p class="user_name_one"></p>
+                                    <p class="user_country"></p>
+                                    <p class="testimonial_date"></p>
+                                </div>
                             </div>
                             <div class="testimonial_text">The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
                                 The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
@@ -233,8 +235,27 @@
                             </div>
                         </div>
                     </div>
+                    <input type="radio" id="radio_progress_bar_one" name="radio_progress" checked>
+                    <input type="radio" id="radio_progress_bar_two" name="radio_progress">
+                    <input type="radio" id="radio_progress_bar_three" name="radio_progress">
+                    <input type="radio" id="radio_progress_bar_four" name="radio_progress">
+                    <input type="radio" id="radio_progress_bar_five" name="radio_progress">
                     <div class="slider_progress_bar" id="slider_bar">
-                        <div class="progress_colored" onclick="move()"></div>
+                        <label for="radio_progress_bar" class="progress_colored_one">
+                            <div class="progress_style"></div>
+                        </label>
+                        <label for="radio_progress_bar" class="progress_colored_one">
+                            <div class="progress_style"></div>
+                        </label>
+                        <label for="radio_progress_bar" class="progress_colored_one">
+                            <div class="progress_style"></div>
+                        </label>
+                        <label for="radio_progress_bar" class="progress_colored_one">
+                            <div class="progress_style"></div>
+                        </label>
+                        <label for="radio_progress_bar" class="progress_colored_one">
+                            <div class="progress_style"></div>
+                        </label>
                     </div>                                                          
                 </div> 
                 <button class="button_testimonials">

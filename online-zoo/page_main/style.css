@@ -1312,6 +1312,13 @@ body {
   color: #333B41;
 }
 
+.curly_arrow {
+  width: 69px;
+  height: 36px;
+  background-image: url("../refs/icons/curly_arrow.png");
+  transform: translateY(74px);
+}
+
 .button_feed {
   width: 298px;
   height: 54px;
@@ -1418,41 +1425,13 @@ body {
   height: 391px;
 }
 
-.testimonial_one {
-  width: 268px;
-  height: 391px;
-  background: #F1F3F2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  background-clip: padding-box;
-  border: solid 2px transparent;
-  border-radius: 20px;
-  padding: 5px;
-}
-.testimonial_one + ::before {
-  content: "";
-  position: relative;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -10;
-  margin: -2px;
-  border-radius: inherit;
-  background: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
-}
-
-.testimonial_one {
+.testimonial_one, .testimonial_two, .testimonial_three, .testimonial_four {
   width: 268px;
   height: 391px;
   background: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
   border-radius: 20px;
   border: 4px solid transparent;
   box-shadow: inset 0px 0px 0px 100vw #F1F3F2;
-  padding: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1476,48 +1455,18 @@ body {
   color: #767474;
   text-align: left;
   overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
-.testimonial_two {
-  width: 268px;
-  height: 391px;
-  background: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
-  border-radius: 20px;
-  border: 4px solid transparent;
-  box-shadow: inset 0px 0px 0px 100vw #F1F3F2;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.testimonial_text::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
 }
 
-.testimonial_three {
-  width: 268px;
-  height: 391px;
-  background: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
-  border-radius: 20px;
-  border: 4px solid transparent;
-  box-shadow: inset 0px 0px 0px 100vw #F1F3F2;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.testimonial_four {
-  width: 268px;
-  height: 391px;
-  background: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
-  border-radius: 20px;
-  border: 4px solid transparent;
-  box-shadow: inset 0px 0px 0px 100vw #F1F3F2;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.testimonial_text:hover {
+  cursor: auto;
 }
 
 .slider_progress_bar {
@@ -1531,12 +1480,22 @@ body {
   border: 2px solid #F1F3F2;
   margin-top: 20px;
   cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
 }
 
-.progress_colored {
-  width: 116px;
+#radio_progress_bar_one:checked ~ .slider_progress_bar .progress_style {
+  width: 120px;
   height: 6px;
   background-color: #F9804B;
+  border-radius: 5px;
+}
+
+#radio_progress_bar_one:not(checked) ~ .slider_progress_bar .progress_style {
+  width: 120px;
+  height: 6px;
+  background-color: #F1F3F2;
   border-radius: 5px;
 }
 
