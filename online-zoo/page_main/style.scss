@@ -43,6 +43,7 @@ $white: #ffffff;
 $orange: #F9804B;
 $orange_gradient_2: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
 $orange_light: #FE9013;
+$green: #4B9200;
 
 
 ::-webkit-scrollbar {
@@ -1518,7 +1519,69 @@ body {
                     border-radius: inherit;
                     background: $pink_gradient;
                 }
-            }            
+            }  
+            
+            // .testimonial_one {
+            //     width: 268px;
+            //     height: 391px;
+            //     background: $light_grey;
+            //     //border-radius: 20px;
+            //     //border: 2px solid;                
+            //     display: flex;
+            //     flex-direction: column;
+            //     justify-content: center;
+            //     align-items: center;
+            //     box-sizing: border-box;                    
+                
+            //     border-radius: 20px;
+            //     //border: double 4px transparent;
+            //     border-radius: 20px;
+            //     //background-image: $pink_gradient;
+            //     background-origin: border-box;
+            //     background-clip: padding-box, border-box;
+            //     padding: 4px;
+            //     border-image: $pink_gradient 1;
+            //     border: solid;
+            //     border-width: 2px;
+            // }
+
+            // .testimonial_one {
+            //     width: 268px;
+            //     height: 391px;
+            //     background: $light_grey;
+            //     //border-radius: 20px;
+            //     //border: 2px solid;                
+            //     display: flex;
+            //     flex-direction: column;
+            //     justify-content: center;
+            //     align-items: center;
+            //     box-sizing: border-box;                    
+                
+            //     border-radius: 20px;
+            //     //border: double 4px transparent;
+            //     border-radius: 20px;
+            //     //background-image: $pink_gradient;
+            //     background-origin: border-box;
+            //     background-clip: padding-box, border-box;
+            //     padding: 4px;
+            //     border-image: $pink_gradient 1;
+            //     border: solid;
+            //     border-width: 2px;
+            // }
+
+            .testimonial_one {
+                width: 268px;
+                height: 391px;
+                background: $pink_gradient;
+                border-radius: 20px;
+                border: 4px solid transparent;  
+                box-shadow: inset 0px 0px 0px 100vw $light_grey;  
+                padding: 5px;                                            
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;                
+            }
 
                 .user_info {
                     width: 191px;
@@ -1542,40 +1605,43 @@ body {
             .testimonial_two {
                 width: 268px;
                 height: 391px;
-                background: #F1F3F2;
+                background: $pink_gradient;
                 border-radius: 20px;
-                border: 2px solid;
-                border-color: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+                border: 4px solid transparent;  
+                box-shadow: inset 0px 0px 0px 100vw $light_grey;  
+                padding: 5px;                                            
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                align-items: center;
+                align-items: center;                
             }
 
             .testimonial_three {
                 width: 268px;
                 height: 391px;
-                background: #F1F3F2;
+                background: $pink_gradient;
                 border-radius: 20px;
-                border: 2px solid;
-                border-color: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+                border: 4px solid transparent;  
+                box-shadow: inset 0px 0px 0px 100vw $light_grey;  
+                padding: 5px;                                            
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                align-items: center;
+                align-items: center;                
             }
 
             .testimonial_four {
                 width: 268px;
                 height: 391px;
-                background: #F1F3F2;
+                background: $pink_gradient;
                 border-radius: 20px;
-                border: 2px solid;
-                border-color: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+                border: 4px solid transparent;  
+                box-shadow: inset 0px 0px 0px 100vw $light_grey;  
+                padding: 5px;                                            
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                align-items: center;             
+                align-items: center;                
             }
 
             .slider_progress_bar {
@@ -1764,6 +1830,21 @@ body {
                     color: $white;
                 }
 
+
+                <form class="subscribe-form" action="#">
+            <input placeholder="Enter your email" type="email" required>
+            <button class="form-btn" type="submit">Submit</button>
+          </form>
+input:valid  .form-btn {
+  border-color: var(--yellow);
+}
+
+//погуглите что делает селектор + 
+
+input:valid + .form-btn {
+    border-color: var(--yellow);
+  }
+
             .social_networks {
                 width: 111px;
                 height: 134px;
@@ -1781,12 +1862,22 @@ body {
                 justify-content: space-between;
             }
 
+                .facebook:hover {
+                    fill: $green;
+                    cursor: pointer;
+                }
+
             .twitter {
                 width: 89px;
                 height: 26px;
                 display: flex;
                 justify-content: space-between;
             }
+
+                .twitter:hover {
+                    fill: $green;
+                    cursor: pointer;
+                }
 
             .instagram {
                 width: 110px;
@@ -1795,12 +1886,22 @@ body {
                 justify-content: space-between;
             }
 
+                .instagram:hover {
+                    fill: $green;
+                    cursor: pointer;
+                }
+
             .youtube {
                 width: 101px;
                 height: 26px;
                 display: flex;
                 justify-content: space-between;
             }
+
+                .youtube:hover {
+                    fill: $green;
+                    cursor: pointer;
+                }
 
             .network_name {
                 font-family: 'Roboto';
@@ -1809,7 +1910,25 @@ body {
                 font-size: 16px;
                 line-height: 140%;
                 color: #FFFFFF;
+                text-decoration: none;
+                transition: all 0.4s ease-in-out;
             }
+
+                .network_name:hover {
+                    color: $green;
+
+                    ~ .network_icon {
+                        background: $green;
+                    }
+                }
+
+                .network_name:visited {
+                    text-decoration: none;
+                }
+
+                .network_name:active {
+                    text-decoration: none;
+                }
 
             .network_icon {
                 width: 26px;
@@ -1820,6 +1939,11 @@ body {
                 border-radius: 50%;
                 background: rgba(196, 196, 196, 0.5);
             }
+
+                .network_icon:hover {
+                    fill: $green;
+                    color: $green;
+                }
 
                 .facebook_icon {
                     width: 8px;
@@ -1946,31 +2070,73 @@ body {
                     align-items: center;
                 }
 
-                    .enter_email {
+                    .email input[type="email"] {
                         width: 208px;
-                        height: 22px;
+                        height: 22px;                        
+                        box-sizing: border-box;
+                        margin: 0;
+                        padding: 0;
                         font-family: 'Roboto';
                         font-style: normal;
                         font-weight: 400;
                         font-size: 16px;
                         line-height: 140%;
-                        color: #BDBDBD;
+                        color: #BDBDBD;   
+                        background-color: transparent;
+                        outline: none;
+                        border: none;
+                        resize: none;
+                        border-style: none;                     
                     }
+
+                    input {
+                        border: none;
+                    }
+
+                    .email::placeholder {
+                        background-color: $black;                        
+                        display: block;
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 140%;
+                        color: #BDBDBD;                        
+                        outline: none;
+                        border: none;
+                        resize: none; 
+                        border-style: none;
+                        border-color: transparent;                      
+                    }
+
+                    input:active {
+                        border: none;
+                    }
+
+                    .email--input:invalid ~ .email--.submit_button {
+                        color: $red;
+                        border-color: $red;
+                    } 
+
+                    .email--input:valid ~ .email--.submit_button {
+                        color: $green;
+                        border-color: $green;
+                    } 
+
 
                 .submit_button {
                     width: 129px;
                     height: 42px;
                     background: #F1F3F2;
-                    border: 1px solid #333B41;
+                    border: 1px solid $black_blue;
                     border-radius: 5px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                 }
 
-                .submit_button:hover {
+                .submit_button {
                     cursor: pointer;
-                    border: 1px solid #4B9200;                
                 }
 
                     .submit_button_content {
@@ -1979,13 +2145,8 @@ body {
                         font-weight: 400;
                         font-size: 16px;
                         line-height: 140%;
-                        color: #000000;
+                        color: $black_blue;
                         transition: all 0.4s ease-in;
-                    }
-
-                    .submit_button:hover .submit_button_content {
-                        cursor: pointer;                    
-                        color: #4B9200;
                     }
 
             .wrapper_credentials {

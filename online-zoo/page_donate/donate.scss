@@ -44,6 +44,7 @@ $white: #ffffff;
 $orange: #F9804B;
 $orange_gradient_2: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
 $orange_light: #FE9013;
+$green: #4B9200;
 
 
 
@@ -282,36 +283,413 @@ body {
                         margin: 40px 0px 0px 0px;
                     }
             
-            .donation_fill_form_frame {
-                height: 964px;
-                background: rgba(255, 255, 255, 0.52);
-                backdrop-filter: blur(2px);
-                border-radius: 20px;
+        .donation_fill_form_frame {
+            height: 964px;
+            background: rgba(255, 255, 255, 0.52);
+            backdrop-filter: blur(2px);
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 60px 0px 0px 0px;                
+        }
+
+            .donation_fill_form {
+                width: 976px;
+                height: 862px;
                 display: flex;
-                justify-content: center;
-                align-items: center;
-                margin: 60px 0px 0px 0px;
+                flex-direction: column;
+                align-items: center;                    
             }
 
-                .donation_fill_form {
-                    width: 976px;
-                    height: 862px;
-                    display: flex;
-                    justify-content: center;
+                .donation_form_title {
+                    width: 463px;
+                    height: 58px;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 48px;
+                    line-height: 120%;
+                    text-align: center;
+                    color: $orange_light;
+                    margin-bottom: 20px;
                 }
 
-                    .donation_form_title {
-                        width: 463px;
-                        height: 58px;
+                    .donation_form_text {
+                        width: 976px;
+                        height: 29px;
                         font-family: 'Roboto';
                         font-style: normal;
                         font-weight: 400;
-                        font-size: 48px;
+                        font-size: 24px;
                         line-height: 120%;
                         text-align: center;
-                        color: $orange_light;
+                        color: $black_blue;
                     }
 
+            .animals_counter {
+                width: 532px;
+                height: 246px;
+                display: flex;
+                margin-top: 60px;
+            }
+
+                .animals_amount_data {
+                    width: 248px;
+                    height: 246px;
+                }
+
+                .panda_icon_big {
+                    width: 284px;
+                    height: 246px;
+                    background-image: url('../refs/icons/animals-widget.svg');
+                }
+
+                .animals_number {
+                    width: 41px;
+                    height: 58px;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 72px;
+                    line-height: 80%;
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: $black;
+                }
+
+                .number_meaning {
+                    width: 159px;
+                    height: 22px;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 140%;
+                    text-align: center;
+                    color: $black_blue;
+                }
+
+                .multiplier {
+                    width: 14px;
+                    height: 14px;
+                    background-image: url('../refs/icons/x_icon.svg');
+                }
+                
+
+        .money_input_grade {
+            width: 976px;
+            height: 40px;
+            border-radius: 2px;
+            background: $black_blue;
+            margin-top: 87px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .sum_line {
+                width: 915px;
+                height: 2px;
+                background: $grey;
+                z-index: 15;
+            }
+
+            .sum_circles {                
+                width: 925px;
+                height: 10px;
+                display: flex;
+                justify-content: space-between;
+                z-index: 25;
+                position: absolute;
+            }
+
+                .circle {                    
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: $yellow;            
+                }
+
+                    .circle:hover {
+                        cursor: pointer;
+                    }
+
+                .circle_active::after {
+                    width: 23px;
+                    height: 23px;
+                    background-color: transparent;
+                    border-radius: 50%;
+                    border: 1px solid $orange;                    
+                }
+
+        .money_sum {
+            width: 950px;
+            height: 36px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 6px;
+        }
+
+            .first_sum, .second_sum, .third_sum {
+                width: 72px;
+                height: 36px;
+                display: flex;
+                align-items: center;
+            }
+
+            .sixth_sum, .fifth_sum, .fourth_sum {
+                width: 72px;
+                height: 36px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+            }
+
+            .eighth_sum, .seventh_sum {
+                width: 72px;
+                height: 36px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+            }
+
+                .five_thousands, .two_thousands {
+                    width: 60px;
+                    height: 36px;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 26px;
+                    line-height: 140%;
+                    text-transform: uppercase;
+                    color: #333B41;
+                }
+
+                .one_thousand {
+                    width: 60px;
+                    height: 36px;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 26px;
+                    line-height: 140%;
+                    text-transform: uppercase;
+                    color: $orange;
+                }
+
+                .five_hundreds, .twofifty_hundreds, .one_hundred {
+                    width: 45px;
+                    height: 36px;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 26px;
+                    line-height: 140%;
+                    text-transform: uppercase;
+                    color: #333B41;
+                }
+                
+                .fifty, .twentyfive {
+                    width: 30px;
+                    height: 36px;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 26px;
+                    line-height: 140%;
+                    text-transform: uppercase;
+                    color: #333B41;
+                }
+
+                .dollar {
+                    width: 10px;
+                    height: 20px;
+                    background-image: url('../refs/icons/dollar.svg');
+                    margin-right: 2px;
+                }
+
+                .dollar_thousand {
+                    width: 10px;
+                    height: 20px;
+                    background-image: url('../refs/icons/dollar_orange.svg');
+                    margin-right: 2px;
+                }
+
+    .another_amount_wrapper {
+        width: 976px;
+        height: 54px;
+        margin-top: 60px;
+    }            
+
+        .another_amount_sum {
+            width: 268px;
+            height: 54px;
+            border-color: 1px solid $grey;
+            position: relative;
+            padding: 16px 123px 16px 9px;
+        }
+
+        input[type=number] {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: $grey;
+            background-color: transparent;            
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        
+        .text_another_amount {
+            position: relative;
+          }
+          
+          .text_another_amount > i {
+            position: absolute;
+            display: block;
+            transform: translate(0, -50%);
+            top: 50%;
+            pointer-events: none;
+            width: 25px;
+            text-align: center;
+            font-style: normal;
+          }
+
+          .text_another_amount > input {
+            padding-left: 25px;
+            padding-right: 0;
+          }
+
+          input[type=number]::before {
+            content: '$';
+            position: absolute;
+          }
+
+
+
+    .frequency_choice {
+        width: 218px;
+        height: 21px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 6px;
+    }
+
+        .monthly_payment {
+            width: 84px;
+            height: 21px;
+            display: flex;
+        }
+
+        .one_payment {
+            width: 84px;
+            height: 21px;  
+            display: flex;              
+        }
+
+        .payment_choice {
+            width: 16px;
+            height: 16px;
+            border: 1px solid #FE9013;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .payment_choice:hover {
+            cursor: pointer;
+        }
+
+        .payment:checked + .payment_choice {
+            width: 16px;
+            height: 16px;
+            border: 1px solid $green;
+            border-radius: 50%;
+            background-color: $green;
+        }
+
+        .payment:not(:checked) + .payment_choice {
+            width: 16px;
+            height: 16px;
+            border: 1px solid $orange;
+            border-radius: 50%;
+            background-color: transparent;
+        }
+
+        .monthly {
+            width: 58px;
+            height: 22px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: $black_blue;
+        }
+
+        .once {
+            width: 37px;
+            height: 22px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: $black_blue;
+        }
+
+        #radiobutton {
+            visibility: hidden;
+        }
+
+        .donation_payment_button {
+            width: 298px;
+            height: 54px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+            border-radius: 25px;
+            margin: 40px 0px 30px 0px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            text-align: center;
+            text-transform: uppercase;
+            color: $white;
+            border-color: $orange;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .donation_payment_button:hover {
+            cursor: pointer;
+            background: $button_hover;
+            border-color: $button_hover;
+        }
+
+        .donation_payment_button:active {
+            cursor: pointer;
+            background: $green;
+            border-color: $green;
+        }
+
+        .share_info {
+            width: 301px;
+            height: 22px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: $black_blue;
+        }
 
 
     
@@ -590,16 +968,6 @@ body {
                     align-items: center;
                 }
 
-                    .enter_email {
-                        width: 208px;
-                        height: 22px;
-                        font-family: 'Roboto';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 16px;
-                        line-height: 140%;
-                        color: #BDBDBD;
-                    }
 
                 .submit_button {
                     width: 129px;
