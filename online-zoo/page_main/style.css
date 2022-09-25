@@ -1439,9 +1439,232 @@ body {
 }
 
 .user_info {
-  width: 191px;
+  width: 237px;
   height: 38px;
   margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.user_icon_1 {
+  width: 37px;
+  height: 37px;
+  background-image: url("../refs/icons/user_icon.svg");
+  margin-right: 10px;
+}
+
+.user_name_location_1 {
+  width: 144px;
+  height: 38px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user_name_one {
+  width: 97px;
+  height: 19px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.where_when_1 {
+  width: 144px;
+  height: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.user_country_1 {
+  width: 87px;
+  height: 18px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #767474;
+}
+
+.testimonial_date_1 {
+  width: 41px;
+  height: 18px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #767474;
+}
+
+.user_icon_2 {
+  width: 37px;
+  height: 37px;
+  background-image: url("../refs/icons/user_one.png");
+  margin-right: 10px;
+}
+
+.user_name_location_2 {
+  width: 144px;
+  height: 38px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user_name_two {
+  width: 126px;
+  height: 19px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.where_when_2 {
+  width: 168px;
+  height: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.user_country_2 {
+  width: 87px;
+  height: 18px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #767474;
+}
+
+.testimonial_date_2 {
+  width: 65px;
+  height: 18px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #767474;
+}
+
+.user_icon_3 {
+  width: 37px;
+  height: 37px;
+  background-image: url("../refs/icons/user_two.png");
+  margin-right: 10px;
+}
+
+.user_name_location_3 {
+  width: 168px;
+  height: 38px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user_name_three {
+  width: 139px;
+  height: 19px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.where_when_3 {
+  width: 168px;
+  height: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.user_country_3 {
+  width: 87px;
+  height: 18px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #767474;
+}
+
+.testimonial_date_3 {
+  width: 65px;
+  height: 18px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #767474;
+}
+
+.user_icon_4 {
+  width: 37px;
+  height: 37px;
+  background-image: url("../refs/icons/user_three.png");
+  margin-right: 10px;
+}
+
+.user_name_location_4 {
+  width: 168px;
+  height: 38px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user_name_four {
+  width: 83px;
+  height: 19px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.where_when_4 {
+  width: 168px;
+  height: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.user_country_4 {
+  width: 87px;
+  height: 18px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #767474;
+}
+
+.testimonial_date_4 {
+  width: 65px;
+  height: 18px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #767474;
 }
 
 .testimonial_text {
@@ -1467,6 +1690,10 @@ body {
 
 .testimonial_text:hover {
   cursor: auto;
+}
+
+.country_date_between_circle {
+  color: #767474;
 }
 
 .slider_progress_bar {
