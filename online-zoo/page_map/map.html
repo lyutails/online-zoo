@@ -13,17 +13,19 @@
         <header class="header">                
             <div class="wrapper">
                 <div class="header_content">
-                    <a href="#first_screen" class="logo">                        
+                    <a href="../page_main/index.html" class="logo">                        
                         <h1 class="logo_name">PetStory online<span class="logo_bamboo"></span></h1>                            
                     </a>
                     <nav class="navigation">
-                        <ul class="navigation_menu">
-                            <li class="navigation_item"><a class="navigation_link" id="active" href="#">About</a></li>
-                            <li class="navigation_item"><a class="navigation_link" href="#">Map</a></li>
-                            <li class="navigation_item"><a class="navigation_link" href="#">Zoos</a></li>
-                            <li class="navigation_item"><a class="navigation_link" href="#">Contact Us</a></li>
-                            <li class="navigation_item"><a class="navigation_link" href="#">Donate</a></li>
-                            <li class="navigation_item"><a class="navigation_link" href="#">Designed by ©</a></li>
+                        <ul class="navigation_menu_one">
+                            <li class="navigation_item"><a class="navigation_link" id="active" href="../page_main/index.html">About</a></li>
+                            <li class="navigation_item"><a class="navigation_link" href="../page_map/map.html">Map</a></li>
+                            <li class="navigation_item"><a class="navigation_link" href="../page_zoos/3_panda.html">Zoos</a></li>
+                            <li class="navigation_item"><a class="navigation_link" href="../page_donate/donate.html">Donate</a></li>
+                            <li class="navigation_item"><a class="navigation_link" href="#footer">Contact Us</a></li>                                
+                        </ul>
+                        <ul class="navigation_menu_two">
+                            <li class="navigation_item"><a class="navigation_link" href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1">Designed by ©</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -32,54 +34,50 @@
         <div class="wrapper">
         <div class="map"></div>
     </div>    
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="wrapper_footer">
             <div class="footer_content">
                 <div class="footer_left">
-                    <a href="#first_screen" class="logo_footer">                        
+                    <a href="../page_main/index.html" class="logo_footer">                        
                         <h1 class="logo_name">PetStory online<span class="logo_bamboo"></span></h1>                            
                     </a>
-                    <button class="button_square_corners_footer">
-                        <p class="footer_button_content">donate for volunteers</p>
+                    <button class="button_footer">
+                        <a class="footer_button_content" href="../page_donate/donate.html">donate for volunteers</a>
                     </button>
                     <div class="social_networks">
                         <div class="facebook">
                             <div class="network_icon">
-                                <span class="facebook_icon"></span>
-                                <span class="networks_circle_icon_background"></span>
+                                <span class="facebook_icon"></span>                                
                             </div>
-                            <p class="network_name">Facebook</p>
+                            <a class="network_name" href="https://www.facebook.com/">Facebook</a>
                         </div>
                         <div class="twitter">
                             <div class="network_icon">
-                                <span class="twitter_icon"></span>
-                                <span class="networks_circle_icon_background"></span>
+                                <span class="twitter_icon"></span>                                
                             </div>
-                            <p class="network_name">Twitter</p>
+                            <a class="network_name" href="https://twitter.com/?lang=en">Twitter</a>
                         </div>
                         <div class="instagram">
                             <div class="network_icon">
-                                <span class="instagram_icon"></span>
-                                <span class="networks_circle_icon_background"></span>
+                                <span class="instagram_icon"></span>                                
                             </div>
-                            <p class="network_name">Instagram</p>
+                            <a class="network_name" href="https://www.instagram.com/">Instagram</a>
                         </div>
                         <div class="youtube">
                             <div class="network_icon">
-                                <span class="youtube_icon"></span>
-                                <span class="networks_circle_icon_background"></span>
+                                <span class="youtube_icon"></span>                                
                             </div>
-                            <p class="network_name">YouTube</p>
+                            <a class="network_name" href="https://www.youtube.com/">YouTube</a>
                         </div>
                     </div>
                 </div>
                 <div class="footer_center">
                     <nav class="navigation_footer">
                         <ul class="navigation_menu_footer">
-                            <li class="navigation_footer_item_one">About</li>
-                            <li class="navigation_footer_item_two">Map</li>
-                            <li class="navigation_footer_item_three">Zoos</li>
-                            <li class="navigation_footer_item_four">Contact Us</li>                            
+                            <li class="navigation_item"><a class="navigation_link" id="active" href="../page_main/index.html">About</a></li>
+                            <li class="navigation_item"><a class="navigation_link" href="../page_map/map.html">Map</a></li>
+                            <li class="navigation_item"><a class="navigation_link" href="../page_zoos/3_panda.html">Zoos</a></li>
+                            <li class="navigation_item"><a class="navigation_link" href="#footer">Contact Us</a></li>                            
                         </ul>
                     </nav>
                 </div>
@@ -87,23 +85,22 @@
                     <div class="upper_part">
                         <p class="subscribe">Subscribe to our news</p>                    
                         <div class="enter_email_block">                        
-                            <div class="enter_email_frame">
-                                <div class="enter_email">Enter your email</div>
+                            <div class="enter_email_frame">                                                  
+                                <input oninput="submitDefault(this)" class="email" type='email' id="email" onfocus="this.placeholder=''" onfocusout="this.placeholder='Enter your email'" placeholder="Enter your email" size="26" maxlength="100" required>                                                                         
                             </div>
-                            <button class="submit_button">
-                                <p class="submit_button_content">Submit</p>
-                            </button>
+                            <button class="submit_button">Submit</button>
                         </div>
                     </div>
                     <div class="wrapper_credentials">
                         <div class="credentials">
-                            <p class="design_author">Designed by Alisa Samborskaya</p>
-                            <p class="school_credits">©RSSchool & ©Yem Digital 2021</p>
+                            <a class="design_author" href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1">Designed by Alisa Samborskaya</a>
+                            <a class="school_credits" href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1">©RSSchool & ©Yem Digital 2021</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>        
+    </footer>
+    <script src="script.js"></script>         
 </body>
 </html>

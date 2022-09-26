@@ -1892,11 +1892,15 @@ input[type=radio] {
   height: 352px;
   display: flex;
   padding-top: 40px;
+  justify-content: space-between;
 }
 
 .footer_left {
   width: 298px;
   height: 352px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .logo_footer {
@@ -1907,14 +1911,15 @@ input[type=radio] {
   align-items: center;
   width: 82px;
   height: 52px;
+  margin: 0px 0px 68px 0px;
   text-decoration: none;
-  border: 1.18841px solid #FFFFFF;
+  border: 1.18841px solid #ffffff;
   border-radius: 2px;
-  margin-bottom: 68px;
+  transition: all 0.4s ease-in-out;
 }
 
 .logo_name {
-  color: #FFFFFF;
+  color: #ffffff;
   display: inline-block;
   font-family: "Roboto";
   font-style: normal;
@@ -1928,6 +1933,7 @@ input[type=radio] {
   text-decoration: none;
   z-index: 16;
   position: absolute;
+  transition: all 0.4s ease-in-out;
 }
 
 .logo_bamboo {
@@ -1941,6 +1947,18 @@ input[type=radio] {
   top: 20px;
   background-repeat: no-repeat;
   z-index: 8;
+  transition: all 0.4s ease-in-out;
+}
+
+.logo_footer:hover {
+  cursor: pointer;
+  border: 1.18841px solid #FE9013;
+}
+.logo_footer:hover .logo_name {
+  color: #FE9013;
+}
+.logo_footer:hover * .logo_bamboo {
+  background-image: url("../refs/icons/bamboo_green.svg");
 }
 
 .button_footer {
@@ -2230,7 +2248,7 @@ input[type=radio] {
   color: #BDBDBD;
   background-color: transparent;
   outline: none;
-  border: none;
+  border: transparent;
   resize: none;
   border-style: none;
 }
@@ -2253,6 +2271,7 @@ input {
   resize: none;
   border-style: none;
   border-color: transparent;
+  border-width: 0px;
 }
 
 .email:-ms-input-placeholder {
@@ -2269,6 +2288,7 @@ input {
   resize: none;
   border-style: none;
   border-color: transparent;
+  border-width: 0px;
 }
 
 .email::placeholder {
@@ -2285,6 +2305,7 @@ input {
   resize: none;
   border-style: none;
   border-color: transparent;
+  border-width: 0px;
 }
 
 input:active {
@@ -2299,6 +2320,11 @@ input:active {
 .enter_email_frame:has(input[type=email]:invalid) ~ .submit_button {
   border-color: #D31414;
   color: #D31414;
+}
+
+.enter_email_frame:has(input[type=email]:default) ~ .submit_button {
+  border-color: #767474;
+  color: #767474;
 }
 
 .submit_button {
@@ -2317,6 +2343,12 @@ input:active {
   line-height: 140%;
   color: #333B41;
   transition: all 0.4s ease-in;
+}
+
+.submit_button:default {
+  border: 1px solid #333B41;
+  border-radius: 5px;
+  color: #333B41;
 }
 
 .submit_button:hover {

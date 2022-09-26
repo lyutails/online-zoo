@@ -70,6 +70,13 @@ body {
     overflow-x: hidden;
 }
 
+.start_screen {
+    width: 100vw;
+    height: 780px;    
+    background-image: url('../refs/pics/giant-panda_highres.jpg');
+    background-size: cover;        
+}
+
 .wrapper_wide {
     width: 100vw;
     margin: auto;    
@@ -215,13 +222,17 @@ body {
                 font-size: 16px;
                 line-height: 140%;
             }
+            
+
+    .map {
+        width: 1084px;
+        height: 715px;
+        background-image: url('../refs/decoration_elements/colored_map.png');
+    }
 
 
 
-
-
-
-
+    
     .footer {
         width: 100vw;  
         height: 443px;      
@@ -747,9 +758,3 @@ body {
                             text-decoration-line: underline;
                             text-decoration-thickness: 1px;
                         }
-        
-
-
-
-
-
