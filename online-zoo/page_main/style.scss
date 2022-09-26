@@ -1903,7 +1903,10 @@ body {
                     cursor: pointer;
                 }
 
-                
+
+                //testimonials slider movement
+
+            
 
 
 
@@ -2071,21 +2074,6 @@ body {
                     color: $white;
                 }
 
-
-//                 <form class="subscribe-form" action="#">
-//             <input placeholder="Enter your email" type="email" required>
-//             <button class="form-btn" type="submit">Submit</button>
-//           </form>
-// input:valid  .form-btn {
-//   border-color: var(--yellow);
-// }
-
-// //погуглите что делает селектор + 
-
-// input:valid + .form-btn {
-//     border-color: var(--yellow);
-//   }
-
             .social_networks {
                 width: 111px;
                 height: 134px;
@@ -2103,8 +2091,7 @@ body {
                 justify-content: space-between;
             }
 
-                .facebook:hover {
-                    fill: $green;
+                .facebook:hover {                    
                     cursor: pointer;
                 }
 
@@ -2115,8 +2102,7 @@ body {
                 justify-content: space-between;
             }
 
-                .twitter:hover {
-                    fill: $green;
+                .twitter:hover {                    
                     cursor: pointer;
                 }
 
@@ -2127,8 +2113,7 @@ body {
                 justify-content: space-between;
             }
 
-                .instagram:hover {
-                    fill: $green;
+                .instagram:hover {                    
                     cursor: pointer;
                 }
 
@@ -2139,8 +2124,7 @@ body {
                 justify-content: space-between;
             }
 
-                .youtube:hover {
-                    fill: $green;
+                .youtube:hover {                    
                     cursor: pointer;
                 }
 
@@ -2150,18 +2134,10 @@ body {
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 140%;
-                color: #FFFFFF;
+                color: $white;
                 text-decoration: none;
                 transition: all 0.4s ease-in-out;
-            }
-
-                .network_name:hover {
-                    color: $green;
-
-                    ~ .network_icon {
-                        background: $green;
-                    }
-                }
+            }               
 
                 .network_name:visited {
                     text-decoration: none;
@@ -2181,10 +2157,51 @@ body {
                 background: rgba(196, 196, 196, 0.5);
             }
 
-                .network_icon:hover {
-                    fill: $green;
-                    color: $green;
+                .facebook:hover {
+
+                        > .network_icon {
+                        background: $green;
+                        
+                        ~ .network_name {
+                            color: $green;
+                        }
+                    }
                 }
+
+                .twitter:hover {
+
+                        > .network_icon {
+                        background: $green;
+                        
+                        ~ .network_name {
+                            color: $green;
+                        }
+                    }
+                }
+
+                .instagram:hover {
+
+                        > .network_icon {
+                        background: $green;
+                        
+                        ~ .network_name {
+                            color: $green;
+                        }
+                    }
+                }
+
+                .youtube:hover {
+
+                        > .network_icon {
+                        background: $green;
+                        
+                        ~ .network_name {
+                            color: $green;
+                        }
+                    }
+                }
+
+                
 
                 .facebook_icon {
                     width: 8px;
@@ -2354,15 +2371,25 @@ body {
                         border: none;
                     }
 
-                    .email--input:invalid ~ .email--.submit_button {
-                        color: $red;
-                        border-color: $red;
-                    } 
+                    // .email--input:invalid ~ .email--.submit_button {
+                    //     color: $red;
+                    //     border-color: $red;
+                    // } 
 
-                    .email--input:valid ~ .email--.submit_button {
-                        color: $green;
-                        border-color: $green;
-                    } 
+                    // .email--input:valid ~ .email--.submit_button {
+                    //     color: $green;
+                    //     border-color: $green;
+                    // } 
+
+            .enter_email_frame:has(input[type="email"]:valid) ~ .submit_button {
+                border-color: $green;
+                color: $green;
+            }
+
+            .enter_email_frame:has(input[type="email"]:invalid) ~ .submit_button {
+                border-color: $red;
+                color: $red;
+            }
 
 
                 .submit_button {
@@ -2374,21 +2401,20 @@ body {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 140%;
+                    color: $black_blue;
+                    transition: all 0.4s ease-in;
                 }
 
-                .submit_button {
+                .submit_button:hover {
                     cursor: pointer;
                 }
 
-                    .submit_button_content {
-                        font-family: 'Roboto';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 16px;
-                        line-height: 140%;
-                        color: $black_blue;
-                        transition: all 0.4s ease-in;
-                    }
 
             .wrapper_credentials {
                 width: 367px;
@@ -2414,7 +2440,7 @@ body {
                         font-weight: 100;
                         font-size: 16px;
                         line-height: 130%;
-                        color: #FFFFFF;
+                        color: $white;
                     }
 
                     .school_credits {
@@ -2425,5 +2451,5 @@ body {
                         font-weight: 100;
                         font-size: 16px;
                         line-height: 130%;
-                        color: #FFFFFF;
+                        color: $white;
                     }
