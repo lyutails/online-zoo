@@ -322,6 +322,8 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  transform: translate3d(20px, 50px, 0px);
+  display: inline-block;
 }
 
 .number_meaning {
@@ -334,12 +336,15 @@ body {
   line-height: 140%;
   text-align: center;
   color: #333B41;
+  transform: translate3d(0px, 110px, 0px);
 }
 
 .multiplier {
   width: 14px;
   height: 14px;
   background-image: url("../refs/icons/x_icon.svg");
+  display: inline-block;
+  transform: translate3d(180px, 20px, 0px);
 }
 
 .money_input_grade {
@@ -504,14 +509,6 @@ body {
   margin-top: 60px;
 }
 
-.another_amount_sum {
-  width: 268px;
-  height: 54px;
-  border-color: 2px solid #767474;
-  position: relative;
-  padding: 16px 123px 16px 9px;
-}
-
 input[type=number] {
   font-family: "Roboto";
   font-style: normal;
@@ -521,40 +518,13 @@ input[type=number] {
   color: #767474;
   background-color: transparent;
   border: 2px solid #767474;
-  width: 125px;
+  width: 140px;
   height: 20px;
   padding: 16px 100px 16px 9px;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
 .text_another_amount {
   position: relative;
-}
-
-.text_another_amount > i {
-  position: absolute;
-  display: block;
-  transform: translate(0, -50%);
-  top: 50%;
-  pointer-events: none;
-  width: 25px;
-  text-align: center;
-  font-style: normal;
-}
-
-.text_another_amount > input {
-  padding-left: 25px;
-  padding-right: 0;
-}
-
-input[type=number]::before {
-  content: "$";
-  position: absolute;
 }
 
 .dollar_input {
@@ -562,7 +532,19 @@ input[type=number]::before {
   height: 20px;
   background-image: url("../refs/icons/dollar_grey.svg");
   display: inline-block;
-  transform: translate3d(-22px, 4px, 0px);
+  transform: translate3d(-24px, 4px, 0px);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .frequency_choice {
@@ -699,11 +681,15 @@ input[type=radio]:not(:checked) ~ .payment_choice {
   height: 352px;
   display: flex;
   padding-top: 40px;
+  justify-content: space-between;
 }
 
 .footer_left {
   width: 298px;
   height: 352px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .logo_footer {
@@ -714,14 +700,15 @@ input[type=radio]:not(:checked) ~ .payment_choice {
   align-items: center;
   width: 82px;
   height: 52px;
+  margin: 0px 0px 68px 0px;
   text-decoration: none;
-  border: 1.18841px solid #FFFFFF;
+  border: 1.18841px solid #ffffff;
   border-radius: 2px;
-  margin-bottom: 68px;
+  transition: all 0.4s ease-in-out;
 }
 
 .logo_name {
-  color: #FFFFFF;
+  color: #ffffff;
   display: inline-block;
   font-family: "Roboto";
   font-style: normal;
@@ -735,6 +722,7 @@ input[type=radio]:not(:checked) ~ .payment_choice {
   text-decoration: none;
   z-index: 16;
   position: absolute;
+  transition: all 0.4s ease-in-out;
 }
 
 .logo_bamboo {
@@ -748,9 +736,21 @@ input[type=radio]:not(:checked) ~ .payment_choice {
   top: 20px;
   background-repeat: no-repeat;
   z-index: 8;
+  transition: all 0.4s ease-in-out;
 }
 
-.button_square_corners_footer {
+.logo_footer:hover {
+  cursor: pointer;
+  border: 1.18841px solid #FE9013;
+}
+.logo_footer:hover .logo_name {
+  color: #FE9013;
+}
+.logo_footer:hover * .logo_bamboo {
+  background-image: url("../refs/icons/bamboo_green.svg");
+}
+
+.button_footer {
   width: 298px;
   height: 54px;
   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
@@ -758,7 +758,7 @@ input[type=radio]:not(:checked) ~ .payment_choice {
   transition: all 0.4s ease-in-out;
 }
 
-.button_square_corners_footer:hover {
+.button_footer:hover {
   background: #E47209;
   cursor: pointer;
 }
@@ -773,7 +773,18 @@ input[type=radio]:not(:checked) ~ .payment_choice {
   line-height: 140%;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer_button_content:active {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer_button_content:visited {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .social_networks {
@@ -793,11 +804,19 @@ input[type=radio]:not(:checked) ~ .payment_choice {
   justify-content: space-between;
 }
 
+.facebook:hover {
+  cursor: pointer;
+}
+
 .twitter {
   width: 89px;
   height: 26px;
   display: flex;
   justify-content: space-between;
+}
+
+.twitter:hover {
+  cursor: pointer;
 }
 
 .instagram {
@@ -807,11 +826,19 @@ input[type=radio]:not(:checked) ~ .payment_choice {
   justify-content: space-between;
 }
 
+.instagram:hover {
+  cursor: pointer;
+}
+
 .youtube {
   width: 101px;
   height: 26px;
   display: flex;
   justify-content: space-between;
+}
+
+.youtube:hover {
+  cursor: pointer;
 }
 
 .network_name {
@@ -820,7 +847,17 @@ input[type=radio]:not(:checked) ~ .payment_choice {
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
-  color: #FFFFFF;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+}
+
+.network_name:visited {
+  text-decoration: none;
+}
+
+.network_name:active {
+  text-decoration: none;
 }
 
 .network_icon {
@@ -831,6 +868,34 @@ input[type=radio]:not(:checked) ~ .payment_choice {
   justify-content: center;
   border-radius: 50%;
   background: rgba(196, 196, 196, 0.5);
+}
+
+.facebook:hover > .network_icon {
+  background: #4B9200;
+}
+.facebook:hover > .network_icon ~ .network_name {
+  color: #4B9200;
+}
+
+.twitter:hover > .network_icon {
+  background: #4B9200;
+}
+.twitter:hover > .network_icon ~ .network_name {
+  color: #4B9200;
+}
+
+.instagram:hover > .network_icon {
+  background: #4B9200;
+}
+.instagram:hover > .network_icon ~ .network_name {
+  color: #4B9200;
+}
+
+.youtube:hover > .network_icon {
+  background: #4B9200;
+}
+.youtube:hover > .network_icon ~ .network_name {
+  color: #4B9200;
 }
 
 .facebook_icon {
@@ -958,6 +1023,99 @@ input[type=radio]:not(:checked) ~ .payment_choice {
   align-items: center;
 }
 
+.email input[type=email] {
+  width: 208px;
+  height: 22px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #BDBDBD;
+  background-color: transparent;
+  outline: none;
+  border: transparent;
+  resize: none;
+  border-style: none;
+}
+
+input {
+  border: none;
+}
+
+.email::-moz-placeholder {
+  background-color: #000000;
+  display: block;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #BDBDBD;
+  outline: none;
+  border: none;
+  resize: none;
+  border-style: none;
+  border-color: transparent;
+  border-width: 0px;
+}
+
+.email:-ms-input-placeholder {
+  background-color: #000000;
+  display: block;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #BDBDBD;
+  outline: none;
+  border: none;
+  resize: none;
+  border-style: none;
+  border-color: transparent;
+  border-width: 0px;
+}
+
+.email::placeholder {
+  background-color: #000000;
+  display: block;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #BDBDBD;
+  outline: none;
+  border: none;
+  resize: none;
+  border-style: none;
+  border-color: transparent;
+  border-width: 0px;
+}
+
+input:active {
+  border: none;
+}
+
+.enter_email_frame:has(input[type=email]:valid) ~ .submit_button {
+  border-color: #4B9200;
+  color: #4B9200;
+}
+
+.enter_email_frame:has(input[type=email]:invalid) ~ .submit_button {
+  border-color: #D31414;
+  color: #D31414;
+}
+
+.enter_email_frame:has(input[type=email]:default) ~ .submit_button {
+  border-color: #767474;
+  color: #767474;
+}
+
 .submit_button {
   width: 129px;
   height: 42px;
@@ -967,26 +1125,23 @@ input[type=radio]:not(:checked) ~ .payment_choice {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.submit_button:hover {
-  cursor: pointer;
-  border: 1px solid #4B9200;
-}
-
-.submit_button_content {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
-  color: #000000;
+  color: #333B41;
   transition: all 0.4s ease-in;
 }
 
-.submit_button:hover .submit_button_content {
+.submit_button:default {
+  border: 1px solid #333B41;
+  border-radius: 5px;
+  color: #333B41;
+}
+
+.submit_button:hover {
   cursor: pointer;
-  color: #4B9200;
 }
 
 .wrapper_credentials {
@@ -1013,7 +1168,21 @@ input[type=radio]:not(:checked) ~ .payment_choice {
   font-weight: 100;
   font-size: 16px;
   line-height: 130%;
-  color: #FFFFFF;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  margin-bottom: 10px;
+}
+
+.design_author:hover {
+  -webkit-text-decoration-color: #4B9200;
+          text-decoration-color: #4B9200;
+  cursor: pointer;
+  color: #4B9200;
+  text-underline-offset: 5px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  text-decoration-thickness: 1px;
 }
 
 .school_credits {
@@ -1024,5 +1193,18 @@ input[type=radio]:not(:checked) ~ .payment_choice {
   font-weight: 100;
   font-size: 16px;
   line-height: 130%;
-  color: #FFFFFF;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+}
+
+.school_credits:hover {
+  -webkit-text-decoration-color: #4B9200;
+          text-decoration-color: #4B9200;
+  cursor: pointer;
+  color: #4B9200;
+  text-underline-offset: 5px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  text-decoration-thickness: 1px;
 }/*# sourceMappingURL=donate.css.map */

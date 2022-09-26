@@ -1996,29 +1996,34 @@ body {
             height: 352px;
             display: flex; 
             padding-top: 40px;     
+            justify-content: space-between;
         }
 
         .footer_left {
             width: 298px;
             height: 352px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
-            .logo_footer {
-                left: 0;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                width: 82px;
-                height: 52px;        
-                text-decoration: none; 
-                border: 1.18841px solid #FFFFFF; 
-                border-radius: 2px; 
-                margin-bottom: 68px;         
-            }
+        .logo_footer {
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 82px;
+            height: 52px;                
+            margin: 0px 0px 68px 0px;   
+            text-decoration: none; 
+            border: 1.18841px solid $white; 
+            border-radius: 2px;
+            transition: all 0.4s ease-in-out;          
+        }
 
             .logo_name {
-                color: #FFFFFF;
+                color: $white;
                 display: inline-block;
                 font-family: 'Roboto';
                 font-style: normal;
@@ -2032,6 +2037,7 @@ body {
                 text-decoration: none;
                 z-index: 16;
                 position: absolute;
+                transition: all 0.4s ease-in-out;
             }
 
             .logo_bamboo {
@@ -2045,6 +2051,20 @@ body {
                 top: 20px;
                 background-repeat: no-repeat;
                 z-index: 8;
+                transition: all 0.4s ease-in-out;
+            }
+
+            .logo_footer:hover {
+                cursor: pointer;
+                border: 1.18841px solid $orange_light; 
+
+                .logo_name {
+                    color: $orange_light;                        
+                }
+
+                * .logo_bamboo {
+                    background-image: url('../refs/icons/bamboo_green.svg');
+                }
             }
 
             .button_footer {
@@ -2350,7 +2370,7 @@ body {
                         color: #BDBDBD;   
                         background-color: transparent;
                         outline: none;
-                        border: none;
+                        border: transparent;
                         resize: none;
                         border-style: none;                     
                     }
@@ -2372,22 +2392,13 @@ body {
                         border: none;
                         resize: none; 
                         border-style: none;
-                        border-color: transparent;                      
+                        border-color: transparent; 
+                        border-width: 0px;                     
                     }
 
                     input:active {
                         border: none;
                     }
-
-                    // .email--input:invalid ~ .email--.submit_button {
-                    //     color: $red;
-                    //     border-color: $red;
-                    // } 
-
-                    // .email--input:valid ~ .email--.submit_button {
-                    //     color: $green;
-                    //     border-color: $green;
-                    // } 
 
             .enter_email_frame:has(input[type="email"]:valid) ~ .submit_button {
                 border-color: $green;
@@ -2399,6 +2410,10 @@ body {
                 color: $red;
             }
 
+            .enter_email_frame:has(input[type="email"]:default) ~ .submit_button {
+                border-color: $grey;
+                color: $grey;
+            }
 
                 .submit_button {
                     width: 129px;
@@ -2419,9 +2434,15 @@ body {
                     transition: all 0.4s ease-in;
                 }
 
+                .submit_button:default {
+                    border: 1px solid $black_blue;
+                    border-radius: 5px;
+                    color: $black_blue;
+                }
+
                 .submit_button:hover {
                     cursor: pointer;
-                }
+                }                
 
 
             .wrapper_credentials {

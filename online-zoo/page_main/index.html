@@ -339,8 +339,8 @@
                     <div class="upper_part">
                         <p class="subscribe">Subscribe to our news</p>                    
                         <div class="enter_email_block">                        
-                            <div class="enter_email_frame">                                                   
-                                <input class="email" type='email' id="email" placeholder="Enter your email" size="26" maxlength="100" required>                                                                         
+                            <div class="enter_email_frame">                                                  
+                                <input oninput="submitDefault(this)" class="email" type='email' id="email" onfocus="this.placeholder=''" onfocusout="this.placeholder='Enter your email'" placeholder="Enter your email" size="26" maxlength="100" required>                                                                         
                             </div>
                             <button class="submit_button">Submit</button>
                         </div>
