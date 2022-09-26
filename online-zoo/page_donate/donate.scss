@@ -408,7 +408,10 @@ body {
                     width: 10px;
                     height: 10px;
                     border-radius: 50%;
-                    background-color: $yellow;            
+                    background-color: $yellow;  
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;          
                 }
 
                     .circle:hover {
@@ -416,11 +419,25 @@ body {
                     }
 
                 .circle_active::after {
+                    content: '';
                     width: 23px;
                     height: 23px;
                     background-color: transparent;
                     border-radius: 50%;
-                    border: 1px solid $orange;                    
+                    border: 3px solid $orange;
+                    display: inline-block;
+                    position: absolute;            
+                }
+
+                .circle_active::before {
+                    content: '';
+                    width: 46px;
+                    height: 46px;
+                    background-color: transparent;
+                    border-radius: 50%;
+                    border: 3px solid $orange;
+                    display: inline-block; 
+                    position: absolute           
                 }
 
         .money_sum {
@@ -525,7 +542,7 @@ body {
         .another_amount_sum {
             width: 268px;
             height: 54px;
-            border-color: 1px solid $grey;
+            border-color: 2px solid $grey;
             position: relative;
             padding: 16px 123px 16px 9px;
         }
@@ -537,7 +554,11 @@ body {
             font-size: 16px;
             line-height: 140%;
             color: $grey;
-            background-color: transparent;            
+            background-color: transparent; 
+            border: 2px solid $grey;      
+            width: 125px;
+            height: 20px; 
+            padding: 16px 100px 16px 9px;    
         }
 
         input::-webkit-outer-spin-button,
@@ -570,7 +591,14 @@ body {
             content: '$';
             position: absolute;
           }
-
+          
+          .dollar_input {
+            width: 10px;
+            height: 20px;
+            background-image: url('../refs/icons/dollar_grey.svg');
+            display: inline-block;
+            transform: translate3d(-22px, 4px, 0px);            
+          }
 
 
     .frequency_choice {
@@ -605,7 +633,7 @@ body {
             cursor: pointer;
         }
 
-        .payment:checked + .payment_choice {
+        input[type='radio']:checked ~ .payment_choice {
             width: 16px;
             height: 16px;
             border: 1px solid $green;
@@ -613,7 +641,7 @@ body {
             background-color: $green;
         }
 
-        .payment:not(:checked) + .payment_choice {
+        input[type='radio']:not(:checked) ~ .payment_choice {
             width: 16px;
             height: 16px;
             border: 1px solid $orange;

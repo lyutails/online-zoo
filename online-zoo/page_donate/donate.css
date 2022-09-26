@@ -374,6 +374,9 @@ body {
   height: 10px;
   border-radius: 50%;
   background-color: #FFEE2E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .circle:hover {
@@ -381,11 +384,25 @@ body {
 }
 
 .circle_active::after {
+  content: "";
   width: 23px;
   height: 23px;
   background-color: transparent;
   border-radius: 50%;
-  border: 1px solid #F9804B;
+  border: 3px solid #F9804B;
+  display: inline-block;
+  position: absolute;
+}
+
+.circle_active::before {
+  content: "";
+  width: 46px;
+  height: 46px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 3px solid #F9804B;
+  display: inline-block;
+  position: absolute;
 }
 
 .money_sum {
@@ -490,7 +507,7 @@ body {
 .another_amount_sum {
   width: 268px;
   height: 54px;
-  border-color: 1px solid #767474;
+  border-color: 2px solid #767474;
   position: relative;
   padding: 16px 123px 16px 9px;
 }
@@ -503,6 +520,10 @@ input[type=number] {
   line-height: 140%;
   color: #767474;
   background-color: transparent;
+  border: 2px solid #767474;
+  width: 125px;
+  height: 20px;
+  padding: 16px 100px 16px 9px;
 }
 
 input::-webkit-outer-spin-button,
@@ -534,6 +555,14 @@ input::-webkit-inner-spin-button {
 input[type=number]::before {
   content: "$";
   position: absolute;
+}
+
+.dollar_input {
+  width: 10px;
+  height: 20px;
+  background-image: url("../refs/icons/dollar_grey.svg");
+  display: inline-block;
+  transform: translate3d(-22px, 4px, 0px);
 }
 
 .frequency_choice {
@@ -568,7 +597,7 @@ input[type=number]::before {
   cursor: pointer;
 }
 
-.payment:checked + .payment_choice {
+input[type=radio]:checked ~ .payment_choice {
   width: 16px;
   height: 16px;
   border: 1px solid #4B9200;
@@ -576,7 +605,7 @@ input[type=number]::before {
   background-color: #4B9200;
 }
 
-.payment:not(:checked) + .payment_choice {
+input[type=radio]:not(:checked) ~ .payment_choice {
   width: 16px;
   height: 16px;
   border: 1px solid #F9804B;

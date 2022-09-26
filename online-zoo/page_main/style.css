@@ -417,7 +417,7 @@ body {
   height: 62px;
   border-radius: 50%;
   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
-  transition: all 0.4s ease-in;
+  transition: all 0.1s ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -425,6 +425,11 @@ body {
 
 .slider_button_left:hover {
   background: #E47209;
+  cursor: pointer;
+}
+
+.slider_button_left:active {
+  background: #4B9200;
   cursor: pointer;
 }
 
@@ -943,7 +948,7 @@ body {
   height: 62px;
   border-radius: 50%;
   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
-  transition: all 0.4s ease-in;
+  transition: all 0.1s ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -951,6 +956,11 @@ body {
 
 .slider_button_right:hover {
   background: #E47209;
+  cursor: pointer;
+}
+
+.slider_button_right:active {
+  background: #4B9200;
   cursor: pointer;
 }
 
@@ -2338,6 +2348,20 @@ input:active {
   font-size: 16px;
   line-height: 130%;
   color: #ffffff;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  margin-bottom: 10px;
+}
+
+.design_author:hover {
+  -webkit-text-decoration-color: #4B9200;
+          text-decoration-color: #4B9200;
+  cursor: pointer;
+  color: #4B9200;
+  text-underline-offset: 5px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  text-decoration-thickness: 1px;
 }
 
 .school_credits {
@@ -2349,4 +2373,17 @@ input:active {
   font-size: 16px;
   line-height: 130%;
   color: #ffffff;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+}
+
+.school_credits:hover {
+  -webkit-text-decoration-color: #4B9200;
+          text-decoration-color: #4B9200;
+  cursor: pointer;
+  color: #4B9200;
+  text-underline-offset: 5px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  text-decoration-thickness: 1px;
 }/*# sourceMappingURL=style.css.map */

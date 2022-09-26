@@ -101,13 +101,11 @@
                             <p class="twentyfive">25</p>
                         </div>
                     </div>  
-                    <div class="another_amount_wrapper">                 
-                        <label class="another_amount_sum" for="another_amount">
-                            <input type="number" onfocus="this.placeholder=''" onfocusout="this.placeholder='Another amount'" value="Another amount" 
-                            class="text_another_amount" placeholder="Another amount" id="another_amount"
-                            oninput="maxLengthCheck(this)" maxlength="4">
-                            <i>$</i>
-                        </label>
+                    <div class="another_amount_wrapper"> 
+                        <input type="number" onfocus="this.placeholder=''" onfocusout="this.placeholder='Another amount'" value="Another amount" 
+                        class="text_another_amount" placeholder="Another amount" id="another_amount"
+                        oninput="maxLengthCheck(this)" maxlength="4">
+                        <span class="dollar_input"></span>                        
                     </div>                     
                     <div class="frequency_choice">
                         <div class="monthly_payment">
@@ -118,7 +116,7 @@
                         </div>
                         <div class="one_payment">
                             <label class="payment_choice" for="radiobutton">
-                                <input type="radio" id="radiobutton" name="choice" class="payment">
+                                <input type="radio" id="radiobutton" name="choice" class="payment" checked>
                             </label>
                             <p class="once">Once</p>
                         </div>
