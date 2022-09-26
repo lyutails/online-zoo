@@ -1988,7 +1988,6 @@ input[type=radio] {
 }
 
 .facebook:hover {
-  fill: #4B9200;
   cursor: pointer;
 }
 
@@ -2000,7 +1999,6 @@ input[type=radio] {
 }
 
 .twitter:hover {
-  fill: #4B9200;
   cursor: pointer;
 }
 
@@ -2012,7 +2010,6 @@ input[type=radio] {
 }
 
 .instagram:hover {
-  fill: #4B9200;
   cursor: pointer;
 }
 
@@ -2024,7 +2021,6 @@ input[type=radio] {
 }
 
 .youtube:hover {
-  fill: #4B9200;
   cursor: pointer;
 }
 
@@ -2034,16 +2030,9 @@ input[type=radio] {
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   transition: all 0.4s ease-in-out;
-}
-
-.network_name:hover {
-  color: #4B9200;
-}
-.network_name:hover ~ .network_icon {
-  background: #4B9200;
 }
 
 .network_name:visited {
@@ -2064,8 +2053,31 @@ input[type=radio] {
   background: rgba(196, 196, 196, 0.5);
 }
 
-.network_icon:hover {
-  fill: #4B9200;
+.facebook:hover > .network_icon {
+  background: #4B9200;
+}
+.facebook:hover > .network_icon ~ .network_name {
+  color: #4B9200;
+}
+
+.twitter:hover > .network_icon {
+  background: #4B9200;
+}
+.twitter:hover > .network_icon ~ .network_name {
+  color: #4B9200;
+}
+
+.instagram:hover > .network_icon {
+  background: #4B9200;
+}
+.instagram:hover > .network_icon ~ .network_name {
+  color: #4B9200;
+}
+
+.youtube:hover > .network_icon {
+  background: #4B9200;
+}
+.youtube:hover > .network_icon ~ .network_name {
   color: #4B9200;
 }
 
@@ -2269,14 +2281,14 @@ input:active {
   border: none;
 }
 
-.email--input:invalid ~ .email--.submit_button {
-  color: #D31414;
-  border-color: #D31414;
+.enter_email_frame:has(input[type=email]:valid) ~ .submit_button {
+  border-color: #4B9200;
+  color: #4B9200;
 }
 
-.email--input:valid ~ .email--.submit_button {
-  color: #4B9200;
-  border-color: #4B9200;
+.enter_email_frame:has(input[type=email]:invalid) ~ .submit_button {
+  border-color: #D31414;
+  color: #D31414;
 }
 
 .submit_button {
@@ -2288,13 +2300,6 @@ input:active {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.submit_button {
-  cursor: pointer;
-}
-
-.submit_button_content {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -2302,6 +2307,10 @@ input:active {
   line-height: 140%;
   color: #333B41;
   transition: all 0.4s ease-in;
+}
+
+.submit_button:hover {
+  cursor: pointer;
 }
 
 .wrapper_credentials {
@@ -2328,7 +2337,7 @@ input:active {
   font-weight: 100;
   font-size: 16px;
   line-height: 130%;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .school_credits {
@@ -2339,5 +2348,5 @@ input:active {
   font-weight: 100;
   font-size: 16px;
   line-height: 130%;
-  color: #FFFFFF;
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */
