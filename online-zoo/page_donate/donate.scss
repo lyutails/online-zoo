@@ -845,6 +845,7 @@ body {
             height: 26px;
             display: flex;
             justify-content: space-between;
+            transition: all 0.1s ease-in-out;
         }
 
             .facebook:hover {                    
@@ -856,6 +857,7 @@ body {
             height: 26px;
             display: flex;
             justify-content: space-between;
+            transition: all 0.1s ease-in-out;
         }
 
             .twitter:hover {                    
@@ -867,6 +869,7 @@ body {
             height: 26px;
             display: flex;
             justify-content: space-between;
+            transition: all 0.1s ease-in-out;
         }
 
             .instagram:hover {                    
@@ -878,6 +881,7 @@ body {
             height: 26px;
             display: flex;
             justify-content: space-between;
+            transition: all 0.1s ease-in-out;
         }
 
             .youtube:hover {                    
@@ -892,7 +896,7 @@ body {
             line-height: 140%;
             color: $white;
             text-decoration: none;
-            transition: all 0.4s ease-in-out;
+            transition: all 0.1s ease-in-out;
         }               
 
             .network_name:visited {
@@ -916,15 +920,37 @@ body {
             .facebook:hover {
 
                     > .network_icon {
+                    background: $orange;
+                    
+                    ~ .network_name {
+                        color: $orange;
+                    }
+                } 
+            }
+
+            .facebook:active {
+
+                    > .network_icon {
                     background: $green;
                     
                     ~ .network_name {
                         color: $green;
                     }
                 }
-            }
+            }         
 
             .twitter:hover {
+
+                    > .network_icon {
+                    background: $orange;
+                    
+                    ~ .network_name {
+                        color: $orange;
+                    }
+                }
+            }
+
+            .twitter:active {
 
                     > .network_icon {
                     background: $green;
@@ -938,15 +964,15 @@ body {
             .instagram:hover {
 
                     > .network_icon {
-                    background: $green;
+                    background: $orange;
                     
                     ~ .network_name {
-                        color: $green;
+                        color: $orange;
                     }
                 }
             }
 
-            .youtube:hover {
+            .instagram:active {
 
                     > .network_icon {
                     background: $green;
@@ -956,6 +982,29 @@ body {
                     }
                 }
             }                
+
+            .youtube:hover {
+
+                    > .network_icon {
+                    background: $orange;
+                    
+                    ~ .network_name {
+                        color: $orange;
+                    }
+                }
+            }
+
+            .youtube:active {
+
+                    > .network_icon {
+                    background: $green;
+                    
+                    ~ .network_name {
+                        color: $green;
+                    }
+                }
+            } 
+                            
 
             .facebook_icon {
                 width: 8px;
@@ -1124,6 +1173,12 @@ body {
 
                 input:active {
                     border: none;
+                }
+
+                input[type=email]:focus {
+                    background: transparent;
+                    outline: none;
+                    color: $grey;
                 }
 
         .enter_email_frame:has(input[type="email"]:valid) ~ .submit_button {
