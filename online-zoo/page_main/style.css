@@ -274,7 +274,8 @@ body {
   cursor: pointer;
 }
 
-.watch {
+.button_start .watch {
+  display: block;
   text-decoration: none;
   color: #ffffff;
 }
@@ -1018,6 +1019,10 @@ body {
   text-decoration: none;
 }
 
+.button_slider .animals_button_name {
+  display: block;
+}
+
 .flower_decoration_two {
   display: flex;
   justify-content: flex-start;
@@ -1390,6 +1395,10 @@ body {
 .button_feed_friend_content:visited {
   text-decoration: none;
   color: #ffffff;
+}
+
+.button_feed .button_feed_friend_content {
+  display: block;
 }
 
 .testimonials_decoration_wrapper {
@@ -2024,6 +2033,10 @@ input[type=radio] {
 .footer_button_content:visited {
   text-decoration: none;
   color: #ffffff;
+}
+
+.button_footer .footer_button_content {
+  display: block;
 }
 
 .social_networks {
