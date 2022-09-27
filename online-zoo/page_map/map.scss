@@ -44,6 +44,7 @@ $orange: #F9804B;
 $orange_gradient_2: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
 $orange_light: #FE9013;
 $green: #4B9200;
+$map_background: #EAF7FE;
 
 
 ::-webkit-scrollbar {
@@ -56,7 +57,7 @@ $green: #4B9200;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: $orange_gradient;
+    background: $pink_gradient;
     border-radius: 20px;
     box-shadow: inset 0 0 5px $grey;
 }
@@ -223,12 +224,71 @@ body {
                 line-height: 140%;
             }
             
+.map_section {
+    width: 1600px;
+    height: 938px;
+    background-color: $map_background;
+}
+
+    .map_controls {
+        width: 54px;
+        height: 118px;
+        display: flex;
+        flex-direction: column; 
+        position: absolute;       
+    }
+
+        .plus {
+            width: 54px;
+            height: 54px;
+            background-color: $white;
+            border-radius: 5px;            
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .plus_closer {
+                width: 32px;
+                height: 32px;
+                background-image: url('../refs/icons/plus.svg');
+                display: inline-block;
+            }
+
+        .minus {
+            width: 54px;
+            height: 54px;
+            background-color: $white;
+            border-radius: 5px;   
+            display: flex;
+            justify-content: center;
+            align-items: center;         
+        }
+
+            .minus_closer {
+                width: 32px;
+                height: 6px;
+                background-image: url('../refs/icons/minus.svg');
+                display: inline-block;
+            }
+
+    .wrapper_map {
+        width: 1160px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
 
     .map {
         width: 1084px;
         height: 715px;
         background-image: url('../refs/decoration_elements/colored_map.png');
+        margin-top: 104px;
+        margin-bottom: 120px;
     }
+
+    
 
 
 
