@@ -2217,7 +2217,7 @@ body {
                 background: rgba(196, 196, 196, 0.5);
             }
 
-                .facebook:hover {
+                .facebook:active {
 
                         > .network_icon {
                         background: $green;
@@ -2228,7 +2228,7 @@ body {
                     }
                 }
 
-                .twitter:hover {
+                .twitter:active {
 
                         > .network_icon {
                         background: $green;
@@ -2239,7 +2239,7 @@ body {
                     }
                 }
 
-                .instagram:hover {
+                .instagram:active {
 
                         > .network_icon {
                         background: $green;
@@ -2250,7 +2250,7 @@ body {
                     }
                 }
 
-                .youtube:hover {
+                .youtube:active {
 
                         > .network_icon {
                         background: $green;
