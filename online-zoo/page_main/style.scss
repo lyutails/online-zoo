@@ -2458,6 +2458,12 @@ body {
                         border: none;
                     }
 
+                    input[type=email]:focus {
+                        background: transparent;
+                        outline: none;
+                        color: $grey;
+                    }
+
                     .email::placeholder {
                         background-color: $black;                        
                         display: block;

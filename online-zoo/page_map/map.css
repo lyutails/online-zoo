@@ -248,7 +248,7 @@ body {
 
 .minus_closer {
   width: 32px;
-  height: 6px;
+  height: 8px;
   background-image: url("../refs/icons/minus.svg");
   display: inline-block;
 }
@@ -734,6 +734,12 @@ input {
 
 input:active {
   border: none;
+}
+
+input[type=email]:focus {
+  background: transparent;
+  outline: none;
+  color: #767474;
 }
 
 .enter_email_frame:has(input[type=email]:valid) ~ .submit_button {
