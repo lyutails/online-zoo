@@ -585,6 +585,7 @@ input[type=radio] {
   border: 1px solid #FE9013;
   border-radius: 50%;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .payment_choice_monthly {
@@ -593,6 +594,7 @@ input[type=radio] {
   border: 1px solid #FE9013;
   border-radius: 50%;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .payment_choice:hover {
@@ -613,6 +615,22 @@ input[type=radio] {
   border: 1px solid #F9804B;
   border-radius: 50%;
   background-color: transparent;
+}
+
+#radiobutton_once:checked ~ .frequency_choice .payment_choice_monthly {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #F9804B;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+#radiobutton_once:not(checked) ~ .frequency_choice .payment_choice_monthly {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #4B9200;
+  border-radius: 50%;
+  background-color: #4B9200;
 }
 
 .monthly {
