@@ -322,7 +322,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  transform: translate3d(20px, 50px, 0px);
+  transform: translate3d(60px, 100px, 0px);
   display: inline-block;
 }
 
@@ -344,7 +344,7 @@ body {
   height: 14px;
   background-image: url("../refs/icons/x_icon.svg");
   display: inline-block;
-  transform: translate3d(180px, 20px, 0px);
+  transform: translate3d(180px, 50px, 0px);
 }
 
 .money_input_grade {
@@ -352,7 +352,7 @@ body {
   height: 40px;
   border-radius: 2px;
   background: #333B41;
-  margin-top: 87px;
+  margin-top: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -394,7 +394,7 @@ body {
   height: 23px;
   background-color: transparent;
   border-radius: 50%;
-  border: 3px solid #F9804B;
+  border: 2px solid #F9804B;
   display: inline-block;
   position: absolute;
 }
@@ -405,7 +405,7 @@ body {
   height: 46px;
   background-color: transparent;
   border-radius: 50%;
-  border: 3px solid #F9804B;
+  border: 2px solid #F9804B;
   display: inline-block;
   position: absolute;
 }
@@ -506,7 +506,10 @@ body {
 .another_amount_wrapper {
   width: 976px;
   height: 54px;
-  margin-top: 60px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
 }
 
 input[type=number] {
@@ -532,7 +535,7 @@ input[type=number] {
   height: 20px;
   background-image: url("../refs/icons/dollar_grey.svg");
   display: inline-block;
-  transform: translate3d(-24px, 4px, 0px);
+  transform: translate3d(-24px, 16px, 0px);
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -629,7 +632,7 @@ input[type=radio]:not(:checked) ~ .payment_choice {
   align-items: center;
   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
   border-radius: 25px;
-  margin: 40px 0px 30px 0px;
+  margin: 31px 0px 30px 0px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -639,7 +642,7 @@ input[type=radio]:not(:checked) ~ .payment_choice {
   text-transform: uppercase;
   color: #ffffff;
   border-color: #F9804B;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .donation_payment_button:hover {
