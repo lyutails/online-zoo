@@ -289,13 +289,18 @@ body {
                 position: relative;
                 //margin: 140px 0px 0px 983px; 
                 border-image: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);                 
-                transition: all 0.4s ease-in-out; 
+                transition: all 0.2s ease-in-out; 
                 margin: 0px 0px 0px 176px;             
             }
 
             .button_start:hover {
                 cursor: pointer;
                 background: $button_hover;                
+            }
+
+            .button_start:active {
+                background: $green;
+                cursor: pointer;
             }
 
             .watch {
@@ -1045,11 +1050,17 @@ body {
         border-radius: 25px;
         margin-top: 80px;        
         border-color: #FE9013;
-        transition: all 0.4s ease-in;
+        transition: all 0.2s ease-in;
     }
 
     .button_slider:hover {
         background: #E47209;
+        cursor: pointer;
+    }
+
+    .button_slider:active {
+        border-color: $green;
+        background: $green;
         cursor: pointer;
     }
 
@@ -1354,7 +1365,7 @@ body {
                             > .monkey_icon {
                                 width: 127px;
                                 height: 73px;
-                                background-image: url('../refs/icons/monkey_colored.svg');                             
+                                background-image: url('../refs/icons/monkey_colored_bitten_banana.svg');                             
                                 cursor: pointer;
                             }
                         }                        
@@ -1413,13 +1424,19 @@ body {
                             justify-content: center;
                             align-items: center;
                             border-image: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
-                            transition: all 0.4s ease-in-out;
+                            transition: all 0.2s ease-in-out;
                         }
             
                         .button_feed:hover {
                             cursor: pointer;
                             background: #E47209;
                             border-radius: 25px;
+                        }
+
+                        .button_feed:active {
+                            border-color: $green;
+                            background: $green;
+                            cursor: pointer;
                         }
 
                         .button_feed_friend_content {
@@ -1446,6 +1463,8 @@ body {
                             text-decoration: none;
                             color: $white;
                         }
+
+                        
 
 .testimonials_decoration_wrapper {
     width: 100%;
@@ -1930,13 +1949,19 @@ body {
                 justify-content: center;
                 align-items: center;
                 border-color: #FE9013;
-                transition: all 0.4s ease-in;                                                            
+                transition: all 0.2s ease-in;                                                            
             }
 
             .button_testimonials:hover {                
                 background: $button_hover;
                 cursor: pointer;
                 border-color: $button_hover;                               
+            }
+
+            .button_testimonials:active {                
+                background: $green;
+                cursor: pointer;
+                border-color: $green;                               
             }
 
             .button_testimonials_content {                
@@ -2072,11 +2097,16 @@ body {
                 height: 54px;
                 background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
                 border-radius: 5px;
-                transition: all 0.4s ease-in-out;                
+                transition: all 0.2s ease-in-out;                
             }
 
             .button_footer:hover {                
                 background: #E47209;
+                cursor: pointer;
+            }
+
+            .button_footer:active {                
+                background: $green;
                 cursor: pointer;
             }
 
@@ -2408,11 +2438,6 @@ body {
             .enter_email_frame:has(input[type="email"]:invalid) ~ .submit_button {
                 border-color: $red;
                 color: $red;
-            }
-
-            .enter_email_frame:has(input[type="email"]:default) ~ .submit_button {
-                border-color: $grey;
-                color: $grey;
             }
 
                 .submit_button {
