@@ -106,18 +106,16 @@
                         class="text_another_amount" placeholder="Another amount" id="another_amount"
                         oninput="maxLengthCheck(this)" maxlength="4">
                         <span class="dollar_input"></span>                        
-                    </div>                     
-                    <div class="frequency_choice">
+                    </div>       
+                    <input type="radio" id="radiobutton_monthly" name="choice" class="payment">
+                    <input type="radio" id="radiobutton_once" name="choice" class="payment" checked>              
+                    <div class="frequency_choice">                        
                         <div class="monthly_payment">
-                            <label class="payment_choice" for="radiobutton">
-                                <input type="radio" id="radiobutton" name="choice" class="payment">
-                            </label>
+                            <label class="payment_choice_monthly" for="radiobutton_monthly"></label>
                             <p class="monthly">Monthly</p>
                         </div>
                         <div class="one_payment">
-                            <label class="payment_choice" for="radiobutton">
-                                <input type="radio" id="radiobutton" name="choice" class="payment" checked>
-                            </label>
+                            <label class="payment_choice_once" for="radiobutton_once"></label>
                             <p class="once">Once</p>
                         </div>
                     </div>

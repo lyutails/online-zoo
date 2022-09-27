@@ -550,6 +550,13 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+input[type=radio] {
+  border: 0px;
+  width: 50px;
+  height: 3em;
+  display: none;
+}
+
 .frequency_choice {
   width: 218px;
   height: 21px;
@@ -559,18 +566,28 @@ input[type=number] {
 }
 
 .monthly_payment {
-  width: 84px;
+  width: 85px;
   height: 21px;
   display: flex;
+  justify-content: space-between;
 }
 
 .one_payment {
   width: 84px;
   height: 21px;
   display: flex;
+  justify-content: flex-start;
 }
 
-.payment_choice {
+.payment_choice_once {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #FE9013;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.payment_choice_monthly {
   width: 16px;
   height: 16px;
   border: 1px solid #FE9013;
@@ -582,7 +599,7 @@ input[type=number] {
   cursor: pointer;
 }
 
-input[type=radio]:checked ~ .payment_choice {
+#radiobutton_once:checked ~ .frequency_choice .payment_choice_once {
   width: 16px;
   height: 16px;
   border: 1px solid #4B9200;
@@ -590,7 +607,7 @@ input[type=radio]:checked ~ .payment_choice {
   background-color: #4B9200;
 }
 
-input[type=radio]:not(:checked) ~ .payment_choice {
+#radiobutton_once:not(checked) ~ .frequency_choice .payment_choice_once {
   width: 16px;
   height: 16px;
   border: 1px solid #F9804B;
@@ -618,10 +635,6 @@ input[type=radio]:not(:checked) ~ .payment_choice {
   font-size: 16px;
   line-height: 140%;
   color: #333B41;
-}
-
-#radiobutton {
-  visibility: hidden;
 }
 
 .donation_payment_button {
