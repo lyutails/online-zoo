@@ -2109,31 +2109,31 @@ input[type=radio] {
   background: rgba(196, 196, 196, 0.5);
 }
 
-.facebook:hover > .network_icon {
+.facebook:active > .network_icon {
   background: #4B9200;
 }
-.facebook:hover > .network_icon ~ .network_name {
+.facebook:active > .network_icon ~ .network_name {
   color: #4B9200;
 }
 
-.twitter:hover > .network_icon {
+.twitter:active > .network_icon {
   background: #4B9200;
 }
-.twitter:hover > .network_icon ~ .network_name {
+.twitter:active > .network_icon ~ .network_name {
   color: #4B9200;
 }
 
-.instagram:hover > .network_icon {
+.instagram:active > .network_icon {
   background: #4B9200;
 }
-.instagram:hover > .network_icon ~ .network_name {
+.instagram:active > .network_icon ~ .network_name {
   color: #4B9200;
 }
 
-.youtube:hover > .network_icon {
+.youtube:active > .network_icon {
   background: #4B9200;
 }
-.youtube:hover > .network_icon ~ .network_name {
+.youtube:active > .network_icon ~ .network_name {
   color: #4B9200;
 }
 
