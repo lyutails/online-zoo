@@ -194,6 +194,14 @@ body {
   line-height: 140%;
 }
 
+.map_wrapper {
+  width: 100vw;
+  margin: auto;
+  background-color: #EAF7FE;
+  display: flex;
+  justify-content: center;
+}
+
 .map_section {
   width: 1600px;
   height: 938px;
@@ -206,6 +214,8 @@ body {
   display: flex;
   flex-direction: column;
   position: absolute;
+  right: 40px;
+  top: 860px;
 }
 
 .plus {
@@ -395,6 +405,7 @@ body {
   height: 26px;
   display: flex;
   justify-content: space-between;
+  transition: all 0.1s ease-in-out;
 }
 
 .facebook:hover {
@@ -406,6 +417,7 @@ body {
   height: 26px;
   display: flex;
   justify-content: space-between;
+  transition: all 0.1s ease-in-out;
 }
 
 .twitter:hover {
@@ -417,6 +429,7 @@ body {
   height: 26px;
   display: flex;
   justify-content: space-between;
+  transition: all 0.1s ease-in-out;
 }
 
 .instagram:hover {
@@ -428,6 +441,7 @@ body {
   height: 26px;
   display: flex;
   justify-content: space-between;
+  transition: all 0.1s ease-in-out;
 }
 
 .youtube:hover {
@@ -442,7 +456,7 @@ body {
   line-height: 140%;
   color: #ffffff;
   text-decoration: none;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .network_name:visited {
@@ -464,30 +478,58 @@ body {
 }
 
 .facebook:hover > .network_icon {
-  background: #4B9200;
+  background: #F9804B;
 }
 .facebook:hover > .network_icon ~ .network_name {
+  color: #F9804B;
+}
+
+.facebook:active > .network_icon {
+  background: #4B9200;
+}
+.facebook:active > .network_icon ~ .network_name {
   color: #4B9200;
 }
 
 .twitter:hover > .network_icon {
-  background: #4B9200;
+  background: #F9804B;
 }
 .twitter:hover > .network_icon ~ .network_name {
+  color: #F9804B;
+}
+
+.twitter:active > .network_icon {
+  background: #4B9200;
+}
+.twitter:active > .network_icon ~ .network_name {
   color: #4B9200;
 }
 
 .instagram:hover > .network_icon {
-  background: #4B9200;
+  background: #F9804B;
 }
 .instagram:hover > .network_icon ~ .network_name {
+  color: #F9804B;
+}
+
+.instagram:active > .network_icon {
+  background: #4B9200;
+}
+.instagram:active > .network_icon ~ .network_name {
   color: #4B9200;
 }
 
 .youtube:hover > .network_icon {
-  background: #4B9200;
+  background: #F9804B;
 }
 .youtube:hover > .network_icon ~ .network_name {
+  color: #F9804B;
+}
+
+.youtube:active > .network_icon {
+  background: #4B9200;
+}
+.youtube:active > .network_icon ~ .network_name {
   color: #4B9200;
 }
 
