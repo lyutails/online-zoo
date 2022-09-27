@@ -277,11 +277,11 @@ body {
   height: 54px;
   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
   border-radius: 5px;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .button_footer:hover {
-  background: #4B9200;
+  background: #E47209;
   cursor: pointer;
 }
 
@@ -772,4 +772,4 @@ input:active {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   text-decoration-thickness: 1px;
-}/*# sourceMappingURL=zoos.css.map */
+}/*# sourceMappingURL=pandas.css.map */

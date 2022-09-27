@@ -206,6 +206,7 @@ body {
   width: 1600px;
   height: 938px;
   background-color: #EAF7FE;
+  z-index: 1;
 }
 
 .map_controls {
@@ -258,14 +259,70 @@ body {
   margin: auto;
   display: flex;
   justify-content: center;
+  z-index: 2;
 }
 
 .map {
   width: 1084px;
   height: 715px;
-  background-image: url("../refs/decoration_elements/colored_map.png");
+  background-image: url("../refs/map/colored_map.png");
   margin-top: 104px;
   margin-bottom: 120px;
+}
+
+.pointers {
+  width: 1084px;
+  height: 715px;
+  position: relative;
+  display: inline-block;
+}
+
+.map_pointer_usa {
+  width: 25.55px;
+  height: 32px;
+  background-image: url("../refs/map/map_pointer.svg");
+  position: absolute;
+  z-index: 5;
+}
+
+.map_pointer_florida {
+  width: 25.55px;
+  height: 32px;
+  background-image: url("../refs/map/map_pointer.svg");
+  position: absolute;
+  z-index: 5;
+}
+
+.map_pointer_congo {
+  width: 25.55px;
+  height: 32px;
+  background-image: url("../refs/map/map_pointer.svg");
+  position: absolute;
+  z-index: 5;
+}
+
+.map_pointer_china_1 {
+  width: 25.55px;
+  height: 32px;
+  background-image: url("../refs/map/map_pointer.svg");
+  z-index: 5;
+  position: absolute;
+}
+
+.map_pointer_china_2 {
+  width: 25.55px;
+  height: 32px;
+  background-image: url("../refs/map/map_pointer.svg");
+  position: absolute;
+  z-index: 5;
+}
+
+.map_pointer_zealand {
+  width: 25.55px;
+  height: 32px;
+  background-image: url("../refs/map/map_pointer.svg");
+  position: absolute;
+  z-index: 5;
 }
 
 .footer {
@@ -388,6 +445,10 @@ body {
 .footer_button_content:visited {
   text-decoration: none;
   color: #ffffff;
+}
+
+.button_footer .footer_button_content {
+  display: block;
 }
 
 .social_networks {

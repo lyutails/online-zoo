@@ -409,7 +409,7 @@ body {
                 position: absolute;
             }
 
-                .circle {                    
+                .circle_5000 {                    
                     width: 10px;
                     height: 10px;
                     border-radius: 50%;
@@ -419,31 +419,363 @@ body {
                     align-items: center;          
                 }
 
-                    .circle:hover {
+                    #radiobutton_circle_5000:checked ~ .money_input_grade .circle_5000 {
+
+                        &::after {
+                            content: '';
+                            width: 23px;
+                            height: 23px;
+                            background-color: transparent;
+                            border-radius: 50%;
+                            border: 2px solid $orange;
+                            display: inline-block;
+                            position: absolute;            
+                        }
+        
+                        &::before {
+                            content: '';
+                            width: 46px;
+                            height: 46px;
+                            background-color: transparent;
+                            border-radius: 50%;
+                            border: 2px solid $orange;
+                            display: inline-block; 
+                            position: absolute           
+                        }                    
+                    }
+
+                    #radiobutton_circle_5000:checked ~ .money_sum .five_thousands {
+                        color: $orange;                                       
+                    }
+
+                    .circle_5000:hover {
                         cursor: pointer;
                     }
 
-                .circle_active::after {
-                    content: '';
-                    width: 23px;
-                    height: 23px;
-                    background-color: transparent;
+                .circle_2000 {                    
+                    width: 10px;
+                    height: 10px;
                     border-radius: 50%;
-                    border: 2px solid $orange;
-                    display: inline-block;
-                    position: absolute;            
+                    background-color: $yellow;  
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;          
                 }
 
-                .circle_active::before {
-                    content: '';
-                    width: 46px;
-                    height: 46px;
-                    background-color: transparent;
+                    #radiobutton_circle_2000:checked ~ .money_input_grade .circle_2000 {
+
+                        &::after {
+                            content: '';
+                            width: 23px;
+                            height: 23px;
+                            background-color: transparent;
+                            border-radius: 50%;
+                            border: 2px solid $orange;
+                            display: inline-block;
+                            position: absolute;            
+                        }
+        
+                        &::before {
+                            content: '';
+                            width: 46px;
+                            height: 46px;
+                            background-color: transparent;
+                            border-radius: 50%;
+                            border: 2px solid $orange;
+                            display: inline-block; 
+                            position: absolute           
+                        }                    
+                    }
+
+                    #radiobutton_circle_2000:checked ~ .money_sum .two_thousands {
+                        color: $orange;                                       
+                    }
+
+                    .circle_2000:hover {
+                        cursor: pointer;
+                    }
+
+                .circle_1000 {                    
+                    width: 10px;
+                    height: 10px;
                     border-radius: 50%;
-                    border: 2px solid $orange;
-                    display: inline-block; 
-                    position: absolute           
+                    background-color: $yellow;  
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;          
                 }
+
+                    #radiobutton_circle_1000:checked ~ .money_input_grade .circle_1000 {
+
+                        &::after {
+                            content: '';
+                            width: 23px;
+                            height: 23px;
+                            background-color: transparent;
+                            border-radius: 50%;
+                            border: 2px solid $orange;
+                            display: inline-block;
+                            position: absolute;            
+                        }
+        
+                        &::before {
+                            content: '';
+                            width: 46px;
+                            height: 46px;
+                            background-color: transparent;
+                            border-radius: 50%;
+                            border: 2px solid $orange;
+                            display: inline-block; 
+                            position: absolute           
+                        }                    
+                    }
+
+                    #radiobutton_circle_1000:checked ~ .money_sum .one_thousand {
+                        color: $orange;                                       
+                    }
+
+                    .circle_1000:hover {
+                        cursor: pointer;
+                    }
+
+                    
+                // .circle_1000::after {
+                //     content: '';
+                //     width: 23px;
+                //     height: 23px;
+                //     background-color: transparent;
+                //     border-radius: 50%;
+                //     border: 2px solid $orange;
+                //     display: inline-block;
+                //     position: absolute;            
+                // }
+
+                // .circle_1000::before {
+                //     content: '';
+                //     width: 46px;
+                //     height: 46px;
+                //     background-color: transparent;
+                //     border-radius: 50%;
+                //     border: 2px solid $orange;
+                //     display: inline-block; 
+                //     position: absolute           
+                // }
+
+                .circle_500 {                    
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: $yellow;  
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;          
+                }
+
+                    #radiobutton_circle_500:checked ~ .money_input_grade .circle_500 {
+
+                        &::after {
+                            content: '';
+                            width: 23px;
+                            height: 23px;
+                            background-color: transparent;
+                            border-radius: 50%;
+                            border: 2px solid $orange;
+                            display: inline-block;
+                            position: absolute;            
+                        }
+        
+                        &::before {
+                            content: '';
+                            width: 46px;
+                            height: 46px;
+                            background-color: transparent;
+                            border-radius: 50%;
+                            border: 2px solid $orange;
+                            display: inline-block; 
+                            position: absolute           
+                        }                    
+                    }
+
+                    #radiobutton_circle_500:checked ~ .money_sum .five_hundreds {
+                        color: $orange;                                       
+                    }
+
+                    .circle_500:hover {
+                        cursor: pointer;
+                    }
+
+                .circle_250 {                    
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: $yellow;  
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;          
+                }
+
+                    #radiobutton_circle_250:checked ~ .money_input_grade .circle_250 {
+
+                        &::after {
+                            content: '';
+                            width: 23px;
+                            height: 23px;
+                            background-color: transparent;
+                            border-radius: 50%;
+                            border: 2px solid $orange;
+                            display: inline-block;
+                            position: absolute;            
+                        }
+        
+                        &::before {
+                            content: '';
+                            width: 46px;
+                            height: 46px;
+                            background-color: transparent;
+                            border-radius: 50%;
+                            border: 2px solid $orange;
+                            display: inline-block; 
+                            position: absolute           
+                        }                    
+                    }
+
+                    #radiobutton_circle_250:checked ~ .money_sum .twofifty_hundreds {
+                        color: $orange;                                       
+                    }
+
+                    .circle_250:hover {
+                        cursor: pointer;
+                    }
+
+                .circle_100 {                    
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: $yellow;  
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;          
+                }
+
+                    #radiobutton_circle_100:checked ~ .money_input_grade .circle_100 {
+
+                        &::after {
+                            content: '';
+                            width: 23px;
+                            height: 23px;
+                            background-color: transparent;
+                            border-radius: 50%;
+                            border: 2px solid $orange;
+                            display: inline-block;
+                            position: absolute;            
+                        }
+        
+                        &::before {
+                            content: '';
+                            width: 46px;
+                            height: 46px;
+                            background-color: transparent;
+                            border-radius: 50%;
+                            border: 2px solid $orange;
+                            display: inline-block; 
+                            position: absolute           
+                        }                    
+                    }
+
+                    #radiobutton_circle_100:checked ~ .money_sum .one_hundred {
+                        color: $orange;                                       
+                    }
+
+                    .circle_100:hover {
+                        cursor: pointer;
+                    }
+
+                .circle_50 {                    
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: $yellow;  
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;          
+                }
+
+                    #radiobutton_circle_50:checked ~ .money_input_grade .circle_50 {
+
+                        &::after {
+                            content: '';
+                            width: 23px;
+                            height: 23px;
+                            background-color: transparent;
+                            border-radius: 50%;
+                            border: 2px solid $orange;
+                            display: inline-block;
+                            position: absolute;            
+                        }
+        
+                        &::before {
+                            content: '';
+                            width: 46px;
+                            height: 46px;
+                            background-color: transparent;
+                            border-radius: 50%;
+                            border: 2px solid $orange;
+                            display: inline-block; 
+                            position: absolute           
+                        }                    
+                    }
+
+                    #radiobutton_circle_50:checked ~ .money_sum .fifty {
+                        color: $orange;                                       
+                    }
+
+                    .circle_50:hover {
+                        cursor: pointer;
+                    }
+
+                .circle_25 {                    
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: $yellow;  
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;          
+                }  
+                    
+                    #radiobutton_circle_25:checked ~ .money_input_grade .circle_25 {
+
+                        &::after {
+                            content: '';
+                            width: 23px;
+                            height: 23px;
+                            background-color: transparent;
+                            border-radius: 50%;
+                            border: 2px solid $orange;
+                            display: inline-block;
+                            position: absolute;            
+                        }
+        
+                        &::before {
+                            content: '';
+                            width: 46px;
+                            height: 46px;
+                            background-color: transparent;
+                            border-radius: 50%;
+                            border: 2px solid $orange;
+                            display: inline-block; 
+                            position: absolute           
+                        }                    
+                    }
+
+                    #radiobutton_circle_25:checked ~ .money_sum .twentyfive {
+                        color: $orange;                                       
+                    }
+
+                    .circle_25:hover {
+                        cursor: pointer;
+                    }
+                
 
         .money_sum {
             width: 950px;
@@ -497,7 +829,7 @@ body {
                     font-size: 26px;
                     line-height: 140%;
                     text-transform: uppercase;
-                    color: $orange;
+                    color: #333B41;
                 }
 
                 .five_hundreds, .twofifty_hundreds, .one_hundred {
@@ -524,19 +856,45 @@ body {
                     color: #333B41;
                 }
 
-                .dollar {
+                .dollar_5000, .dollar_thousand, .dollar_2000, .dollar_500, .dollar_250, .dollar_100, .dollar_50, .dollar_25 {
                     width: 10px;
                     height: 20px;
                     background-image: url('../refs/icons/dollar.svg');
                     margin-right: 2px;
                 }
 
-                .dollar_thousand {
-                    width: 10px;
-                    height: 20px;
-                    background-image: url('../refs/icons/dollar_orange.svg');
-                    margin-right: 2px;
+                #radiobutton_circle_5000:checked ~ .money_sum .dollar_5000 {
+                    background-image: url(../refs/icons/dollar_orange.svg);                                       
                 }
+
+                #radiobutton_circle_2000:checked ~ .money_sum .dollar_2000 {
+                    background-image: url(../refs/icons/dollar_orange.svg);                                       
+                }
+
+                #radiobutton_circle_1000:checked ~ .money_sum .dollar_thousand {
+                    background-image: url(../refs/icons/dollar_orange.svg);                                       
+                }
+
+                #radiobutton_circle_500:checked ~ .money_sum .dollar_500 {
+                    background-image: url(../refs/icons/dollar_orange.svg);                                       
+                }
+
+                #radiobutton_circle_250:checked ~ .money_sum .dollar_250 {
+                    background-image: url(../refs/icons/dollar_orange.svg);                                       
+                }
+
+                #radiobutton_circle_100:checked ~ .money_sum .dollar_100 {
+                    background-image: url(../refs/icons/dollar_orange.svg);                                       
+                }
+
+                #radiobutton_circle_50:checked ~ .money_sum .dollar_50 {
+                    background-image: url(../refs/icons/dollar_orange.svg);                                       
+                }
+
+                #radiobutton_circle_25:checked ~ .money_sum .dollar_25 {
+                    background-image: url(../refs/icons/dollar_orange.svg);                                       
+                }
+
 
     .another_amount_wrapper {
         width: 976px;
