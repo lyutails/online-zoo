@@ -1362,18 +1362,55 @@ body {
                             background-image: url('../refs/icons/monkey.svg');                             
                             display: inline-block;
                             transition: all 0.2s ease-in-out;
+                            z-index: 80;
+                        }
+
+                        .banana_peel {
+                            width: 50px;
+                            height: 42px;
+                            background-image: url('../refs/icons/banana_peel\ 1.png');                             
+                            display: inline-block;
+                            position: absolute;
+                            transition: all 0.2s ease-in-out;
+                            z-index: 90;
+                            transform: translate3d(-40px, 20px, 0px);
+                            opacity: 0;
                         }
 
                         .feed_icon_third:hover {
                             cursor: pointer;
+
+                            & > .banana_peel {
+                                animation-name: banana_anim;
+                                animation-duration: 4s;
+                                animation-timing-function: linear;
+                                animation-iteration-count: 1;
+                                animation-fill-mode: forwards;
+                            }
 
                             > .monkey_icon {
                                 width: 127px;
                                 height: 73px;
                                 background-image: url('../refs/icons/monkey_colored_bitten_banana.svg');                             
                                 cursor: pointer;
+                            }                         
+                            
+                        }    
+                        
+                        @keyframes banana_anim {
+                            from {
+                                opacity: 0;
+                                transform: translate3d(-40px, 20px, 0px);
                             }
-                        }                        
+                            20% {
+                                opacity: 0.9;
+                                transform: translate3d(-40px, 70px, 0px);
+                            }
+                            to {
+                                opacity: 1;
+                                transform: translate3d(-40px, 250px, 0px);
+                            }
+                        }
 
                         .card {
                             width: 168px;
@@ -2533,7 +2570,26 @@ body {
 
                 .submit_button:hover {
                     cursor: pointer;
-                }                
+                } 
+                
+                
+
+
+                // .email:not([value='']):not(:focus):invalid {
+                //     ваши__стили
+                // }
+                  
+                // .email:not([value='']):invalid::placeholder {
+                //     ваши__стили
+                // }
+                  
+                // .email:not([value='']):not(:focus):invalid + .submit_button {
+                //     border-color: $red;
+                //     color: $red;
+                // }
+
+
+
 
 
             .wrapper_credentials {
