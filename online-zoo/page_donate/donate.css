@@ -308,7 +308,7 @@ body {
 .panda_icon_big {
   width: 284px;
   height: 246px;
-  background-image: url("../refs/icons/animals-widget.svg");
+  background-image: url("../refs/icons/animals-widget_3.svg");
   -webkit-animation-name: panda_donation_anim;
           animation-name: panda_donation_anim;
   -webkit-animation-duration: 2s;
@@ -319,7 +319,7 @@ body {
 
 @-webkit-keyframes panda_donation_anim {
   0% {
-    background-image: url("../refs/icons/animals-widget.svg");
+    background-image: url("../refs/icons/animals-widget_3.svg");
   }
   50% {
     background-image: url("../refs/icons/animals-widget_1.svg");
@@ -331,7 +331,7 @@ body {
 
 @keyframes panda_donation_anim {
   0% {
-    background-image: url("../refs/icons/animals-widget.svg");
+    background-image: url("../refs/icons/animals-widget_3.svg");
   }
   50% {
     background-image: url("../refs/icons/animals-widget_1.svg");
