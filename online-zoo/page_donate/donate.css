@@ -366,12 +366,26 @@ body {
 }
 
 .sum_circles {
-  width: 925px;
+  width: 960px;
   height: 10px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   z-index: 25;
   position: absolute;
+}
+
+.circle_wrapper_5000 {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.circle_wrapper_5000:hover {
+  cursor: pointer;
 }
 
 .circle_5000 {
@@ -379,12 +393,11 @@ body {
   height: 10px;
   border-radius: 50%;
   background-color: #FFEE2E;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
+  position: absolute;
 }
 
-#radiobutton_circle_5000:checked ~ .money_input_grade .circle_5000::after {
+#radiobutton_circle_5000:checked ~ .money_input_grade .circle_wrapper_5000::after {
   content: "";
   width: 23px;
   height: 23px;
@@ -394,7 +407,7 @@ body {
   display: inline-block;
   position: absolute;
 }
-#radiobutton_circle_5000:checked ~ .money_input_grade .circle_5000::before {
+#radiobutton_circle_5000:checked ~ .money_input_grade .circle_wrapper_5000::before {
   content: "";
   width: 46px;
   height: 46px;
@@ -413,17 +426,29 @@ body {
   cursor: pointer;
 }
 
+.circle_wrapper_2000 {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.circle_wrapper_2000:hover {
+  cursor: pointer;
+}
+
 .circle_2000 {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: #FFEE2E;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
+  position: absolute;
 }
 
-#radiobutton_circle_2000:checked ~ .money_input_grade .circle_2000::after {
+#radiobutton_circle_2000:checked ~ .money_input_grade .circle_wrapper_2000::after {
   content: "";
   width: 23px;
   height: 23px;
@@ -433,7 +458,7 @@ body {
   display: inline-block;
   position: absolute;
 }
-#radiobutton_circle_2000:checked ~ .money_input_grade .circle_2000::before {
+#radiobutton_circle_2000:checked ~ .money_input_grade .circle_wrapper_2000::before {
   content: "";
   width: 46px;
   height: 46px;
@@ -452,17 +477,29 @@ body {
   cursor: pointer;
 }
 
+.circle_wrapper_1000 {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.circle_wrapper_1000:hover {
+  cursor: pointer;
+}
+
 .circle_1000 {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: #FFEE2E;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
+  position: absolute;
 }
 
-#radiobutton_circle_1000:checked ~ .money_input_grade .circle_1000::after {
+#radiobutton_circle_1000:checked ~ .money_input_grade .circle_wrapper_1000::after {
   content: "";
   width: 23px;
   height: 23px;
@@ -472,7 +509,7 @@ body {
   display: inline-block;
   position: absolute;
 }
-#radiobutton_circle_1000:checked ~ .money_input_grade .circle_1000::before {
+#radiobutton_circle_1000:checked ~ .money_input_grade .circle_wrapper_1000::before {
   content: "";
   width: 46px;
   height: 46px;
@@ -491,17 +528,42 @@ body {
   cursor: pointer;
 }
 
+.circle_wrapper_500 {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.circle_wrapper_500:hover {
+  cursor: pointer;
+}
+
+.circle_wrapper_500 {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.circle_wrapper_500:hover {
+  cursor: pointer;
+}
+
 .circle_500 {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: #FFEE2E;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
+  position: absolute;
 }
 
-#radiobutton_circle_500:checked ~ .money_input_grade .circle_500::after {
+#radiobutton_circle_500:checked ~ .money_input_grade .circle_wrapper_500::after {
   content: "";
   width: 23px;
   height: 23px;
@@ -511,7 +573,7 @@ body {
   display: inline-block;
   position: absolute;
 }
-#radiobutton_circle_500:checked ~ .money_input_grade .circle_500::before {
+#radiobutton_circle_500:checked ~ .money_input_grade .circle_wrapper_500::before {
   content: "";
   width: 46px;
   height: 46px;
@@ -530,6 +592,28 @@ body {
   cursor: pointer;
 }
 
+.circle_wrapper_250 {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.circle_wrapper_250:hover {
+  cursor: pointer;
+}
+
+.circle_250 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #FFEE2E;
+  display: inline-block;
+  position: absolute;
+}
+
 .circle_250 {
   width: 10px;
   height: 10px;
@@ -540,7 +624,7 @@ body {
   align-items: center;
 }
 
-#radiobutton_circle_250:checked ~ .money_input_grade .circle_250::after {
+#radiobutton_circle_250:checked ~ .money_input_grade .circle_wrapper_250::after {
   content: "";
   width: 23px;
   height: 23px;
@@ -550,7 +634,7 @@ body {
   display: inline-block;
   position: absolute;
 }
-#radiobutton_circle_250:checked ~ .money_input_grade .circle_250::before {
+#radiobutton_circle_250:checked ~ .money_input_grade .circle_wrapper_250::before {
   content: "";
   width: 46px;
   height: 46px;
@@ -569,17 +653,29 @@ body {
   cursor: pointer;
 }
 
+.circle_wrapper_100 {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.circle_wrapper_100:hover {
+  cursor: pointer;
+}
+
 .circle_100 {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: #FFEE2E;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
+  position: absolute;
 }
 
-#radiobutton_circle_100:checked ~ .money_input_grade .circle_100::after {
+#radiobutton_circle_100:checked ~ .money_input_grade .circle_wrapper_100::after {
   content: "";
   width: 23px;
   height: 23px;
@@ -589,7 +685,7 @@ body {
   display: inline-block;
   position: absolute;
 }
-#radiobutton_circle_100:checked ~ .money_input_grade .circle_100::before {
+#radiobutton_circle_100:checked ~ .money_input_grade .circle_wrapper_100::before {
   content: "";
   width: 46px;
   height: 46px;
@@ -608,17 +704,29 @@ body {
   cursor: pointer;
 }
 
+.circle_wrapper_50 {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.circle_wrapper_50:hover {
+  cursor: pointer;
+}
+
 .circle_50 {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: #FFEE2E;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
+  position: absolute;
 }
 
-#radiobutton_circle_50:checked ~ .money_input_grade .circle_50::after {
+#radiobutton_circle_50:checked ~ .money_input_grade .circle_wrapper_50::after {
   content: "";
   width: 23px;
   height: 23px;
@@ -628,7 +736,7 @@ body {
   display: inline-block;
   position: absolute;
 }
-#radiobutton_circle_50:checked ~ .money_input_grade .circle_50::before {
+#radiobutton_circle_50:checked ~ .money_input_grade .circle_wrapper_50::before {
   content: "";
   width: 46px;
   height: 46px;
@@ -647,17 +755,29 @@ body {
   cursor: pointer;
 }
 
+.circle_wrapper_25 {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.circle_wrapper_25:hover {
+  cursor: pointer;
+}
+
 .circle_25 {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: #FFEE2E;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
+  position: absolute;
 }
 
-#radiobutton_circle_25:checked ~ .money_input_grade .circle_25::after {
+#radiobutton_circle_25:checked ~ .money_input_grade .circle_wrapper_25::after {
   content: "";
   width: 23px;
   height: 23px;
@@ -667,7 +787,7 @@ body {
   display: inline-block;
   position: absolute;
 }
-#radiobutton_circle_25:checked ~ .money_input_grade .circle_25::before {
+#radiobutton_circle_25:checked ~ .money_input_grade .circle_wrapper_25::before {
   content: "";
   width: 46px;
   height: 46px;
