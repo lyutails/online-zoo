@@ -281,6 +281,7 @@ body {
   width: 25.55px;
   height: 32px;
   background-image: url("../refs/map/map_pointer.svg");
+  transform: translate3d(137px, 363px, 0);
   position: absolute;
   z-index: 5;
 }
@@ -289,6 +290,7 @@ body {
   width: 25.55px;
   height: 32px;
   background-image: url("../refs/map/map_pointer.svg");
+  transform: translate3d(252px, 380px, 0);
   position: absolute;
   z-index: 5;
 }
@@ -297,6 +299,7 @@ body {
   width: 25.55px;
   height: 32px;
   background-image: url("../refs/map/map_pointer.svg");
+  transform: translate3d(542px, 466px, 0);
   position: absolute;
   z-index: 5;
 }
@@ -305,6 +308,7 @@ body {
   width: 25.55px;
   height: 32px;
   background-image: url("../refs/map/map_pointer.svg");
+  transform: translate3d(849px, 382px, 0);
   z-index: 5;
   position: absolute;
 }
@@ -313,6 +317,7 @@ body {
   width: 25.55px;
   height: 32px;
   background-image: url("../refs/map/map_pointer.svg");
+  transform: translate3d(855px, 335px, 0);
   position: absolute;
   z-index: 5;
 }
@@ -321,8 +326,18 @@ body {
   width: 25.55px;
   height: 32px;
   background-image: url("../refs/map/map_pointer.svg");
+  transform: translate3d(1015px, 610px, 0);
   position: absolute;
   z-index: 5;
+}
+
+.zealand {
+  width: 56px;
+  height: 78px;
+  background-image: url("../refs/map/zealand.png");
+  transform: translate3d(1010px, -112px, 0);
+  position: absolute;
+  z-index: 4;
 }
 
 .footer {
