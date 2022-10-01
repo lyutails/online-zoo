@@ -531,6 +531,7 @@ body {
   background-color: rgba(228, 114, 9, 0.4);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  pointer-events: none;
 }
 .pandas_pic:hover ~ .pandas_name {
   color: #ffffff;
@@ -581,6 +582,7 @@ body {
   background-color: rgba(75, 146, 0, 0.4);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  pointer-events: none;
 }
 .eagles_pic:hover ~ .eagles_name {
   color: #ffffff;
@@ -696,6 +698,7 @@ body {
   background-color: rgba(228, 114, 9, 0.4);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  pointer-events: none;
 }
 .gorillas_pic:hover ~ .gorillas_name {
   color: #ffffff;
@@ -767,6 +770,7 @@ body {
   background-color: rgba(228, 114, 9, 0.4);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  pointer-events: none;
 }
 .sloth_pic:hover ~ .sloth_name {
   color: #ffffff;
@@ -804,6 +808,7 @@ body {
   background-color: rgba(75, 146, 0, 0.4);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  pointer-events: none;
 }
 .cheetahs_pic:hover ~ .cheetahs_name {
   color: #ffffff;
@@ -885,6 +890,7 @@ body {
   background-color: rgba(75, 146, 0, 0.4);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  pointer-events: none;
 }
 .penguins_pic:hover ~ .penguins_name {
   color: #ffffff;
