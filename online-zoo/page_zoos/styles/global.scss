@@ -1020,6 +1020,7 @@ img {
 
             .submit_button:hover {
                 cursor: pointer;
+            } 
 
         .wrapper_credentials {
             width: 367px;
@@ -1027,7 +1028,7 @@ img {
             display: flex;
             justify-content: flex-end;
             align-items: flex-end;
-        }        
+        }
 
             .credentials {
                 width: 228px;
@@ -1037,7 +1038,7 @@ img {
                 justify-content: flex-start;
             }
 
-                a .design_author {
+                .design_author {
                     width: 220px;
                     height: 21px;
                     font-family: 'Roboto';
@@ -1049,8 +1050,9 @@ img {
                     text-decoration: none;
                     transition: all 0.4s ease-in-out;
                     margin-bottom: 10px;
+                }
 
-                    &:hover {
+                    .design_author:hover {
                         text-decoration-color: $green;
                         cursor: pointer;
                         color: $green;
@@ -1059,23 +1061,7 @@ img {
                         text-decoration-thickness: 1px;
                     }
 
-                    &:active {
-                        text-decoration-color: $green;
-                        cursor: pointer;
-                        color: $green;
-                        text-underline-offset: 5px;
-                        text-decoration-line: underline;
-                        text-decoration-thickness: 1px;
-                    }
-
-                    &:visited {
-                        text-decoration-color: $white;
-                        cursor: pointer;
-                        color: $white;
-                    }
-                }                    
-
-                a .school_credits {
+                .school_credits {
                     width: 228px;
                     height: 21px;
                     font-family: 'Roboto';
@@ -1086,30 +1072,13 @@ img {
                     color: $white;
                     text-decoration: none;
                     transition: all 0.4s ease-in-out;
-
-                    &:hover {
-                        text-decoration-color: $green;
-                        cursor: pointer;
-                        color: $green;
-                        text-underline-offset: 5px;
-                        text-decoration-line: underline;
-                        text-decoration-thickness: 1px;
-                    }
-
-                    &:active {
-                        text-decoration-color: $green;
-                        cursor: pointer;
-                        color: $green;
-                        text-underline-offset: 5px;
-                        text-decoration-line: underline;
-                        text-decoration-thickness: 1px;
-                    }
-
-                    &:visited {
-                        text-decoration-color: $white;
-                        cursor: pointer;
-                        color: $white;
-                    }
                 }
-                    
-            }        
+
+                    .school_credits:hover {
+                        text-decoration-color: $green;
+                        cursor: pointer;
+                        color: $green;
+                        text-underline-offset: 5px;
+                        text-decoration-line: underline;
+                        text-decoration-thickness: 1px;
+                    }
