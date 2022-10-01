@@ -395,10 +395,10 @@ body {
         }          
 
         .eagle {
-            width: 44px;
-            height: 44px;
-            background-image: url('../refs/map/eagle1.png');
-            transform: translate3d(90px, -365px, 0);              
+            width: 50px;
+            height: 22px;
+            background-image: url('../refs/map/eagle2.png');
+            transform: translate3d(80px, -365px, 0);              
             position: absolute;
             z-index: 4;
             animation-name: eagle_anim;
@@ -415,28 +415,28 @@ body {
 
             @keyframes eagle_anim {
                 0% {
-                    transform: translate3d(90px, -365px, 0);  
+                    transform: translate3d(80px, -365px, 0);  
                 }
                 20% {
-                    transform: translate3d(90px, -345px, 0);
+                    transform: translate3d(80px, -345px, 0);
                 }
                 40% {
-                    transform: translate3d(90px, -385px, 0);
+                    transform: translate3d(80px, -385px, 0);
                 }
                 60% {
-                    transform: translate3d(90px, -345px, 0);
+                    transform: translate3d(80px, -345px, 0);
                 }
                 80% {
-                    transform: translate3d(90px, -385px, 0);
+                    transform: translate3d(80px, -385px, 0);
                 }
                 100% {
-                    transform: translate3d(90px, -365px, 0);
+                    transform: translate3d(80px, -365px, 0);
                 }
             }
 
         .alligator {
             width: 75px;
-            height: 20px;
+            height: 31px;
             background-image: url('../refs/map/crocodile.png');
             transform: translate3d(240px, -300px, 0);              
             position: absolute;
@@ -447,32 +447,61 @@ body {
             animation-iteration-count: 1;
             animation-timing-function: linear;
             animation-fill-mode: forwards;
-        }
 
-            .alligator:hover {
+            .alligator:after:hover {
                 cursor: pointer;
+            }
+
+            &.tail {
+                display: inline-block;
+                background-image: url('../refs/map/crocodile_anim.png');
+                animation-name: alligator_anim;
+                animation-duration: 5s;
+                animation-delay: 6s;
+                animation-iteration-count: 1;
+                animation-timing-function: linear;
+                animation-fill-mode: forwards;
             }
 
             @keyframes alligator_anim {
                 0% {
-                    transform: translate3d(240px, -300px, 0);  
+                    background-image: url('../refs/map/crocodile.png');  
+                }
+                5% {
+                    background-image: url('../refs/map/crocodile_anim.png');
                 }
                 20% {
-                    transform: translate3d(220px, -300px, 0);
+                    background-image: url('../refs/map/crocodile_anim.png');
+                }
+                25% {
+                    background-image: url('../refs/map/crocodile.png');
                 }
                 40% {
-                    transform: translate3d(260px, -300px, 0);
+                    background-image: url('../refs/map/crocodile.png');
+                }
+                45% {
+                    background-image: url('../refs/map/crocodile_anim.png');
                 }
                 60% {
-                    transform: translate3d(220px, -300px, 0);
+                    background-image: url('../refs/map/crocodile_anim.png');
+                }
+                65% {
+                    background-image: url('../refs/map/crocodile.png');
                 }
                 80% {
-                    transform: translate3d(260px, -300px, 0);
+                    background-image: url('../refs/map/crocodile.png');
+                }
+                85% {
+                    background-image: url('../refs/map/crocodile_anim.png');
+                }
+                95% {
+                    background-image: url('../refs/map/crocodile_anim.png');
                 }
                 100% {
-                    transform: translate3d(240px, -300px, 0);
+                    background-image: url('../refs/map/crocodile.png');
                 }
             }
+        }            
 
         .gorilla {
             width: 50px;
@@ -491,22 +520,22 @@ body {
 
             @keyframes gorilla_anim {
                 0% {
-                    transform: translate3d(535px, -210px, 0);  
+                    background-image: url('../refs/map/gorillas.png');  
                 }
                 20% {
-                    transform: translate3d(555px, -210px, 0);
+                    background-image: url('../refs/map/gorillas_anim.png');
                 }
                 40% {
-                    transform: translate3d(515px, -210px, 0);
+                    background-image: url('../refs/map/gorillas.png');
                 }
                 60% {
-                    transform: translate3d(555px, -210px, 0);
+                    background-image: url('../refs/map/gorillas_anim.png');
                 }
                 80% {
-                    transform: translate3d(515px, -210px, 0);
+                    background-image: url('../refs/map/gorillas.png');
                 }
                 100% {
-                    transform: translate3d(535px, -210px, 0);
+                    background-image: url('../refs/map/gorillas_anim.png');
                 }
             }
 
@@ -561,7 +590,7 @@ body {
             transform: translate3d(805px, -335px, 0);              
             position: absolute;
             z-index: 4;
-            animation-name: panda_2_anim;
+            animation-name: pandas_anim;
             animation-duration: 5s;
             animation-delay: 21s;
             animation-iteration-count: 1;
@@ -569,26 +598,44 @@ body {
             animation-fill-mode: forwards;
         }
 
-            @keyframes panda_2_anim {
-                0% {
-                    transform: translate3d(805px, -335px, 0);  
-                }
-                20% {
-                    transform: translate3d(805px, -345px, 0);
-                }
-                40% {
-                    transform: translate3d(805px, -325px, 0);
-                }
-                60% {
-                    transform: translate3d(805px, -345px, 0);
-                }
-                80% {
-                    transform: translate3d(805px, -325px, 0);
-                }
-                100% {
-                    transform: translate3d(805px, -335px, 0);
-                }
+        @keyframes pandas_anim {
+            0% {
+                background-image: url('../refs/map/pandas.png');  
             }
+            5% {
+                background-image: url('../refs/map/pandas_anim.png');
+            }
+            20% {
+                background-image: url('../refs/map/pandas_anim.png');
+            }
+            25% {
+                background-image: url('../refs/map/pandas.png');
+            }
+            40% {
+                background-image: url('../refs/map/pandas.png');
+            }
+            45% {
+                background-image: url('../refs/map/pandas_anim.png');
+            }
+            60% {
+                background-image: url('../refs/map/pandas_anim.png');
+            }
+            65% {
+                background-image: url('../refs/map/pandas.png');
+            }
+            80% {
+                background-image: url('../refs/map/pandas.png');
+            }
+            85% {
+                background-image: url('../refs/map/pandas_anim.png');
+            }
+            95% {
+                background-image: url('../refs/map/pandas_anim.png');
+            }
+            100% {
+                background-image: url('../refs/map/pandas.png');
+            }
+        }
 
             .panda_2:hover {
                 cursor: pointer;
@@ -596,12 +643,12 @@ body {
 
         .kiwi {
             width: 50px;
-            height: 38px;
-            background-image: url('../refs/map/Kiwi\ 2.png');
+            height: 41px;
+            background-image: url('../refs/map/kiwi.png');
             transform: translate3d(1036px, -95px, 0);              
             position: absolute;
             z-index: 4;
-            animation-name: kiwi_2_anim;
+            animation-name: kiwi_anim;
             animation-duration: 5s;
             animation-delay: 26s;
             animation-iteration-count: 1;
@@ -609,26 +656,44 @@ body {
             animation-fill-mode: forwards;
         }
 
-            @keyframes kiwi_2_anim {
-                0% {
-                    transform: translate3d(1036px, -95px, 0);  
-                }
-                20% {
-                    transform: translate3d(1036px, -105px, 0);
-                }
-                40% {
-                    transform: translate3d(1036px, -85px, 0);
-                }
-                60% {
-                    transform: translate3d(1036px, -105px, 0);
-                }
-                80% {
-                    transform: translate3d(1036px, -85px, 0);
-                }
-                100% {
-                    transform: translate3d(1036px, -95px, 0);
-                }
+        @keyframes kiwi_anim {
+            0% {
+                background-image: url('../refs/map/kiwi.png');  
             }
+            5% {
+                background-image: url('../refs/map/kiwi_anim.png');
+            }
+            20% {
+                background-image: url('../refs/map/kiwi_anim.png');
+            }
+            25% {
+                background-image: url('../refs/map/kiwi.png');
+            }
+            40% {
+                background-image: url('../refs/map/kiwi.png');
+            }
+            45% {
+                background-image: url('../refs/map/kiwi_anim.png');
+            }
+            60% {
+                background-image: url('../refs/map/kiwi_anim.png');
+            }
+            65% {
+                background-image: url('../refs/map/kiwi.png');
+            }
+            80% {
+                background-image: url('../refs/map/kiwi.png');
+            }
+            85% {
+                background-image: url('../refs/map/kiwi_anim.png');
+            }
+            95% {
+                background-image: url('../refs/map/kiwi_anim.png');
+            }
+            100% {
+                background-image: url('../refs/map/kiwi.png');
+            }
+        }
 
             .kiwi:hover {
                 cursor: pointer;
