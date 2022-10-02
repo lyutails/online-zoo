@@ -211,7 +211,7 @@ body {
 .switcher {
     width: 99px;    
     position: absolute;
-    top: 188px;    
+    top: 186px;    
     left: 30px;
     z-index: 200;    
     overflow: hidden;
@@ -395,19 +395,19 @@ input[type="checkbox"] {
 }
 
 #up:checked ~ .switcher_up_down .arrow_down {
-    background-image: url('../../refs/icons/arrow_down_default.svg');
-
-    &~ .animal_list {
-        transform: translateY(0px);
-    }
+    background-image: url('../../refs/icons/arrow_up_default.svg');   
 }
 
 #up:not(checked) ~ .switcher_up_down .arrow_down {
-    background-image: url('../../refs/icons/arrow_up_default.svg');
+    background-image: url('../../refs/icons/arrow_down_default.svg');    
+}
 
-    &~ .animal_list {
-        transform: translateY(0px);
-    }
+#up:checked ~ .animal_list_up_down .animal_list {
+    transform: translateY(-98px);
+}
+
+#up:not(checked) ~ .animal_list_up_down .animal_list {
+    transform: translateY(0px);
 }
 
 
