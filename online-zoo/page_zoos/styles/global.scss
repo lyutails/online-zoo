@@ -270,20 +270,41 @@ body {
                 background-image: url('../../refs/icons/switcher/sloth_icon_hover_switcher.svg');
                 border-color: $button_hover;
             }
+
+            &:active {
+                background-image: url('../../refs/icons/switcher/sloth_icon_active_switcher.svg');
+                border-color: $green;
+            }
         }
 
         &.arrow_down {
             position: absolute;
             bottom: 16px;
             left: 8px;
-            background-image: url('../../refs/icons/arrow_down.svg');
+            background-image: url('../../refs/icons/arrow_down_default.svg');
 
             &:after {
                 content: '';
                 border: 1px solid $black;
                 border-radius: 50%;                
                 width:60px;
+                height: 60px;                                
+            }
+
+            &:after:hover {
+                content: '';
+                border: 1px solid $button_hover;
+                border-radius: 50%;                
+                width:60px;
                 height: 60px;
+            }
+
+            &:hover {
+                background-image: url('../../refs/icons/arrow_down_hover.svg');
+            }
+
+            &:active {
+                background-image: url('../../refs/icons/arrow_down_active.svg');
             }
         }
         
