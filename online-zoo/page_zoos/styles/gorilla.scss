@@ -242,9 +242,9 @@ input[type="checkbox"] {
 }
 
 #up:checked ~ .animal_list_up_down .animal_list {
-    transform: translateY(-98px);
+    transform: translate3d(-8px, -98px, 0px);
 }
 
 #up:not(checked) ~ .animal_list_up_down .animal_list {
-    transform: translateY(0px);
+    transform: translate3d(-8px, 0px, 0px);
 }
