@@ -211,7 +211,7 @@ body {
 .switcher {
     width: 99px;    
     position: absolute;
-    top: 192px;    
+    top: 188px;    
     left: 30px;
     z-index: 200;    
     overflow: hidden;
@@ -246,6 +246,26 @@ body {
         z-index: 300;
         background-repeat: no-repeat;
         background-position: center;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            border-color: $button_hover;
+            cursor: pointer;
+        }
+
+        &:active {
+            border-color: $green;
+            cursor: pointer;
+        }
+
+        &.active {
+            border-color: $green;
+            cursor: pointer;
+            
+            &.sloth {
+                background-image: url('../../refs/icons/sloth_icon_small_green.svg');
+            }      
+        }
 
         &.arrow_down {
             position: absolute;
@@ -254,22 +274,53 @@ body {
             background-image: url('../../refs/icons/arrow_down.svg');
 
             &:after {
-                border-radius: 50%;
-                border-color: $black;
-                border-width: 2px;
-                width: 50px;
-                height: 50px;
+                content: '';
+                border: 1px solid $black;
+                border-radius: 50%;                
+                width:60px;
+                height: 60px;
             }
         }
         
         &.gorilla {          
             background-image: url('../../refs/icons/gorilla_icon.svg');            
         }
+
+        &.crocodile {
+            background-image: url('../../refs/icons/alligator_icon.svg');
+
+            // &:hover {
+            //     background-image: url('../../refs/icons/alligator_icon_hover.svg');
+            // }
+        }
+
+        &.panda {
+            background-image: url('../../refs/icons/panda_icon.svg');
+        }
+
+        &.eagle {
+            background-image: url('../../refs/icons/eagle_icon.svg');
+        }
+
+        &.sloth {
+            background-image: url('../../refs/icons/sloth_icon_small_black.svg');
+
+            &:hover {
+                background-image: url('../../refs/icons/sloth_icon_small_hover.svg');
+                
+                border-color: $button_hover;
+            }
+        }
+
+        &.penguin {
+            background-image: url('../../refs/icons/penguin_icon.svg');
+        }
+
+        &.penguin {
+            background-image: url('../../refs/icons/kiwi_icon_small.svg');
+        }
     }
 }
-
-
-
 
 
 img {
@@ -322,7 +373,7 @@ img {
 }
 
 .content {
-    width: 1160px;
+    max-width: 1160px;
     margin: 0 auto;
     font-family: 'Roboto';
 
@@ -342,10 +393,17 @@ img {
             }
         }
 
-        .video-wrapper {
-            width: 100%;
-            height: 652px;
-        }
+.video-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1160px;
+}
+
+    iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
 
         .slider-wrapper {
             margin-top: 70px;
