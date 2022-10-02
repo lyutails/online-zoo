@@ -182,175 +182,6 @@ body {
   line-height: 140%;
 }
 
-.switcher {
-  width: 99px;
-  position: absolute;
-  top: 186px;
-  left: 30px;
-  z-index: 200;
-  overflow: hidden;
-  border-radius: 5px;
-  background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
-}
-.switcher .animal_list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 5px;
-  text-decoration: none;
-  list-style: none;
-  gap: 8px;
-  padding: 16px 0px 16px 0px;
-  max-height: 652px;
-}
-.switcher .switcher_circle {
-  width: 78px;
-  min-height: 78px;
-  border-radius: 50%;
-  border-color: #F9804B;
-  border-width: 2px;
-  border-style: solid;
-  background: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 300;
-  background-repeat: no-repeat;
-  background-position: center;
-  transition: all 0.2s ease-in-out;
-}
-.switcher .switcher_circle:hover {
-  border-color: #E47209;
-  cursor: pointer;
-}
-.switcher .switcher_circle:active {
-  border-color: #4B9200;
-  cursor: pointer;
-}
-.switcher .switcher_circle.active {
-  border-color: #4B9200;
-  cursor: pointer;
-}
-.switcher .switcher_circle.active.sloth {
-  background-image: url("../../refs/icons/switcher/sloth_icon_active_switcher.svg");
-}
-.switcher .switcher_circle.active:hover {
-  background-image: url("../../refs/icons/switcher/sloth_icon_hover_switcher.svg");
-  border-color: #E47209;
-}
-.switcher .switcher_circle.active:active {
-  background-image: url("../../refs/icons/switcher/sloth_icon_active_switcher.svg");
-  border-color: #4B9200;
-}
-.switcher .switcher_circle.arrow_down {
-  position: absolute;
-  bottom: 16px;
-  left: 8px;
-  background-image: url("../../refs/icons/arrow_down_default.svg");
-}
-.switcher .switcher_circle.arrow_down:after {
-  content: "";
-  border: 1px solid #000000;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-}
-.switcher .switcher_circle.arrow_down:after:hover {
-  content: "";
-  border: 1px solid #E47209;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-}
-.switcher .switcher_circle.arrow_down:hover {
-  background-image: url("../../refs/icons/arrow_down_hover.svg");
-}
-.switcher .switcher_circle.arrow_down:active {
-  background-image: url("../../refs/icons/arrow_down_active.svg");
-}
-.switcher .switcher_circle.gorilla {
-  background-image: url("../../refs/icons/switcher/gorilla_icon_default_switcher.svg");
-}
-.switcher .switcher_circle.gorilla:hover {
-  background-image: url("../../refs/icons/switcher/gorilla_icon_hover_switcher.svg");
-  border-color: #E47209;
-}
-.switcher .switcher_circle.gorilla:active {
-  background-image: url("../../refs/icons/switcher/gorilla_icon_active_switcher.svg");
-  border-color: #4B9200;
-}
-.switcher .switcher_circle.crocodile {
-  background-image: url("../../refs/icons/switcher/crocodile_icon_default_switcher.svg");
-}
-.switcher .switcher_circle.crocodile:hover {
-  background-image: url("../../refs/icons/switcher/crocodile_icon_hover_switcher.svg");
-}
-.switcher .switcher_circle.crocodile:active {
-  background-image: url("../../refs/icons/switcher/crocodile_icon_active_switcher.svg");
-  border-color: #4B9200;
-}
-.switcher .switcher_circle.panda {
-  background-image: url("../../refs/icons/switcher/panda_icon_default_switcher.svg");
-}
-.switcher .switcher_circle.panda:hover {
-  background-image: url("../../refs/icons/switcher/panda_icon_hover_switcher.svg");
-}
-.switcher .switcher_circle.panda:active {
-  background-image: url("../../refs/icons/switcher/panda_icon_active_switcher.svg");
-  border-color: #4B9200;
-}
-.switcher .switcher_circle.eagle {
-  background-image: url("../../refs/icons/switcher/eagle_icon_default_switcher.svg");
-}
-.switcher .switcher_circle.eagle:hover {
-  background-image: url("../../refs/icons/switcher/eagle_icon_hover_switcher.svg");
-}
-.switcher .switcher_circle.eagle:active {
-  background-image: url("../../refs/icons/switcher/eagle_icon_active_switcher.svg");
-  border-color: #4B9200;
-}
-.switcher .switcher_circle.penguin {
-  background-image: url("../../refs/icons/switcher/penguin_icon_default_switcher.svg");
-}
-.switcher .switcher_circle.penguin:hover {
-  background-image: url("../../refs/icons/switcher/penguin_icon_hover_switcher.svg");
-}
-.switcher .switcher_circle.penguin:active {
-  background-image: url("../../refs/icons/switcher/penguin_icon_active_switcher.svg");
-  border-color: #4B9200;
-}
-.switcher .switcher_circle.kiwi {
-  background-image: url("../../refs/icons/switcher/kiwi_icon_default_switcher.svg");
-}
-.switcher .switcher_circle.kiwi:hover {
-  background-image: url("../../refs/icons/switcher/kiwi_icon_hover_switcher.svg");
-}
-.switcher .switcher_circle.kiwi:active {
-  background-image: url("../../refs/icons/switcher/kiwi_icon_active_switcher.svg");
-  border-color: #4B9200;
-}
-
-input[type=checkbox] {
-  border: 0px;
-  display: none;
-}
-
-#up:checked ~ .switcher_up_down .arrow_down {
-  background-image: url("../../refs/icons/arrow_up_default.svg");
-}
-
-#up:not(checked) ~ .switcher_up_down .arrow_down {
-  background-image: url("../../refs/icons/arrow_down_default.svg");
-}
-
-#up:checked ~ .animal_list_up_down .animal_list {
-  transform: translateY(-98px);
-}
-
-#up:not(checked) ~ .animal_list_up_down .animal_list {
-  transform: translateY(0px);
-}
-
 img {
   width: 100%;
 }
@@ -1230,4 +1061,173 @@ input:active {
 .donate_pic .donate_button:active {
   cursor: pointer;
   background: #4B9200;
+}
+
+.switcher {
+  width: 99px;
+  position: absolute;
+  top: 186px;
+  left: 30px;
+  z-index: 200;
+  overflow: hidden;
+  border-radius: 5px;
+  background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+}
+.switcher .animal_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  text-decoration: none;
+  list-style: none;
+  gap: 8px;
+  padding: 16px 0px 16px 0px;
+  max-height: 652px;
+}
+.switcher .switcher_circle {
+  width: 78px;
+  min-height: 78px;
+  border-radius: 50%;
+  border-color: #F9804B;
+  border-width: 2px;
+  border-style: solid;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 300;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.2s ease-in-out;
+}
+.switcher .switcher_circle:hover {
+  border-color: #E47209;
+  cursor: pointer;
+}
+.switcher .switcher_circle:active {
+  border-color: #4B9200;
+  cursor: pointer;
+}
+.switcher .switcher_circle.active {
+  border-color: #4B9200;
+  cursor: pointer;
+}
+.switcher .switcher_circle.active.kiwi {
+  background-image: url("../../refs/icons/switcher/kiwi_icon_active_switcher.svg");
+}
+.switcher .switcher_circle.active:hover {
+  background-image: url("../../refs/icons/switcher/kiwi_icon_hover_switcher.svg");
+  border-color: #E47209;
+}
+.switcher .switcher_circle.active:active {
+  background-image: url("../../refs/icons/switcher/kiwi_icon_active_switcher.svg");
+  border-color: #4B9200;
+}
+.switcher .switcher_circle.arrow_down {
+  position: absolute;
+  bottom: 16px;
+  left: 8px;
+  background-image: url("../../refs/icons/arrow_down_default.svg");
+}
+.switcher .switcher_circle.arrow_down:after {
+  content: "";
+  border: 1px solid #000000;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+.switcher .switcher_circle.arrow_down:after:hover {
+  content: "";
+  border: 1px solid #E47209;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+.switcher .switcher_circle.arrow_down:hover {
+  background-image: url("../../refs/icons/arrow_down_hover.svg");
+}
+.switcher .switcher_circle.arrow_down:active {
+  background-image: url("../../refs/icons/arrow_down_active.svg");
+}
+.switcher .switcher_circle.gorilla {
+  background-image: url("../../refs/icons/switcher/gorilla_icon_default_switcher.svg");
+}
+.switcher .switcher_circle.gorilla:hover {
+  background-image: url("../../refs/icons/switcher/gorilla_icon_hover_switcher.svg");
+  border-color: #E47209;
+}
+.switcher .switcher_circle.gorilla:active {
+  background-image: url("../../refs/icons/switcher/gorilla_icon_active_switcher.svg");
+  border-color: #4B9200;
+}
+.switcher .switcher_circle.crocodile {
+  background-image: url("../../refs/icons/switcher/crocodile_icon_default_switcher.svg");
+}
+.switcher .switcher_circle.crocodile:hover {
+  background-image: url("../../refs/icons/switcher/crocodile_icon_hover_switcher.svg");
+}
+.switcher .switcher_circle.crocodile:active {
+  background-image: url("../../refs/icons/switcher/crocodile_icon_active_switcher.svg");
+  border-color: #4B9200;
+}
+.switcher .switcher_circle.panda {
+  background-image: url("../../refs/icons/switcher/panda_icon_default_switcher.svg");
+}
+.switcher .switcher_circle.panda:hover {
+  background-image: url("../../refs/icons/switcher/panda_icon_hover_switcher.svg");
+}
+.switcher .switcher_circle.panda:active {
+  background-image: url("../../refs/icons/switcher/panda_icon_active_switcher.svg");
+  border-color: #4B9200;
+}
+.switcher .switcher_circle.eagle {
+  background-image: url("../../refs/icons/switcher/eagle_icon_default_switcher.svg");
+}
+.switcher .switcher_circle.eagle:hover {
+  background-image: url("../../refs/icons/switcher/eagle_icon_hover_switcher.svg");
+}
+.switcher .switcher_circle.eagle:active {
+  background-image: url("../../refs/icons/switcher/eagle_icon_active_switcher.svg");
+  border-color: #4B9200;
+}
+.switcher .switcher_circle.penguin {
+  background-image: url("../../refs/icons/switcher/penguin_icon_default_switcher.svg");
+}
+.switcher .switcher_circle.penguin:hover {
+  background-image: url("../../refs/icons/switcher/penguin_icon_hover_switcher.svg");
+}
+.switcher .switcher_circle.penguin:active {
+  background-image: url("../../refs/icons/switcher/penguin_icon_active_switcher.svg");
+  border-color: #4B9200;
+}
+.switcher .switcher_circle.sloth {
+  background-image: url("../../refs/icons/switcher/sloth_icon_default_switcher.svg");
+}
+.switcher .switcher_circle.sloth:hover {
+  background-image: url("../../refs/icons/switcher/sloth_icon_hover_switcher.svg");
+}
+.switcher .switcher_circle.sloth:active {
+  background-image: url("../../refs/icons/switcher/sloth_icon_active_switcher.svg");
+  border-color: #4B9200;
+}
+
+input[type=checkbox] {
+  border: 0px;
+  display: none;
+}
+
+#up:checked ~ .switcher_up_down .arrow_down {
+  background-image: url("../../refs/icons/arrow_down_default.svg");
+}
+
+#up:not(checked) ~ .switcher_up_down .arrow_down {
+  background-image: url("../../refs/icons/arrow_up_default.svg");
+}
+
+#up:checked ~ .animal_list_up_down .animal_list {
+  transform: translateY(0px);
+}
+
+#up:not(checked) ~ .animal_list_up_down .animal_list {
+  transform: translateY(-98px);
 }/*# sourceMappingURL=kiwi.css.map */
