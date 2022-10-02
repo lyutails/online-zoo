@@ -185,7 +185,7 @@ body {
 .switcher {
   width: 99px;
   position: absolute;
-  top: 192px;
+  top: 188px;
   left: 30px;
   z-index: 200;
   overflow: hidden;
@@ -217,6 +217,22 @@ body {
   z-index: 300;
   background-repeat: no-repeat;
   background-position: center;
+  transition: all 0.2s ease-in-out;
+}
+.switcher .switcher_circle:hover {
+  border-color: #E47209;
+  cursor: pointer;
+}
+.switcher .switcher_circle:active {
+  border-color: #4B9200;
+  cursor: pointer;
+}
+.switcher .switcher_circle.active {
+  border-color: #4B9200;
+  cursor: pointer;
+}
+.switcher .switcher_circle.active.sloth {
+  background-image: url("../../refs/icons/sloth_icon_small_green.svg");
 }
 .switcher .switcher_circle.arrow_down {
   position: absolute;
@@ -225,14 +241,36 @@ body {
   background-image: url("../../refs/icons/arrow_down.svg");
 }
 .switcher .switcher_circle.arrow_down:after {
+  content: "";
+  border: 1px solid #000000;
   border-radius: 50%;
-  border-color: #000000;
-  border-width: 2px;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
 }
 .switcher .switcher_circle.gorilla {
   background-image: url("../../refs/icons/gorilla_icon.svg");
+}
+.switcher .switcher_circle.crocodile {
+  background-image: url("../../refs/icons/alligator_icon.svg");
+}
+.switcher .switcher_circle.panda {
+  background-image: url("../../refs/icons/panda_icon.svg");
+}
+.switcher .switcher_circle.eagle {
+  background-image: url("../../refs/icons/eagle_icon.svg");
+}
+.switcher .switcher_circle.sloth {
+  background-image: url("../../refs/icons/sloth_icon_small_black.svg");
+}
+.switcher .switcher_circle.sloth:hover {
+  background-image: url("../../refs/icons/sloth_icon_small_hover.svg");
+  border-color: #E47209;
+}
+.switcher .switcher_circle.penguin {
+  background-image: url("../../refs/icons/penguin_icon.svg");
+}
+.switcher .switcher_circle.penguin {
+  background-image: url("../../refs/icons/kiwi_icon_small.svg");
 }
 
 img {
@@ -279,7 +317,7 @@ img {
 }
 
 .content {
-  width: 1160px;
+  max-width: 1160px;
   margin: 0 auto;
   font-family: "Roboto";
 }
@@ -299,7 +337,13 @@ img {
 }
 .content section.video .video-wrapper {
   width: 100%;
-  height: 652px;
+  margin: 0 auto;
+  max-width: 1160px;
+}
+.content section.video iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
 }
 .content section.video .slider-wrapper {
   margin-top: 70px;
