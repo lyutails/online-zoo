@@ -389,6 +389,27 @@ body {
     }
 }
 
+input[type="checkbox"] {
+    border: 0px;    
+    display: none;
+}
+
+#up:checked ~ .switcher_up_down .arrow_down {
+    background-image: url('../../refs/icons/arrow_down_default.svg');
+
+    &~ .animal_list {
+        transform: translateY(0px);
+    }
+}
+
+#up:not(checked) ~ .switcher_up_down .arrow_down {
+    background-image: url('../../refs/icons/arrow_up_default.svg');
+
+    &~ .animal_list {
+        transform: translateY(0px);
+    }
+}
+
 
 img {
     width: 100%;
