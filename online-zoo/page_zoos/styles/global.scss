@@ -263,8 +263,13 @@ body {
             cursor: pointer;
             
             &.sloth {
-                background-image: url('../../refs/icons/sloth_icon_small_green.svg');
+                background-image: url('../../refs/icons/switcher/sloth_icon_active_switcher.svg');
             }      
+
+            &:hover {
+                background-image: url('../../refs/icons/switcher/sloth_icon_hover_switcher.svg');
+                border-color: $button_hover;
+            }
         }
 
         &.arrow_down {
@@ -282,42 +287,83 @@ body {
             }
         }
         
-        &.gorilla {          
-            background-image: url('../../refs/icons/gorilla_icon.svg');            
+        &.gorilla {
+            background-image: url('../../refs/icons/switcher/gorilla_icon_default_switcher.svg');
+
+            &:hover {
+                background-image: url('../../refs/icons/switcher/gorilla_icon_hover_switcher.svg');                
+                border-color: $button_hover;
+            } 
+            
+            &:active {
+                background-image: url('../../refs/icons/switcher/gorilla_icon_active_switcher.svg');                
+                border-color: $green;
+            } 
         }
 
         &.crocodile {
-            background-image: url('../../refs/icons/alligator_icon.svg');
+            background-image: url('../../refs/icons/switcher/crocodile_icon_default_switcher.svg');            
 
-            // &:hover {
-            //     background-image: url('../../refs/icons/alligator_icon_hover.svg');
-            // }
+            &:hover {
+                background-image: url('../../refs/icons/switcher/crocodile_icon_hover_switcher.svg');
+            }
+
+            &:active {
+                background-image: url('../../refs/icons/switcher/crocodile_icon_active_switcher.svg');                
+                border-color: $green;
+            }
         }
 
         &.panda {
-            background-image: url('../../refs/icons/panda_icon.svg');
+            background-image: url('../../refs/icons/switcher/panda_icon_default_switcher.svg');            
+
+            &:hover {
+                background-image: url('../../refs/icons/switcher/panda_icon_hover_switcher.svg');
+            }
+
+            &:active {
+                background-image: url('../../refs/icons/switcher/panda_icon_active_switcher.svg');                
+                border-color: $green;
+            }
         }
 
         &.eagle {
-            background-image: url('../../refs/icons/eagle_icon.svg');
-        }
-
-        &.sloth {
-            background-image: url('../../refs/icons/sloth_icon_small_black.svg');
+            background-image: url('../../refs/icons/switcher/eagle_icon_default_switcher.svg');            
 
             &:hover {
-                background-image: url('../../refs/icons/sloth_icon_small_hover.svg');
-                
-                border-color: $button_hover;
+                background-image: url('../../refs/icons/switcher/eagle_icon_hover_switcher.svg');
+            }
+
+            &:active {
+                background-image: url('../../refs/icons/switcher/eagle_icon_active_switcher.svg');                
+                border-color: $green;
             }
         }
 
         &.penguin {
-            background-image: url('../../refs/icons/penguin_icon.svg');
+            background-image: url('../../refs/icons/switcher/penguin_icon_default_switcher.svg');            
+
+            &:hover {
+                background-image: url('../../refs/icons/switcher/penguin_icon_hover_switcher.svg');
+            }
+
+            &:active {
+                background-image: url('../../refs/icons/switcher/penguin_icon_active_switcher.svg');                
+                border-color: $green;
+            }
         }
 
-        &.penguin {
-            background-image: url('../../refs/icons/kiwi_icon_small.svg');
+        &.kiwi {
+            background-image: url('../../refs/icons/switcher/kiwi_icon_default_switcher.svg');            
+
+            &:hover {
+                background-image: url('../../refs/icons/switcher/kiwi_icon_hover_switcher.svg');
+            }
+
+            &:active {
+                background-image: url('../../refs/icons/switcher/kiwi_icon_active_switcher.svg');                
+                border-color: $green;
+            }
         }
     }
 }
