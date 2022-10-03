@@ -51,9 +51,9 @@ $green: #4B9200;
 }
 
 
-//media queries 4K                    
+//media queries 4K                  
 
-@media screen and (min-width: 1600px) and (max-width: 3840px) {
+
 
 
 
@@ -2659,9 +2659,6 @@ body {
                         text-decoration-line: underline;
                         text-decoration-thickness: 1px;
                     }
-
-}
-
 
 
 
@@ -5509,16 +5506,15 @@ body {
     
             .text_main_and_button {
                 width: 292px;
-                height: 242px;   
+                height: 305px;   
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
                 margin: 10px 0px 0px 0px;         
             }
     
             .text_main_and_circle {
                 width: 458px;
-                height: 374px;            
+                transform: translateX(-45px);            
             }
     
                 .title_first_screen {
@@ -5566,7 +5562,8 @@ body {
                     position: relative;
                     border-image: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);                 
                     transition: all 0.2s ease-in-out; 
-                    margin: 0px 0px 0px 95px;             
+                    //margin: 0px 0px 0px 95px; 
+                    transform: translateX(-345px);            
                 }
     
                 .button_start:hover {
@@ -5609,7 +5606,7 @@ body {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            margin-top: 100px;
+            margin-top: 60px;
             margin-left: 30px;
         }
         
@@ -5623,7 +5620,8 @@ body {
                 height: 408px;
                 background-image: url('../refs/pics/1000/bamboo-cap.png');
                 backdrop-filter: blur(2px); 
-                margin-top: 12px;           
+                margin-top: 12px;  
+                display: none;         
             }
     
             .goal_info {
@@ -5654,7 +5652,7 @@ body {
                     font-size: 16px;
                     line-height: 130%;
                     color: $black_blue;
-                    margin: 0px 0px 54px 0px;
+                    margin: 0px 0px 30px 0px;
                 }
     
                 .work_title {
@@ -5664,7 +5662,7 @@ body {
                     font-size: 24px;
                     line-height: 120%;
                     color: $black_blue;
-                    margin: 0px 0px 34px 0px;
+                    margin: 0px 0px 20px 0px;
                 }
     
                 .work_explanation {
@@ -5684,13 +5682,12 @@ body {
             }
     
                 .flower_one_image {
-                    background-image: url('../refs/decoration_elements/flower_foto1.png');
-                    width: 204px;
-                    height: 613px;
+                    background-image: url('../refs/pics/640/flower_foto1.png');
+                    width: 132px;
+                    height: 484px;
                     position: absolute;
                     z-index: 100px;                 
-                    transform: translateY(-530px); 
-                    opacity: 0.2;                                           
+                    transform: translateY(-500px);                                          
                 }
     
     
@@ -5710,9 +5707,9 @@ body {
     }   
     
     .slider_container {
-        width: 940px;
-        height: 935px;
-        margin: 142px 0px 140px 0px;
+        width: 600px;
+        height: 870px;
+        margin: 80px 0px 140px 0px;
         display: flex;  
         flex-direction: column;
         align-items: center;  
@@ -5738,7 +5735,7 @@ body {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                transform: translate3d(512px, 0px, 0px);
+                transform: translate3d(585px, 0px, 0px);
             }
     
             .slider_button_left:hover {
@@ -5758,19 +5755,19 @@ body {
                     height: 10px;
                 }
     
-        //     .slider_with_buttons {
-        //         width: 1322px;
-        //         height: 872px;
-        //         display: flex;
-        //         flex-direction: row;
-        //         align-items: center;
-        //         justify-content: space-between;
-        //         margin: 180px 0px 0px 0px;
-        //     }    
+            .slider_with_buttons {
+                width: 600px;
+                height: 756px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                //margin: 180px 0px 0px 0px;
+            }    
     
             .animals_slider {
-                width: 940px;
-                height: 800px;
+                width: 600px;
+                height: 756px;
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
@@ -5779,8 +5776,8 @@ body {
             }
             
             .slider_pic {
-                width: 294px;
-                height: 354px;
+                width: 285px;
+                height: 332px;
                 display: flex;
                 flex-direction: column;
                 border-radius: 5px;
@@ -5790,9 +5787,9 @@ body {
             }
     
             .pandas_pic {
-                width: 294px;
-                height: 294px;
-                background-image: url('../refs/pics/1000/slider_pets_1000/slider_1000_pandas.png'); 
+                width: 285px;
+                height: 285px;
+                background-image: url('../refs/pics/640/slider_pets_640/slider_640_pandas.png'); 
                 border-top-left-radius: 5px;
                 border-top-right-radius: 5px;
                 transition: all 0.4s ease-in-out;                   
@@ -5801,7 +5798,7 @@ body {
             .slider_text_pandas {
                 display: flex;
                 flex-direction: column;
-                width: 220px;
+                width: 210px;
                 height: 38px;
                 margin: 8px 11px 14px 16px;        
                 
@@ -5829,7 +5826,7 @@ body {
                 display: flex;
                 flex-direction: row;        
                 align-items: center;
-                width: 294px;
+                width: 285px;
                 height: 60px;
                 transition: all 0.4s ease-in-out;         
             }
@@ -5874,15 +5871,15 @@ body {
                 display: flex;
                 flex-direction: row;        
                 align-items: center;
-                width: 294px;
+                width: 285px;
                 height: 60px;
                 transition: all 0.4s ease-in-out;         
             }
     
             .eagles_pic {
-                width: 294px;
-                height: 294px;
-                background-image: url('../refs/pics/1000/slider_pets_1000/slider_1000_eagle.png'); 
+                width: 285px;
+                height: 285px;
+                background-image: url('../refs/pics/640/slider_pets_640/slider_640_eagle.png'); 
                 border-top-left-radius: 5px;
                 border-top-right-radius: 5px;
                 transition: all 0.4s ease-in-out;
@@ -5932,7 +5929,7 @@ body {
                }
     
             .slider_text_eagles {
-                width: 220px;
+                width: 210px;
                 height: 38px;
                 margin: 8px 0px 14px 16px;
                 display: flex;
@@ -5957,6 +5954,10 @@ body {
                     color: $black;
                }
             }
+
+        .gorillas {
+            display: none;
+        }
     
             .slider_info_icon_gorillas {
                 display: flex;
@@ -5964,7 +5965,7 @@ body {
                 align-items: center;
                 width: 294px;
                 height: 60px;
-                transition: all 0.4s ease-in-out;         
+                transition: all 0.4s ease-in-out;                         
             }
     
             .gorillas_pic {
@@ -6047,9 +6048,9 @@ body {
             }        
     
             .sloth_pic {
-                width: 294px;
-                height: 294px;
-                background-image: url('../refs/pics/1000/slider_pets_1000/slider_1000_sloth.png'); 
+                width: 285px;
+                height: 285px;
+                background-image: url('../refs/pics/640/slider_pets_640/slider_640_sloth.png'); 
                 border-top-left-radius: 5px;
                 border-top-right-radius: 5px;
                 transition: all 0.4s ease-in-out;                   
@@ -6058,7 +6059,7 @@ body {
                 .slider_text_sloth {
                     display: flex;
                     flex-direction: column;
-                    width: 220px;
+                    width: 210px;
                     height: 38px;
                     margin: 8px 11px 14px 16px;        
                     
@@ -6119,15 +6120,15 @@ body {
                 display: flex;
                 flex-direction: row;        
                 align-items: center;
-                width: 294px;
+                width: 285px;
                 height: 60px;
-                transition: all 0.4s ease-in-out;         
+                transition: all 0.4s ease-in-out;                         
             }   
     
             .cheetahs_pic {
-                width: 294px;
-                height: 294px;
-                background-image: url('../refs/pics/1000/slider_pets_1000/slider_1000_cheetahs.png'); 
+                width: 285px;
+                height: 285px;
+                background-image: url('../refs/pics/640/slider_pets_640/slider_640_cheetahs.png'); 
                 border-top-left-radius: 5px;
                 border-top-right-radius: 5px;
                 transition: all 0.4s ease-in-out;
@@ -6177,7 +6178,7 @@ body {
                }
     
             .slider_text_cheetahs {
-                width: 220px;
+                width: 210px;
                 height: 38px;
                 margin: 8px 0px 14px 16px;
                 display: flex;
@@ -6210,7 +6211,11 @@ body {
                 width: 294px;
                 height: 60px;
                 transition: all 0.4s ease-in-out;         
-            }         
+            }
+            
+        .penguins {
+            display: none;
+        }
     
             .penguins_pic {
                 width: 294px;
@@ -6312,7 +6317,7 @@ body {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                transform: translate3d(-512px, 0px, 0px);
+                transform: translate3d(-585px, 0px, 0px);
             }
     
             .slider_button_right:hover {
@@ -6340,7 +6345,7 @@ body {
             border-radius: 25px;        
             border-color: #FE9013;
             transition: all 0.2s ease-in;    
-            margin-top: 80px;           
+            margin-top: 60px;           
         }
     
         .button_slider:hover {
@@ -6385,12 +6390,12 @@ body {
         }
     
             .flower_two_image {
-                background-image: url('../refs/pics/1000/palm_foto.png');
-                width: 194px;
+                background-image: url('../refs/pics/640/palm_foto.png');
+                width: 134px;
                 height: 202px;
                 position: absolute;
                 z-index: 110px;
-                transform: translateY(1016px);                                                        
+                transform: translateY(890px);                                                        
             }
         
         .flower_decoration_three {            
@@ -6400,21 +6405,19 @@ body {
         }
     
             .flower_three_image {
-                background-image: url('../refs/pics/1000/strelitzia\ 1.png');
-                width: 241px;
-                height: 180px;
+                background-image: url('../refs/pics/640/strelitzia\ 1.png');
+                width: 175px;
+                height: 131px;
                 position: absolute;
                 z-index: 20px;
-                transform: translateY(1038px);                                                                     
-            }
-    
-    
+                transform: translateY(938px);                                                                     
+            }   
     
     
     
         .pick_feed {
             width: 100vw;
-            height: 876px;
+            height: 781px;
             background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
             opacity: 0.9;
             display: flex;
@@ -6424,7 +6427,7 @@ body {
         }
     
             .wrapper_feed {
-                width: 1000px;
+                width: 640px;
                 margin: auto;
                 display: flex;
                 flex-direction: column;            
@@ -6432,8 +6435,8 @@ body {
             }
     
                 .feed_info_block {
-                    width: 940px;
-                    height: 796px;
+                    width: 640px;
+                    height: 741px;
                     background: rgba(253, 253, 255, 0.52);
                     backdrop-filter: blur(2px);
                     border-radius: 20px;                
@@ -6445,7 +6448,7 @@ body {
                     .pick_feed_friend {
                         width: 463px;
                         height: 58px;
-                        margin-top: 30px;
+                        margin-top: 10px;
                         font-family: 'Roboto';
                         font-style: normal;
                         font-weight: 400;
@@ -6457,19 +6460,20 @@ body {
                     }
     
                     .pick_feed_info {
-                        width: 843px;
-                        height: 29px;
+                        width: 600px;
+                        height: 52px;
                         margin-top: 20px;
                         font-family: 'Roboto';
                         font-style: normal;
                         font-weight: 400;
                         font-size: 24px;
                         line-height: 120%;
+                        text-align: center;
                         color: #333B41;
                     }
     
                     .covid_warning {
-                        width: 843px;
+                        width: 600px;
                         height: 42px;                    
                         margin-top: 20px;
                         font-family: 'Roboto';
@@ -6477,11 +6481,12 @@ body {
                         font-weight: 500;
                         font-size: 16px;
                         line-height: 130%;
+                        text-align: center;
                         color: #333B41;
                     }
     
                     .gift_to_fund {
-                        width: 843px;
+                        width: 600px;
                         height: 42px;                    
                         margin-top: 10px;
                         font-family: 'Roboto';
@@ -6513,7 +6518,7 @@ body {
                     .how_it_works {
                         width: 209px;
                         height: 47px;
-                        margin-top: 40px;
+                        margin-top: 20px;
                         font-family: 'Roboto';
                         font-style: normal;
                         font-weight: 400;
@@ -6523,11 +6528,11 @@ body {
                     }
     
                     .pick_feed_icons {
-                        width: 764px;
+                        width: 588px;
                         height: 244px;
                         display: flex;
                         justify-content: space-between;                    
-                        margin-top: 40px;
+                        margin-top: 20px;
                     }
     
                     .feed_icon_first {
@@ -6736,26 +6741,25 @@ body {
                                 color: #333B41;
                             }
     
-                    .curly_arrow {
-                        width: 69px;
-                        height: 36px;
-                        background-image: url('../refs/icons/curly_arrow.png');
-                        transform: translateY(74px);
+                    .curly_arrow_first {
+                        width: 88px;
+                        height: 28px;
+                        background-image: url('../refs/pics/640/arrow.svg');
+                        transform: translate3d(135px, -12px, 0px);
+                        position: absolute;
+                    }
+
+                    .curly_arrow_second {
+                        width: 88px;
+                        height: 28px;
+                        background-image: url('../refs/pics/640/arrow.svg');
+                        transform: translate3d(345px, -12px, 0px);
+                        position: absolute;
                     }
     
-                            .button_feed {
-                                width: 298px;
-                                height: 54px;
-                                background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
-                                border-radius: 25px;
-                                margin-top: 70px;
-                                position: relative;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                border-image: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
-                                transition: all 0.2s ease-in-out;
-                            }
+                        .button_feed {
+                            margin-top: 40px;                                
+                        }
                 
                             .button_feed:hover {
                                 cursor: pointer;
@@ -6812,7 +6816,7 @@ body {
         }     
     
             .wrapper_testimonials {
-                width: 1000px;
+                width: 640px;
                 margin: auto;
                 background-color: #FDFDFF;
                 display: flex;
@@ -6821,9 +6825,9 @@ body {
             }
     
             .testimonials_and_button {
-                width: 940px;
-                height: 602px;                       
-                margin: 100px 0px 140px 0px;
+                width: 600px;
+                height: 451px;                       
+                margin: 60px 0px 80px 0px;
                 display: flex;
                 flex-direction: column;            
                 justify-content: space-between;
