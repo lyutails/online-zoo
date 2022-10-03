@@ -1393,7 +1393,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    display: none;
   }
   .user_info {
     width: 237px;
@@ -2338,6 +2337,7 @@
     height: 80px;
     display: flex;
     flex-direction: row;
+    margin-left: 30px;
   }
   .logo {
     left: 0;
@@ -2396,7 +2396,7 @@
   .navigation {
     margin-top: 29px;
     margin-left: 63px;
-    width: 585px;
+    width: 795px;
     height: 22px;
     display: flex;
     justify-content: space-between;
@@ -2451,6 +2451,7 @@
     display: flex;
     justify-content: center;
     padding-left: 188px;
+    overflow: hidden;
   }
   .text_main_and_button {
     width: 458px;
@@ -2488,7 +2489,6 @@
     border-radius: 50%;
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     position: relative;
-    z-index: 2;
   }
   .button_start {
     width: 298px;
@@ -2507,7 +2507,7 @@
     -o-border-image: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
        border-image: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     transition: all 0.2s ease-in-out;
-    margin: 0px 0px 0px 47px;
+    margin: 0px 0px 0px 95px;
   }
   .button_start:hover {
     cursor: pointer;
@@ -2531,7 +2531,7 @@
     color: #ffffff;
   }
   .wrapper_wide_goal {
-    width: 100% vw;
+    width: 100vw;
     margin: auto;
     background-color: #FDFDFF;
   }
@@ -2543,6 +2543,7 @@
     flex-direction: row;
     justify-content: space-between;
     margin-top: 100px;
+    margin-left: 30px;
   }
   .wrapper_goal {
     width: 1000px;
@@ -2631,11 +2632,46 @@
   }
   .slider_container {
     width: 940px;
-    height: 800px;
-    margin: 142px 0px 80px 0px;
+    height: 935px;
+    margin: 142px 0px 140px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+  .wrapper_slider_buttons {
+    width: 1322px;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .slider_button_left {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    transition: all 0.1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate3d(512px, 0px, 0px);
+  }
+  .slider_button_left:hover {
+    background: #E47209;
+    cursor: pointer;
+  }
+  .slider_button_left:active {
+    background: #4B9200;
+    cursor: pointer;
+  }
+  .arrow_left {
+    position: absolute;
+    background-image: url("../refs/icons/arrow_left.png");
+    width: 18px;
+    height: 10px;
   }
   .animals_slider {
     width: 940px;
@@ -2644,7 +2680,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: space-between;
+    align-content: space-between;
   }
   .slider_pic {
     width: 294px;
@@ -2657,8 +2693,8 @@
     overflow: hidden;
   }
   .pandas_pic {
-    width: 366px;
-    height: 366px;
+    width: 294px;
+    height: 294px;
     background-image: url("../refs/pics/1000/slider_pets_1000/slider_1000_pandas.png");
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -2667,7 +2703,7 @@
   .slider_text_pandas {
     display: flex;
     flex-direction: column;
-    width: 294px;
+    width: 220px;
     height: 38px;
     margin: 8px 11px 14px 16px;
   }
@@ -2692,7 +2728,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 366px;
+    width: 294px;
     height: 60px;
     transition: all 0.4s ease-in-out;
   }
@@ -2731,13 +2767,13 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 366px;
+    width: 294px;
     height: 60px;
     transition: all 0.4s ease-in-out;
   }
   .eagles_pic {
-    width: 366px;
-    height: 366px;
+    width: 294px;
+    height: 294px;
     background-image: url("../refs/pics/1000/slider_pets_1000/slider_1000_eagle.png");
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -2780,7 +2816,7 @@
     color: #000000;
   }
   .slider_text_eagles {
-    width: 294px;
+    width: 220px;
     height: 38px;
     margin: 8px 0px 14px 16px;
     display: flex;
@@ -2807,13 +2843,13 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 366px;
+    width: 294px;
     height: 60px;
     transition: all 0.4s ease-in-out;
   }
   .gorillas_pic {
-    width: 366px;
-    height: 366px;
+    width: 294px;
+    height: 294px;
     background-image: url("../refs/pics/1000/slider_pets_1000/slider_1000_gorilla_1.png");
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -2822,7 +2858,7 @@
   .slider_text_gorillas {
     display: flex;
     flex-direction: column;
-    width: 294px;
+    width: 220px;
     height: 38px;
     margin: 8px 11px 14px 16px;
   }
@@ -2879,8 +2915,8 @@
     transition: all 0.4s ease-in-out;
   }
   .sloth_pic {
-    width: 366px;
-    height: 366px;
+    width: 294px;
+    height: 294px;
     background-image: url("../refs/pics/1000/slider_pets_1000/slider_1000_sloth.png");
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -2889,7 +2925,7 @@
   .slider_text_sloth {
     display: flex;
     flex-direction: column;
-    width: 294px;
+    width: 220px;
     height: 38px;
     margin: 8px 11px 14px 16px;
   }
@@ -2914,7 +2950,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 366px;
+    width: 294px;
     height: 60px;
     transition: all 0.4s ease-in-out;
   }
@@ -2941,13 +2977,13 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 366px;
+    width: 294px;
     height: 60px;
     transition: all 0.4s ease-in-out;
   }
   .cheetahs_pic {
-    width: 366px;
-    height: 366px;
+    width: 294px;
+    height: 294px;
     background-image: url("../refs/pics/1000/slider_pets_1000/slider_1000_cheetahs.png");
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -2990,7 +3026,7 @@
     color: #000000;
   }
   .slider_text_cheetahs {
-    width: 294px;
+    width: 220px;
     height: 38px;
     margin: 8px 0px 14px 16px;
     display: flex;
@@ -3017,13 +3053,13 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 366px;
+    width: 294px;
     height: 60px;
     transition: all 0.4s ease-in-out;
   }
   .penguins_pic {
-    width: 366px;
-    height: 366px;
+    width: 294px;
+    height: 294px;
     background-image: url("../refs/pics/1000/slider_pets_1000/slider_1000_penguin.png");
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -3066,7 +3102,7 @@
     color: #000000;
   }
   .slider_text_penguins {
-    width: 294px;
+    width: 220px;
     height: 38px;
     margin: 8px 0px 14px 16px;
     display: flex;
@@ -3108,6 +3144,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: translate3d(-512px, 0px, 0px);
   }
   .slider_button_right:hover {
     background: #E47209;
@@ -3131,6 +3168,7 @@
     border-radius: 25px;
     border-color: #FE9013;
     transition: all 0.2s ease-in;
+    margin-top: 80px;
   }
   .button_slider:hover {
     background: #E47209;
@@ -3172,7 +3210,7 @@
     height: 202px;
     position: absolute;
     z-index: 110px;
-    transform: translateY(965px);
+    transform: translateY(1016px);
   }
   .flower_decoration_three {
     display: flex;
@@ -3185,7 +3223,7 @@
     height: 180px;
     position: absolute;
     z-index: 20px;
-    transform: translateY(985px);
+    transform: translateY(1038px);
   }
   .pick_feed {
     width: 100vw;
@@ -3196,7 +3234,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 140px;
   }
   .wrapper_feed {
     width: 1000px;
@@ -4008,11 +4045,12 @@
     margin: auto;
   }
   .footer_content {
-    width: 1000px;
+    width: 939px;
     height: 335px;
     display: flex;
     padding-top: 40px;
     justify-content: space-between;
+    margin-left: 30px;
   }
   .footer_left {
     width: 298px;
