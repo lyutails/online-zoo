@@ -6677,7 +6677,7 @@ input:active {
   }
   .logo:hover {
     cursor: pointer;
-    border: 1.18841px solid #FE9013;
+    border: none;
   }
   .logo:hover .logo_name {
     color: #FE9013;
