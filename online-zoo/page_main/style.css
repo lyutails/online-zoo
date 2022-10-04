@@ -4892,6 +4892,7 @@ input:active {
     margin: 2.5px 0px 2.5px 20px;
     text-decoration: none;
     transition: all 0.4s ease-in-out;
+    border: none;
   }
   .logo_name {
     width: 47px;
@@ -4927,6 +4928,7 @@ input:active {
   .logo:hover {
     cursor: pointer;
     border: 1.18841px solid #FE9013;
+    border: none;
   }
   .logo:hover .logo_name {
     color: #FE9013;
