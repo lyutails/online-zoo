@@ -5344,7 +5344,8 @@ body {
                     height: 29px;                
                     margin: 2.5px 0px 2.5px 20px;   
                     text-decoration: none;
-                    transition: all 0.4s ease-in-out;          
+                    transition: all 0.4s ease-in-out;
+                    border: none;          
                 }
     
                     .logo_name {
@@ -5382,7 +5383,8 @@ body {
     
                     .logo:hover {
                         cursor: pointer;
-                        border: 1.18841px solid $orange_light; 
+                        border: 1.18841px solid $orange_light;
+                        border: none; 
     
                         .logo_name {
                             color: $orange_light;                        
@@ -8012,7 +8014,7 @@ body {
     
                     .logo:hover {
                         cursor: pointer;
-                        border: 1.18841px solid $orange_light; 
+                        border: none; 
     
                         .logo_name {
                             color: $orange_light;                        
