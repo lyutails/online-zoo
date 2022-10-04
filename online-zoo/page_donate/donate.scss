@@ -5030,7 +5030,7 @@ input[type="radio"] {
                 }
     
                 .sum_circles {                
-                    width: 260px;
+                    width: 288px;
                     height: 10px;
                     display: flex;
                     justify-content: space-between;
@@ -5236,8 +5236,8 @@ input[type="radio"] {
     
                             &::after {
                                 content: '';
-                                width: 23px;
-                                height: 23px;
+                                width: 18px;
+                                height: 18px;
                                 background-color: transparent;
                                 border-radius: 50%;
                                 border: 2px solid $orange;
@@ -5247,8 +5247,8 @@ input[type="radio"] {
             
                             &::before {
                                 content: '';
-                                width: 46px;
-                                height: 46px;
+                                width: 36px;
+                                height: 36px;
                                 background-color: transparent;
                                 border-radius: 50%;
                                 border: 2px solid $orange;
@@ -5301,8 +5301,8 @@ input[type="radio"] {
     
                             &::after {
                                 content: '';
-                                width: 23px;
-                                height: 23px;
+                                width: 18px;
+                                height: 18px;
                                 background-color: transparent;
                                 border-radius: 50%;
                                 border: 2px solid $orange;
@@ -5312,8 +5312,8 @@ input[type="radio"] {
             
                             &::before {
                                 content: '';
-                                width: 46px;
-                                height: 46px;
+                                width: 36px;
+                                height: 36px;
                                 background-color: transparent;
                                 border-radius: 50%;
                                 border: 2px solid $orange;
@@ -5411,8 +5411,8 @@ input[type="radio"] {
     
                             &::after {
                                 content: '';
-                                width: 23px;
-                                height: 23px;
+                                width: 18px;
+                                height: 18px;
                                 background-color: transparent;
                                 border-radius: 50%;
                                 border: 2px solid $orange;
@@ -5422,8 +5422,8 @@ input[type="radio"] {
             
                             &::before {
                                 content: '';
-                                width: 46px;
-                                height: 46px;
+                                width: 36px;
+                                height: 36px;
                                 background-color: transparent;
                                 border-radius: 50%;
                                 border: 2px solid $orange;
@@ -5466,8 +5466,8 @@ input[type="radio"] {
     
                             &::after {
                                 content: '';
-                                width: 23px;
-                                height: 23px;
+                                width: 18px;
+                                height: 18px;
                                 background-color: transparent;
                                 border-radius: 50%;
                                 border: 2px solid $orange;
@@ -5477,8 +5477,8 @@ input[type="radio"] {
             
                             &::before {
                                 content: '';
-                                width: 46px;
-                                height: 46px;
+                                width: 36px;
+                                height: 36px;
                                 background-color: transparent;
                                 border-radius: 50%;
                                 border: 2px solid $orange;
@@ -5497,8 +5497,8 @@ input[type="radio"] {
                     
     
             .money_sum {
-                width: 280px;
-                height: 36px;
+                width: 285px;
+                height: 18px;
                 display: flex;
                 justify-content: space-between;
                 margin-top: 6px;
@@ -5506,24 +5506,24 @@ input[type="radio"] {
             }
     
                 .first_sum, .second_sum, .third_sum {
-                    width: 72px;
-                    height: 36px;
+                    width: 28px;
+                    height: 18px;
                     display: flex;
                     align-items: center;
                     display: none;
                 }
     
                 .sixth_sum, .fifth_sum, .fourth_sum {
-                    width: 72px;
-                    height: 36px;
+                    width: 28px;
+                    height: 18px;
                     display: flex;
                     align-items: center;
                     justify-content: flex-end;
                 }
     
                 .eighth_sum, .seventh_sum {
-                    width: 72px;
-                    height: 36px;
+                    width: 24px;
+                    height: 18px;
                     display: flex;
                     align-items: center;
                     justify-content: flex-end;
@@ -5535,7 +5535,7 @@ input[type="radio"] {
                         font-family: 'Roboto';
                         font-style: normal;
                         font-weight: 500;
-                        font-size: 26px;
+                        font-size: 13px;
                         line-height: 140%;
                         text-transform: uppercase;
                         color: #333B41;
@@ -5547,40 +5547,40 @@ input[type="radio"] {
                         font-family: 'Roboto';
                         font-style: normal;
                         font-weight: 500;
-                        font-size: 26px;
+                        font-size: 13px;
                         line-height: 140%;
                         text-transform: uppercase;
                         color: #333B41;
                     }
     
                     .five_hundreds, .twofifty_hundreds, .one_hundred {
-                        width: 45px;
-                        height: 36px;
+                        width: 23px;
+                        height: 18px;
                         font-family: 'Roboto';
                         font-style: normal;
                         font-weight: 500;
-                        font-size: 26px;
+                        font-size: 13px;
                         line-height: 140%;
                         text-transform: uppercase;
                         color: #333B41;
                     }
                     
                     .fifty, .twentyfive {
-                        width: 30px;
-                        height: 36px;
+                        width: 15px;
+                        height: 18px;
                         font-family: 'Roboto';
                         font-style: normal;
                         font-weight: 500;
-                        font-size: 26px;
+                        font-size: 13px;
                         line-height: 140%;
                         text-transform: uppercase;
                         color: #333B41;
                     }
     
                     .dollar_5000, .dollar_thousand, .dollar_2000, .dollar_500, .dollar_250, .dollar_100, .dollar_50, .dollar_25 {
-                        width: 10px;
-                        height: 20px;
-                        background-image: url('../refs/icons/dollar.svg');
+                        width: 5px;
+                        height: 10px;
+                        background-image: url('../refs/pics/320/dollar\ 320.svg');
                         margin-right: 2px;
                     }
     
@@ -5618,10 +5618,10 @@ input[type="radio"] {
     
     
         .another_amount_wrapper {
-            width: 976px;
-            height: 54px;
-            margin-top: 50px;
-            margin-bottom: 25px;
+            width: 300px;
+            height: 42px;
+            margin-top: 18px;
+            margin-bottom: 30px;
             display: flex;
             justify-content: center;
         } 
@@ -5676,7 +5676,6 @@ input[type="radio"] {
             height: 21px;
             display: flex;
             justify-content: space-between;
-            margin-top: 6px;
         }
     
             .monthly_payment {
@@ -5781,7 +5780,7 @@ input[type="radio"] {
                 align-items: center;
                 background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
                 border-radius: 25px;
-                margin: 31px 0px 30px 0px;
+                margin: 30px 0px 30px 0px;
                 font-family: 'Roboto';
                 font-style: normal;
                 font-weight: 500;
@@ -5812,9 +5811,10 @@ input[type="radio"] {
                 font-family: 'Roboto';
                 font-style: normal;
                 font-weight: 400;
-                font-size: 16px;
+                font-size: 15px;
                 line-height: 140%;
                 color: $black_blue;
+                transform: translateX(10px);
             }
 
 }

@@ -4506,7 +4506,7 @@ input::-webkit-inner-spin-button {
     z-index: 15;
   }
   .sum_circles {
-    width: 260px;
+    width: 288px;
     height: 10px;
     display: flex;
     justify-content: space-between;
@@ -4676,8 +4676,8 @@ input::-webkit-inner-spin-button {
   }
   #radiobutton_circle_500:checked ~ .money_input_grade .circle_wrapper_500::after {
     content: "";
-    width: 23px;
-    height: 23px;
+    width: 18px;
+    height: 18px;
     background-color: transparent;
     border-radius: 50%;
     border: 2px solid #F9804B;
@@ -4686,8 +4686,8 @@ input::-webkit-inner-spin-button {
   }
   #radiobutton_circle_500:checked ~ .money_input_grade .circle_wrapper_500::before {
     content: "";
-    width: 46px;
-    height: 46px;
+    width: 36px;
+    height: 36px;
     background-color: transparent;
     border-radius: 50%;
     border: 2px solid #F9804B;
@@ -4730,8 +4730,8 @@ input::-webkit-inner-spin-button {
   }
   #radiobutton_circle_250:checked ~ .money_input_grade .circle_wrapper_250::after {
     content: "";
-    width: 23px;
-    height: 23px;
+    width: 18px;
+    height: 18px;
     background-color: transparent;
     border-radius: 50%;
     border: 2px solid #F9804B;
@@ -4740,8 +4740,8 @@ input::-webkit-inner-spin-button {
   }
   #radiobutton_circle_250:checked ~ .money_input_grade .circle_wrapper_250::before {
     content: "";
-    width: 46px;
-    height: 46px;
+    width: 36px;
+    height: 36px;
     background-color: transparent;
     border-radius: 50%;
     border: 2px solid #F9804B;
@@ -4820,8 +4820,8 @@ input::-webkit-inner-spin-button {
   }
   #radiobutton_circle_50:checked ~ .money_input_grade .circle_wrapper_50::after {
     content: "";
-    width: 23px;
-    height: 23px;
+    width: 18px;
+    height: 18px;
     background-color: transparent;
     border-radius: 50%;
     border: 2px solid #F9804B;
@@ -4830,8 +4830,8 @@ input::-webkit-inner-spin-button {
   }
   #radiobutton_circle_50:checked ~ .money_input_grade .circle_wrapper_50::before {
     content: "";
-    width: 46px;
-    height: 46px;
+    width: 36px;
+    height: 36px;
     background-color: transparent;
     border-radius: 50%;
     border: 2px solid #F9804B;
@@ -4865,8 +4865,8 @@ input::-webkit-inner-spin-button {
   }
   #radiobutton_circle_25:checked ~ .money_input_grade .circle_wrapper_25::after {
     content: "";
-    width: 23px;
-    height: 23px;
+    width: 18px;
+    height: 18px;
     background-color: transparent;
     border-radius: 50%;
     border: 2px solid #F9804B;
@@ -4875,8 +4875,8 @@ input::-webkit-inner-spin-button {
   }
   #radiobutton_circle_25:checked ~ .money_input_grade .circle_wrapper_25::before {
     content: "";
-    width: 46px;
-    height: 46px;
+    width: 36px;
+    height: 36px;
     background-color: transparent;
     border-radius: 50%;
     border: 2px solid #F9804B;
@@ -4890,30 +4890,30 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
   }
   .money_sum {
-    width: 280px;
-    height: 36px;
+    width: 285px;
+    height: 18px;
     display: flex;
     justify-content: space-between;
     margin-top: 6px;
     padding-right: 10px;
   }
   .first_sum, .second_sum, .third_sum {
-    width: 72px;
-    height: 36px;
+    width: 28px;
+    height: 18px;
     display: flex;
     align-items: center;
     display: none;
   }
   .sixth_sum, .fifth_sum, .fourth_sum {
-    width: 72px;
-    height: 36px;
+    width: 28px;
+    height: 18px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
   }
   .eighth_sum, .seventh_sum {
-    width: 72px;
-    height: 36px;
+    width: 24px;
+    height: 18px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -4924,7 +4924,7 @@ input::-webkit-inner-spin-button {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
-    font-size: 26px;
+    font-size: 13px;
     line-height: 140%;
     text-transform: uppercase;
     color: #333B41;
@@ -4935,37 +4935,37 @@ input::-webkit-inner-spin-button {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
-    font-size: 26px;
+    font-size: 13px;
     line-height: 140%;
     text-transform: uppercase;
     color: #333B41;
   }
   .five_hundreds, .twofifty_hundreds, .one_hundred {
-    width: 45px;
-    height: 36px;
+    width: 23px;
+    height: 18px;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
-    font-size: 26px;
+    font-size: 13px;
     line-height: 140%;
     text-transform: uppercase;
     color: #333B41;
   }
   .fifty, .twentyfive {
-    width: 30px;
-    height: 36px;
+    width: 15px;
+    height: 18px;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
-    font-size: 26px;
+    font-size: 13px;
     line-height: 140%;
     text-transform: uppercase;
     color: #333B41;
   }
   .dollar_5000, .dollar_thousand, .dollar_2000, .dollar_500, .dollar_250, .dollar_100, .dollar_50, .dollar_25 {
-    width: 10px;
-    height: 20px;
-    background-image: url("../refs/icons/dollar.svg");
+    width: 5px;
+    height: 10px;
+    background-image: url("../refs/pics/320/dollar 320.svg");
     margin-right: 2px;
   }
   #radiobutton_circle_5000:checked ~ .money_sum .dollar_5000 {
@@ -4993,10 +4993,10 @@ input::-webkit-inner-spin-button {
     background-image: url(../refs/icons/dollar_orange.svg);
   }
   .another_amount_wrapper {
-    width: 976px;
-    height: 54px;
-    margin-top: 50px;
-    margin-bottom: 25px;
+    width: 300px;
+    height: 42px;
+    margin-top: 18px;
+    margin-bottom: 30px;
     display: flex;
     justify-content: center;
   }
@@ -5044,7 +5044,6 @@ input::-webkit-inner-spin-button {
     height: 21px;
     display: flex;
     justify-content: space-between;
-    margin-top: 6px;
   }
   .monthly_payment {
     width: 85px;
@@ -5133,7 +5132,7 @@ input::-webkit-inner-spin-button {
     align-items: center;
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     border-radius: 25px;
-    margin: 31px 0px 30px 0px;
+    margin: 30px 0px 30px 0px;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
@@ -5161,8 +5160,9 @@ input::-webkit-inner-spin-button {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 140%;
     color: #333B41;
+    transform: translateX(10px);
   }
 }/*# sourceMappingURL=donate.css.map */
