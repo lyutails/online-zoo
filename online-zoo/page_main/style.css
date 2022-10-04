@@ -9140,11 +9140,10 @@ input:active {
     align-items: center;
     width: 128px;
     height: 23px;
-    margin: 0px 0px 30px 0px;
     text-decoration: none;
     transition: all 0.4s ease-in-out;
     border: none;
-    transform: translateX(80px);
+    transform: translate3d(80px, -10px, 0px);
   }
   .logo_name {
     color: #ffffff;
@@ -9195,7 +9194,7 @@ input:active {
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    transform: translate3d(58px, 10px, 0px);
+    transform: translate3d(58px, -10px, 0px);
   }
   .facebook {
     width: 111px;
@@ -9343,7 +9342,8 @@ input:active {
     height: 126px;
     display: flex;
     flex-direction: column;
-    transform: translate3d(-465px, 20px, 0px);
+    align-items: center;
+    transform: translate3d(-430px, 0px, 0px);
   }
   .subscribe {
     width: 237px;
@@ -9351,7 +9351,7 @@ input:active {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 120%;
     color: #FFFFFF;
   }
@@ -9545,7 +9545,7 @@ input:active {
   .wrapper_credentials {
     width: 228px;
     height: 52px;
-    transform: translate3d(-200px, 120px, 0px);
+    transform: translate3d(-200px, 130px, 0px);
     padding: 0;
   }
   .credentials {
@@ -9601,9 +9601,6 @@ input:active {
     text-decoration-thickness: 1px;
   }
   .button_footer {
-    display: none;
-  }
-  .button_footer_1 {
     width: 298px;
     height: 54px;
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
