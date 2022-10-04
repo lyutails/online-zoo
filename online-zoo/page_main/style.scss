@@ -4208,7 +4208,6 @@ body {
                 width: 940px;
                 height: 391px;
                 overflow: hidden;
-                margin-bottom: 20px;
             }
 
             .testimonial_one, .testimonial_two, .testimonial_three {
@@ -5275,6 +5274,8 @@ body {
 
 
 
+
+
 //media queries 640
 
 @media screen and (min-width: 640px) and (max-width: 999.9px) {
@@ -5491,7 +5492,7 @@ body {
 
     // #burger_id:checked + label .burger_menu .line_2 {
     //     opacity: 0;  
-    // }       
+    // } 
     
 
             
@@ -7928,7 +7929,1288 @@ body {
 //media queries 320
 
 @media screen and (min-width: 320px) and (max-width: 639.9px) {
+
+    ::-webkit-scrollbar {
+        width: 20px;
+    }
     
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px $grey;
+        border-radius: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: $orange_gradient;
+        border-radius: 20px;
+        box-shadow: inset 0 0 5px $grey;
+    }
+    
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        overflow-x: hidden;
+    }
+    
+    .start_screen {        
+        height: 221px;    
+        background-image: url('../refs/pics/320/Giant\ Panda\ \(1\).png');                
+    }
+    
+    .wrapper_wide {
+        width: 100vw;
+        margin: auto;    
+    }    
+    
+    .header {
+        height: 34px;
+    }
+    
+        .wrapper {
+            width: 320px;            
+        }  
+    
+            .header_content {
+                width: 300px;
+                height: 30px;
+            }
+                
+                .logo {                 
+                    width: 86px;
+                    height: 29px;                
+                    margin: 2.5px 0px 2.5px 0px;   
+                    text-decoration: none;
+                    transition: all 0.4s ease-in-out; 
+                    border: none;         
+                }
+    
+                    .logo_name {
+                        width: 47px;
+                        height: 29px;
+                        color: $white;
+                        display: inline-block;
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12.3px;
+                        line-height: 120%;
+                        text-align: center;
+                        box-sizing: border-box;                    
+                        text-decoration: none;
+                        z-index: 16;
+                        position: absolute;
+                        transition: all 0.4s ease-in-out;
+                    }
+    
+                    .logo_bamboo {
+                        width: 10px;
+                        height: 14px;
+                        display: inline-block;
+                        background-image: url('../refs/pics/640/bamboo.svg');               
+                        position: absolute;
+                        box-sizing: border-box;                    
+                        left: 7px;
+                        top: 20px;
+                        background-repeat: no-repeat;
+                        z-index: 8;
+                        transition: all 0.4s ease-in-out;
+                        transform: translate3d(-3px, -7px, 0);
+                    }
+    
+                    .logo:hover {
+                        cursor: pointer;
+                        border: 1.18841px solid $orange_light; 
+    
+                        .logo_name {
+                            color: $orange_light;                        
+                        }
+    
+                        * .logo_bamboo {
+                            background-image: url('../refs/icons/bamboo_green.svg');
+                        }
+                    }    
+    
+        .navigation {
+            margin-top: 29px;
+            margin-left: 63px;
+            width: 300px;
+            height: 22px;                      
+        }
+    
+            .navigation_menu_one {                  
+                display: none;               
+            }       
+            
+            .navigation_menu_two {
+                display: none;
+            }
+    
+    .burger_menu {
+        width: 18px;
+        height: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        margin-top: 11px;
+        cursor: pointer;        
+
+        .line {
+            width: 18px;
+            height: 2px;
+            background: $white;
+            border-radius: 2px;
+            transition: all 0.8s ease-in-out;
+        } 
+    }
+
+    // #burger_id:checked + label .burger_menu .line_1 {
+    //     background-color: $orange; 
+    //     transform: rotate(45deg);
+    //     transform-origin: 9px center;  
+    // }
+
+    // #burger_id:checked + label .burger_menu .line_3 {
+    //     background-color: $orange;  
+    //     transform: rotate(-45deg); 
+    //     transform-origin: 9px center; 
+    // }
+
+    // #burger_id:checked + label .burger_menu .line_2 {
+    //     opacity: 0;  
+    // }
+
+    .wrapper_main_text {
+        width: 320px;        
+    }
+
+        .text_main_and_button {
+            width: 299px;            
+            height: 239;   
+            display: flex;
+            margin: 22px 0px 0px 0px;         
+        }
+
+        .text_main_and_circle {
+            width: 147px;
+            height: auto;
+            transform: translateX(100px);            
+        }
+
+            .title_first_screen {
+                width: 128px;
+                height: 102px;
+                font-size: 28px;
+                line-height: 75%;
+                height: auto;         
+                margin: 18px 0px 0px 40px;
+                transform: translateX(10px);             
+            }
+
+
+            .title_colored {
+                color: #FFEE2E;
+            }
+
+            .circle {
+                width: 119px;
+                height: 119px;
+                transform: translateX(35px);                           
+            }
+
+            .button_start {                                     
+                transform: translate3d(-190px, -350px, 0px);            
+            }
+           
+
+.wrapper_wide_goal {
+    width: 100vw;
+    margin: auto; 
+    background-color: $frosted_glass_white;   
+}
+    
+    .goal {
+        background-color: $frosted_glass_white;
+        width: 300px;
+        height: 388px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 104px;
+        padding: 0px 10px 0px 10px;
+    }
+    
+    .wrapper_goal {
+        width: 1000px;
+        margin: auto;
+    } 
+
+        .goal_pic { 
+            display: none;         
+        }
+
+        .goal_info {
+            width: 454px;
+            height: 427px;
+            display: flex;
+            flex-direction: column;           
+        }
+
+            .goal_title {
+                width: 320px;
+                height: 58px;                
+                font-size: 24px;                
+                margin: 0px 0px 10px 0px;                
+            }
+
+            .founders {
+                width: 297px;
+                height: 63px;                
+                margin: 0px 0px 20px 0px;
+            }
+
+            .work_title {                
+                font-size: 24px;                
+                margin: 0px 0px 10px 0px;
+            }
+
+            .work_explanation {
+                width: 300px;
+                height: 198px;
+            }
+
+        .flower_decoration_one {  
+            width: 100vw;                      
+            display: flex;
+            justify-content: flex-end;
+            z-index: 300px;            
+        }
+
+            .flower_one_image {
+                background-image: url('../refs/pics/320/flower_foto1.png');
+                width: 35px;
+                height: 225px;               
+                transform: translateY(-450px);                                          
+            }
+
+
+    .slider_decoration_elements {
+        width: 100vw;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }  
+    
+    .wrapper_slider_buttons {
+        width: 285.24px;
+        height: 1388px;
+    }
+    
+    .wrapper_wide_slider {
+        width: 100vw;
+        margin: auto;   
+        display: flex;
+        flex-direction: column;
+        align-items: center;       
+    }   
+    
+    .slider_container {
+        width: 285px;
+        height: 1462px;
+        margin: 40px 0px 60px 0px;
+        display: flex;  
+        flex-direction: column; 
+        justify-content: space-between; 
+        align-items: center;   
+    }         
+    
+        .arrow_left {
+            position: absolute;
+            background-image: url('../refs/icons/arrow_left.png');
+            width: 18px;
+            height: 10px;
+        }
+    
+            .slider_with_buttons {
+                width: 285.24px;
+                height: 1388px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                margin: 20px 0px 0px 0px;
+            }    
+    
+            .animals_slider {
+                width: 285.24px;
+                height: 1388px;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-content: space-between;              
+            }
+            
+            .slider_pic {
+                width: 285px;
+                height: 332px;
+                display: flex;
+                flex-direction: column;
+                border-radius: 5px;
+                border: 1px solid;
+                border-color: #FE9013;
+                overflow: hidden;             
+            }
+    
+            .pandas_pic {
+                width: 285px;
+                height: 285px;
+                background-image: url('../refs/pics/640/slider_pets_640/slider_640_pandas.png'); 
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                transition: all 0.4s ease-in-out;                   
+            }
+    
+            .slider_text_pandas {
+                display: flex;
+                flex-direction: column;
+                width: 210px;
+                height: 38px;
+                margin: 8px 11px 14px 16px;        
+                
+                .pandas_name {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 140%;
+                    text-transform: uppercase;
+                    color: $black;
+                }
+    
+                .pandas_habitation {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 15px;
+                    line-height: 120%;
+                    color: $black;
+                }
+            }
+    
+            .slider_info_icon_pandas {
+                display: flex;
+                flex-direction: row;        
+                align-items: center;
+                width: 285px;
+                height: 60px;
+                transition: all 0.4s ease-in-out;         
+            }
+    
+            .pandas_pic:hover {
+                transform: scale(1.05);
+                cursor: pointer;
+                background-color: rgba(0, 0, 0, 0.4);
+                background-blend-mode: multiply;                    
+            
+                
+                + .slider_info_icon_pandas {                
+                    transform: scale(1.05) translateY(3px);                
+                    //background-color: rgba(196, 196, 196, 0.4); 
+                    background-color: rgba(228, 114, 9, 0.4);               
+                    border-bottom-left-radius: 5px; 
+                    border-bottom-right-radius: 5px;
+                    pointer-events: none;                 
+                }     
+    
+                ~ .pandas_name {                
+                    color: $white;
+                }
+    
+                ~ .pandas_habitation {                
+                    color: $white;
+                }            
+            }       
+            
+            .pandas_pic:hover > .overlay_pandas {
+                position: absolute;    
+                left: 0; top: 0; right: 0; bottom: 0;            
+                background: rgba(0, 0, 0, 0.8);
+                width: 100vw;
+                height: 100vh;
+                display: block;
+                z-index: 200;
+            }
+            
+    
+            .slider_info_icon_eagles {
+                display: flex;
+                flex-direction: row;        
+                align-items: center;
+                width: 285px;
+                height: 60px;
+                transition: all 0.4s ease-in-out;         
+            }
+    
+            .eagles_pic {
+                width: 285px;
+                height: 285px;
+                background-image: url('../refs/pics/640/slider_pets_640/slider_640_eagle.png'); 
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                transition: all 0.4s ease-in-out;
+            }
+    
+            .eagles_pic:hover {
+                transform: scale(1.05);
+                cursor: pointer;
+                background-color: rgba(0, 0, 0, 0.4);
+                background-blend-mode: multiply;        
+                
+                + .slider_info_icon_eagles {                
+                    transform: scale(1.05) translateY(8px) translateY(-5px);
+                    //background-color: rgba(196, 196, 196, 0.4);
+                    background-color: rgba(75, 146, 0, 0.4);
+                    border-bottom-left-radius: 5px; 
+                    border-bottom-right-radius: 5px; 
+                    pointer-events: none;                
+                }
+    
+                ~ .eagles_name {                
+                    color: $white;
+                }
+    
+                ~ .eagles_habitation {                
+                    color: $white;
+                }
+            }
+    
+                .eagles_name {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 140%;
+                    text-transform: uppercase;
+                    color: $black;
+                } 
+    
+                .eagles_habitation {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 15px;
+                    line-height: 120%;
+                    color: $black;
+                }
+    
+            .slider_text_eagles {
+                width: 210px;
+                height: 38px;
+                margin: 8px 0px 14px 16px;
+                display: flex;
+                flex-direction: column;
+    
+                .eagles_name {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 140%;
+                    text-transform: uppercase;
+                    color: $black;
+                } 
+    
+                .eagles_habitation {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 15px;
+                    line-height: 120%;
+                    color: $black;
+                }
+            }
+
+        .gorillas {
+            display: none;
+        }
+    
+            .slider_info_icon_gorillas {
+                display: flex;
+                flex-direction: row;        
+                align-items: center;
+                width: 294px;
+                height: 60px;
+                transition: all 0.4s ease-in-out;                         
+            }
+    
+            .gorillas_pic {
+                width: 294px;
+                height: 294px;
+                background-image: url('../refs/pics/1000/slider_pets_1000/slider_1000_gorilla_1.png'); 
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                transition: all 0.4s ease-in-out;                   
+            }
+    
+                .slider_text_gorillas {
+                    display: flex;
+                    flex-direction: column;
+                    width: 220px;
+                    height: 38px;
+                    margin: 8px 11px 14px 16px;        
+                    
+                    .gorillas_name {
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 140%;
+                        text-transform: uppercase;
+                        color: $black;
+                    }
+    
+                    .gorillas_habitation {
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 15px;
+                        line-height: 120%;
+                        color: $black;
+                    }
+                }
+    
+                .slider_info_icon_gorillas {
+                    display: flex;
+                    flex-direction: row;        
+                    align-items: center;
+                    width: 366px;
+                    height: 60px;
+                    transition: all 0.4s ease-in-out;         
+                }
+    
+                .gorillas_pic:hover {
+                    transform: scale(1.05);
+                    cursor: pointer;
+                    background-color: rgba(0, 0, 0, 0.4);
+                    background-blend-mode: multiply;        
+                    
+                    + .slider_info_icon_gorillas {                
+                        transform: scale(1.05) translateY(8px) translateY(-5px);                
+                        //background-color: rgba(196, 196, 196, 0.4); 
+                        background-color: rgba(228, 114, 9, 0.4);               
+                        border-bottom-left-radius: 5px; 
+                        border-bottom-right-radius: 5px;
+                        pointer-events: none;                 
+                    }
+    
+                    ~ .gorillas_name {                
+                        color: $white;
+                    }
+    
+                    ~ .gorillas_habitation {                
+                        color: $white;
+                    }
+                }
+    
+    
+            .slider_info_icon_sloth {
+                display: flex;
+                flex-direction: row;        
+                align-items: center;
+                width: 366px;
+                height: 60px;
+                transition: all 0.4s ease-in-out;         
+            }        
+    
+            .sloth_pic {
+                width: 285px;
+                height: 285px;
+                background-image: url('../refs/pics/640/slider_pets_640/slider_640_sloth.png'); 
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                transition: all 0.4s ease-in-out;                   
+            }
+    
+                .slider_text_sloth {
+                    display: flex;
+                    flex-direction: column;
+                    width: 210px;
+                    height: 38px;
+                    margin: 8px 11px 14px 16px;        
+                    
+                    .sloth_name {
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 140%;
+                        text-transform: uppercase;
+                        color: $black;
+                    }
+    
+                    .sloth_habitation {
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 15px;
+                        line-height: 120%;
+                        color: $black;
+                    }
+                }
+    
+                .slider_info_icon_sloth {
+                    display: flex;
+                    flex-direction: row;        
+                    align-items: center;
+                    width: 294px;
+                    height: 60px;
+                    transition: all 0.4s ease-in-out;         
+                }
+    
+                .sloth_pic:hover {
+                    transform: scale(1.05);
+                    cursor: pointer;
+                    background-color: rgba(0, 0, 0, 0.4);
+                    background-blend-mode: multiply;        
+                    
+                    + .slider_info_icon_sloth {                
+                        transform: scale(1.05) translateY(8px) translateY(-5px);                
+                        //background-color: rgba(196, 196, 196, 0.4); 
+                        background-color: rgba(228, 114, 9, 0.4);               
+                        border-bottom-left-radius: 5px; 
+                        border-bottom-right-radius: 5px; 
+                        pointer-events: none;                
+                    }
+    
+                    ~ .sloth_name {                
+                        color: $white;
+                    }
+    
+                    ~ .sloth_habitation {                
+                        color: $white;
+                    }
+                }
+    
+            .slider_info_icon_cheetahs {
+                display: flex;
+                flex-direction: row;        
+                align-items: center;
+                width: 285px;
+                height: 60px;
+                transition: all 0.4s ease-in-out;                         
+            }   
+    
+            .cheetahs_pic {
+                width: 285px;
+                height: 285px;
+                background-image: url('../refs/pics/640/slider_pets_640/slider_640_cheetahs.png'); 
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                transition: all 0.4s ease-in-out;
+            }
+    
+            .cheetahs_pic:hover {
+                transform: scale(1.05);
+                cursor: pointer;
+                background-color: rgba(0, 0, 0, 0.4);
+                background-blend-mode: multiply;         
+                
+                + .slider_info_icon_cheetahs {                
+                    transform: scale(1.05) translateY(8px) translateY(-5px);
+                    //background-color: rgba(196, 196, 196, 0.4);
+                    background-color: rgba(75, 146, 0, 0.4);
+                    border-bottom-left-radius: 5px; 
+                    border-bottom-right-radius: 5px; 
+                    pointer-events: none;                
+                }
+    
+                ~ .cheetahs_name {                
+                    color: $white;
+                }
+    
+                ~ .cheetahs_habitation {                
+                    color: $white;
+                }
+            }
+    
+                .cheetahs_name {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 140%;
+                    text-transform: uppercase;
+                    color: $black;
+                } 
+    
+                .cheetahs_habitation {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 15px;
+                    line-height: 120%;
+                    color: $black;
+                }
+    
+            .slider_text_cheetahs {
+                width: 210px;
+                height: 38px;
+                margin: 8px 0px 14px 16px;
+                display: flex;
+                flex-direction: column;
+    
+                .cheetahs_name {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 140%;
+                    text-transform: uppercase;
+                    color: $black;
+                } 
+    
+                .cheetahs_habitation {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 15px;
+                    line-height: 120%;
+                    color: $black;
+                }
+            }
+    
+            .slider_info_icon_penguins {
+                display: flex;
+                flex-direction: row;        
+                align-items: center;
+                width: 294px;
+                height: 60px;
+                transition: all 0.4s ease-in-out;         
+            }
+            
+        .penguins {
+            display: none;
+        }
+    
+            .penguins_pic {
+                width: 294px;
+                height: 294px;
+                background-image: url('../refs/pics/1000/slider_pets_1000/slider_1000_penguin.png'); 
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                transition: all 0.4s ease-in-out;
+            }
+    
+            .penguins_pic:hover {
+                transform: scale(1.05);
+                cursor: pointer;
+                background-color: rgba(0, 0, 0, 0.4);
+                background-blend-mode: multiply;         
+                
+                + .slider_info_icon_penguins {                
+                    transform: scale(1.05) translateY(8px) translateY(-5px);
+                    //background-color: rgba(196, 196, 196, 0.4);
+                    background-color: rgba(75, 146, 0, 0.4);
+                    border-bottom-left-radius: 5px; 
+                    border-bottom-right-radius: 5px; 
+                    pointer-events: none;                
+                }
+    
+                ~ .penguins_name {                
+                    color: $white;
+                }
+    
+                ~ .penguins_habitation {                
+                    color: $white;
+                }
+            }
+    
+                .penguins_name {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 140%;
+                    text-transform: uppercase;
+                    color: $black;
+                } 
+    
+                .penguins_habitation {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 15px;
+                    line-height: 120%;
+                    color: $black;
+                }
+    
+            .slider_text_penguins {
+                width: 220px;
+                height: 38px;
+                margin: 8px 0px 14px 16px;
+                display: flex;
+                flex-direction: column;
+    
+                .penguins_name {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 140%;
+                    text-transform: uppercase;
+                    color: $black;
+                } 
+    
+                .penguins_habitation {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 15px;
+                    line-height: 120%;
+                    color: $black;
+                }
+            }
+    
+            .food_vegetarian {
+                width: 33px;
+                height: 37px; 
+                background-image: url('../refs/icons/banana-bamboo_icon.png');
+            }
+    
+            .food_omnivores {
+                width: 48px;
+                height: 38px; 
+                background-image: url('../refs/icons/meet-fish_icon.png');
+            }        
+    
+            .slider_button_right {
+                width: 62px;
+                height: 62px;
+                border-radius: 50%;
+                background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+                transition: all 0.1s ease-in-out;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transform: translate3d(-585px, 0px, 0px);
+            }
+    
+            .slider_button_right:hover {
+                background: #E47209;
+                cursor: pointer;
+            }
+    
+            .slider_button_right:active {
+                background: $green;
+                cursor: pointer;
+            }
+    
+                .arrow_right {
+                    position: absolute;
+                    background-image: url('../refs/icons/arrow_left.png');
+                    width: 18px;
+                    height: 10px;
+                    transform: rotateY(180deg);
+                }            
+    
+        .button_slider {            
+                
+            margin-top: 20px;           
+        }
+    
+        .button_slider:hover {
+            background: #E47209;
+            cursor: pointer;
+        }
+    
+        .button_slider:active {
+            border-color: $green;
+            background: $green;
+            cursor: pointer;
+        }
+    
+            .animals_button_name {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 140%;
+                text-align: center;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                text-decoration: none;
+            }
+    
+            .animals_button_name:visited {
+                text-decoration: none;
+            }
+    
+            .animals_button_name:active {
+                text-decoration: none;
+            }
+    
+            .button_slider .animals_button_name {
+                display: block;
+            }
+    
+        .flower_decoration_two {            
+            display: flex;
+            justify-content: flex-start;        
+            width: 100vw;    
+        }
+    
+            .flower_two_image {
+                background-image: url('../refs/pics/320/palm_foto.png');
+                width: 58px;
+                height: 72px;
+                transform: translateY(1494px);                                                        
+            }
+        
+        .flower_decoration_three {            
+            display: flex;
+            justify-content: flex-end;
+            width: 100vw;            
+        }
+    
+            .flower_three_image {
+                background-image: url('../refs/pics/320/strelitzia\ 1.png');
+                width: 68px;
+                height: 71px;
+                transform: translateY(1500px);                                                                     
+            }
+
+
+.pick_feed {
+    width: 100vw;
+    height: 1082px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+    .wrapper_feed {
+        width: 320px;
+        height: 1042px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;            
+        align-items: center;
+    }
+
+        .feed_info_block {
+            width: 300px;
+            height: 1042px;               
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;            
+            align-items: center;                               
+        }
+
+            .pick_feed_friend {
+                width: 232px;
+                height: 29px;                
+                font-size: 24px; 
+                text-align: center; 
+                margin: auto;              
+            }
+
+            .pick_feed_info {
+                width: 297px;
+                height: 66px;
+                margin-top: 10px;                
+                font-size: 18px;
+                text-align: center;                 
+            }
+
+            .covid_warning {                
+                display: none;
+            }
+
+            .gift_to_fund {                
+                display: none;
+            }               
+
+            .how_it_works {
+                width: 320px;
+                height: 30px;
+                font-size: 24px;
+                margin-top: 20px; 
+                text-align: center;               
+            }
+
+            .pick_feed_icons {
+                width: 168px;
+                height: 724px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;                    
+                margin-top: 20px;
+            }
+
+            .feed_icon_first {
+                width: 168px;
+                height: 168px;                               
+            }                    
+
+                .first_step {
+                    width: 168px;
+                    height: 244px;                        
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+
+                    .card_icon {
+                        width: 108px;
+                        height: 60px;
+                        background-image: url('../refs/icons/pay.svg');                             
+                        display: inline-block;                
+                        transition: all 0.2s ease-in-out;
+                    }
+
+                        .card_icon:hover {
+                            width: 108px;
+                            height: 60px;
+                            background-image: url('../refs/icons/pay_colored.svg');
+                            cursor: pointer;
+                        }
+
+                        .feed_icon_first:hover {
+                            cursor: pointer;
+    
+                            > .card_icon {
+                                width: 108px;
+                                height: 60px;
+                                background-image: url('../refs/icons/pay_colored.svg');
+                                cursor: pointer;
+                            }
+                        }
+
+
+                .second_step {
+                    width: 168px;
+                    height: 244px;                        
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+
+                .feed_icon_second {
+                    width: 168px;
+                    height: 168px;
+                    background: #FFFFFF;
+                    border-radius: 5px;
+                    border-width: 1px;
+                    border-style: solid;
+                    border-color: $orange_light;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;               
+                }
+
+                    .payment_icon {
+                        width: 87px;
+                        height: 96px;
+                        background-image: url('../refs/icons/zoo.svg');                             
+                        display: inline-block;
+                        transition: all 0.2s ease-in-out;
+                    }
+
+                    .feed_icon_second:hover {
+                        cursor: pointer;
+
+                        > .payment_icon {
+                            width: 87px;
+                            height: 96px;
+                            background-image: url('../refs/icons/zoo_colored.svg');                             
+                            cursor: pointer;
+                        }
+                    }
+
+
+
+                .third_step {
+                    width: 168px;
+                    height: 244px;                        
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+
+                .feed_icon_third {
+                    width: 168px;
+                    height: 168px;
+                    background: #FFFFFF;
+                    border-radius: 5px;
+                    border-width: 1px;
+                    border-style: solid;
+                    border-color: $orange_light;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;               
+                }
+                
+                    .monkey_icon {
+                        width: 127px;
+                        height: 73px;
+                        background-image: url('../refs/icons/monkey.svg');                             
+                        display: inline-block;
+                        transition: all 0.2s ease-in-out;
+                        z-index: 80;
+                    }
+
+                    .banana_peel {
+                        width: 50px;
+                        height: 42px;
+                        background-image: url('../refs/icons/banana_peel\ 1.png');                             
+                        display: inline-block;
+                        position: absolute;
+                        transition: all 0.2s ease-in-out;
+                        z-index: 90;
+                        transform: translate3d(-40px, 20px, 0px);
+                        opacity: 0;
+                    }
+
+                    .feed_icon_third:hover {
+                        cursor: pointer;
+
+                        & > .banana_peel {
+                            animation-name: banana_anim;
+                            animation-duration: 4s;
+                            animation-timing-function: linear;
+                            animation-iteration-count: 1;
+                            animation-fill-mode: forwards;
+                        }
+
+                        > .monkey_icon {
+                            width: 127px;
+                            height: 73px;
+                            background-image: url('../refs/icons/monkey_colored_bitten_banana.svg');                             
+                            cursor: pointer;
+                        }                         
+                        
+                    }    
+                    
+                    @keyframes banana_anim {
+                        from {
+                            opacity: 0;
+                            transform: translate3d(-40px, 20px, 0px);
+                        }
+                        20% {
+                            opacity: 0.9;
+                            transform: translate3d(-40px, 70px, 0px);
+                        }
+                        to {
+                            opacity: 1;
+                            transform: translate3d(-40px, 250px, 0px);
+                        }
+                    }
+
+                    .card {
+                        width: 168px;
+                        height: 46px;
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 140%;
+                        text-align: center;
+                        color: #333B41;
+                    }
+
+                    .payment {
+                        width: 168px;
+                        height: 46px;
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 140%;                            
+                        text-align: center;
+                        color: #333B41;
+                    }
+
+                    .gets_favourite_dish {
+                        width: 168px;
+                        height: 46px;
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 140%;
+                        text-align: center;
+                        color: #333B41;
+                    }
+
+            .curly_arrow_first {
+                width: 88px;
+                height: 28px;
+                background-image: url('../refs/pics/640/arrow.svg');
+                transform: translate3d(135px, -12px, 0px);
+                position: absolute;
+            }
+
+            .curly_arrow_second {
+                width: 88px;
+                height: 28px;
+                background-image: url('../refs/pics/640/arrow.svg');
+                transform: translate3d(345px, -12px, 0px);
+                position: absolute;
+            }
+
+                .button_feed {
+                    margin-top: 20px;                                
+                }
+        
+                    .button_feed:hover {
+                        cursor: pointer;
+                        background: #E47209;
+                        border-radius: 25px;
+                    }
+
+                    .button_feed:active {
+                        border-color: $green;
+                        background: $green;
+                        cursor: pointer;
+                    }
+
+                    .button_feed_friend_content {
+                        position: absolute;
+                        width: 292px;
+                        height: 22px;                            
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 140%;                            
+                        text-align: center;
+                        text-transform: uppercase;
+                        color: $white;
+                        text-decoration: none;
+                    }
+
+                    .button_feed_friend_content:active {
+                        text-decoration: none;
+                        color: $white;
+                    }
+
+                    .button_feed_friend_content:visited {
+                        text-decoration: none;
+                        color: $white;
+                    }
+
+                    .button_feed .button_feed_friend_content {
+                        display: block;
+                    }
+    
+                
 }
 
 
