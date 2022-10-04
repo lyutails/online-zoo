@@ -1465,7 +1465,7 @@ body {
                             color: #333B41;
                         }
 
-                .curly_arrow {
+                .curly_arrow_first, .curly_arrow_second {
                     width: 69px;
                     height: 36px;
                     background-image: url('../refs/icons/curly_arrow.png');
@@ -3827,6 +3827,7 @@ body {
                     font-size: 16px;
                     line-height: 130%;
                     color: #333B41;
+                    text-align: center;
                 }
 
                 .gift_to_fund {
@@ -4085,10 +4086,10 @@ body {
                             color: #333B41;
                         }
 
-                .curly_arrow {
+                .curly_arrow_first, .curly_arrow_second {
                     width: 69px;
                     height: 36px;
-                    background-image: url('../refs/icons/curly_arrow.png');
+                    background-image: url('../refs/pics/1000/pick\ feed\ arrows.svg');
                     transform: translateY(74px);
                 }
 
@@ -9139,34 +9140,31 @@ body {
 
                     .gets_favourite_dish {
                         width: 168px;
-                        height: 46px;
-                        font-family: 'Roboto';
-                        font-style: normal;
+                        height: 46px;                        
                         font-weight: 400;
-                        font-size: 16px;
-                        line-height: 140%;
-                        text-align: center;
-                        color: #333B41;
+                        font-size: 16px;                        
+                        text-align: center;                        
                     }
 
             .curly_arrow_first {
-                width: 88px;
-                height: 28px;
-                background-image: url('../refs/pics/640/arrow.svg');
-                transform: translate3d(135px, -12px, 0px);
+                width: 28px;
+                height: 88px;
+                background-image: url('../refs/pics/320/arrow_green.svg');
+                transform: translate3d(168px, 162px, 0px);                 
                 position: absolute;
             }
 
             .curly_arrow_second {
-                width: 88px;
-                height: 28px;
-                background-image: url('../refs/pics/640/arrow.svg');
-                transform: translate3d(345px, -12px, 0px);
+                width: 28px;
+                height: 88px;
+                background-image: url('../refs/pics/320/arrow_green.svg');
+                transform: translate3d(168px, 402px, 0px);                
                 position: absolute;
             }
 
                 .button_feed {
-                    margin-top: 20px;                                
+                    margin-top: 20px;  
+                    margin-bottom: 40px;                              
                 }
         
                     .button_feed:hover {
@@ -9210,6 +9208,537 @@ body {
                         display: block;
                     }
     
+.testimonials_decoration_wrapper {
+    width: 100%;
+    margin: auto;    
+} 
+
+    .testimonials {
+        width: 100vw;
+        margin: auto;
+        background-color: #FDFDFF;        
+    }     
+
+        .wrapper_testimonials {
+            width: 320px;                        
+        }
+
+        .testimonials_and_button {
+            width: 300px;
+            height: 490px;                       
+            margin: 30px 0px 60px 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;                
+        }
+
+            .testimonials_info {
+                width: 300px;
+                height: auto;                
+                background-color: #FDFDFF;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .testimonials_title {
+                width: 138px;
+                height: 29px;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 130%;
+                text-align: center;
+                color: #333B41;
+                margin-bottom: 30px;
+            }
+
+            .testimonials_slider {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 300px;
+                height: 357px;
+                overflow: hidden;
+            }
+
+            .testimonial_one, .testimonial_two, .testimonial_three {
+                width: 298px;
+                height: 110px;
+                background: $pink_gradient;
+                border-radius: 20px;
+                border: 2px solid transparent;  
+                box-shadow: inset 0px 0px 0px 100vw $light_grey;                                                             
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: flex-start;                
+            }
+
+            .testimonial_four {
+                display: none;
+            } 
+
+                .user_info {
+                    width: 252px;
+                    height: 39px;
+                    margin-bottom: 10px;
+                    display: flex;  
+                    justify-content: flex-start;   
+                    align-items: center;                                                      
+                }
+
+                    .user_icon_1 {
+                        width: 37px;
+                        height: 37px;
+                        background-image: url('../refs/icons/user_icon.svg');
+                        margin-right: 10px;
+                    }
+
+                    .user_name_location_1 {
+                        width: 144px;
+                        height: 38px;
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                        .user_name_one {
+                            width: 97px;
+                            height: 19px;
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 120%;
+                            color: $black;
+                        }
+
+                        .where_when_1 {
+                            width: 144px;
+                            height: 18px;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                        }
+
+                        .user_country_1 {
+                            width: 87px;
+                            height: 18px;
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 15px;
+                            line-height: 120%;
+                            color: $grey;
+                        }
+
+                        .testimonial_date_1 {
+                            width: 41px;
+                            height: 18px;
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 15px;
+                            line-height: 120%;
+                            color: $grey;
+                        }
+
+
+                    .user_icon_2 {
+                        width: 37px;
+                        height: 37px;
+                        background-image: url('../refs/icons/user_one.png');
+                        margin-right: 10px;
+                    }
+
+                    .user_name_location_2 {
+                        width: 144px;
+                        height: 38px;
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                        .user_name_two {
+                            width: 126px;
+                            height: 19px;
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 120%;
+                            color: $black;
+                        }
+
+                        .where_when_2 {
+                            width: 168px;
+                            height: 18px;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                        }
+
+                        .user_country_2 {
+                            width: 87px;
+                            height: 18px;
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 15px;
+                            line-height: 120%;
+                            color: $grey;
+                        }
+
+                        .testimonial_date_2 {
+                            width: 65px;
+                            height: 18px;
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 15px;
+                            line-height: 120%;
+                            color: $grey;
+                        }
+
+                    .user_icon_3 {
+                        width: 37px;
+                        height: 37px;
+                        background-image: url('../refs/icons/user_two.png');
+                        margin-right: 10px;
+                    }
+
+                    .user_name_location_3 {
+                        width: 168px;
+                        height: 38px;
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                        .user_name_three {
+                            width: 139px;
+                            height: 19px;
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 120%;
+                            color: $black;
+                        }
+
+                        .where_when_3 {
+                            width: 168px;
+                            height: 18px;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                        }
+
+                        .user_country_3 {
+                            width: 87px;
+                            height: 18px;
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 15px;
+                            line-height: 120%;
+                            color: $grey;
+                        }
+
+                        .testimonial_date_3 {
+                            width: 65px;
+                            height: 18px;
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 15px;
+                            line-height: 120%;
+                            color: $grey;
+                        }
+
+                    .user_icon_4 {
+                        width: 37px;
+                        height: 37px;
+                        background-image: url('../refs/icons/user_three.png');
+                        margin-right: 10px;
+                    }
+
+                    .user_name_location_4 {
+                        width: 168px;
+                        height: 38px;
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                        .user_name_four {
+                            width: 83px;
+                            height: 19px;
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 120%;
+                            color: $black;
+                        }
+
+                        .where_when_4 {
+                            width: 168px;
+                            height: 18px;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                        }
+
+                        .user_country_4 {
+                            width: 87px;
+                            height: 18px;
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 15px;
+                            line-height: 120%;
+                            color: $grey;
+                        }
+
+                        .testimonial_date_4 {
+                            width: 65px;
+                            height: 18px;
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 15px;
+                            line-height: 120%;
+                            color: $grey;
+                        }
+
+                .testimonial_text {
+                    width: 252px;
+                    height: 40px;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 15px;
+                    line-height: 120%;
+                    color: #767474;
+                    text-align: left;
+                    overflow: hidden;
+                    overflow-y: scroll;
+                    scrollbar-width: none;
+                    -ms-overflow-style: none;                    
+                }
+                
+                .testimonial_text::-webkit-scrollbar {
+                    width: 0px;
+                    background: transparent;
+                    }
+
+                .testimonial_text:hover {
+                    cursor: auto;
+                }
+
+                .country_date_between_circle {
+                    color: $grey;
+                }
+
+            .slider_progress_bar {
+                width: 390px;
+                height: 8px;
+                box-sizing: border-box;
+                background: $light_grey;
+                border-radius: 5px;
+                border: 2px solid $light_grey;         
+                cursor: pointer;
+                display: flex;
+                flex-direction: row;
+                align-items: space-between;
+                display: none;
+            }
+
+    input[type="radio"] {
+        border: 0px;
+        width: 50px;
+        height: 3em;
+        display: none;
+    }
+
+                #radio_progress_bar_one:checked ~ .slider_progress_bar .progress_style_1 {
+                    //position: relative;
+                    //width: 116px;
+                    width: 78px;
+                    height: 6px;
+                    background-color: $orange;
+                    border-radius: 5px;
+                }
+
+                #radio_progress_bar_one:not(checked) ~ .slider_progress_bar .progress_style_1 {
+                    //position: relative;
+                    //width: 116px;
+                    width: 78px;
+                    height: 6px;
+                    background-color: $light_grey;
+                    border-radius: 5px;
+                }
+
+                .progress_style_1:hover {
+                    cursor: pointer;
+                }
+
+                #radio_progress_bar_two:checked ~ .slider_progress_bar .progress_style_2 {
+                    //position: relative;
+                    //width: 116px;
+                    width: 78px;
+                    height: 6px;
+                    background-color: $orange;
+                    border-radius: 5px;
+                }                
+
+                #radio_progress_bar_two:not(checked) ~ .slider_progress_bar .progress_style_2 {
+                    //position: relative;
+                    //width: 116px;
+                    width: 78px;
+                    height: 6px;
+                    background-color: $light_grey;
+                    border-radius: 5px;
+                }
+
+                .progress_style_2:hover {
+                    cursor: pointer;
+                }
+                
+                #radio_progress_bar_three:checked ~ .slider_progress_bar .progress_style_3 {
+                    //position: relative;
+                    //width: 116px;
+                    width: 78px;
+                    height: 6px;
+                    background-color: $orange;
+                    border-radius: 5px;
+                }
+
+                #radio_progress_bar_three:not(checked) ~ .slider_progress_bar .progress_style_3 {
+                    //position: relative;
+                    //width: 116px;
+                    width: 78px;
+                    height: 6px;
+                    background-color: $light_grey;
+                    border-radius: 5px;
+                }
+                
+                .progress_style_3:hover {
+                    cursor: pointer;
+                }
+
+                #radio_progress_bar_four:checked ~ .slider_progress_bar .progress_style_4 {
+                    //position: relative;
+                    //width: 116px;
+                    width: 78px;
+                    height: 6px;
+                    background-color: $orange;
+                    border-radius: 5px;
+                }
+
+                #radio_progress_bar_four:not(checked) ~ .slider_progress_bar .progress_style_4 {
+                    //position: relative;
+                    //width: 116px;
+                    width: 78px;
+                    height: 6px;
+                    background-color: $light_grey;
+                    border-radius: 5px;
+                }
+                
+                .progress_style_4:hover {
+                    cursor: pointer;
+                }
+
+                #radio_progress_bar_five:checked ~ .slider_progress_bar .progress_style_5 {
+                    //position: relative;
+                    //width: 116px;
+                    width: 78px;
+                    height: 6px;
+                    background-color: $orange;
+                    border-radius: 5px;
+                }
+
+                #radio_progress_bar_five:not(checked) ~ .slider_progress_bar .progress_style_5 {
+                    //position: relative;
+                    //width: 116px;
+                    width: 78px;
+                    height: 6px;
+                    background-color: $light_grey;
+                    border-radius: 5px;
+                }
+                
+                .progress_style_5:hover {
+                    cursor: pointer;
+                }
+
+
+                //testimonials slider movement            
+
+
+
+            .button_testimonials {
+                width: 240px;
+                height: 54px;
+                background: $orange_gradient_2;
+                border-radius: 5px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-color: #FE9013;
+                transition: all 0.2s ease-in;
+                //margin-top: 52px;                                                            
+            }
+
+            .button_testimonials:hover {                
+                background: $button_hover;
+                cursor: pointer;
+                border-color: $button_hover;                               
+            }
+
+            .button_testimonials:active {                
+                background: $green;
+                cursor: pointer;
+                border-color: $green;                               
+            }
+
+            .button_testimonials_content {                
+                width: 240px;
+                height: 22px;            
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 140%;
+                text-align: center;
+                text-transform: uppercase;
+                color: $white;
+                text-decoration: none;
+            }
+
+                .button_testimonials_content:visited {
+                    color: $white;
+                    text-decoration: none;
+                }
+
+                .button_testimonials_content:active {
+                    color: $white;
+                    text-decoration: none;
+                }
+
+    .flower_decoration_four {            
+        display: flex;
+        justify-content: flex-end;                    
+    }
+
+        .flower_four_image {
+            background-image: url('../refs/pics/320/leav_foto\ \(1\).png');
+            width: 43px;
+            height: 73px;
+            position: absolute;
+            z-index: 30px;
+            transform: translateY(-60px);                                                                     
+        }
                 
 }
 
