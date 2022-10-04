@@ -5749,21 +5749,21 @@ body {
         } 
     }
 
-    // #burger_id:checked + label .burger_menu .line_1 {
-    //     background-color: $orange; 
-    //     transform: rotate(45deg);
-    //     transform-origin: 9px center;  
-    // }
+    #burger_id:checked + label .burger_menu .line_1 {
+        background-color: $orange; 
+        transform: rotate(45deg) translateY(5.5px);        
+        transform-origin: center;  
+    }
 
-    // #burger_id:checked + label .burger_menu .line_3 {
-    //     background-color: $orange;  
-    //     transform: rotate(-45deg); 
-    //     transform-origin: 9px center; 
-    // }
+    #burger_id:checked + label .burger_menu .line_3 {
+        background-color: $orange;  
+        transform: rotate(-45deg) translateY(-5.5px); 
+        transform-origin: center; 
+    }
 
-    // #burger_id:checked + label .burger_menu .line_2 {
-    //     opacity: 0;  
-    // } 
+    #burger_id:checked + label .burger_menu .line_2 {
+        opacity: 0;  
+    } 
     
 
             
@@ -8447,40 +8447,40 @@ body {
                 display: none;
             }
     
-    .burger_menu {
-        width: 18px;
-        height: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-content: center;
-        margin-top: 11px;
-        cursor: pointer;        
-
-        .line {
+        .burger_menu {
             width: 18px;
-            height: 2px;
-            background: $white;
-            border-radius: 2px;
-            transition: all 0.8s ease-in-out;
+            height: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-content: center;
+            margin-top: 11px;
+            cursor: pointer;        
+    
+            .line {
+                width: 18px;
+                height: 2px;
+                background: $white;
+                border-radius: 2px;
+                transition: all 0.8s ease-in-out;
+            } 
+        }
+    
+        #burger_id:checked + label .burger_menu .line_1 {
+            background-color: $orange; 
+            transform: rotate(45deg) translateY(5.5px);        
+            transform-origin: center;  
+        }
+    
+        #burger_id:checked + label .burger_menu .line_3 {
+            background-color: $orange;  
+            transform: rotate(-45deg) translateY(-5.5px); 
+            transform-origin: center; 
+        }
+    
+        #burger_id:checked + label .burger_menu .line_2 {
+            opacity: 0;  
         } 
-    }
-
-    // #burger_id:checked + label .burger_menu .line_1 {
-    //     background-color: $orange; 
-    //     transform: rotate(45deg);
-    //     transform-origin: 9px center;  
-    // }
-
-    // #burger_id:checked + label .burger_menu .line_3 {
-    //     background-color: $orange;  
-    //     transform: rotate(-45deg); 
-    //     transform-origin: 9px center; 
-    // }
-
-    // #burger_id:checked + label .burger_menu .line_2 {
-    //     opacity: 0;  
-    // }
 
     .wrapper_main_text {
         width: 320px;        
