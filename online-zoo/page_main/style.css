@@ -5095,26 +5095,16 @@ input:active {
     background-color: #FDFDFF;
   }
   .goal {
-    background-color: #FDFDFF;
-    width: 940px;
-    height: 427px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    width: 495px;
+    height: 367px;
     margin-top: 60px;
-    margin-left: 30px;
+    margin-left: 20px;
   }
   .wrapper_goal {
-    width: 1000px;
+    width: 640px;
     margin: auto;
   }
   .goal_pic {
-    width: 455px;
-    height: 408px;
-    background-image: url("../refs/pics/1000/bamboo-cap.png");
-    -webkit-backdrop-filter: blur(2px);
-            backdrop-filter: blur(2px);
-    margin-top: 12px;
     display: none;
   }
   .goal_info {
@@ -5174,7 +5164,7 @@ input:active {
     height: 484px;
     position: absolute;
     z-index: 100px;
-    transform: translateY(-500px);
+    transform: translateY(-440px);
   }
   .slider_decoration_elements {
     width: 100vw;
@@ -6772,15 +6762,15 @@ input:active {
     padding: 0px 10px 0px 10px;
   }
   .wrapper_goal {
-    width: 1000px;
+    width: 320px;
     margin: auto;
   }
   .goal_pic {
     display: none;
   }
   .goal_info {
-    width: 454px;
-    height: 427px;
+    width: 300px;
+    height: 388px;
     display: flex;
     flex-direction: column;
   }
