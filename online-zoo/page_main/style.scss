@@ -5341,9 +5341,9 @@ body {
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    width: 47px;
+                    width: 86px;
                     height: 29px;                
-                    margin: 2.5px 0px 2.5px 0px;   
+                    margin: 2.5px 0px 2.5px 20px;   
                     text-decoration: none;
                     transition: all 0.4s ease-in-out;          
                 }
@@ -5363,7 +5363,6 @@ body {
                         text-decoration: none;
                         z-index: 16;
                         position: absolute;
-                        border: 0.768116px solid #FFFFFF;
                         transition: all 0.4s ease-in-out;
                     }
     
@@ -5506,7 +5505,7 @@ body {
     
             .text_main_and_button {
                 width: 292px;
-                height: 305px;   
+                height: auto;   
                 display: flex;
                 flex-direction: column;
                 margin: 10px 0px 0px 0px;         
@@ -5514,12 +5513,13 @@ body {
     
             .text_main_and_circle {
                 width: 458px;
+                height: auto;
                 transform: translateX(-45px);            
             }
     
                 .title_first_screen {
                     width: 252px;
-                    height: 204px;
+                    height: auto;
                     font-family: 'Roboto';
                     font-style: bold;
                     font-weight: 700;
@@ -5561,9 +5561,8 @@ body {
                     border-radius: 25px;                
                     position: relative;
                     border-image: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);                 
-                    transition: all 0.2s ease-in-out; 
-                    //margin: 0px 0px 0px 95px; 
-                    transform: translateX(-345px);            
+                    transition: all 0.2s ease-in-out;                      
+                    transform: translateX(-510px);            
                 }
     
                 .button_start:hover {
@@ -6826,17 +6825,13 @@ body {
     
             .testimonials_and_button {
                 width: 600px;
-                height: 451px;                       
-                margin: 60px 0px 80px 0px;
-                display: flex;
-                flex-direction: column;            
-                justify-content: space-between;
-                align-items: flex-start;
+                height: 528px;                       
+                margin: 60px 0px 80px 0px;                
             }
     
                 .testimonials_info {
-                    width: 940px;
-                    height: 496px;                
+                    width: 600px;
+                    height: auto;                
                     background-color: #FDFDFF;
                     display: flex;
                     flex-direction: column;
@@ -6859,25 +6854,24 @@ body {
     
                 .testimonials_slider {
                     display: flex;
+                    flex-direction: column;
                     justify-content: space-between;
-                    width: 940px;
-                    height: 391px;
+                    width: 600px;
+                    height: 357px;
                     overflow: hidden;
-                    margin-bottom: 20px;
                 }
     
                 .testimonial_one, .testimonial_two, .testimonial_three {
-                    width: 293px;
-                    height: 387px;
+                    width: 600px;
+                    height: 109px;
                     background: $pink_gradient;
                     border-radius: 20px;
                     border: 2px solid transparent;  
-                    box-shadow: inset 0px 0px 0px 100vw $light_grey;  
-                    //padding: 5px;                                            
+                    box-shadow: inset 0px 0px 0px 100vw $light_grey;                                                             
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    align-items: center;                
+                    align-content: flex-start;                
                 }
     
                 .testimonial_four {
@@ -6885,7 +6879,7 @@ body {
                 } 
     
                     .user_info {
-                        width: 237px;
+                        width: 559px;
                         height: 38px;
                         margin-bottom: 10px;
                         display: flex;  
@@ -7115,8 +7109,8 @@ body {
                             }
     
                     .testimonial_text {
-                        width: 255px;
-                        height: 309px;
+                        width: 559px;
+                        height: 40px;
                         font-family: 'Roboto';
                         font-style: normal;
                         font-weight: 300;
@@ -7154,6 +7148,7 @@ body {
                     display: flex;
                     flex-direction: row;
                     align-items: space-between;
+                    display: none;
                 }
     
         input[type="radio"] {
@@ -7334,12 +7329,12 @@ body {
         }
     
             .flower_four_image {
-                background-image: url('../refs/pics/1000/leav_foto\ \(1\).png');
-                width: 136px;
-                height: 241px;
+                background-image: url('../refs/pics/640/leav_foto\ \(1\).png');
+                width: 82px;
+                height: 135px;
                 position: absolute;
                 z-index: 30px;
-                transform: translateY(-220px);                                                                     
+                transform: translateY(-130px);                                                                     
             }
     
     // .footer {
