@@ -4204,4 +4204,965 @@ input::-webkit-inner-spin-button {
     line-height: 140%;
     color: #333B41;
   }
+}
+@media screen and (min-width: 320px) and (max-width: 639.9px) {
+  ::-webkit-scrollbar {
+    width: 20px;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #767474;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px #767474;
+  }
+  .start_screen {
+    width: 100vw;
+    height: 187px;
+    background-image: url("../refs/pics/320/panda_bg donate 320.png");
+    background-size: cover;
+  }
+  .wrapper_wide {
+    width: 100vw;
+    margin: auto;
+  }
+  .header {
+    width: 100%;
+    height: 34px;
+    position: fixed;
+    z-index: 800;
+  }
+  .wrapper {
+    width: 300px;
+    margin: auto;
+  }
+  .header_content {
+    width: 300px;
+    height: 34px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 47px;
+    height: 30px;
+    margin: 10px 0px 2px 0px;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    border: none;
+  }
+  .logo_name {
+    color: #ffffff;
+    display: inline-block;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    text-align: center;
+    box-sizing: border-box;
+    width: 72.49px;
+    height: 44.91px;
+    text-decoration: none;
+    z-index: 16;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+  }
+  .logo_bamboo {
+    width: 10px;
+    height: 14px;
+    display: inline-block;
+    background-image: url("../refs/icons/bamboo.svg");
+    position: absolute;
+    box-sizing: border-box;
+    left: 15px;
+    top: 10px;
+    background-repeat: no-repeat;
+    z-index: 8;
+    transition: all 0.4s ease-in-out;
+  }
+  .logo:hover {
+    cursor: pointer;
+    border: none;
+  }
+  .logo:hover .logo_name {
+    color: #FE9013;
+  }
+  .logo:hover * .logo_bamboo {
+    background-image: url("../refs/icons/bamboo_green.svg");
+  }
+  .navigation {
+    display: none;
+  }
+  .burger_menu {
+    width: 18px;
+    height: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 11px;
+    cursor: pointer;
+  }
+  .burger_menu .line {
+    width: 18px;
+    height: 2px;
+    background: #ffffff;
+    border-radius: 2px;
+    transition: all 0.8s ease-in-out;
+  }
+  .donation_info {
+    width: 100vw;
+    height: 1145px;
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+  }
+  .wrapper_donation {
+    width: 300px;
+    margin: auto;
+  }
+  .help_info {
+    position: relative;
+    width: 300px;
+    height: 474px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 30px;
+  }
+  .help_title {
+    height: 87px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: start;
+  }
+  .help_details {
+    height: 308px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: #ffffff;
+    text-align: start;
+  }
+  .donation_title {
+    width: 300px;
+    height: 47px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    color: #FE9013;
+    margin: 30px 0px 0px 0px;
+    text-align: start;
+  }
+  .donation_fill_form_frame {
+    height: 591px;
+    background: rgba(255, 255, 255, 0.52);
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px 0px 0px;
+  }
+  .donation_fill_form {
+    width: 300px;
+    height: 591px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .donation_form_title {
+    width: 300px;
+    height: 29px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #FE9013;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  .donation_form_text {
+    width: 300px;
+    height: 44px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    color: #333B41;
+  }
+  .animals_counter {
+    width: 300px;
+    height: 140px;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+  }
+  .animals_amount_data {
+    width: 90px;
+    height: 140px;
+    transform: translate3d(-30px, -70px, 0px);
+  }
+  .panda_icon_big {
+    width: 160px;
+    height: 140px;
+    background-image: url("../refs/icons/animals-widget_3.svg");
+    -webkit-animation-name: panda_donation_anim;
+            animation-name: panda_donation_anim;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  @-webkit-keyframes panda_donation_anim {
+    0% {
+      background-image: url("../refs/icons/animals-widget_3.svg");
+    }
+    50% {
+      background-image: url("../refs/icons/animals-widget_1.svg");
+    }
+    100% {
+      background-image: url("../refs/icons/animals-widget_2.svg");
+    }
+  }
+  @keyframes panda_donation_anim {
+    0% {
+      background-image: url("../refs/icons/animals-widget_3.svg");
+    }
+    50% {
+      background-image: url("../refs/icons/animals-widget_1.svg");
+    }
+    100% {
+      background-image: url("../refs/icons/animals-widget_2.svg");
+    }
+  }
+  .animals_number {
+    width: 41px;
+    height: 58px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 80%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    transform: translate3d(60px, 120px, 0px);
+    display: inline-block;
+  }
+  .number_meaning {
+    width: 159px;
+    height: 22px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 140%;
+    text-align: center;
+    color: #333B41;
+    transform: translate3d(0px, 110px, 0px);
+  }
+  .multiplier {
+    width: 8px;
+    height: 8px;
+    background-image: url("../refs/pics/320/x_icon.svg");
+    display: inline-block;
+    transform: translate3d(130px, 50px, 0px);
+  }
+  .money_input_grade {
+    width: 300px;
+    height: 20px;
+    border-radius: 2px;
+    background: #333B41;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sum_line {
+    width: 260px;
+    height: 2px;
+    background: #767474;
+    z-index: 15;
+  }
+  .sum_circles {
+    width: 260px;
+    height: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 25;
+    position: absolute;
+  }
+  .circle_wrapper_5000 {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: none;
+  }
+  .circle_wrapper_5000:hover {
+    cursor: pointer;
+  }
+  .circle_5000 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FFEE2E;
+    display: inline-block;
+    position: absolute;
+    display: none;
+  }
+  #radiobutton_circle_5000:checked ~ .money_input_grade .circle_wrapper_5000::after {
+    content: "";
+    width: 23px;
+    height: 23px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid #F9804B;
+    display: inline-block;
+    position: absolute;
+  }
+  #radiobutton_circle_5000:checked ~ .money_input_grade .circle_wrapper_5000::before {
+    content: "";
+    width: 46px;
+    height: 46px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid #F9804B;
+    display: inline-block;
+    position: absolute;
+  }
+  #radiobutton_circle_5000:checked ~ .money_sum .five_thousands {
+    color: #F9804B;
+  }
+  .circle_5000:hover {
+    cursor: pointer;
+  }
+  .circle_wrapper_2000 {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: none;
+  }
+  .circle_wrapper_2000:hover {
+    cursor: pointer;
+  }
+  .circle_2000 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FFEE2E;
+    display: inline-block;
+    position: absolute;
+    display: none;
+  }
+  #radiobutton_circle_2000:checked ~ .money_input_grade .circle_wrapper_2000::after {
+    content: "";
+    width: 23px;
+    height: 23px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid #F9804B;
+    display: inline-block;
+    position: absolute;
+  }
+  #radiobutton_circle_2000:checked ~ .money_input_grade .circle_wrapper_2000::before {
+    content: "";
+    width: 46px;
+    height: 46px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid #F9804B;
+    display: inline-block;
+    position: absolute;
+  }
+  #radiobutton_circle_2000:checked ~ .money_sum .two_thousands {
+    color: #F9804B;
+  }
+  .circle_2000:hover {
+    cursor: pointer;
+  }
+  .circle_wrapper_1000 {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: none;
+  }
+  .circle_wrapper_1000:hover {
+    cursor: pointer;
+  }
+  .circle_1000 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FFEE2E;
+    display: inline-block;
+    position: absolute;
+    display: none;
+  }
+  #radiobutton_circle_1000:checked ~ .money_input_grade .circle_wrapper_1000::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid #F9804B;
+    display: inline-block;
+    position: absolute;
+  }
+  #radiobutton_circle_1000:checked ~ .money_input_grade .circle_wrapper_1000::before {
+    content: "";
+    width: 36px;
+    height: 36px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid #F9804B;
+    display: inline-block;
+    position: absolute;
+  }
+  #radiobutton_circle_1000:checked ~ .money_sum .one_thousand {
+    color: #F9804B;
+  }
+  .circle_1000:hover {
+    cursor: pointer;
+  }
+  .circle_wrapper_500 {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .circle_wrapper_500:hover {
+    cursor: pointer;
+  }
+  .circle_500 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FFEE2E;
+    display: inline-block;
+    position: absolute;
+  }
+  #radiobutton_circle_500:checked ~ .money_input_grade .circle_wrapper_500::after {
+    content: "";
+    width: 23px;
+    height: 23px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid #F9804B;
+    display: inline-block;
+    position: absolute;
+  }
+  #radiobutton_circle_500:checked ~ .money_input_grade .circle_wrapper_500::before {
+    content: "";
+    width: 46px;
+    height: 46px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid #F9804B;
+    display: inline-block;
+    position: absolute;
+  }
+  #radiobutton_circle_500:checked ~ .money_sum .five_hundreds {
+    color: #F9804B;
+  }
+  .circle_500:hover {
+    cursor: pointer;
+  }
+  .circle_wrapper_250 {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .circle_wrapper_250:hover {
+    cursor: pointer;
+  }
+  .circle_250 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FFEE2E;
+    display: inline-block;
+    position: absolute;
+  }
+  .circle_250 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FFEE2E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #radiobutton_circle_250:checked ~ .money_input_grade .circle_wrapper_250::after {
+    content: "";
+    width: 23px;
+    height: 23px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid #F9804B;
+    display: inline-block;
+    position: absolute;
+  }
+  #radiobutton_circle_250:checked ~ .money_input_grade .circle_wrapper_250::before {
+    content: "";
+    width: 46px;
+    height: 46px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid #F9804B;
+    display: inline-block;
+    position: absolute;
+  }
+  #radiobutton_circle_250:checked ~ .money_sum .twofifty_hundreds {
+    color: #F9804B;
+  }
+  .circle_250:hover {
+    cursor: pointer;
+  }
+  .circle_wrapper_100 {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .circle_wrapper_100:hover {
+    cursor: pointer;
+  }
+  .circle_100 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FFEE2E;
+    display: inline-block;
+    position: absolute;
+  }
+  #radiobutton_circle_100:checked ~ .money_input_grade .circle_wrapper_100::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid #F9804B;
+    display: inline-block;
+    position: absolute;
+  }
+  #radiobutton_circle_100:checked ~ .money_input_grade .circle_wrapper_100::before {
+    content: "";
+    width: 36px;
+    height: 36px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid #F9804B;
+    display: inline-block;
+    position: absolute;
+  }
+  #radiobutton_circle_100:checked ~ .money_sum .one_hundred {
+    color: #F9804B;
+  }
+  .circle_100:hover {
+    cursor: pointer;
+  }
+  .circle_wrapper_50 {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .circle_wrapper_50:hover {
+    cursor: pointer;
+  }
+  .circle_50 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FFEE2E;
+    display: inline-block;
+    position: absolute;
+  }
+  #radiobutton_circle_50:checked ~ .money_input_grade .circle_wrapper_50::after {
+    content: "";
+    width: 23px;
+    height: 23px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid #F9804B;
+    display: inline-block;
+    position: absolute;
+  }
+  #radiobutton_circle_50:checked ~ .money_input_grade .circle_wrapper_50::before {
+    content: "";
+    width: 46px;
+    height: 46px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid #F9804B;
+    display: inline-block;
+    position: absolute;
+  }
+  #radiobutton_circle_50:checked ~ .money_sum .fifty {
+    color: #F9804B;
+  }
+  .circle_50:hover {
+    cursor: pointer;
+  }
+  .circle_wrapper_25 {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .circle_wrapper_25:hover {
+    cursor: pointer;
+  }
+  .circle_25 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FFEE2E;
+    display: inline-block;
+    position: absolute;
+  }
+  #radiobutton_circle_25:checked ~ .money_input_grade .circle_wrapper_25::after {
+    content: "";
+    width: 23px;
+    height: 23px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid #F9804B;
+    display: inline-block;
+    position: absolute;
+  }
+  #radiobutton_circle_25:checked ~ .money_input_grade .circle_wrapper_25::before {
+    content: "";
+    width: 46px;
+    height: 46px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid #F9804B;
+    display: inline-block;
+    position: absolute;
+  }
+  #radiobutton_circle_25:checked ~ .money_sum .twentyfive {
+    color: #F9804B;
+  }
+  .circle_25:hover {
+    cursor: pointer;
+  }
+  .money_sum {
+    width: 280px;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+    padding-right: 10px;
+  }
+  .first_sum, .second_sum, .third_sum {
+    width: 72px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    display: none;
+  }
+  .sixth_sum, .fifth_sum, .fourth_sum {
+    width: 72px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .eighth_sum, .seventh_sum {
+    width: 72px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .five_thousands, .two_thousands {
+    width: 60px;
+    height: 36px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #333B41;
+  }
+  .one_thousand {
+    width: 60px;
+    height: 36px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #333B41;
+  }
+  .five_hundreds, .twofifty_hundreds, .one_hundred {
+    width: 45px;
+    height: 36px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #333B41;
+  }
+  .fifty, .twentyfive {
+    width: 30px;
+    height: 36px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #333B41;
+  }
+  .dollar_5000, .dollar_thousand, .dollar_2000, .dollar_500, .dollar_250, .dollar_100, .dollar_50, .dollar_25 {
+    width: 10px;
+    height: 20px;
+    background-image: url("../refs/icons/dollar.svg");
+    margin-right: 2px;
+  }
+  #radiobutton_circle_5000:checked ~ .money_sum .dollar_5000 {
+    background-image: url(../refs/icons/dollar_orange.svg);
+  }
+  #radiobutton_circle_2000:checked ~ .money_sum .dollar_2000 {
+    background-image: url(../refs/icons/dollar_orange.svg);
+  }
+  #radiobutton_circle_1000:checked ~ .money_sum .dollar_thousand {
+    background-image: url(../refs/icons/dollar_orange.svg);
+  }
+  #radiobutton_circle_500:checked ~ .money_sum .dollar_500 {
+    background-image: url(../refs/icons/dollar_orange.svg);
+  }
+  #radiobutton_circle_250:checked ~ .money_sum .dollar_250 {
+    background-image: url(../refs/icons/dollar_orange.svg);
+  }
+  #radiobutton_circle_100:checked ~ .money_sum .dollar_100 {
+    background-image: url(../refs/icons/dollar_orange.svg);
+  }
+  #radiobutton_circle_50:checked ~ .money_sum .dollar_50 {
+    background-image: url(../refs/icons/dollar_orange.svg);
+  }
+  #radiobutton_circle_25:checked ~ .money_sum .dollar_25 {
+    background-image: url(../refs/icons/dollar_orange.svg);
+  }
+  .another_amount_wrapper {
+    width: 976px;
+    height: 54px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+  }
+  input[type=number] {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #767474;
+    background-color: transparent;
+    border: 2px solid #767474;
+    width: 140px;
+    height: 20px;
+    padding: 16px 100px 16px 9px;
+  }
+  .text_another_amount {
+    position: relative;
+  }
+  .dollar_input {
+    width: 10px;
+    height: 20px;
+    background-image: url("../refs/icons/dollar_grey.svg");
+    display: inline-block;
+    transform: translate3d(-24px, 16px, 0px);
+  }
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+  input[type=radio] {
+    border: 0px;
+    width: 50px;
+    height: 3em;
+    display: none;
+  }
+  .frequency_choice {
+    width: 218px;
+    height: 21px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+  }
+  .monthly_payment {
+    width: 85px;
+    height: 21px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .one_payment {
+    width: 84px;
+    height: 21px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .payment_choice_once {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #FE9013;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .payment_choice_monthly {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #FE9013;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .payment_choice:hover {
+    cursor: pointer;
+  }
+  #radiobutton_once:checked ~ .frequency_choice .payment_choice_once {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #4B9200;
+    border-radius: 50%;
+    background-color: #4B9200;
+  }
+  #radiobutton_once:not(checked) ~ .frequency_choice .payment_choice_once {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #F9804B;
+    border-radius: 50%;
+    background-color: transparent;
+  }
+  #radiobutton_once:checked ~ .frequency_choice .payment_choice_monthly {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #F9804B;
+    border-radius: 50%;
+    background-color: transparent;
+  }
+  #radiobutton_once:not(checked) ~ .frequency_choice .payment_choice_monthly {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #4B9200;
+    border-radius: 50%;
+    background-color: #4B9200;
+  }
+  .monthly {
+    width: 58px;
+    height: 22px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #333B41;
+  }
+  .once {
+    width: 37px;
+    height: 22px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #333B41;
+  }
+  .donation_payment_button {
+    width: 298px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 25px;
+    margin: 31px 0px 30px 0px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    border-color: #F9804B;
+    transition: all 0.2s ease-in-out;
+  }
+  .donation_payment_button:hover {
+    cursor: pointer;
+    background: #E47209;
+    border-color: #E47209;
+  }
+  .donation_payment_button:active {
+    cursor: pointer;
+    background: #4B9200;
+    border-color: #4B9200;
+  }
+  .share_info {
+    width: 301px;
+    height: 22px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #333B41;
+  }
 }/*# sourceMappingURL=donate.css.map */
