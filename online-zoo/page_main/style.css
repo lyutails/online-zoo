@@ -4885,9 +4885,9 @@ input:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 47px;
+    width: 86px;
     height: 29px;
-    margin: 2.5px 0px 2.5px 0px;
+    margin: 2.5px 0px 2.5px 20px;
     text-decoration: none;
     transition: all 0.4s ease-in-out;
   }
@@ -4906,7 +4906,6 @@ input:active {
     text-decoration: none;
     z-index: 16;
     position: absolute;
-    border: 0.768116px solid #FFFFFF;
     transition: all 0.4s ease-in-out;
   }
   .logo_bamboo {
@@ -5013,18 +5012,19 @@ input:active {
   }
   .text_main_and_button {
     width: 292px;
-    height: 305px;
+    height: auto;
     display: flex;
     flex-direction: column;
     margin: 10px 0px 0px 0px;
   }
   .text_main_and_circle {
     width: 458px;
+    height: auto;
     transform: translateX(-45px);
   }
   .title_first_screen {
     width: 252px;
-    height: 204px;
+    height: auto;
     font-family: "Roboto";
     font-style: bold;
     font-weight: 700;
@@ -5064,7 +5064,7 @@ input:active {
     -o-border-image: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
        border-image: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     transition: all 0.2s ease-in-out;
-    transform: translateX(-345px);
+    transform: translateX(-510px);
   }
   .button_start:hover {
     cursor: pointer;
@@ -6177,16 +6177,12 @@ input:active {
   }
   .testimonials_and_button {
     width: 600px;
-    height: 451px;
+    height: 528px;
     margin: 60px 0px 80px 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
   }
   .testimonials_info {
-    width: 940px;
-    height: 496px;
+    width: 600px;
+    height: auto;
     background-color: #FDFDFF;
     display: flex;
     flex-direction: column;
@@ -6207,15 +6203,15 @@ input:active {
   }
   .testimonials_slider {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    width: 940px;
-    height: 391px;
+    width: 600px;
+    height: 357px;
     overflow: hidden;
-    margin-bottom: 20px;
   }
   .testimonial_one, .testimonial_two, .testimonial_three {
-    width: 293px;
-    height: 387px;
+    width: 600px;
+    height: 109px;
     background: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
     border-radius: 20px;
     border: 2px solid transparent;
@@ -6223,13 +6219,13 @@ input:active {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-content: flex-start;
   }
   .testimonial_four {
     display: none;
   }
   .user_info {
-    width: 237px;
+    width: 559px;
     height: 38px;
     margin-bottom: 10px;
     display: flex;
@@ -6433,8 +6429,8 @@ input:active {
     color: #767474;
   }
   .testimonial_text {
-    width: 255px;
-    height: 309px;
+    width: 559px;
+    height: 40px;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 300;
@@ -6468,6 +6464,7 @@ input:active {
     display: flex;
     flex-direction: row;
     align-items: space-between;
+    display: none;
   }
   input[type=radio] {
     border: 0px;
@@ -6598,11 +6595,11 @@ input:active {
     justify-content: flex-end;
   }
   .flower_four_image {
-    background-image: url("../refs/pics/1000/leav_foto (1).png");
-    width: 136px;
-    height: 241px;
+    background-image: url("../refs/pics/640/leav_foto (1).png");
+    width: 82px;
+    height: 135px;
     position: absolute;
     z-index: 30px;
-    transform: translateY(-220px);
+    transform: translateY(-130px);
   }
 }/*# sourceMappingURL=style.css.map */
