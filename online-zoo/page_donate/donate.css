@@ -4662,6 +4662,7 @@ input::-webkit-inner-spin-button {
     align-items: flex-start;
     position: absolute;
     transform: translate3d(568px, -40px, 0px);
+    z-index: 600;
   }
   .facebook {
     width: 111px;
