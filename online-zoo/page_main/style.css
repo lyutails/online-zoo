@@ -7046,6 +7046,7 @@ input:active {
     align-items: flex-start;
     position: absolute;
     transform: translate3d(568px, -40px, 0px);
+    z-index: 600;
   }
   .facebook {
     width: 111px;
@@ -7096,7 +7097,7 @@ input:active {
     color: #ffffff;
     text-decoration: none;
     transition: all 0.1s ease-in-out;
-    display: none;
+    visibility: hidden;
   }
   .network_name:visited {
     text-decoration: none;

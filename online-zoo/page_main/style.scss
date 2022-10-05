@@ -7746,7 +7746,16 @@ body {
                 align-items: flex-start;
                 position: absolute;
                 transform: translate3d(568px, -40px, 0px);
+                z-index: 600;
             }
+
+            // .link_facebook {
+            //     width: 26px;
+            //     height: 26px;
+            //     display: inline-block;
+            //     position: relative;
+            //     inset: 1;
+            // }
     
             .facebook {
                 width: 111px;
@@ -7805,7 +7814,7 @@ body {
                 color: $white;
                 text-decoration: none;
                 transition: all 0.1s ease-in-out;
-                display: none;
+                visibility: hidden;
             }               
     
                 .network_name:visited {
@@ -7815,16 +7824,17 @@ body {
                 .network_name:active {
                     text-decoration: none;
                 }
+
     
-            .network_icon {
-                width: 26px;
-                height: 26px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 50%;
-                background: rgba(196, 196, 196, 0.5);
-            }
+        .network_icon {
+            width: 26px;
+            height: 26px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(196, 196, 196, 0.5);            
+        }
     
                 .facebook:hover {
     
