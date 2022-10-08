@@ -5588,7 +5588,7 @@ body {
     
             .wrapper {
                 width: 640px;
-                margin: auto;
+                margin: 0 auto;
                 display: flex;
             }  
     
@@ -5612,7 +5612,8 @@ body {
                     text-decoration: none;
                     transition: all 0.4s ease-in-out;
                     border: none;      
-                    z-index: 42;                             
+                    z-index: 42; 
+                    transform: translateX(-20px);                            
                 }     
                 
                 .logo_name_up {
@@ -5972,7 +5973,7 @@ body {
                     position: relative;
                     border-image: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);                 
                     transition: all 0.2s ease-in-out;                      
-                    transform: translateX(-310px);            
+                    transform: translateX(-330px);            
                 }
     
                 .button_start:hover {
@@ -6109,7 +6110,7 @@ body {
     .slider_container {
         width: 600px;
         height: auto;
-        margin: 30px 0px 100px 0px;
+        margin: 20px 0px 100px 0px;
         display: flex;  
         flex-direction: column;
         align-items: center;  
@@ -6792,7 +6793,7 @@ body {
                 height: 202px;
                 position: absolute;
                 z-index: 110px;
-                transform: translateY(865px);                                                        
+                transform: translateY(855px);                                                        
             }
         
         .flower_decoration_three {            
@@ -6807,7 +6808,7 @@ body {
                 height: 131px;
                 position: absolute;
                 z-index: 20px;
-                transform: translateY(935px);                                                                     
+                transform: translateY(925px);                                                                     
             }   
     
     
@@ -7672,7 +7673,7 @@ body {
     
     
                 .button_testimonials {
-                    width: 298px;
+                    width: 240px;
                     height: 54px;
                     background: $orange_gradient_2;
                     border-radius: 5px;
@@ -7682,7 +7683,7 @@ body {
                     align-items: center;
                     border-color: #FE9013;
                     transition: all 0.2s ease-in;
-                    //margin-top: 52px;                                                            
+                    transform: translateX(180px);                                                            
                 }
     
                 .button_testimonials:hover {                
@@ -8295,7 +8296,7 @@ body {
                     width: auto;
                     height: 52px;
                     transform: translateX(-10px);
-                    padding-top: 240px; 
+                    padding-top: 210px; 
                 }
         
                     .credentials {

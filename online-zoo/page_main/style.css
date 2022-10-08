@@ -5185,7 +5185,7 @@ input:active {
   }
   .wrapper {
     width: 640px;
-    margin: auto;
+    margin: 0 auto;
     display: flex;
   }
   .header_content {
@@ -5208,6 +5208,7 @@ input:active {
     transition: all 0.4s ease-in-out;
     border: none;
     z-index: 42;
+    transform: translateX(-20px);
   }
   .logo_name_up {
     width: 47px;
@@ -5513,7 +5514,7 @@ input:active {
     -o-border-image: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
        border-image: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     transition: all 0.2s ease-in-out;
-    transform: translateX(-310px);
+    transform: translateX(-330px);
   }
   .button_start:hover {
     cursor: pointer;
@@ -5629,7 +5630,7 @@ input:active {
   .slider_container {
     width: 600px;
     height: auto;
-    margin: 30px 0px 100px 0px;
+    margin: 20px 0px 100px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6217,7 +6218,7 @@ input:active {
     height: 202px;
     position: absolute;
     z-index: 110px;
-    transform: translateY(865px);
+    transform: translateY(855px);
   }
   .flower_decoration_three {
     display: flex;
@@ -6230,7 +6231,7 @@ input:active {
     height: 131px;
     position: absolute;
     z-index: 20px;
-    transform: translateY(935px);
+    transform: translateY(925px);
   }
   .pick_feed {
     width: 100vw;
@@ -6984,7 +6985,7 @@ input:active {
     cursor: pointer;
   }
   .button_testimonials {
-    width: 298px;
+    width: 240px;
     height: 54px;
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     border-radius: 5px;
@@ -6994,6 +6995,7 @@ input:active {
     align-items: center;
     border-color: #FE9013;
     transition: all 0.2s ease-in;
+    transform: translateX(180px);
   }
   .button_testimonials:hover {
     background: #E47209;
@@ -7516,7 +7518,7 @@ input:active {
     width: auto;
     height: 52px;
     transform: translateX(-10px);
-    padding-top: 240px;
+    padding-top: 210px;
   }
   .credentials {
     width: auto;
