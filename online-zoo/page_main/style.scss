@@ -2807,6 +2807,10 @@ body {
 
 @media screen and (min-width: 1000px) and (max-width: 1599.9px) {
 
+.burger_wrapper {
+    display: none;
+}
+
 
 ::-webkit-scrollbar {
     width: 20px;
