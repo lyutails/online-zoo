@@ -10464,7 +10464,7 @@ body {
                 text-decoration: none;                 
                 transition: all 0.4s ease-in-out; 
                 border: none;   
-                transform: translate3d(80px, -10px, 0px);      
+                transform: translate3d(93px, -10px, 0px);      
             }
         
                 .logo_name {
@@ -10527,7 +10527,7 @@ body {
                 }
         
                 .facebook {
-                    width: 111px;
+                    width: auto;
                     height: 26px;
                     display: flex;
                     justify-content: space-between;
@@ -10539,7 +10539,7 @@ body {
                     }
         
                 .twitter {
-                    width: 89px;
+                    width: auto;
                     height: 26px;
                     display: flex;
                     justify-content: space-between;
@@ -10551,7 +10551,7 @@ body {
                     }
         
                 .instagram {
-                    width: 110px;
+                    width: auto;
                     height: 26px;
                     display: flex;
                     justify-content: space-between;
@@ -10563,7 +10563,7 @@ body {
                     }
         
                 .youtube {
-                    width: 101px;
+                    width: auto;
                     height: 26px;
                     display: flex;
                     justify-content: space-between;
