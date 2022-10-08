@@ -386,7 +386,7 @@ body {
   height: 605px;
   position: absolute;
   z-index: 100px;
-  transform: translateY(-540px);
+  transform: translateY(-525px);
 }
 
 .slider_decoration_elements {
@@ -7723,6 +7723,7 @@ input:active {
     margin: auto;
   }
   .header {
+    width: 100vw;
     height: 34px;
     position: fixed;
     z-index: 800;
@@ -9711,7 +9712,7 @@ input:active {
     flex-direction: column;
     justify-content: space-between;
     margin-top: 14px;
-    padding-right: 55px;
+    transform: translateX(-30px);
   }
   .enter_email_frame {
     width: 228px;
@@ -9835,7 +9836,7 @@ input:active {
     cursor: pointer;
   }
   .footer_3 {
-    width: 300px;
+    width: auto;
     height: 111px;
     display: flex;
     justify-content: space-between;
