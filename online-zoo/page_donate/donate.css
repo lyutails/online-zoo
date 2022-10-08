@@ -3576,18 +3576,20 @@ input::-webkit-inner-spin-button {
     margin: auto;
   }
   .header {
-    width: 100%;
+    width: 100vw;
     height: 34px;
+    background-color: #000000;
     position: fixed;
     z-index: 800;
   }
   .wrapper {
-    width: 600px;
-    margin: auto;
+    width: 640px;
+    margin: 0 auto;
+    display: flex;
   }
   .header_content {
     width: 600px;
-    height: 34px;
+    height: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -3603,6 +3605,7 @@ input::-webkit-inner-spin-button {
     text-decoration: none;
     transition: all 0.4s ease-in-out;
     border: none;
+    transform: translateX(20px);
   }
   .logo_name_up {
     color: #ffffff;
@@ -3655,6 +3658,7 @@ input::-webkit-inner-spin-button {
     justify-content: space-between;
     align-content: center;
     margin-top: 11px;
+    transform: translateX(20px);
     cursor: pointer;
   }
   .burger_menu .line {
@@ -6206,7 +6210,7 @@ input::-webkit-inner-spin-button {
     text-decoration: none;
     transition: all 0.4s ease-in-out;
     border: none;
-    transform: translate3d(80px, -10px, 0px);
+    transform: translate3d(90px, -10px, 0px);
   }
   .logo_name {
     color: #ffffff;
@@ -6255,12 +6259,11 @@ input::-webkit-inner-spin-button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     position: absolute;
     transform: translate3d(58px, -10px, 0px);
   }
   .facebook {
-    width: 111px;
+    width: auto;
     height: 26px;
     display: flex;
     justify-content: space-between;
@@ -6270,7 +6273,7 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
   }
   .twitter {
-    width: 89px;
+    width: auto;
     height: 26px;
     display: flex;
     justify-content: space-between;
@@ -6280,7 +6283,7 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
   }
   .instagram {
-    width: 110px;
+    width: auto;
     height: 26px;
     display: flex;
     justify-content: space-between;
@@ -6290,7 +6293,7 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
   }
   .youtube {
-    width: 101px;
+    width: auto;
     height: 26px;
     display: flex;
     justify-content: space-between;
@@ -6409,7 +6412,7 @@ input::-webkit-inner-spin-button {
     transform: translate3d(-430px, 0px, 0px);
   }
   .subscribe {
-    width: 237px;
+    width: 217px;
     height: 29px;
     font-family: "Roboto";
     font-style: normal;
@@ -6417,6 +6420,7 @@ input::-webkit-inner-spin-button {
     font-size: 16px;
     line-height: 120%;
     color: #FFFFFF;
+    transform: translateX(5px);
   }
   .enter_email_block {
     width: auto;
@@ -6425,6 +6429,7 @@ input::-webkit-inner-spin-button {
     flex-direction: column;
     justify-content: space-between;
     margin-top: 14px;
+    transform: translateX(-30px);
   }
   .enter_email_frame {
     width: 228px;

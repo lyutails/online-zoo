@@ -3840,25 +3840,27 @@ input[type="radio"] {
     margin: auto;    
 }
 
-    .header {
-        width: 100%;
-        height: 34px;
-        position: fixed;
-        z-index: 800;                    
+.header {
+    width: 100vw;
+    height: 34px;
+    background-color: $black;
+    position: fixed; 
+    z-index: 800;      
+}
+
+    .wrapper {
+        width: 640px;
+        margin: 0 auto;
+        display: flex;
+    }  
+
+    .header_content {
+        width: 600px;
+        height: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
-
-        .wrapper {
-            width: 600px;
-            margin: auto;
-        }  
-
-        .header_content {
-            width: 600px;
-            height: 34px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
             
         .logo_up {
             display: flex;
@@ -3871,6 +3873,7 @@ input[type="radio"] {
             text-decoration: none;           
             transition: all 0.4s ease-in-out;          
             border: none;
+            transform: translateX(20px);
         }
 
             .logo_name_up {
@@ -3932,6 +3935,7 @@ input[type="radio"] {
         justify-content: space-between;
         align-content: center;
         margin-top: 11px;
+        transform: translateX(20px);
         cursor: pointer;        
 
         .line {
@@ -6849,7 +6853,7 @@ input[type="radio"] {
                     text-decoration: none;                 
                     transition: all 0.4s ease-in-out; 
                     border: none;   
-                    transform: translate3d(80px, -10px, 0px);      
+                    transform: translate3d(90px, -10px, 0px);      
                 }
             
                     .logo_name {
@@ -6906,13 +6910,13 @@ input[type="radio"] {
                         display: flex;
                         flex-direction: row;
                         justify-content: space-between;
-                        align-items: center;
+                        //align-items: center;
                         position: absolute;
                         transform: translate3d(58px, -10px, 0px);                    
                     }
             
                     .facebook {
-                        width: 111px;
+                        width: auto;
                         height: 26px;
                         display: flex;
                         justify-content: space-between;
@@ -6924,7 +6928,7 @@ input[type="radio"] {
                         }
             
                     .twitter {
-                        width: 89px;
+                        width: auto;
                         height: 26px;
                         display: flex;
                         justify-content: space-between;
@@ -6936,7 +6940,7 @@ input[type="radio"] {
                         }
             
                     .instagram {
-                        width: 110px;
+                        width: auto;
                         height: 26px;
                         display: flex;
                         justify-content: space-between;
@@ -6948,7 +6952,7 @@ input[type="radio"] {
                         }
             
                     .youtube {
-                        width: 101px;
+                        width: auto;
                         height: 26px;
                         display: flex;
                         justify-content: space-between;
@@ -7120,14 +7124,15 @@ input[type="radio"] {
                 }        
         
                 .subscribe {
-                    width: 237px;
+                    width: 217px;
                     height: 29px;
                     font-family: 'Roboto';
                     font-style: normal;
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 120%;
-                    color: #FFFFFF;                                        
+                    color: #FFFFFF; 
+                    transform: translateX(5px);                                       
                 }
         
                 .enter_email_block {
@@ -7137,6 +7142,7 @@ input[type="radio"] {
                     flex-direction: column;
                     justify-content: space-between;
                     margin-top: 14px;
+                    transform: translateX(-30px);
                 }
         
                     .enter_email_frame {
