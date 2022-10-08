@@ -5982,28 +5982,52 @@ input::-webkit-inner-spin-button {
     margin-right: 2px;
   }
   #radiobutton_circle_5000:checked ~ .money_sum .dollar_5000 {
-    background-image: url(../refs/icons/dollar_orange.svg);
+    background-image: url("../refs/icons/dollar_orange.svg");
   }
   #radiobutton_circle_2000:checked ~ .money_sum .dollar_2000 {
-    background-image: url(../refs/icons/dollar_orange.svg);
+    background-image: url("../refs/icons/dollar_orange.svg");
   }
   #radiobutton_circle_1000:checked ~ .money_sum .dollar_thousand {
-    background-image: url(../refs/icons/dollar_orange.svg);
+    background-image: url("../refs/icons/dollar_orange.svg");
   }
   #radiobutton_circle_500:checked ~ .money_sum .dollar_500 {
-    background-image: url(../refs/icons/dollar_orange.svg);
+    background-image: url("../refs/icons/dollar_orange.svg");
   }
   #radiobutton_circle_250:checked ~ .money_sum .dollar_250 {
-    background-image: url(../refs/icons/dollar_orange.svg);
+    background-image: url("../refs/icons/dollar_orange.svg");
   }
   #radiobutton_circle_100:checked ~ .money_sum .dollar_100 {
-    background-image: url(../refs/icons/dollar_orange.svg);
+    background-image: url("../refs/icons/dollar_orange.svg");
   }
   #radiobutton_circle_50:checked ~ .money_sum .dollar_50 {
-    background-image: url(../refs/icons/dollar_orange.svg);
+    background-image: url("../refs/icons/dollar_orange.svg");
   }
   #radiobutton_circle_25:checked ~ .money_sum .dollar_25 {
-    background-image: url(../refs/icons/dollar_orange.svg);
+    background-image: url("../refs/icons/dollar_orange.svg");
+  }
+  #radiobutton_circle_5000:not(checked) ~ .money_sum .dollar_5000 {
+    background-image: url("../refs/pics/320/dollar_grey.svg");
+  }
+  #radiobutton_circle_2000:not(checked) ~ .money_sum .dollar_2000 {
+    background-image: url("../refs/pics/320/dollar_grey.svg");
+  }
+  #radiobutton_circle_1000:not(checked) ~ .money_sum .dollar_thousand {
+    background-image: url("../refs/pics/320/dollar_grey.svg");
+  }
+  #radiobutton_circle_500:not(checked) ~ .money_sum .dollar_500 {
+    background-image: url("../refs/pics/320/dollar_grey.svg");
+  }
+  #radiobutton_circle_250:not(checked) ~ .money_sum .dollar_250 {
+    background-image: url("../refs/pics/320/dollar_grey.svg");
+  }
+  #radiobutton_circle_100:not(checked) ~ .money_sum .dollar_100 {
+    background-image: url("../refs/pics/320/dollar_grey.svg");
+  }
+  #radiobutton_circle_50:not(checked) ~ .money_sum .dollar_50 {
+    background-image: url("../refs/pics/320/dollar_grey.svg");
+  }
+  #radiobutton_circle_25:not(checked) ~ .money_sum .dollar_25 {
+    background-image: url("../refs/pics/320/dollar_grey.svg");
   }
   .another_amount_wrapper {
     width: 300px;
