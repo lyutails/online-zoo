@@ -2803,6 +2803,10 @@ body {
 
 @media screen and (min-width: 1000px) and (max-width: 1599.9px) {
 
+    .burger_items {
+        display: none;
+    }
+
 ::-webkit-scrollbar {
     width: 20px;
 }
@@ -2984,11 +2988,11 @@ body {
 
 
     .wrapper_main_text {
-        width: 1000px;
+        width: auto;
         margin: auto;
         display: flex;
         justify-content: center;
-        padding-left: 188px;
+        padding-left: 288px;
         overflow: hidden;
     }
 
@@ -3195,8 +3199,8 @@ body {
 
 .slider_container {
     width: 940px;
-    height: 935px;
-    margin: 142px 0px 140px 0px;
+    height: auto;
+    margin: 86px 0px 140px 0px;
     display: flex;  
     flex-direction: column;
     align-items: center;  
@@ -3205,12 +3209,9 @@ body {
 }
 
     .wrapper_slider_buttons {
-        width: 1322px;
-        height: 800px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+        width: auto;
+        height: auto;
+        display: block;
     }
 
         .slider_button_left {
@@ -3222,7 +3223,7 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-            transform: translate3d(512px, 0px, 0px);
+            transform: translate3d(320px, 431px, 0px);
         }
 
         .slider_button_left:hover {
@@ -3241,16 +3242,6 @@ body {
                 width: 18px;
                 height: 10px;
             }
-
-    //     .slider_with_buttons {
-    //         width: 1322px;
-    //         height: 872px;
-    //         display: flex;
-    //         flex-direction: row;
-    //         align-items: center;
-    //         justify-content: space-between;
-    //         margin: 180px 0px 0px 0px;
-    //     }    
 
         .animals_slider {
             width: 940px;
@@ -3796,7 +3787,7 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-            transform: translate3d(-512px, 0px, 0px);
+            transform: translate3d(558px, -431px, 0px);
         }
 
         .slider_button_right:hover {
@@ -3824,7 +3815,7 @@ body {
         border-radius: 25px;        
         border-color: #FE9013;
         transition: all 0.2s ease-in;    
-        margin-top: 80px;           
+        margin-top: 0px;           
     }
 
     .button_slider:hover {
@@ -3874,7 +3865,7 @@ body {
             height: 202px;
             position: absolute;
             z-index: 110px;
-            transform: translateY(1016px);                                                        
+            transform: translateY(1004px);                                                        
         }
     
     .flower_decoration_three {            
@@ -3889,7 +3880,7 @@ body {
             height: 180px;
             position: absolute;
             z-index: 20px;
-            transform: translateY(1038px);                                                                     
+            transform: translateY(1025px);                                                                     
         }
 
 
@@ -5169,7 +5160,7 @@ body {
             }
         
             .upper_part {
-                width: 655px;
+                width: auto;
                 height: 85px;
                 padding-left: 242px;
             }
@@ -6034,8 +6025,8 @@ body {
             }
     
             .goal_info {
-                width: 454px;
-                height: 427px;
+                width: 495px;
+                height: 367px;
                 display: flex;
                 flex-direction: column;
             }
@@ -6096,7 +6087,7 @@ body {
                     height: 484px;
                     position: absolute;
                     z-index: 100px;                 
-                    transform: translateY(-420px);                                          
+                    transform: translateY(-428px);                                          
                 }
     
     
@@ -6118,7 +6109,7 @@ body {
     .slider_container {
         width: 600px;
         height: auto;
-        margin: 80px 0px 100px 0px;
+        margin: 30px 0px 100px 0px;
         display: flex;  
         flex-direction: column;
         align-items: center;  
@@ -6801,7 +6792,7 @@ body {
                 height: 202px;
                 position: absolute;
                 z-index: 110px;
-                transform: translateY(915px);                                                        
+                transform: translateY(865px);                                                        
             }
         
         .flower_decoration_three {            
@@ -6816,7 +6807,7 @@ body {
                 height: 131px;
                 position: absolute;
                 z-index: 20px;
-                transform: translateY(985px);                                                                     
+                transform: translateY(935px);                                                                     
             }   
     
     
@@ -8112,115 +8103,8 @@ body {
                 line-height: 120%;
                 color: #FFFFFF;  
                 display: none;               
-            }
-    
-            .enter_email_block {
-                width: 367px;
-                height: 42px;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                margin-top: 14px;
-            }
-    
-                .enter_email_frame {
-                    width: 228px;
-                    height: 42px;
-                    border: 1px solid #F9804B;
-                    border-radius: 2px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-    
-                    .email input[type="email"] {
-                        width: 208px;
-                        height: 22px;                        
-                        box-sizing: border-box;
-                        margin: 0;
-                        padding: 0;
-                        font-family: 'Roboto';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 16px;
-                        line-height: 140%;
-                        color: #BDBDBD;   
-                        background-color: transparent;
-                        outline: none;
-                        border: transparent;
-                        resize: none;
-                        border-style: none;                     
-                    }
-    
-                    input {
-                        border: none;
-                    }
-    
-                    input[type=email]:focus {
-                        background: transparent;
-                        outline: none;
-                        color: $grey;
-                    }
-    
-                    .email::placeholder {
-                        background-color: $black;                        
-                        display: block;
-                        font-family: 'Roboto';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 16px;
-                        line-height: 140%;
-                        color: #BDBDBD;                        
-                        outline: none;
-                        border: none;
-                        resize: none; 
-                        border-style: none;
-                        border-color: transparent; 
-                        border-width: 0px;                     
-                    }
-    
-                    input:active {
-                        border: none;
-                    }
-    
-            .enter_email_frame:has(input[type="email"]:valid) ~ .submit_button {
-                border-color: $green;
-                color: $green;
-            }
-    
-            .enter_email_frame:has(input[type="email"]:invalid) ~ .submit_button {
-                border-color: $red;
-                color: $red;
-            }
-    
-                .submit_button {
-                    width: 129px;
-                    height: 42px;
-                    background: #F1F3F2;
-                    border: 1px solid $black_blue;
-                    border-radius: 5px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-    
-                    font-family: 'Roboto';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 140%;
-                    color: $black_blue;
-                    transition: all 0.4s ease-in;
-                }
-    
-                .submit_button:default {
-                    border: 1px solid $black_blue;
-                    border-radius: 5px;
-                    color: $black_blue;
-                }
-    
-                .submit_button:hover {
-                    cursor: pointer;
-                } 
+            }     
+                
                     
         
             .footer_3 {
@@ -8228,13 +8112,13 @@ body {
                 height: 52px;
                 display: flex;            
                 justify-content: space-between;
-                padding-bottom: 15px;
                 transform: translateX(-450px);
             }
         
             .navigation_footer {
                 width: 298px;
-                height: 22px;                                           
+                height: 22px;
+                padding-top: 240px;                                           
             }
         
             .navigation_menu_footer {
@@ -8411,6 +8295,7 @@ body {
                     width: auto;
                     height: 52px;
                     transform: translateX(-10px);
+                    padding-top: 240px; 
                 }
         
                     .credentials {
