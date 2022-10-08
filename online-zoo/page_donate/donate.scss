@@ -5711,7 +5711,7 @@ input[type="radio"] {
     }
     
         .header {
-            width: 100%;
+            width: 100vw;
             height: 34px;
             position: fixed;
             z-index: 800;                    
@@ -7131,7 +7131,7 @@ input[type="radio"] {
                 }
         
                 .enter_email_block {
-                    width: 300px;
+                    width: auto;
                     height: 200px;
                     display: flex;
                     flex-direction: column;
