@@ -4362,7 +4362,7 @@ input::-webkit-inner-spin-button {
     background-image: url(../refs/icons/dollar_orange.svg);
   }
   .another_amount_wrapper {
-    width: 976px;
+    width: auto;
     height: 54px;
     margin-top: 50px;
     margin-bottom: 25px;
@@ -4665,7 +4665,7 @@ input::-webkit-inner-spin-button {
     z-index: 600;
   }
   .facebook {
-    width: 111px;
+    width: 30px;
     height: 26px;
     display: flex;
     justify-content: space-between;
@@ -4675,7 +4675,7 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
   }
   .twitter {
-    width: 89px;
+    width: 30px;
     height: 26px;
     display: flex;
     justify-content: space-between;
@@ -4685,7 +4685,7 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
   }
   .instagram {
-    width: 110px;
+    width: 30px;
     height: 26px;
     display: flex;
     justify-content: space-between;
@@ -4695,7 +4695,7 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
   }
   .youtube {
-    width: 101px;
+    width: 30px;
     height: 26px;
     display: flex;
     justify-content: space-between;
@@ -4804,6 +4804,7 @@ input::-webkit-inner-spin-button {
     display: flex;
     flex-direction: column;
     padding-bottom: 20px;
+    transform: translateX(-300px);
   }
   .upper_part {
     width: 655px;
@@ -4955,7 +4956,6 @@ input::-webkit-inner-spin-button {
     display: flex;
     justify-content: space-between;
     padding-bottom: 15px;
-    transform: translateX(-290px);
   }
   .navigation_footer {
     width: 298px;
