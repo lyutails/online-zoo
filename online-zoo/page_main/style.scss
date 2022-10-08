@@ -10850,7 +10850,7 @@ body {
             }        
     
             .subscribe {
-                width: 237px;
+                width: 200px;
                 height: 29px;
                 font-family: 'Roboto';
                 font-style: normal;
@@ -10867,6 +10867,7 @@ body {
                 flex-direction: column;
                 justify-content: space-between;
                 margin-top: 14px;
+                padding-right: 55px;
             }
     
                 .enter_email_frame {

@@ -9697,7 +9697,7 @@ input:active {
     transform: translate3d(-430px, 0px, 0px);
   }
   .subscribe {
-    width: 237px;
+    width: 200px;
     height: 29px;
     font-family: "Roboto";
     font-style: normal;
@@ -9713,6 +9713,7 @@ input:active {
     flex-direction: column;
     justify-content: space-between;
     margin-top: 14px;
+    padding-right: 55px;
   }
   .enter_email_frame {
     width: 228px;
