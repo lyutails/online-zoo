@@ -2738,14 +2738,8 @@ input:active {
   .burger_items {
     display: none;
   }
-  .burger_wrapper {
-    display: none;
-  }
 }
 @media screen and (min-width: 1000px) and (max-width: 1599.9px) {
-  .burger_wrapper {
-    display: none;
-  }
   ::-webkit-scrollbar {
     width: 20px;
   }
@@ -5618,7 +5612,7 @@ input:active {
     height: 484px;
     position: absolute;
     z-index: 100px;
-    transform: translateY(-440px);
+    transform: translateY(-420px);
   }
   .slider_decoration_elements {
     width: 100vw;
@@ -7735,7 +7729,7 @@ input:active {
     z-index: 800;
   }
   .wrapper {
-    width: 320px;
+    width: auto;
   }
   .header_content {
     width: 300px;
@@ -8031,6 +8025,20 @@ input:active {
   .navigation {
     display: none;
   }
+  .burger_overlay {
+    transition: all 1s ease-in-out;
+    top: 0;
+    right: 0;
+    width: 0vw;
+    position: absolute;
+    z-index: 1100;
+    height: 100vh;
+  }
+  .burger_overlay.active {
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+  }
   .wrapper_main_text {
     width: 320px;
   }
@@ -8094,7 +8102,7 @@ input:active {
     flex-direction: column;
   }
   .goal_title {
-    width: 320px;
+    width: auto;
     height: 58px;
     font-size: 24px;
     margin: 0px 0px 10px 0px;
@@ -9699,7 +9707,7 @@ input:active {
     color: #FFFFFF;
   }
   .enter_email_block {
-    width: 300px;
+    width: auto;
     height: 200px;
     display: flex;
     flex-direction: column;
