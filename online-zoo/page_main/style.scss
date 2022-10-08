@@ -417,7 +417,7 @@ body {
                 height: 605px;
                 position: absolute;
                 z-index: 100px;                 
-                transform: translateY(-540px);                                            
+                transform: translateY(-525px);                                            
             }
 
 
@@ -8507,6 +8507,7 @@ body {
     }    
     
     .header {
+        width: 100vw;
         height: 34px;
         position: fixed;  
         z-index: 800;      
@@ -10865,7 +10866,7 @@ body {
                 flex-direction: column;
                 justify-content: space-between;
                 margin-top: 14px;
-                padding-right: 55px;
+                transform: translateX(-30px);
             }
     
                 .enter_email_frame {
@@ -10970,7 +10971,7 @@ body {
                         
             
                 .footer_3 {
-                    width: 300px;
+                    width: auto;
                     height: 111px;
                     display: flex;            
                     justify-content: space-between;
