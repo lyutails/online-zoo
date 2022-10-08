@@ -5725,7 +5725,7 @@ body {
 
 .burger_wrapper {
     width: 280px;
-    height: 100vw;
+    height: 100vh;
     margin: 0 auto;    
     z-index: 900;
     position: fixed;
@@ -5743,14 +5743,13 @@ body {
     
     .burger_items {
         width: 240px;
-        height: 600px;
+        height: 100vh;
         background-color: rgba(253, 253, 255, 0.6); 
         position: absolute;
         right: 0;
         z-index: 1000; 
         display: flex;
-        flex-direction: column;
-        justify-content: space-between; 
+        flex-direction: column; 
         padding-left: 20px;
     }
 
@@ -8685,7 +8684,7 @@ body {
         
         .burger_wrapper {
             width: 280px;
-            height: 100vw;
+            height: 100vh;
             margin: 0 auto;    
             z-index: 900;
             position: fixed;
@@ -8701,14 +8700,13 @@ body {
             
             .burger_items {
                 width: 240px;
-                height: 600px;
+                height: 100vh;
                 background-color: rgba(253, 253, 255, 0.6); 
                 position: absolute;
                 right: 0;
                 z-index: 1000; 
                 display: flex;
-                flex-direction: column;
-                justify-content: space-between; 
+                flex-direction: column; 
                 padding-left: 20px;
             }
         
