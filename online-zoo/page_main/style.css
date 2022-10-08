@@ -5293,7 +5293,7 @@ input:active {
   }
   .burger_wrapper {
     width: 280px;
-    height: 100vw;
+    height: 100vh;
     margin: 0 auto;
     z-index: 900;
     position: fixed;
@@ -5308,14 +5308,13 @@ input:active {
   }
   .burger_items {
     width: 240px;
-    height: 600px;
+    height: 100vh;
     background-color: rgba(253, 253, 255, 0.6);
     position: absolute;
     right: 0;
     z-index: 1000;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     padding-left: 20px;
   }
   .logo_burger {
@@ -7872,7 +7871,7 @@ input:active {
   }
   .burger_wrapper {
     width: 280px;
-    height: 100vw;
+    height: 100vh;
     margin: 0 auto;
     z-index: 900;
     position: fixed;
@@ -7886,14 +7885,13 @@ input:active {
   }
   .burger_items {
     width: 240px;
-    height: 600px;
+    height: 100vh;
     background-color: rgba(253, 253, 255, 0.6);
     position: absolute;
     right: 0;
     z-index: 1000;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     padding-left: 20px;
   }
   .logo_burger {
