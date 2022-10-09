@@ -5699,22 +5699,21 @@ body {
     } 
 }
 
-#burger_id:checked.active + label .burger_icon .line_1 {
+#burger_id:checked + label .burger_icon .line_1 {
     background-color: $orange; 
     transform: rotate(45deg) translateY(5.5px);        
     transform-origin: center;  
 }
 
-#burger_id:checked.active + label .burger_icon .line_3 {
+#burger_id:checked + label .burger_icon .line_3 {
     background-color: $orange;  
     transform: rotate(-45deg) translateY(-5.5px); 
     transform-origin: center; 
 }
 
-#burger_id:checked.active + label .burger_icon .line_2 {
+#burger_id:checked + label .burger_icon .line_2 {
     opacity: 0;  
 }
-
 
 
 
@@ -7538,6 +7537,7 @@ body {
                     .country_date_between_circle {
                         color: $grey;
                     }
+
     
                 .slider_progress_bar {
                     width: 390px;
@@ -7671,7 +7671,7 @@ body {
                     }
     
     
-                    //testimonials slider movement            
+                              
     
     
     
@@ -8505,8 +8505,7 @@ body {
             opacity: 0;  
         } 
 
-
-
+       
 
         .burger_icon {
             width: 18px;
@@ -8539,38 +8538,7 @@ body {
             } 
         }
         
-        #burger_id:checked + label .burger_icon .line_1 {
-            background-color: $orange; 
-            transform: rotate(45deg) translateY(5.5px);        
-            transform-origin: center;  
-        }
-        
-        #burger_id:checked + label .burger_icon .line_3 {
-            background-color: $orange;  
-            transform: rotate(-45deg) translateY(-5.5px); 
-            transform-origin: center; 
-        }
-        
-        #burger_id:checked + label .burger_icon .line_2 {
-            opacity: 0;  
-        }
-        
-        #burger_id:checked:hover + label .burger_icon .line_1 {
-            background-color: $orange; 
-            transform: rotate(45deg) translateY(5.5px);        
-            transform-origin: center;  
-        }
-        
-        #burger_id:checked:hover + label .burger_icon .line_3 {
-            background-color: $orange;  
-            transform: rotate(-45deg) translateY(-5.5px); 
-            transform-origin: center; 
-        }
-        
-        #burger_id:checked:hover + label .burger_icon .line_2 {
-            opacity: 0;  
-        }
-        
+
         
         .burger_wrapper {
             width: 280px;
@@ -8743,13 +8711,6 @@ body {
                     color: $button_hover;
                 }
                 
-                .burger_overlay {
-                    width: 100vw;
-                    height: 100vh;
-                    position: absolute;
-                    background-color: rgba(0, 0, 0, 0.8);
-                    z-index: 1100;
-                }
             
         .navigation {
             display: none;
@@ -8769,7 +8730,8 @@ body {
             width: 100vw;          
             background-color: rgba(0, 0, 0, 0.8);           
             cursor: pointer;
-        }
+        }       
+           
 
 
     .wrapper_main_text {

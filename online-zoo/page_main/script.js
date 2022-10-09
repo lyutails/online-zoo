@@ -31,16 +31,26 @@ if (burgerOverlay) {
     const burgerWrapper = document.querySelector('.burger_wrapper');
     const burgerMenu = document.querySelector('.burger_items');
     const body = document.querySelector('body');
-    const burger = document.querySelector('.burger_menu_checkbox');
+    const burger = document.getElementById('burger_id');
 
     burgerOverlay.addEventListener('click', function(b) {
         burgerOverlay.classList.remove('active');
         burgerWrapper.classList.remove('active');
         burgerMenu.classList.remove('active');
-        body.classList.remove('active');
-        burger.classList.remove('active');
+        body.classList.remove('active');        
+        burger.checked = false;     
     })
 }
 
 
-// slider animals 
+
+// carousel animals 
+
+
+
+// popup testimonials
+
+const testimonial = document.querySelector('.testimonial_one');
+if (testimonial) {
+    const burgerOverlay = document.querySelector('.testimonial_overlay');
+}

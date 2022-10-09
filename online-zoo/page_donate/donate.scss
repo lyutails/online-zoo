@@ -51,6 +51,10 @@ $green: #4B9200;
     display: none;
 }
 
+.burger_wrapper {
+    display: none;
+}
+
 
 ::-webkit-scrollbar {
     width: 20px;
@@ -1937,6 +1941,11 @@ input[type="radio"] {
 //media queries 1000
 
 @media screen and (min-width: 1000px) and (max-width: 1599.9px) {
+
+
+.burger_wrapper {
+    display: none;
+}
 
 .start_screen {
     width: 100vw;
@@ -3927,41 +3936,246 @@ input[type="radio"] {
             }           
             
     
-    .burger_menu {
+.burger_icon {
+    width: 18px;
+    height: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 11px;
+    cursor: pointer; 
+    right: 20px;
+    position: fixed;
+    z-index: 1800; 
+    transition: all 0.4s ease-in-out;      
+
+    .line {
         width: 18px;
-        height: 10px;
+        height: 2px;
+        background: $white;
+        border-radius: 2px;
+        transition: all 0.4s ease-in-out;
+
+        .line:hover {            
+            background: $orange;
+        }
+        
+        .line:active {
+            background: $green;
+        }        
+    } 
+}
+
+#burger_id:checked + label .burger_icon .line_1 {
+    background-color: $orange; 
+    transform: rotate(45deg) translateY(5.5px);        
+    transform-origin: center;  
+}
+
+#burger_id:checked + label .burger_icon .line_3 {
+    background-color: $orange;  
+    transform: rotate(-45deg) translateY(-5.5px); 
+    transform-origin: center; 
+}
+
+#burger_id:checked + label .burger_icon .line_2 {
+    opacity: 0;  
+}
+
+
+.burger_wrapper {
+    width: 280px;
+    height: 100vh;
+    margin: 0 auto;    
+    z-index: 900;
+    position: fixed;
+    display: flex;
+    top: 0;
+    right: -100%;
+    z-index: 1200;    
+    transition: all 1s ease-in-out;
+}
+
+.burger_wrapper.active {
+    right: 0;
+}
+
+    
+    .burger_items {
+        width: 240px;
+        height: 100vh;
+        background-color: rgba(253, 253, 255, 0.6); 
+        position: absolute;
+        right: 0;
+        z-index: 1000; 
+        display: flex;
+        flex-direction: column; 
+        padding-left: 20px;
+    }
+
+    .logo_burger {
+        left: 0;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+        width: 82px;
+        height: 52px;                
+        margin: 10px 0px 14px 0px;   
+        text-decoration: none; 
+        border: 1.18841px solid $white; 
+        border-radius: 2px;
+        transition: all 0.4s ease-in-out;
+    }
+
+        .logo_name_burger {
+            color: $white;
+            display: inline-block;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 120%;
+            text-align: center;
+            box-sizing: border-box;                    
+            width: 72.49px;
+            height: 44.91px;                    
+            text-decoration: none;
+            z-index: 16;
+            position: absolute;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .logo_bamboo_burger {
+            width: 12px;
+            height: 28px;
+            display: inline-block;
+            background-image: url('../refs/icons/bamboo.svg');               
+            position: absolute;
+            box-sizing: border-box;                    
+            left: 7px;
+            top: 20px;
+            background-repeat: no-repeat;
+            z-index: 8;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .logo_burger:hover {
+            cursor: pointer;
+            border: 1.18841px solid $orange_light; 
+
+            .logo_name_burger {
+                color: $orange_light;                        
+            }
+
+            * .logo_bamboo_burger {
+                background-image: url('../refs/icons/bamboo_green.svg');
+            }
+        }        
+
+
+    .navigation_burger {
+        width: 240px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
         align-content: center;
-        margin-top: 11px;
-        transform: translateX(20px);
-        cursor: pointer;        
-
-        .line {
-            width: 18px;
-            height: 2px;
-            background: $white;
-            border-radius: 2px;
-            transition: all 0.8s ease-in-out;
-        } 
+        justify-content: space-between;
+        list-style: none;
     }
 
-    #burger_id:checked + label .burger_menu .line_1 {
-        background-color: $orange; 
-        transform: rotate(45deg) translateY(5.5px);        
-        transform-origin: center;  
+    .navigation_menu_burger {    
+        width: 135px;
+        height: 250px;                   
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+        color: $white;
+        list-style: none; 
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-between;              
+    }
+    
+    .navigation_burger_item {
+    &.about, .map, .zoos, .donate, .contact, .designed {
+        width: 150px;
+        height: 22px;
+        text-decoration: none;
+        transition-duration: 0.4s;
+    }
+    }
+    
+    .navigation_burger_about:hover {
+        cursor: pointer;                
     }
 
-    #burger_id:checked + label .burger_menu .line_3 {
-        background-color: $orange;  
-        transform: rotate(-45deg) translateY(-5.5px); 
-        transform-origin: center; 
+    .navigation_burger_about #active {
+        color: $button_hover;
+        cursor: auto;    }
+
+    
+
+    .navigation_link_burger:not(#active):hover {
+        color: $button_hover;
     }
 
-    #burger_id:checked + label .burger_menu .line_2 {
-        opacity: 0;  
-    } 
+    .navigation_link_burger {
+        text-decoration: none;
+        color: $white;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+    }     
+    
+        .navigation_burger_item {
+            text-decoration: none;
+        }
+        
+        .navigation_burger_item:hover {
+            cursor: pointer;                
+        }
+
+        .navigation_burger_item #active {
+            color: $button_hover;
+            cursor: auto;
+        }
+
+        .navigation_link_burger {
+            transition-duration: 0.4s;
+        }
+
+        .navigation_link_burger:not(#active):hover {
+            color: $button_hover;
+        }
+
+        .burger_overlay {
+            transition: all 1s ease-in-out;            
+            top: 0;
+            right: 0;
+            width: 0vw;
+            position: fixed;
+            z-index: 1100;
+            height: 100vh;
+        }
+        
+        .burger_overlay.active {
+            width: 100vw;          
+            background-color: rgba(0, 0, 0, 0.8);           
+            cursor: pointer;
+        }
+        
+    
+.navigation {
+    display: none;
+}
+
 
 
 .donation_info {    
@@ -5798,40 +6012,245 @@ input[type="radio"] {
                 }           
                 
         
-        .burger_menu {
-            width: 18px;
-            height: 10px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-content: center;
-            margin-top: 11px;
-            cursor: pointer;        
-    
-            .line {
-                width: 18px;
-                height: 2px;
-                background: $white;
-                border-radius: 2px;
-                transition: all 0.8s ease-in-out;
-            } 
+.burger_icon {
+    width: 18px;
+    height: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 11px;
+    cursor: pointer; 
+    right: 20px;
+    position: fixed;
+    z-index: 1800; 
+    transition: all 0.4s ease-in-out;      
+
+    .line {
+        width: 18px;
+        height: 2px;
+        background: $white;
+        border-radius: 2px;
+        transition: all 0.4s ease-in-out;
+
+        .line:hover {            
+            background: $orange;
         }
+        
+        .line:active {
+            background: $green;
+        }        
+    } 
+}
+
+#burger_id:checked + label .burger_icon .line_1 {
+    background-color: $orange; 
+    transform: rotate(45deg) translateY(5.5px);        
+    transform-origin: center;  
+}
+
+#burger_id:checked + label .burger_icon .line_3 {
+    background-color: $orange;  
+    transform: rotate(-45deg) translateY(-5.5px); 
+    transform-origin: center; 
+}
+
+#burger_id:checked + label .burger_icon .line_2 {
+    opacity: 0;  
+}
+
+
+.burger_wrapper {
+    width: 280px;
+    height: 100vh;
+    margin: 0 auto;    
+    z-index: 900;
+    position: fixed;
+    display: flex;
+    top: 0;
+    right: -100%;
+    z-index: 1200;    
+    transition: all 1s ease-in-out;
+}
+
+.burger_wrapper.active {
+    right: 0;
+}
+
     
-        #burger_id:checked + label .burger_menu .line_1 {
-            background-color: $orange; 
-            transform: rotate(45deg) translateY(5.5px);        
-            transform-origin: center;  
+    .burger_items {
+        width: 240px;
+        height: 100vh;
+        background-color: rgba(253, 253, 255, 0.6); 
+        position: absolute;
+        right: 0;
+        z-index: 1000; 
+        display: flex;
+        flex-direction: column; 
+        padding-left: 20px;
+    }
+
+    .logo_burger {
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 82px;
+        height: 52px;                
+        margin: 10px 0px 14px 0px;   
+        text-decoration: none; 
+        border: 1.18841px solid $white; 
+        border-radius: 2px;
+        transition: all 0.4s ease-in-out;
+    }
+
+        .logo_name_burger {
+            color: $white;
+            display: inline-block;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 120%;
+            text-align: center;
+            box-sizing: border-box;                    
+            width: 72.49px;
+            height: 44.91px;                    
+            text-decoration: none;
+            z-index: 16;
+            position: absolute;
+            transition: all 0.4s ease-in-out;
         }
-    
-        #burger_id:checked + label .burger_menu .line_3 {
-            background-color: $orange;  
-            transform: rotate(-45deg) translateY(-5.5px); 
-            transform-origin: center; 
+
+        .logo_bamboo_burger {
+            width: 12px;
+            height: 28px;
+            display: inline-block;
+            background-image: url('../refs/icons/bamboo.svg');               
+            position: absolute;
+            box-sizing: border-box;                    
+            left: 7px;
+            top: 20px;
+            background-repeat: no-repeat;
+            z-index: 8;
+            transition: all 0.4s ease-in-out;
         }
+
+        .logo_burger:hover {
+            cursor: pointer;
+            border: 1.18841px solid $orange_light; 
+
+            .logo_name_burger {
+                color: $orange_light;                        
+            }
+
+            * .logo_bamboo_burger {
+                background-image: url('../refs/icons/bamboo_green.svg');
+            }
+        }        
+
+
+    .navigation_burger {
+        width: 240px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    .navigation_menu_burger {    
+        width: 135px;
+        height: 250px;                   
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+        color: $white;
+        list-style: none; 
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-between;              
+    }
     
-        #burger_id:checked + label .burger_menu .line_2 {
-            opacity: 0;  
-        } 
+    .navigation_burger_item {
+    &.about, .map, .zoos, .donate, .contact, .designed {
+        width: 150px;
+        height: 22px;
+        text-decoration: none;
+        transition-duration: 0.4s;
+    }
+    }
+    
+    .navigation_burger_about:hover {
+        cursor: pointer;                
+    }
+
+    .navigation_burger_about #active {
+        color: $button_hover;
+        cursor: auto;    }
+
+    
+
+    .navigation_link_burger:not(#active):hover {
+        color: $button_hover;
+    }
+
+    .navigation_link_burger {
+        text-decoration: none;
+        color: $white;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+    }     
+    
+        .navigation_burger_item {
+            text-decoration: none;
+        }
+        
+        .navigation_burger_item:hover {
+            cursor: pointer;                
+        }
+
+        .navigation_burger_item #active {
+            color: $button_hover;
+            cursor: auto;
+        }
+
+        .navigation_link_burger {
+            transition-duration: 0.4s;
+        }
+
+        .navigation_link_burger:not(#active):hover {
+            color: $button_hover;
+        }
+
+        .burger_overlay {
+            transition: all 1s ease-in-out;            
+            top: 0;
+            right: 0;
+            width: 0vw;
+            position: fixed;
+            z-index: 1100;
+            height: 100vh;
+        }
+        
+        .burger_overlay.active {
+            width: 100vw;          
+            background-color: rgba(0, 0, 0, 0.8);           
+            cursor: pointer;
+        }
+        
+    
+.navigation {
+    display: none;
+}
     
     
     .donation_info {    
