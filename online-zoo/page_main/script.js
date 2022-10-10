@@ -54,3 +54,19 @@ const testimonial = document.querySelector('.testimonial_one');
 if (testimonial) {
     const burgerOverlay = document.querySelector('.testimonial_overlay');
 }
+
+
+
+
+
+
+
+
+
+
+const priceBar = document.querySelector(".donation_amount_bar");
+const amountBar = document.querySelector(".input__amount");
+priceBar.addEventListener("click", (e) => {
+  e.target.className = "radio-button" ? amountBar.value = e.target.value : false;
+  }
+);

@@ -7721,6 +7721,19 @@ input:active {
   .burger_icon .line .line:active {
     background: #4B9200;
   }
+  #burger_id:checked + label .burger_icon .line_1 {
+    background-color: #F9804B;
+    transform: rotate(45deg) translateY(5.5px);
+    transform-origin: center;
+  }
+  #burger_id:checked + label .burger_icon .line_3 {
+    background-color: #F9804B;
+    transform: rotate(-45deg) translateY(-5.5px);
+    transform-origin: center;
+  }
+  #burger_id:checked + label .burger_icon .line_2 {
+    opacity: 0;
+  }
   .burger_wrapper {
     width: 280px;
     height: 100vh;
@@ -7731,6 +7744,7 @@ input:active {
     top: 0;
     right: -100%;
     z-index: 1200;
+    transition: all 1s ease-in-out;
   }
   .burger_wrapper.active {
     right: 0;
