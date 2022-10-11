@@ -5720,8 +5720,8 @@ body {
 
 @media screen and (min-width: 640px) and (max-width: 999.9px) {
 
-    .input_range {
-        appearance: none;
+    input[type=range] {
+        display: none;
     }
 
     ::-webkit-scrollbar {
@@ -5737,8 +5737,7 @@ body {
         background: $orange_gradient;
         border-radius: 20px;
         box-shadow: inset 0 0 5px $grey;
-    }
-    
+    }    
     
     html {
         scroll-behavior: smooth;
@@ -5843,10 +5842,8 @@ body {
                     * .logo_bamboo_up {
                         background-image: url('../refs/icons/bamboo_green.svg');
                     }
-                } 
-                
+                }
 
-    
 .burger_icon {
     width: 18px;
     height: 10px;
@@ -7403,8 +7400,7 @@ body {
             }
     
             .testimonials_and_button {
-                width: 600px;
-                height: 528px;                       
+                width: 600px;                                       
                 margin: 60px 0px 80px 0px;                
             }
     
@@ -7416,28 +7412,21 @@ body {
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                }
-    
-                .testimonials_title {
-                    width: 206px;
-                    height: 47px;
-                    font-family: 'Roboto';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 36px;
-                    line-height: 130%;
-                    text-align: center;
-                    color: #333B41;
-                    margin-bottom: 30px;
-                }
-    
-                .testimonials_slider {
+                } 
+
+                .testimonials_slider {  
                     display: flex;
                     flex-direction: column;
-                    justify-content: space-between;
-                    width: 600px;
-                    height: 357px;
-                    overflow: hidden;
+                    // justify-content: space-between;
+                    // width: 600px;
+                    // height: 357px;
+                    // overflow: hidden;              
+                    transform: translateX(0px);
+                    gap: 15px;
+                } 
+
+                .testimonials_title {
+                    margin-bottom: 60;
                 }
     
                 .testimonial {
@@ -7471,15 +7460,8 @@ body {
                         height: 37px;                        
                         margin-right: 10px;
                         display: inline-block;
-                    }
-    
-                        .user_name_location_1 {
-                            width: 144px;
-                            height: 38px;
-                            display: flex;
-                            flex-direction: column;
-                        }
-
+                    }   
+                        
                         .user_name_location {
                             width: 168px;
                             height: 38px;
@@ -7487,8 +7469,8 @@ body {
                             flex-direction: column;
                         }
     
-                            .user_name_one {
-                                width: 97px;
+                            .user_name {
+                                width: 150px;
                                 height: 19px;
                                 font-family: 'Roboto';
                                 font-style: normal;
@@ -7498,15 +7480,15 @@ body {
                                 color: $black;
                             }
     
-                            .where_when_1 {
-                                width: 144px;
+                            .where_when {
+                                width: 168px;
                                 height: 18px;
                                 display: flex;
                                 flex-direction: row;
                                 justify-content: space-between;
                             }
     
-                            .user_country_1 {
+                            .user_country {
                                 width: 87px;
                                 height: 18px;
                                 font-family: 'Roboto';
@@ -7518,47 +7500,6 @@ body {
                             }
     
                             .testimonial_date_1 {
-                                width: 41px;
-                                height: 18px;
-                                font-family: 'Roboto';
-                                font-style: normal;
-                                font-weight: 300;
-                                font-size: 15px;
-                                line-height: 120%;
-                                color: $grey;
-                            }     
-    
-                            .user_name_two {
-                                width: 126px;
-                                height: 19px;
-                                font-family: 'Roboto';
-                                font-style: normal;
-                                font-weight: 400;
-                                font-size: 16px;
-                                line-height: 120%;
-                                color: $black;
-                            }
-    
-                            .where_when_2 {
-                                width: 168px;
-                                height: 18px;
-                                display: flex;
-                                flex-direction: row;
-                                justify-content: space-between;
-                            }
-    
-                            .user_country_2 {
-                                width: 87px;
-                                height: 18px;
-                                font-family: 'Roboto';
-                                font-style: normal;
-                                font-weight: 300;
-                                font-size: 15px;
-                                line-height: 120%;
-                                color: $grey;
-                            }
-    
-                            .testimonial_date_2 {
                                 width: 65px;
                                 height: 18px;
                                 font-family: 'Roboto';
@@ -7567,92 +7508,8 @@ body {
                                 font-size: 15px;
                                 line-height: 120%;
                                 color: $grey;
-                            }
-    
-                            .user_name_three {
-                                width: 139px;
-                                height: 19px;
-                                font-family: 'Roboto';
-                                font-style: normal;
-                                font-weight: 400;
-                                font-size: 16px;
-                                line-height: 120%;
-                                color: $black;
-                            }
-    
-                            .where_when_3 {
-                                width: 168px;
-                                height: 18px;
-                                display: flex;
-                                flex-direction: row;
-                                justify-content: space-between;
-                            }
-    
-                            .user_country_3 {
-                                width: 87px;
-                                height: 18px;
-                                font-family: 'Roboto';
-                                font-style: normal;
-                                font-weight: 300;
-                                font-size: 15px;
-                                line-height: 120%;
-                                color: $grey;
-                            }
-    
-                            .testimonial_date_3 {
-                                width: 65px;
-                                height: 18px;
-                                font-family: 'Roboto';
-                                font-style: normal;
-                                font-weight: 300;
-                                font-size: 15px;
-                                line-height: 120%;
-                                color: $grey;
-                            }
-    
-                        
-    
-                            .user_name_four {
-                                width: 83px;
-                                height: 19px;
-                                font-family: 'Roboto';
-                                font-style: normal;
-                                font-weight: 400;
-                                font-size: 16px;
-                                line-height: 120%;
-                                color: $black;
-                            }
-    
-                            .where_when_4 {
-                                width: 168px;
-                                height: 18px;
-                                display: flex;
-                                flex-direction: row;
-                                justify-content: space-between;
-                            }
-    
-                            .user_country_4 {
-                                width: 87px;
-                                height: 18px;
-                                font-family: 'Roboto';
-                                font-style: normal;
-                                font-weight: 300;
-                                font-size: 15px;
-                                line-height: 120%;
-                                color: $grey;
-                            }
-    
-                            .testimonial_date_4 {
-                                width: 65px;
-                                height: 18px;
-                                font-family: 'Roboto';
-                                font-style: normal;
-                                font-weight: 300;
-                                font-size: 15px;
-                                line-height: 120%;
-                                color: $grey;
-                            }
-    
+                            }   
+
                     .testimonial_text {
                         width: 559px;
                         height: 37px;
@@ -7680,9 +7537,7 @@ body {
     
                     .country_date_between_circle {
                         color: $grey;
-                    }
-
-    
+                    }    
                 
     
                 .button_testimonials {
@@ -7899,14 +7754,6 @@ body {
                 transform: translate3d(568px, -40px, 0px);
                 z-index: 600;
             }
-
-            // .link_facebook {
-            //     width: 26px;
-            //     height: 26px;
-            //     display: inline-block;
-            //     position: relative;
-            //     inset: 1;
-            // }
     
             .facebook {
                 width: auto;
@@ -8370,6 +8217,10 @@ body {
 //media queries 320
 
 @media screen and (min-width: 320px) and (max-width: 639.9px) {
+
+    input[type=range] {
+        display: none;
+    }
 
     ::-webkit-scrollbar {
         width: 20px;
@@ -9942,6 +9793,17 @@ body {
                 overflow: hidden;
             }
 
+            .testimonials_slider {  
+                display: flex;
+                flex-direction: column;
+                // justify-content: space-between;
+                // width: 600px;
+                // height: 357px;
+                // overflow: hidden;              
+                transform: translateX(0px);
+                gap: 30px;
+            }
+
             .testimonial_one, .testimonial_two, .testimonial_three {
                 width: 294px;
                 height: 110px;
@@ -9968,22 +9830,22 @@ body {
                     align-items: center;                                                      
                 }
 
-                    .user_icon_1 {
+                    .user_icon {
                         width: 37px;
                         height: 37px;
                         background-image: url('../refs/icons/user_icon.svg');
                         margin-right: 10px;
                     }
 
-                    .user_name_location_1 {
+                    .user_name_location {
                         width: 144px;
                         height: 38px;
                         display: flex;
                         flex-direction: column;
                     }
 
-                        .user_name_one {
-                            width: 97px;
+                        .user_name {
+                            width: 150px;
                             height: 19px;
                             font-family: 'Roboto';
                             font-style: normal;
@@ -9993,7 +9855,7 @@ body {
                             color: $black;
                         }
 
-                        .where_when_1 {
+                        .where_when {
                             width: 144px;
                             height: 18px;
                             display: flex;
@@ -10001,7 +9863,7 @@ body {
                             justify-content: space-between;
                         }
 
-                        .user_country_1 {
+                        .user_country {
                             width: 87px;
                             height: 18px;
                             font-family: 'Roboto';
@@ -10012,174 +9874,8 @@ body {
                             color: $grey;
                         }
 
-                        .testimonial_date_1 {
+                        .testimonial_date {
                             width: 41px;
-                            height: 18px;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: 300;
-                            font-size: 15px;
-                            line-height: 120%;
-                            color: $grey;
-                        }
-
-
-                    .user_icon_2 {
-                        width: 37px;
-                        height: 37px;
-                        background-image: url('../refs/icons/user_one.png');
-                        margin-right: 10px;
-                    }
-
-                    .user_name_location_2 {
-                        width: 144px;
-                        height: 38px;
-                        display: flex;
-                        flex-direction: column;
-                    }
-
-                        .user_name_two {
-                            width: 126px;
-                            height: 19px;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 16px;
-                            line-height: 120%;
-                            color: $black;
-                        }
-
-                        .where_when_2 {
-                            width: 168px;
-                            height: 18px;
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: space-between;
-                        }
-
-                        .user_country_2 {
-                            width: 87px;
-                            height: 18px;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: 300;
-                            font-size: 15px;
-                            line-height: 120%;
-                            color: $grey;
-                        }
-
-                        .testimonial_date_2 {
-                            width: 65px;
-                            height: 18px;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: 300;
-                            font-size: 15px;
-                            line-height: 120%;
-                            color: $grey;
-                        }
-
-                    .user_icon_3 {
-                        width: 37px;
-                        height: 37px;
-                        background-image: url('../refs/icons/user_two.png');
-                        margin-right: 10px;
-                    }
-
-                    .user_name_location_3 {
-                        width: 168px;
-                        height: 38px;
-                        display: flex;
-                        flex-direction: column;
-                    }
-
-                        .user_name_three {
-                            width: 139px;
-                            height: 19px;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 16px;
-                            line-height: 120%;
-                            color: $black;
-                        }
-
-                        .where_when_3 {
-                            width: 168px;
-                            height: 18px;
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: space-between;
-                        }
-
-                        .user_country_3 {
-                            width: 87px;
-                            height: 18px;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: 300;
-                            font-size: 15px;
-                            line-height: 120%;
-                            color: $grey;
-                        }
-
-                        .testimonial_date_3 {
-                            width: 65px;
-                            height: 18px;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: 300;
-                            font-size: 15px;
-                            line-height: 120%;
-                            color: $grey;
-                        }
-
-                    .user_icon_4 {
-                        width: 37px;
-                        height: 37px;
-                        background-image: url('../refs/icons/user_three.png');
-                        margin-right: 10px;
-                    }
-
-                    .user_name_location_4 {
-                        width: 168px;
-                        height: 38px;
-                        display: flex;
-                        flex-direction: column;
-                    }
-
-                        .user_name_four {
-                            width: 83px;
-                            height: 19px;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 16px;
-                            line-height: 120%;
-                            color: $black;
-                        }
-
-                        .where_when_4 {
-                            width: 168px;
-                            height: 18px;
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: space-between;
-                        }
-
-                        .user_country_4 {
-                            width: 87px;
-                            height: 18px;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: 300;
-                            font-size: 15px;
-                            line-height: 120%;
-                            color: $grey;
-                        }
-
-                        .testimonial_date_4 {
-                            width: 65px;
                             height: 18px;
                             font-family: 'Roboto';
                             font-style: normal;
@@ -10217,8 +9913,6 @@ body {
                 .country_date_between_circle {
                     color: $grey;
                 }
-
-
 
             .button_testimonials {
                 width: 240px;
