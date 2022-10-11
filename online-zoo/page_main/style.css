@@ -463,12 +463,22 @@ body {
 
 .animals_slider {
   width: 1158px;
-  height: 872px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.animals_carousel {
+  width: 6066px;
+  height: 888px;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+  gap: 26px;
+  transition: all 1s ease-in-out;
+  transform: translateX(-1180px);
 }
 
 .slider_pic {
@@ -485,7 +495,7 @@ body {
 .pandas_pic {
   width: 366px;
   height: 366px;
-  background-image: url("../refs/for_slider/slider_pandas.png");
+  background-image: url("../refs/pics/animals/1600_slider_pets/pandas.png");
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   transition: all 0.4s ease-in-out;
@@ -570,7 +580,7 @@ body {
 .eagles_pic {
   width: 366px;
   height: 366px;
-  background-image: url("../refs/for_slider/slider_eagles.png");
+  background-image: url("../refs/pics/animals/1600_slider_pets/eagle.png");
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   transition: all 0.4s ease-in-out;
@@ -652,7 +662,7 @@ body {
 .gorillas_pic {
   width: 366px;
   height: 366px;
-  background-image: url("../refs/for_slider/slider_gorilla.png");
+  background-image: url("../refs/pics/animals/1600_slider_pets/gorilla.png");
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   transition: all 0.4s ease-in-out;
@@ -724,7 +734,7 @@ body {
 .sloth_pic {
   width: 366px;
   height: 366px;
-  background-image: url("../refs/for_slider/slider_sloth.png");
+  background-image: url("../refs/pics/animals/1600_slider_pets/sloth.png");
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   transition: all 0.4s ease-in-out;
@@ -796,7 +806,7 @@ body {
 .cheetahs_pic {
   width: 366px;
   height: 366px;
-  background-image: url("../refs/for_slider/slider_cheetahs.png");
+  background-image: url("../refs/pics/animals/1600_slider_pets/cheetahs.png");
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   transition: all 0.4s ease-in-out;
@@ -878,7 +888,7 @@ body {
 .penguins_pic {
   width: 366px;
   height: 366px;
-  background-image: url("../refs/for_slider/slider_penguins.png");
+  background-image: url("../refs/pics/animals/1600_slider_pets/paneguin.png");
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   transition: all 0.4s ease-in-out;
@@ -940,6 +950,826 @@ body {
   color: #000000;
 }
 .slider_text_penguins .penguins_habitation {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.slider_info_icon_flamingo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 366px;
+  height: 60px;
+  transition: all 0.4s ease-in-out;
+}
+
+.flamingo_pic {
+  width: 366px;
+  height: 366px;
+  background-image: url("../refs/pics/animals/1600_slider_pets/flamingo.jpg");
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transition: all 0.4s ease-in-out;
+}
+
+.flamingo_pic:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: multiply;
+}
+.flamingo_pic:hover + .slider_info_icon_flamingo {
+  transform: scale(1.05) translateY(8px) translateY(-5px);
+  background-color: rgba(75, 146, 0, 0.4);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  pointer-events: none;
+}
+.flamingo_pic:hover ~ .flamingo_name {
+  color: #ffffff;
+}
+.flamingo_pic:hover ~ .flamingo_habitation {
+  color: #ffffff;
+}
+
+.flamingo_name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.flamingo_habitation {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.slider_text_flamingo {
+  width: 294px;
+  height: 38px;
+  margin: 8px 0px 14px 16px;
+  display: flex;
+  flex-direction: column;
+}
+.slider_text_flamingo .flamingo_name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #000000;
+}
+.slider_text_flamingo .hedgehog_habitation {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.slider_info_icon_hedgehog {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 366px;
+  height: 60px;
+  transition: all 0.4s ease-in-out;
+}
+
+.hedgehog_pic {
+  width: 366px;
+  height: 366px;
+  background-image: url("../refs/pics/animals/1600_slider_pets/hedgehog.png");
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transition: all 0.4s ease-in-out;
+}
+
+.hedgehog_pic:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: multiply;
+}
+.hedgehog_pic:hover + .slider_info_icon_hedgehog {
+  transform: scale(1.05) translateY(8px) translateY(-5px);
+  background-color: rgba(75, 146, 0, 0.4);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  pointer-events: none;
+}
+.hedgehog_pic:hover ~ .hedgehog_name {
+  color: #ffffff;
+}
+.hedgehog_pic:hover ~ .hedgehog_habitation {
+  color: #ffffff;
+}
+
+.hedgehog_name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.hedgehog_habitation {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.slider_text_hedgehog {
+  width: 294px;
+  height: 38px;
+  margin: 8px 0px 14px 16px;
+  display: flex;
+  flex-direction: column;
+}
+.slider_text_hedgehog .hedgehog_name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #000000;
+}
+.slider_text_hedgehog .hedgehog_habitation {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.slider_info_icon_kolibri {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 366px;
+  height: 60px;
+  transition: all 0.4s ease-in-out;
+}
+
+.kolibri_pic {
+  width: 366px;
+  height: 366px;
+  background-image: url("../refs/pics/animals/1600_slider_pets/kolibri.png");
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transition: all 0.4s ease-in-out;
+}
+
+.kolibri_pic:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: multiply;
+}
+.kolibri_pic:hover + .slider_info_icon_kolibri {
+  transform: scale(1.05) translateY(8px) translateY(-5px);
+  background-color: rgba(75, 146, 0, 0.4);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  pointer-events: none;
+}
+.kolibri_pic:hover ~ .kolibri_name {
+  color: #ffffff;
+}
+.kolibri_pic:hover ~ .kolibri_habitation {
+  color: #ffffff;
+}
+
+.kolibri_name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.kolibri_habitation {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.slider_text_kolibri {
+  width: 294px;
+  height: 38px;
+  margin: 8px 0px 14px 16px;
+  display: flex;
+  flex-direction: column;
+}
+.slider_text_kolibri .kolibri_name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #000000;
+}
+.slider_text_kolibri .kolibri_habitation {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.slider_info_icon_polar_fox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 366px;
+  height: 60px;
+  transition: all 0.4s ease-in-out;
+}
+
+.polar_fox_pic {
+  width: 366px;
+  height: 366px;
+  background-image: url("../refs/pics/animals/1600_slider_pets/polar_fox.png");
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transition: all 0.4s ease-in-out;
+}
+
+.polar_fox_pic:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: multiply;
+}
+.polar_fox_pic:hover + .slider_info_icon_polar_fox {
+  transform: scale(1.05) translateY(8px) translateY(-5px);
+  background-color: rgba(75, 146, 0, 0.4);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  pointer-events: none;
+}
+.polar_fox_pic:hover ~ .polar_fox_name {
+  color: #ffffff;
+}
+.polar_fox_pic:hover ~ .polar_fox_habitation {
+  color: #ffffff;
+}
+
+.polar_fox_name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.polar_fox_habitation {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.slider_text_polar_fox {
+  width: 294px;
+  height: 38px;
+  margin: 8px 0px 14px 16px;
+  display: flex;
+  flex-direction: column;
+}
+.slider_text_polar_fox .polar_fox_name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #000000;
+}
+.slider_text_polar_fox .polar_fox_habitation {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.slider_info_icon_polar_owl {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 366px;
+  height: 60px;
+  transition: all 0.4s ease-in-out;
+}
+
+.polar_owl_pic {
+  width: 366px;
+  height: 366px;
+  background-image: url("../refs/pics/animals/1600_slider_pets/polar_owl.jpg");
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transition: all 0.4s ease-in-out;
+}
+
+.polar_owl_pic:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: multiply;
+}
+.polar_owl_pic:hover + .slider_info_icon_polar_owl {
+  transform: scale(1.05) translateY(8px) translateY(-5px);
+  background-color: rgba(75, 146, 0, 0.4);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  pointer-events: none;
+}
+.polar_owl_pic:hover ~ .polar_owl_name {
+  color: #ffffff;
+}
+.polar_owl_pic:hover ~ .polar_owl_habitation {
+  color: #ffffff;
+}
+
+.polar_owl_name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.polar_owl_habitation {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.slider_text_polar_owl {
+  width: 294px;
+  height: 38px;
+  margin: 8px 0px 14px 16px;
+  display: flex;
+  flex-direction: column;
+}
+.slider_text_polar_owl .polar_owl_name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #000000;
+}
+.slider_text_polar_owl .polar_owl_habitation {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.slider_info_icon_medoed {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 366px;
+  height: 60px;
+  transition: all 0.4s ease-in-out;
+}
+
+.medoed_pic {
+  width: 366px;
+  height: 366px;
+  background-image: url("../refs/pics/animals/1600_slider_pets/medoed.jpg");
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transition: all 0.4s ease-in-out;
+}
+
+.medoed_pic:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: multiply;
+}
+.medoed_pic:hover + .slider_info_icon_medoed {
+  transform: scale(1.05) translateY(8px) translateY(-5px);
+  background-color: rgba(75, 146, 0, 0.4);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  pointer-events: none;
+}
+.medoed_pic:hover ~ .medoed_name {
+  color: #ffffff;
+}
+.medoed_pic:hover ~ .medoed_habitation {
+  color: #ffffff;
+}
+
+.medoed_name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.medoed_habitation {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.slider_text_medoed {
+  width: 294px;
+  height: 38px;
+  margin: 8px 0px 14px 16px;
+  display: flex;
+  flex-direction: column;
+}
+.slider_text_medoed .medoed_name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #000000;
+}
+.slider_text_medoed .medoed_habitation {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.slider_info_icon_gorilla_2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 366px;
+  height: 60px;
+  transition: all 0.4s ease-in-out;
+}
+
+.gorilla_2_pic {
+  width: 366px;
+  height: 366px;
+  background-image: url("../refs/pics/animals/1600_slider_pets/gorilla_1.png");
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transition: all 0.4s ease-in-out;
+}
+
+.gorilla_2_pic:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: multiply;
+}
+.gorilla_2_pic:hover + .slider_info_icon_gorilla_2 {
+  transform: scale(1.05) translateY(8px) translateY(-5px);
+  background-color: rgba(75, 146, 0, 0.4);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  pointer-events: none;
+}
+.gorilla_2_pic:hover ~ .gorilla_2_name {
+  color: #ffffff;
+}
+.gorilla_2_pic:hover ~ .gorilla_2_habitation {
+  color: #ffffff;
+}
+
+.gorilla_2_name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.gorilla_2_habitation {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.slider_text_gorilla_2 {
+  width: 294px;
+  height: 38px;
+  margin: 8px 0px 14px 16px;
+  display: flex;
+  flex-direction: column;
+}
+.slider_text_gorilla_2 .gorilla_2_name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #000000;
+}
+.slider_text_gorilla_2 .gorilla_2_habitation {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.slider_info_icon_kiwi_1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 366px;
+  height: 60px;
+  transition: all 0.4s ease-in-out;
+}
+
+.kiwi_1_pic {
+  width: 366px;
+  height: 366px;
+  background-image: url("../refs/pics/animals/1600_slider_pets/kiwi.png");
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transition: all 0.4s ease-in-out;
+}
+
+.kiwi_1_pic:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: multiply;
+}
+.kiwi_1_pic:hover + .slider_info_icon_kiwi_1 {
+  transform: scale(1.05) translateY(8px) translateY(-5px);
+  background-color: rgba(75, 146, 0, 0.4);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  pointer-events: none;
+}
+.kiwi_1_pic:hover ~ .kiwi_1_name {
+  color: #ffffff;
+}
+.kiwi_1_pic:hover ~ .kiwi_1_habitation {
+  color: #ffffff;
+}
+
+.kiwi_1_name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.kiwi_1_habitation {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.slider_text_kiwi_1 {
+  width: 294px;
+  height: 38px;
+  margin: 8px 0px 14px 16px;
+  display: flex;
+  flex-direction: column;
+}
+.slider_text_kiwi_1 .kiwi_1_name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #000000;
+}
+.slider_text_kiwi_1 .kiwi_1_habitation {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.slider_info_icon_lemur {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 366px;
+  height: 60px;
+  transition: all 0.4s ease-in-out;
+}
+
+.lemur_pic {
+  width: 366px;
+  height: 366px;
+  background-image: url("../refs/pics/animals/1600_slider_pets/lemur.jpg");
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transition: all 0.4s ease-in-out;
+}
+
+.lemur_pic:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: multiply;
+}
+.lemur_pic:hover + .slider_info_icon_lemur {
+  transform: scale(1.05) translateY(8px) translateY(-5px);
+  background-color: rgba(75, 146, 0, 0.4);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  pointer-events: none;
+}
+.lemur_pic:hover ~ .lemur_name {
+  color: #ffffff;
+}
+.lemur_pic:hover ~ .lemur_habitation {
+  color: #ffffff;
+}
+
+.lemur_name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.lemur_habitation {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.slider_text_lemur {
+  width: 294px;
+  height: 38px;
+  margin: 8px 0px 14px 16px;
+  display: flex;
+  flex-direction: column;
+}
+.slider_text_lemur .lemur_name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #000000;
+}
+.slider_text_lemur .lemur_habitation {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.slider_info_icon_crocodile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 366px;
+  height: 60px;
+  transition: all 0.4s ease-in-out;
+}
+
+.crocodile_pic {
+  width: 366px;
+  height: 366px;
+  background-image: url("../refs/pics/animals/1600_slider_pets/crocodile_face.png");
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transition: all 0.4s ease-in-out;
+}
+
+.crocodile_pic:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: multiply;
+}
+.crocodile_pic:hover + .slider_info_icon_crocodile {
+  transform: scale(1.05) translateY(8px) translateY(-5px);
+  background-color: rgba(75, 146, 0, 0.4);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  pointer-events: none;
+}
+.crocodile_pic:hover ~ .crocodile_name {
+  color: #ffffff;
+}
+.crocodile_pic:hover ~ .crocodile_habitation {
+  color: #ffffff;
+}
+
+.crocodile_name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.crocodile_habitation {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.slider_text_crocodile {
+  width: 294px;
+  height: 38px;
+  margin: 8px 0px 14px 16px;
+  display: flex;
+  flex-direction: column;
+}
+.slider_text_crocodile .crocodile_name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #000000;
+}
+.slider_text_crocodile .crocodile_habitation {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
@@ -1488,7 +2318,7 @@ body {
 
 .testimonials_and_button {
   width: 1160px;
-  height: 599px;
+  height: 600px;
   margin: 140px 220px 180px 220px;
   display: flex;
   flex-direction: column;
@@ -1498,12 +2328,13 @@ body {
 
 .testimonials_info {
   width: 1160px;
-  height: 514px;
+  height: 520px;
   background-color: #FDFDFF;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .testimonials_title {
@@ -1521,35 +2352,48 @@ body {
 
 .testimonials_slider {
   display: flex;
-  justify-content: space-between;
-  width: 1160px;
-  height: 391px;
+  gap: 24px;
+  height: 395px;
+  margin-bottom: 16px;
+  transform: translateX(1331px);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
 
-.testimonial_one, .testimonial_two, .testimonial_three {
+.testimonial {
   width: 268px;
   height: 391px;
   background: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
   border-radius: 20px;
-  border: 4px solid transparent;
+  border: 2px solid transparent;
   box-shadow: inset 0px 0px 0px 100vw #F1F3F2;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
-.testimonial_four {
-  width: 268px;
-  height: 391px;
-  background: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
-  border-radius: 20px;
-  border: 4px solid transparent;
-  box-shadow: inset 0px 0px 0px 100vw #F1F3F2;
+.shadow {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.cross {
+  top: -20px;
+  right: -20px;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-image: url("../refs/icons/popup_closer.png");
+  cursor: pointer;
 }
 
 .user_info {
@@ -1561,22 +2405,22 @@ body {
   align-items: center;
 }
 
-.user_icon_1 {
+.user_icon {
+  display: inline-block;
   width: 37px;
   height: 37px;
-  background-image: url("../refs/icons/user_icon.svg");
   margin-right: 10px;
 }
 
-.user_name_location_1 {
-  width: 144px;
+.user_name_location {
+  width: 168px;
   height: 38px;
   display: flex;
   flex-direction: column;
 }
 
-.user_name_one {
-  width: 97px;
+.user_name {
+  width: 140px;
   height: 19px;
   font-family: "Roboto";
   font-style: normal;
@@ -1586,15 +2430,15 @@ body {
   color: #000000;
 }
 
-.where_when_1 {
-  width: 144px;
+.where_when {
+  width: 168px;
   height: 18px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.user_country_1 {
+.user_country {
   width: 87px;
   height: 18px;
   font-family: "Roboto";
@@ -1605,172 +2449,7 @@ body {
   color: #767474;
 }
 
-.testimonial_date_1 {
-  width: 41px;
-  height: 18px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 120%;
-  color: #767474;
-}
-
-.user_icon_2 {
-  width: 37px;
-  height: 37px;
-  background-image: url("../refs/icons/user_one.png");
-  margin-right: 10px;
-}
-
-.user_name_location_2 {
-  width: 144px;
-  height: 38px;
-  display: flex;
-  flex-direction: column;
-}
-
-.user_name_two {
-  width: 126px;
-  height: 19px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 120%;
-  color: #000000;
-}
-
-.where_when_2 {
-  width: 168px;
-  height: 18px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.user_country_2 {
-  width: 87px;
-  height: 18px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 120%;
-  color: #767474;
-}
-
-.testimonial_date_2 {
-  width: 65px;
-  height: 18px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 120%;
-  color: #767474;
-}
-
-.user_icon_3 {
-  width: 37px;
-  height: 37px;
-  background-image: url("../refs/icons/user_two.png");
-  margin-right: 10px;
-}
-
-.user_name_location_3 {
-  width: 168px;
-  height: 38px;
-  display: flex;
-  flex-direction: column;
-}
-
-.user_name_three {
-  width: 139px;
-  height: 19px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 120%;
-  color: #000000;
-}
-
-.where_when_3 {
-  width: 168px;
-  height: 18px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.user_country_3 {
-  width: 87px;
-  height: 18px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 120%;
-  color: #767474;
-}
-
-.testimonial_date_3 {
-  width: 65px;
-  height: 18px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 120%;
-  color: #767474;
-}
-
-.user_icon_4 {
-  width: 37px;
-  height: 37px;
-  background-image: url("../refs/icons/user_three.png");
-  margin-right: 10px;
-}
-
-.user_name_location_4 {
-  width: 168px;
-  height: 38px;
-  display: flex;
-  flex-direction: column;
-}
-
-.user_name_four {
-  width: 83px;
-  height: 19px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 120%;
-  color: #000000;
-}
-
-.where_when_4 {
-  width: 168px;
-  height: 18px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.user_country_4 {
-  width: 87px;
-  height: 18px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 120%;
-  color: #767474;
-}
-
-.testimonial_date_4 {
+.testimonial_date {
   width: 65px;
   height: 18px;
   font-family: "Roboto";
@@ -1810,117 +2489,54 @@ body {
   color: #767474;
 }
 
-.slider_progress_bar {
-  width: 599px;
+input[type=range] {
+  display: block;
+  -webkit-appearance: none;
+  width: 600px;
   height: 8px;
-  box-sizing: border-box;
-  width: 599px;
+  margin: 0 auto;
+  background-color: #FDFDFF;
+  border: 1px solid #F9804B;
+  border-radius: 5px;
+  margin-top: 2px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 115px;
   height: 8px;
-  background: #F1F3F2;
-  border-radius: 5px;
-  border: 2px solid #F1F3F2;
-  margin-top: 20px;
-  cursor: pointer;
-  display: flex;
-  flex-direction: row;
-  align-items: space-between;
-}
-
-input[type=radio] {
-  border: 0px;
-  width: 50px;
-  height: 3em;
-  display: none;
-}
-
-#radio_progress_bar_one:checked ~ .slider_progress_bar .progress_style_1 {
-  width: 120px;
-  height: 6px;
   background-color: #F9804B;
-  border-radius: 5px;
-}
-
-#radio_progress_bar_one:not(checked) ~ .slider_progress_bar .progress_style_1 {
-  width: 120px;
-  height: 6px;
-  background-color: #F1F3F2;
-  border-radius: 5px;
-}
-
-.progress_style_1:hover {
   cursor: pointer;
-}
-
-#radio_progress_bar_two:checked ~ .slider_progress_bar .progress_style_2 {
-  width: 120px;
-  height: 6px;
-  background-color: #F9804B;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
   border-radius: 5px;
 }
 
-#radio_progress_bar_two:not(checked) ~ .slider_progress_bar .progress_style_2 {
-  width: 120px;
-  height: 6px;
-  background-color: #F1F3F2;
-  border-radius: 5px;
-}
-
-.progress_style_2:hover {
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 115px;
+  height: 8px;
+  background-color: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
   cursor: pointer;
-}
-
-#radio_progress_bar_three:checked ~ .slider_progress_bar .progress_style_3 {
-  width: 120px;
-  height: 6px;
-  background-color: #F9804B;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
   border-radius: 5px;
 }
 
-#radio_progress_bar_three:not(checked) ~ .slider_progress_bar .progress_style_3 {
-  width: 120px;
-  height: 6px;
-  background-color: #F1F3F2;
+input[type=range]:active {
+  display: block;
+  -webkit-appearance: none;
+  width: 600px;
+  height: 8px;
+  margin: 0 auto;
+  background-color: #FDFDFF;
+  border: 1px solid #F9804B;
   border-radius: 5px;
+  margin-top: 2px;
 }
 
-.progress_style_3:hover {
-  cursor: pointer;
-}
-
-#radio_progress_bar_four:checked ~ .slider_progress_bar .progress_style_4 {
-  width: 120px;
-  height: 6px;
-  background-color: #F9804B;
-  border-radius: 5px;
-}
-
-#radio_progress_bar_four:not(checked) ~ .slider_progress_bar .progress_style_4 {
-  width: 120px;
-  height: 6px;
-  background-color: #F1F3F2;
-  border-radius: 5px;
-}
-
-.progress_style_4:hover {
-  cursor: pointer;
-}
-
-#radio_progress_bar_five:checked ~ .slider_progress_bar .progress_style_5 {
-  width: 120px;
-  height: 6px;
-  background-color: #F9804B;
-  border-radius: 5px;
-}
-
-#radio_progress_bar_five:not(checked) ~ .slider_progress_bar .progress_style_5 {
-  width: 120px;
-  height: 6px;
-  background-color: #F1F3F2;
-  border-radius: 5px;
-}
-
-.progress_style_5:hover {
-  cursor: pointer;
+.testimonials_slider.active {
+  transform: translateX(-298px);
 }
 
 .button_testimonials {
@@ -4065,411 +4681,13 @@ input:active {
   }
   .testimonials_info {
     width: 940px;
-    height: 496px;
-    background-color: #FDFDFF;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .testimonials_title {
-    width: 206px;
-    height: 47px;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 130%;
-    text-align: center;
-    color: #333B41;
-    margin-bottom: 30px;
   }
   .testimonials_slider {
-    display: flex;
-    justify-content: space-between;
-    width: 940px;
-    height: 391px;
-    overflow: hidden;
-  }
-  .testimonial_one, .testimonial_two, .testimonial_three {
-    width: 293px;
-    height: 387px;
-    background: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
-    border-radius: 20px;
-    border: 2px solid transparent;
-    box-shadow: inset 0px 0px 0px 100vw #F1F3F2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .testimonial_four {
-    display: none;
-  }
-  .user_info {
-    width: 237px;
-    height: 38px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .user_icon_1 {
-    width: 37px;
-    height: 37px;
-    background-image: url("../refs/icons/user_icon.svg");
-    margin-right: 10px;
-  }
-  .user_name_location_1 {
-    width: 144px;
-    height: 38px;
-    display: flex;
-    flex-direction: column;
-  }
-  .user_name_one {
-    width: 97px;
-    height: 19px;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 120%;
-    color: #000000;
-  }
-  .where_when_1 {
-    width: 144px;
-    height: 18px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .user_country_1 {
-    width: 87px;
-    height: 18px;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 120%;
-    color: #767474;
-  }
-  .testimonial_date_1 {
-    width: 41px;
-    height: 18px;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 120%;
-    color: #767474;
-  }
-  .user_icon_2 {
-    width: 37px;
-    height: 37px;
-    background-image: url("../refs/icons/user_one.png");
-    margin-right: 10px;
-  }
-  .user_name_location_2 {
-    width: 144px;
-    height: 38px;
-    display: flex;
-    flex-direction: column;
-  }
-  .user_name_two {
-    width: 126px;
-    height: 19px;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 120%;
-    color: #000000;
-  }
-  .where_when_2 {
-    width: 168px;
-    height: 18px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .user_country_2 {
-    width: 87px;
-    height: 18px;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 120%;
-    color: #767474;
-  }
-  .testimonial_date_2 {
-    width: 65px;
-    height: 18px;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 120%;
-    color: #767474;
-  }
-  .user_icon_3 {
-    width: 37px;
-    height: 37px;
-    background-image: url("../refs/icons/user_two.png");
-    margin-right: 10px;
-  }
-  .user_name_location_3 {
-    width: 168px;
-    height: 38px;
-    display: flex;
-    flex-direction: column;
-  }
-  .user_name_three {
-    width: 139px;
-    height: 19px;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 120%;
-    color: #000000;
-  }
-  .where_when_3 {
-    width: 168px;
-    height: 18px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .user_country_3 {
-    width: 87px;
-    height: 18px;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 120%;
-    color: #767474;
-  }
-  .testimonial_date_3 {
-    width: 65px;
-    height: 18px;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 120%;
-    color: #767474;
-  }
-  .user_icon_4 {
-    width: 37px;
-    height: 37px;
-    background-image: url("../refs/icons/user_three.png");
-    margin-right: 10px;
-  }
-  .user_name_location_4 {
-    width: 168px;
-    height: 38px;
-    display: flex;
-    flex-direction: column;
-  }
-  .user_name_four {
-    width: 83px;
-    height: 19px;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 120%;
-    color: #000000;
-  }
-  .where_when_4 {
-    width: 168px;
-    height: 18px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .user_country_4 {
-    width: 87px;
-    height: 18px;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 120%;
-    color: #767474;
-  }
-  .testimonial_date_4 {
-    width: 65px;
-    height: 18px;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 120%;
-    color: #767474;
-  }
-  .testimonial_text {
-    width: 255px;
-    height: 307px;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 120%;
-    color: #767474;
-    text-align: left;
-    overflow: hidden;
-    overflow-y: scroll;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
-  .testimonial_text::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
-  }
-  .testimonial_text:hover {
-    cursor: auto;
-  }
-  .country_date_between_circle {
-    color: #767474;
-  }
-  .slider_progress_bar {
-    width: 390px;
-    height: 8px;
-    box-sizing: border-box;
-    background: #F1F3F2;
-    border-radius: 5px;
-    border: 2px solid #F1F3F2;
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    align-items: space-between;
-  }
-  input[type=radio] {
-    border: 0px;
-    width: 50px;
-    height: 3em;
-    display: none;
-  }
-  #radio_progress_bar_one:checked ~ .slider_progress_bar .progress_style_1 {
-    width: 78px;
-    height: 6px;
-    background-color: #F9804B;
-    border-radius: 5px;
-  }
-  #radio_progress_bar_one:not(checked) ~ .slider_progress_bar .progress_style_1 {
-    width: 78px;
-    height: 6px;
-    background-color: #F1F3F2;
-    border-radius: 5px;
-  }
-  .progress_style_1:hover {
-    cursor: pointer;
-  }
-  #radio_progress_bar_two:checked ~ .slider_progress_bar .progress_style_2 {
-    width: 78px;
-    height: 6px;
-    background-color: #F9804B;
-    border-radius: 5px;
-  }
-  #radio_progress_bar_two:not(checked) ~ .slider_progress_bar .progress_style_2 {
-    width: 78px;
-    height: 6px;
-    background-color: #F1F3F2;
-    border-radius: 5px;
-  }
-  .progress_style_2:hover {
-    cursor: pointer;
-  }
-  #radio_progress_bar_three:checked ~ .slider_progress_bar .progress_style_3 {
-    width: 78px;
-    height: 6px;
-    background-color: #F9804B;
-    border-radius: 5px;
-  }
-  #radio_progress_bar_three:not(checked) ~ .slider_progress_bar .progress_style_3 {
-    width: 78px;
-    height: 6px;
-    background-color: #F1F3F2;
-    border-radius: 5px;
-  }
-  .progress_style_3:hover {
-    cursor: pointer;
-  }
-  #radio_progress_bar_four:checked ~ .slider_progress_bar .progress_style_4 {
-    width: 78px;
-    height: 6px;
-    background-color: #F9804B;
-    border-radius: 5px;
-  }
-  #radio_progress_bar_four:not(checked) ~ .slider_progress_bar .progress_style_4 {
-    width: 78px;
-    height: 6px;
-    background-color: #F1F3F2;
-    border-radius: 5px;
-  }
-  .progress_style_4:hover {
-    cursor: pointer;
-  }
-  #radio_progress_bar_five:checked ~ .slider_progress_bar .progress_style_5 {
-    width: 78px;
-    height: 6px;
-    background-color: #F9804B;
-    border-radius: 5px;
-  }
-  #radio_progress_bar_five:not(checked) ~ .slider_progress_bar .progress_style_5 {
-    width: 78px;
-    height: 6px;
-    background-color: #F1F3F2;
-    border-radius: 5px;
-  }
-  .progress_style_5:hover {
-    cursor: pointer;
+    transform: translateX(1450px);
+    gap: 9px;
   }
   .button_testimonials {
-    width: 298px;
-    height: 54px;
-    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-color: #FE9013;
-    transition: all 0.2s ease-in;
-  }
-  .button_testimonials:hover {
-    background: #E47209;
-    cursor: pointer;
-    border-color: #E47209;
-  }
-  .button_testimonials:active {
-    background: #4B9200;
-    cursor: pointer;
-    border-color: #4B9200;
-  }
-  .button_testimonials_content {
-    width: 298px;
-    height: 22px;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 140%;
-    text-align: center;
-    text-transform: uppercase;
-    color: #ffffff;
-    text-decoration: none;
-  }
-  .button_testimonials_content:visited {
-    color: #ffffff;
-    text-decoration: none;
-  }
-  .button_testimonials_content:active {
-    color: #ffffff;
-    text-decoration: none;
+    transform: translateX(90px);
   }
   .flower_decoration_four {
     display: flex;
@@ -5149,6 +5367,11 @@ input:active {
   }
 }
 @media screen and (min-width: 640px) and (max-width: 999.9px) {
+  .input_range {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
   ::-webkit-scrollbar {
     width: 20px;
   }
@@ -6647,7 +6870,7 @@ input:active {
     height: 357px;
     overflow: hidden;
   }
-  .testimonial_one, .testimonial_two, .testimonial_three {
+  .testimonial {
     width: 596px;
     height: 109px;
     background: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
@@ -6670,14 +6893,20 @@ input:active {
     justify-content: flex-start;
     align-items: center;
   }
-  .user_icon_1 {
+  .user_icon {
     width: 37px;
     height: 37px;
-    background-image: url("../refs/icons/user_icon.svg");
     margin-right: 10px;
+    display: inline-block;
   }
   .user_name_location_1 {
     width: 144px;
+    height: 38px;
+    display: flex;
+    flex-direction: column;
+  }
+  .user_name_location {
+    width: 168px;
     height: 38px;
     display: flex;
     flex-direction: column;
@@ -6719,18 +6948,6 @@ input:active {
     line-height: 120%;
     color: #767474;
   }
-  .user_icon_2 {
-    width: 37px;
-    height: 37px;
-    background-image: url("../refs/icons/user_one.png");
-    margin-right: 10px;
-  }
-  .user_name_location_2 {
-    width: 144px;
-    height: 38px;
-    display: flex;
-    flex-direction: column;
-  }
   .user_name_two {
     width: 126px;
     height: 19px;
@@ -6768,18 +6985,6 @@ input:active {
     line-height: 120%;
     color: #767474;
   }
-  .user_icon_3 {
-    width: 37px;
-    height: 37px;
-    background-image: url("../refs/icons/user_two.png");
-    margin-right: 10px;
-  }
-  .user_name_location_3 {
-    width: 168px;
-    height: 38px;
-    display: flex;
-    flex-direction: column;
-  }
   .user_name_three {
     width: 139px;
     height: 19px;
@@ -6816,18 +7021,6 @@ input:active {
     font-size: 15px;
     line-height: 120%;
     color: #767474;
-  }
-  .user_icon_4 {
-    width: 37px;
-    height: 37px;
-    background-image: url("../refs/icons/user_three.png");
-    margin-right: 10px;
-  }
-  .user_name_location_4 {
-    width: 168px;
-    height: 38px;
-    display: flex;
-    flex-direction: column;
   }
   .user_name_four {
     width: 83px;
@@ -6890,100 +7083,6 @@ input:active {
   }
   .country_date_between_circle {
     color: #767474;
-  }
-  .slider_progress_bar {
-    width: 390px;
-    height: 8px;
-    box-sizing: border-box;
-    background: #F1F3F2;
-    border-radius: 5px;
-    border: 2px solid #F1F3F2;
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    align-items: space-between;
-    display: none;
-  }
-  input[type=radio] {
-    border: 0px;
-    width: 50px;
-    height: 3em;
-    display: none;
-  }
-  #radio_progress_bar_one:checked ~ .slider_progress_bar .progress_style_1 {
-    width: 78px;
-    height: 6px;
-    background-color: #F9804B;
-    border-radius: 5px;
-  }
-  #radio_progress_bar_one:not(checked) ~ .slider_progress_bar .progress_style_1 {
-    width: 78px;
-    height: 6px;
-    background-color: #F1F3F2;
-    border-radius: 5px;
-  }
-  .progress_style_1:hover {
-    cursor: pointer;
-  }
-  #radio_progress_bar_two:checked ~ .slider_progress_bar .progress_style_2 {
-    width: 78px;
-    height: 6px;
-    background-color: #F9804B;
-    border-radius: 5px;
-  }
-  #radio_progress_bar_two:not(checked) ~ .slider_progress_bar .progress_style_2 {
-    width: 78px;
-    height: 6px;
-    background-color: #F1F3F2;
-    border-radius: 5px;
-  }
-  .progress_style_2:hover {
-    cursor: pointer;
-  }
-  #radio_progress_bar_three:checked ~ .slider_progress_bar .progress_style_3 {
-    width: 78px;
-    height: 6px;
-    background-color: #F9804B;
-    border-radius: 5px;
-  }
-  #radio_progress_bar_three:not(checked) ~ .slider_progress_bar .progress_style_3 {
-    width: 78px;
-    height: 6px;
-    background-color: #F1F3F2;
-    border-radius: 5px;
-  }
-  .progress_style_3:hover {
-    cursor: pointer;
-  }
-  #radio_progress_bar_four:checked ~ .slider_progress_bar .progress_style_4 {
-    width: 78px;
-    height: 6px;
-    background-color: #F9804B;
-    border-radius: 5px;
-  }
-  #radio_progress_bar_four:not(checked) ~ .slider_progress_bar .progress_style_4 {
-    width: 78px;
-    height: 6px;
-    background-color: #F1F3F2;
-    border-radius: 5px;
-  }
-  .progress_style_4:hover {
-    cursor: pointer;
-  }
-  #radio_progress_bar_five:checked ~ .slider_progress_bar .progress_style_5 {
-    width: 78px;
-    height: 6px;
-    background-color: #F9804B;
-    border-radius: 5px;
-  }
-  #radio_progress_bar_five:not(checked) ~ .slider_progress_bar .progress_style_5 {
-    width: 78px;
-    height: 6px;
-    background-color: #F1F3F2;
-    border-radius: 5px;
-  }
-  .progress_style_5:hover {
-    cursor: pointer;
   }
   .button_testimonials {
     width: 240px;
@@ -9169,100 +9268,6 @@ input:active {
   }
   .country_date_between_circle {
     color: #767474;
-  }
-  .slider_progress_bar {
-    width: 390px;
-    height: 8px;
-    box-sizing: border-box;
-    background: #F1F3F2;
-    border-radius: 5px;
-    border: 2px solid #F1F3F2;
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    align-items: space-between;
-    display: none;
-  }
-  input[type=radio] {
-    border: 0px;
-    width: 50px;
-    height: 3em;
-    display: none;
-  }
-  #radio_progress_bar_one:checked ~ .slider_progress_bar .progress_style_1 {
-    width: 78px;
-    height: 6px;
-    background-color: #F9804B;
-    border-radius: 5px;
-  }
-  #radio_progress_bar_one:not(checked) ~ .slider_progress_bar .progress_style_1 {
-    width: 78px;
-    height: 6px;
-    background-color: #F1F3F2;
-    border-radius: 5px;
-  }
-  .progress_style_1:hover {
-    cursor: pointer;
-  }
-  #radio_progress_bar_two:checked ~ .slider_progress_bar .progress_style_2 {
-    width: 78px;
-    height: 6px;
-    background-color: #F9804B;
-    border-radius: 5px;
-  }
-  #radio_progress_bar_two:not(checked) ~ .slider_progress_bar .progress_style_2 {
-    width: 78px;
-    height: 6px;
-    background-color: #F1F3F2;
-    border-radius: 5px;
-  }
-  .progress_style_2:hover {
-    cursor: pointer;
-  }
-  #radio_progress_bar_three:checked ~ .slider_progress_bar .progress_style_3 {
-    width: 78px;
-    height: 6px;
-    background-color: #F9804B;
-    border-radius: 5px;
-  }
-  #radio_progress_bar_three:not(checked) ~ .slider_progress_bar .progress_style_3 {
-    width: 78px;
-    height: 6px;
-    background-color: #F1F3F2;
-    border-radius: 5px;
-  }
-  .progress_style_3:hover {
-    cursor: pointer;
-  }
-  #radio_progress_bar_four:checked ~ .slider_progress_bar .progress_style_4 {
-    width: 78px;
-    height: 6px;
-    background-color: #F9804B;
-    border-radius: 5px;
-  }
-  #radio_progress_bar_four:not(checked) ~ .slider_progress_bar .progress_style_4 {
-    width: 78px;
-    height: 6px;
-    background-color: #F1F3F2;
-    border-radius: 5px;
-  }
-  .progress_style_4:hover {
-    cursor: pointer;
-  }
-  #radio_progress_bar_five:checked ~ .slider_progress_bar .progress_style_5 {
-    width: 78px;
-    height: 6px;
-    background-color: #F9804B;
-    border-radius: 5px;
-  }
-  #radio_progress_bar_five:not(checked) ~ .slider_progress_bar .progress_style_5 {
-    width: 78px;
-    height: 6px;
-    background-color: #F1F3F2;
-    border-radius: 5px;
-  }
-  .progress_style_5:hover {
-    cursor: pointer;
   }
   .button_testimonials {
     width: 240px;

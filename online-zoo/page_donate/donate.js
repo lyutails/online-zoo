@@ -1,9 +1,3 @@
-function maxLengthCheck(object)
-{
-    if (object.value.length > object.maxLength)
-    object.value = object.value.slice(0, object.maxLength)
-}
-
 
 // burger menu
 
@@ -37,3 +31,30 @@ if (burgerOverlay) {
         burger.checked = false;     
     })
 }
+
+
+// another amount four symbols limit
+
+function maxLengthCheck(object)
+{
+    if (object.value.length > object.maxLength)
+    object.value = object.value.slice(0, object.maxLength)
+}
+
+// input amount number
+
+const sumGrade = document.querySelector(".sum_circles");
+const moneyInput = document.querySelector(".payment");
+sumGrade.addEventListener("click", (e) => {
+  e.target.className = "radiobutton_circle_5000" ? moneyInput.value = e.target.value : false;
+  }
+);
+
+
+
+// const priceBar = document.querySelector(".donation_amount_bar");
+// const amountBar = document.querySelector(".input__amount");
+// priceBar.addEventListener("click", (e) => {
+//   e.target.className = "radio-button" ? amountBar.value = e.target.value : false;
+//   }
+// );
