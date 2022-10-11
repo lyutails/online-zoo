@@ -493,17 +493,29 @@ body {
             align-items: center;
             justify-content: space-between;
             margin: 180px 0px 0px 0px;
-        }    
+        } 
+        
 
         .animals_slider {
-            width: 1158px;
-            height: 872px;
+            width: 1158px;            
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: space-between;              
+            flex-direction: row;                       
+            overflow: hidden;                        
         }
+
+        .animals_carousel {
+            width: 6066px;
+            height: 888px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-content: space-between;
+            flex-wrap: wrap;      
+            gap: 26px; 
+            transition: all 1s ease-in-out; 
+            transform: translateX(-1180px);    
+        }
+       
         
         .slider_pic {
             width: 366px;
@@ -513,13 +525,13 @@ body {
             border-radius: 5px;
             border: 1px solid;
             border-color: #FE9013;
-            overflow: hidden;             
+           overflow: hidden;             
         }
 
         .pandas_pic {
             width: 366px;
             height: 366px;
-            background-image: url('../refs/for_slider/slider_pandas.png'); 
+            background-image: url('../refs/pics/animals/1600_slider_pets/pandas.png'); 
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
             transition: all 0.4s ease-in-out;                   
@@ -609,7 +621,7 @@ body {
         .eagles_pic {
             width: 366px;
             height: 366px;
-            background-image: url('../refs/for_slider/slider_eagles.png'); 
+            background-image: url('../refs/pics/animals/1600_slider_pets/eagle.png'); 
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
             transition: all 0.4s ease-in-out;
@@ -697,7 +709,7 @@ body {
         .gorillas_pic {
             width: 366px;
             height: 366px;
-            background-image: url('../refs/for_slider/slider_gorilla.png'); 
+            background-image: url('../refs/pics/animals/1600_slider_pets/gorilla.png'); 
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
             transition: all 0.4s ease-in-out;                   
@@ -763,7 +775,6 @@ body {
                 }
             }
 
-
         .slider_info_icon_sloth {
             display: flex;
             flex-direction: row;        
@@ -776,7 +787,7 @@ body {
         .sloth_pic {
             width: 366px;
             height: 366px;
-            background-image: url('../refs/for_slider/slider_sloth.png'); 
+            background-image: url('../refs/pics/animals/1600_slider_pets/sloth.png'); 
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
             transition: all 0.4s ease-in-out;                   
@@ -854,7 +865,7 @@ body {
         .cheetahs_pic {
             width: 366px;
             height: 366px;
-            background-image: url('../refs/for_slider/slider_cheetahs.png'); 
+            background-image: url('../refs/pics/animals/1600_slider_pets/cheetahs.png'); 
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
             transition: all 0.4s ease-in-out;
@@ -942,7 +953,7 @@ body {
         .penguins_pic {
             width: 366px;
             height: 366px;
-            background-image: url('../refs/for_slider/slider_penguins.png'); 
+            background-image: url('../refs/pics/animals/1600_slider_pets/paneguin.png'); 
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
             transition: all 0.4s ease-in-out;
@@ -1017,6 +1028,890 @@ body {
                 color: $black;
            }
         }
+
+    .slider_info_icon_flamingo {
+        display: flex;
+        flex-direction: row;        
+        align-items: center;
+        width: 366px;
+        height: 60px;
+        transition: all 0.4s ease-in-out;         
+    }         
+
+    .flamingo_pic {
+        width: 366px;
+        height: 366px;
+        background-image: url('../refs/pics/animals/1600_slider_pets/flamingo.jpg'); 
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .flamingo_pic:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.4);
+        background-blend-mode: multiply;         
+        
+        + .slider_info_icon_flamingo {                
+            transform: scale(1.05) translateY(8px) translateY(-5px);
+            //background-color: rgba(196, 196, 196, 0.4);
+            background-color: rgba(75, 146, 0, 0.4);
+            border-bottom-left-radius: 5px; 
+            border-bottom-right-radius: 5px; 
+            pointer-events: none;                
+        }
+
+        ~ .flamingo_name {                
+            color: $white;
+        }
+
+        ~ .flamingo_habitation {                
+            color: $white;
+        }
+    }
+
+        .flamingo_name {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: $black;
+        } 
+
+        .flamingo_habitation {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 120%;
+            color: $black;
+        }
+
+    .slider_text_flamingo {
+        width: 294px;
+        height: 38px;
+        margin: 8px 0px 14px 16px;
+        display: flex;
+        flex-direction: column;
+
+        .flamingo_name {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: $black;
+        } 
+
+        .hedgehog_habitation {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 120%;
+            color: $black;
+        }
+    }
+
+    .slider_info_icon_hedgehog {
+        display: flex;
+        flex-direction: row;        
+        align-items: center;
+        width: 366px;
+        height: 60px;
+        transition: all 0.4s ease-in-out;         
+    }         
+
+    .hedgehog_pic {
+        width: 366px;
+        height: 366px;
+        background-image: url('../refs/pics/animals/1600_slider_pets/hedgehog.png'); 
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .hedgehog_pic:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.4);
+        background-blend-mode: multiply;         
+        
+        + .slider_info_icon_hedgehog {                
+            transform: scale(1.05) translateY(8px) translateY(-5px);
+            //background-color: rgba(196, 196, 196, 0.4);
+            background-color: rgba(75, 146, 0, 0.4);
+            border-bottom-left-radius: 5px; 
+            border-bottom-right-radius: 5px; 
+            pointer-events: none;                
+        }
+
+        ~ .hedgehog_name {                
+            color: $white;
+        }
+
+        ~ .hedgehog_habitation {                
+            color: $white;
+        }
+    }
+
+        .hedgehog_name {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: $black;
+        } 
+
+        .hedgehog_habitation {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 120%;
+            color: $black;
+        }
+
+    .slider_text_hedgehog {
+        width: 294px;
+        height: 38px;
+        margin: 8px 0px 14px 16px;
+        display: flex;
+        flex-direction: column;
+
+        .hedgehog_name {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: $black;
+        } 
+
+        .hedgehog_habitation {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 120%;
+            color: $black;
+        }
+    }
+
+    .slider_info_icon_kolibri {
+        display: flex;
+        flex-direction: row;        
+        align-items: center;
+        width: 366px;
+        height: 60px;
+        transition: all 0.4s ease-in-out;         
+    }         
+
+    .kolibri_pic {
+        width: 366px;
+        height: 366px;
+        background-image: url('../refs/pics/animals/1600_slider_pets/kolibri.png'); 
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .kolibri_pic:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.4);
+        background-blend-mode: multiply;         
+        
+        + .slider_info_icon_kolibri {                
+            transform: scale(1.05) translateY(8px) translateY(-5px);
+            //background-color: rgba(196, 196, 196, 0.4);
+            background-color: rgba(75, 146, 0, 0.4);
+            border-bottom-left-radius: 5px; 
+            border-bottom-right-radius: 5px; 
+            pointer-events: none;                
+        }
+
+        ~ .kolibri_name {                
+            color: $white;
+        }
+
+        ~ .kolibri_habitation {                
+            color: $white;
+        }
+    }
+
+        .kolibri_name {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: $black;
+        } 
+
+        .kolibri_habitation {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 120%;
+            color: $black;
+        }
+
+    .slider_text_kolibri {
+        width: 294px;
+        height: 38px;
+        margin: 8px 0px 14px 16px;
+        display: flex;
+        flex-direction: column;
+
+        .kolibri_name {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: $black;
+        } 
+
+        .kolibri_habitation {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 120%;
+            color: $black;
+        }
+    }
+
+    .slider_info_icon_polar_fox {
+        display: flex;
+        flex-direction: row;        
+        align-items: center;
+        width: 366px;
+        height: 60px;
+        transition: all 0.4s ease-in-out;         
+    }         
+
+    .polar_fox_pic {
+        width: 366px;
+        height: 366px;
+        background-image: url('../refs/pics/animals/1600_slider_pets/polar_fox.png'); 
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .polar_fox_pic:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.4);
+        background-blend-mode: multiply;         
+        
+        + .slider_info_icon_polar_fox {                
+            transform: scale(1.05) translateY(8px) translateY(-5px);
+            //background-color: rgba(196, 196, 196, 0.4);
+            background-color: rgba(75, 146, 0, 0.4);
+            border-bottom-left-radius: 5px; 
+            border-bottom-right-radius: 5px; 
+            pointer-events: none;                
+        }
+
+        ~ .polar_fox_name {                
+            color: $white;
+        }
+
+        ~ .polar_fox_habitation {                
+            color: $white;
+        }
+    }
+
+        .polar_fox_name {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: $black;
+        } 
+
+        .polar_fox_habitation {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 120%;
+            color: $black;
+        }
+
+    .slider_text_polar_fox {
+        width: 294px;
+        height: 38px;
+        margin: 8px 0px 14px 16px;
+        display: flex;
+        flex-direction: column;
+
+        .polar_fox_name {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: $black;
+        } 
+
+        .polar_fox_habitation {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 120%;
+            color: $black;
+        }
+    }
+
+    .slider_info_icon_polar_owl {
+        display: flex;
+        flex-direction: row;        
+        align-items: center;
+        width: 366px;
+        height: 60px;
+        transition: all 0.4s ease-in-out;         
+    }         
+
+    .polar_owl_pic {
+        width: 366px;
+        height: 366px;
+        background-image: url('../refs/pics/animals/1600_slider_pets/polar_owl.jpg'); 
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .polar_owl_pic:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.4);
+        background-blend-mode: multiply;         
+        
+        + .slider_info_icon_polar_owl {                
+            transform: scale(1.05) translateY(8px) translateY(-5px);
+            //background-color: rgba(196, 196, 196, 0.4);
+            background-color: rgba(75, 146, 0, 0.4);
+            border-bottom-left-radius: 5px; 
+            border-bottom-right-radius: 5px; 
+            pointer-events: none;                
+        }
+
+        ~ .polar_owl_name {                
+            color: $white;
+        }
+
+        ~ .polar_owl_habitation {                
+            color: $white;
+        }
+    }
+
+        .polar_owl_name {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: $black;
+        } 
+
+        .polar_owl_habitation {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 120%;
+            color: $black;
+        }
+
+    .slider_text_polar_owl {
+        width: 294px;
+        height: 38px;
+        margin: 8px 0px 14px 16px;
+        display: flex;
+        flex-direction: column;
+
+        .polar_owl_name {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: $black;
+        } 
+
+        .polar_owl_habitation {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 120%;
+            color: $black;
+        }
+    }
+
+    .slider_info_icon_medoed {
+        display: flex;
+        flex-direction: row;        
+        align-items: center;
+        width: 366px;
+        height: 60px;
+        transition: all 0.4s ease-in-out;         
+    }         
+
+    .medoed_pic {
+        width: 366px;
+        height: 366px;
+        background-image: url('../refs/pics/animals/1600_slider_pets/medoed.jpg'); 
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .medoed_pic:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.4);
+        background-blend-mode: multiply;         
+        
+        + .slider_info_icon_medoed {                
+            transform: scale(1.05) translateY(8px) translateY(-5px);
+            //background-color: rgba(196, 196, 196, 0.4);
+            background-color: rgba(75, 146, 0, 0.4);
+            border-bottom-left-radius: 5px; 
+            border-bottom-right-radius: 5px; 
+            pointer-events: none;                
+        }
+
+        ~ .medoed_name {                
+            color: $white;
+        }
+
+        ~ .medoed_habitation {                
+            color: $white;
+        }
+    }
+
+        .medoed_name {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: $black;
+        } 
+
+        .medoed_habitation {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 120%;
+            color: $black;
+        }
+
+    .slider_text_medoed {
+        width: 294px;
+        height: 38px;
+        margin: 8px 0px 14px 16px;
+        display: flex;
+        flex-direction: column;
+
+        .medoed_name {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: $black;
+        } 
+
+        .medoed_habitation {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 120%;
+            color: $black;
+        }
+    }
+
+    .slider_info_icon_gorilla_2 {
+        display: flex;
+        flex-direction: row;        
+        align-items: center;
+        width: 366px;
+        height: 60px;
+        transition: all 0.4s ease-in-out;         
+    }         
+
+    .gorilla_2_pic {
+        width: 366px;
+        height: 366px;
+        background-image: url('../refs/pics/animals/1600_slider_pets/gorilla_1.png'); 
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .gorilla_2_pic:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.4);
+        background-blend-mode: multiply;         
+        
+        + .slider_info_icon_gorilla_2 {                
+            transform: scale(1.05) translateY(8px) translateY(-5px);
+            //background-color: rgba(196, 196, 196, 0.4);
+            background-color: rgba(75, 146, 0, 0.4);
+            border-bottom-left-radius: 5px; 
+            border-bottom-right-radius: 5px; 
+            pointer-events: none;                
+        }
+
+        ~ .gorilla_2_name {                
+            color: $white;
+        }
+
+        ~ .gorilla_2_habitation {                
+            color: $white;
+        }
+    }
+
+        .gorilla_2_name {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: $black;
+        } 
+
+        .gorilla_2_habitation {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 120%;
+            color: $black;
+        }
+
+    .slider_text_gorilla_2 {
+        width: 294px;
+        height: 38px;
+        margin: 8px 0px 14px 16px;
+        display: flex;
+        flex-direction: column;
+
+        .gorilla_2_name {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: $black;
+        } 
+
+        .gorilla_2_habitation {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 120%;
+            color: $black;
+        }
+    }
+
+
+    .slider_info_icon_kiwi_1 {
+        display: flex;
+        flex-direction: row;        
+        align-items: center;
+        width: 366px;
+        height: 60px;
+        transition: all 0.4s ease-in-out;         
+    }         
+
+    .kiwi_1_pic {
+        width: 366px;
+        height: 366px;
+        background-image: url('../refs/pics/animals/1600_slider_pets/kiwi.png'); 
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .kiwi_1_pic:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.4);
+        background-blend-mode: multiply;         
+        
+        + .slider_info_icon_kiwi_1 {                
+            transform: scale(1.05) translateY(8px) translateY(-5px);
+            //background-color: rgba(196, 196, 196, 0.4);
+            background-color: rgba(75, 146, 0, 0.4);
+            border-bottom-left-radius: 5px; 
+            border-bottom-right-radius: 5px; 
+            pointer-events: none;                
+        }
+
+        ~ .kiwi_1_name {                
+            color: $white;
+        }
+
+        ~ .kiwi_1_habitation {                
+            color: $white;
+        }
+    }
+
+        .kiwi_1_name {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: $black;
+        } 
+
+        .kiwi_1_habitation {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 120%;
+            color: $black;
+        }
+
+    .slider_text_kiwi_1 {
+        width: 294px;
+        height: 38px;
+        margin: 8px 0px 14px 16px;
+        display: flex;
+        flex-direction: column;
+
+        .kiwi_1_name {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: $black;
+        } 
+
+        .kiwi_1_habitation {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 120%;
+            color: $black;
+        }
+    }
+
+    .slider_info_icon_lemur {
+        display: flex;
+        flex-direction: row;        
+        align-items: center;
+        width: 366px;
+        height: 60px;
+        transition: all 0.4s ease-in-out;         
+    }         
+
+    .lemur_pic {
+        width: 366px;
+        height: 366px;
+        background-image: url('../refs/pics/animals/1600_slider_pets/lemur.jpg'); 
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .lemur_pic:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.4);
+        background-blend-mode: multiply;         
+        
+        + .slider_info_icon_lemur {                
+            transform: scale(1.05) translateY(8px) translateY(-5px);
+            //background-color: rgba(196, 196, 196, 0.4);
+            background-color: rgba(75, 146, 0, 0.4);
+            border-bottom-left-radius: 5px; 
+            border-bottom-right-radius: 5px; 
+            pointer-events: none;                
+        }
+
+        ~ .lemur_name {                
+            color: $white;
+        }
+
+        ~ .lemur_habitation {                
+            color: $white;
+        }
+    }
+
+        .lemur_name {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: $black;
+        } 
+
+        .lemur_habitation {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 120%;
+            color: $black;
+        }
+
+    .slider_text_lemur {
+        width: 294px;
+        height: 38px;
+        margin: 8px 0px 14px 16px;
+        display: flex;
+        flex-direction: column;
+
+        .lemur_name {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: $black;
+        } 
+
+        .lemur_habitation {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 120%;
+            color: $black;
+        }
+    }
+
+
+
+    .slider_info_icon_crocodile {
+        display: flex;
+        flex-direction: row;        
+        align-items: center;
+        width: 366px;
+        height: 60px;
+        transition: all 0.4s ease-in-out;         
+    }         
+
+    .crocodile_pic {
+        width: 366px;
+        height: 366px;
+        background-image: url('../refs/pics/animals/1600_slider_pets/crocodile_face.png'); 
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .crocodile_pic:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.4);
+        background-blend-mode: multiply;         
+        
+        + .slider_info_icon_crocodile {                
+            transform: scale(1.05) translateY(8px) translateY(-5px);
+            //background-color: rgba(196, 196, 196, 0.4);
+            background-color: rgba(75, 146, 0, 0.4);
+            border-bottom-left-radius: 5px; 
+            border-bottom-right-radius: 5px; 
+            pointer-events: none;                
+        }
+
+        ~ .crocodile_name {                
+            color: $white;
+        }
+
+        ~ .crocodile_habitation {                
+            color: $white;
+        }
+    }
+
+        .crocodile_name {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: $black;
+        } 
+
+        .crocodile_habitation {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 120%;
+            color: $black;
+        }
+
+    .slider_text_crocodile {
+        width: 294px;
+        height: 38px;
+        margin: 8px 0px 14px 16px;
+        display: flex;
+        flex-direction: column;
+
+        .crocodile_name {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: $black;
+        } 
+
+        .crocodile_habitation {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 120%;
+            color: $black;
+        }
+    }
+
 
         .food_vegetarian {
             width: 33px;
@@ -1549,7 +2444,7 @@ body {
 
         .testimonials_and_button {
             width: 1160px;
-            height: 599px;                       
+            height: 600px;                       
             margin: 140px 220px 180px 220px;
             display: flex;
             flex-direction: column;            
@@ -1559,12 +2454,13 @@ body {
 
             .testimonials_info {
                 width: 1160px;
-                height: 514px;                
+                height: 520px;                
                 background-color: #FDFDFF;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                overflow: hidden;
             }
 
             .testimonials_title {
@@ -1580,39 +2476,51 @@ body {
                 margin-bottom: 47px;
             }
 
-            .testimonials_slider {
-                display: flex;
-                justify-content: space-between;
-                width: 1160px;
-                height: 391px;
+            .testimonials_slider {     
+                display: flex;       
+                gap: 24px;         
+                height: 395px;
+                margin-bottom: 16px;                
+                transform: translateX(1331px);
+                transition: all 0.5s ease-in-out;
+                cursor: pointer;
             }
 
-            .testimonial_one, .testimonial_two, .testimonial_three {
+            .testimonial {
                 width: 268px;
                 height: 391px;
                 background: $pink_gradient;
                 border-radius: 20px;
-                border: 4px solid transparent;  
-                box-shadow: inset 0px 0px 0px 100vw $light_grey;  
-                //padding: 5px;                                            
+                border: 2px solid transparent;  
+                box-shadow: inset 0px 0px 0px 100vw $light_grey;                                                             
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                align-items: center;                
-            }
+                align-items: center; 
+                position: relative;               
+            }   
+            
+            .shadow {
+                position: fixed;
+                background-color: rgba(0, 0, 0, 0.4);
+                width: 100%;
+                height: 100vh;
+                top: 0;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }           
+            
 
-            .testimonial_four {
-                width: 268px;
-                height: 391px;
-                background: $pink_gradient;
-                border-radius: 20px;
-                border: 4px solid transparent;  
-                box-shadow: inset 0px 0px 0px 100vw $light_grey;  
-                //padding: 5px;                                            
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;                
+            .cross {
+                top: -20px;
+                right: -20px;
+                position: absolute;
+                width: 14px;
+                height: 14px;
+                background-image: url('../refs/icons/popup_closer.png');
+                cursor: pointer;
             }
 
                 .user_info {
@@ -1624,133 +2532,22 @@ body {
                     align-items: center;                                                      
                 }
 
-                    .user_icon_1 {
+                    .user_icon {
+                        display: inline-block;
                         width: 37px;
-                        height: 37px;
-                        background-image: url('../refs/icons/user_icon.svg');
+                        height: 37px;                        
                         margin-right: 10px;
                     }
 
-                    .user_name_location_1 {
-                        width: 144px;
-                        height: 38px;
-                        display: flex;
-                        flex-direction: column;
-                    }
-
-                        .user_name_one {
-                            width: 97px;
-                            height: 19px;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 16px;
-                            line-height: 120%;
-                            color: $black;
-                        }
-
-                        .where_when_1 {
-                            width: 144px;
-                            height: 18px;
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: space-between;
-                        }
-
-                        .user_country_1 {
-                            width: 87px;
-                            height: 18px;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: 300;
-                            font-size: 15px;
-                            line-height: 120%;
-                            color: $grey;
-                        }
-
-                        .testimonial_date_1 {
-                            width: 41px;
-                            height: 18px;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: 300;
-                            font-size: 15px;
-                            line-height: 120%;
-                            color: $grey;
-                        }
-
-
-                    .user_icon_2 {
-                        width: 37px;
-                        height: 37px;
-                        background-image: url('../refs/icons/user_one.png');
-                        margin-right: 10px;
-                    }
-
-                    .user_name_location_2 {
-                        width: 144px;
-                        height: 38px;
-                        display: flex;
-                        flex-direction: column;
-                    }
-
-                        .user_name_two {
-                            width: 126px;
-                            height: 19px;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 16px;
-                            line-height: 120%;
-                            color: $black;
-                        }
-
-                        .where_when_2 {
-                            width: 168px;
-                            height: 18px;
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: space-between;
-                        }
-
-                        .user_country_2 {
-                            width: 87px;
-                            height: 18px;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: 300;
-                            font-size: 15px;
-                            line-height: 120%;
-                            color: $grey;
-                        }
-
-                        .testimonial_date_2 {
-                            width: 65px;
-                            height: 18px;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: 300;
-                            font-size: 15px;
-                            line-height: 120%;
-                            color: $grey;
-                        }
-
-                    .user_icon_3 {
-                        width: 37px;
-                        height: 37px;
-                        background-image: url('../refs/icons/user_two.png');
-                        margin-right: 10px;
-                    }
-
-                    .user_name_location_3 {
+                    .user_name_location {
                         width: 168px;
                         height: 38px;
                         display: flex;
                         flex-direction: column;
                     }
 
-                        .user_name_three {
-                            width: 139px;
+                        .user_name {
+                            width: 140px;
                             height: 19px;
                             font-family: 'Roboto';
                             font-style: normal;
@@ -1760,7 +2557,7 @@ body {
                             color: $black;
                         }
 
-                        .where_when_3 {
+                        .where_when {
                             width: 168px;
                             height: 18px;
                             display: flex;
@@ -1768,7 +2565,7 @@ body {
                             justify-content: space-between;
                         }
 
-                        .user_country_3 {
+                        .user_country {
                             width: 87px;
                             height: 18px;
                             font-family: 'Roboto';
@@ -1777,9 +2574,9 @@ body {
                             font-size: 15px;
                             line-height: 120%;
                             color: $grey;
-                        }
+                        }                        
 
-                        .testimonial_date_3 {
+                        .testimonial_date {
                             width: 65px;
                             height: 18px;
                             font-family: 'Roboto';
@@ -1788,62 +2585,7 @@ body {
                             font-size: 15px;
                             line-height: 120%;
                             color: $grey;
-                        }
-
-                    .user_icon_4 {
-                        width: 37px;
-                        height: 37px;
-                        background-image: url('../refs/icons/user_three.png');
-                        margin-right: 10px;
-                    }
-
-                    .user_name_location_4 {
-                        width: 168px;
-                        height: 38px;
-                        display: flex;
-                        flex-direction: column;
-                    }
-
-                        .user_name_four {
-                            width: 83px;
-                            height: 19px;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 16px;
-                            line-height: 120%;
-                            color: $black;
-                        }
-
-                        .where_when_4 {
-                            width: 168px;
-                            height: 18px;
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: space-between;
-                        }
-
-                        .user_country_4 {
-                            width: 87px;
-                            height: 18px;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: 300;
-                            font-size: 15px;
-                            line-height: 120%;
-                            color: $grey;
-                        }
-
-                        .testimonial_date_4 {
-                            width: 65px;
-                            height: 18px;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: 300;
-                            font-size: 15px;
-                            line-height: 120%;
-                            color: $grey;
-                        }
+                        }                   
 
                 .testimonial_text {
                     width: 237px;
@@ -1874,142 +2616,55 @@ body {
                     color: $grey;
                 }
 
-            .slider_progress_bar {
-                width: 599px;
-                height: 8px;
-                box-sizing: border-box;
-                width: 599px;
-                height: 8px;
-                background: $light_grey;
-                border-radius: 5px;
-                border: 2px solid $light_grey;                
-                margin-top: 20px;
-                cursor: pointer;
-                display: flex;
-                flex-direction: row;
-                align-items: space-between;
-            }
-
-    input[type="radio"] {
-        border: 0px;
-        width: 50px;
-        height: 3em;
-        display: none;
+    input[type="range"] {
+        display: block;
+        -webkit-appearance: none;        
+        width: 600px; 
+        height: 8px;
+        margin: 0 auto;
+        background-color: $frosted_glass_white;
+        border: 1px solid $orange;
+        border-radius: 5px;        
+        margin-top: 2px;       
     }
 
-                #radio_progress_bar_one:checked ~ .slider_progress_bar .progress_style_1 {
-                    //position: relative;
-                    //width: 116px;
-                    width: 120px;
-                    height: 6px;
-                    background-color: $orange;
-                    border-radius: 5px;
-                }
+    input[type="range"]::-webkit-slider-thumb {         
+        -webkit-appearance: none;       
+        width: 115px; 
+        height: 8px;        
+        background-color: $orange;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+        border-radius: 5px;
+    }
 
-                #radio_progress_bar_one:not(checked) ~ .slider_progress_bar .progress_style_1 {
-                    //position: relative;
-                    //width: 116px;
-                    width: 120px;
-                    height: 6px;
-                    background-color: $light_grey;
-                    border-radius: 5px;
-                }
+    input[type="range"]::-webkit-slider-thumb {         
+        -webkit-appearance: none;       
+        width: 115px; 
+        height: 8px;        
+        background-color: $pink_gradient;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+        border-radius: 5px;
+    }  
+    
+    input[type="range"]:active {
+        display: block;
+        -webkit-appearance: none;        
+        width: 600px; 
+        height: 8px;
+        margin: 0 auto;
+        background-color: $frosted_glass_white;
+        border: 1px solid $orange;
+        border-radius: 5px;        
+        margin-top: 2px;       
+    }    
 
-                .progress_style_1:hover {
-                    cursor: pointer;
-                }
+    .testimonials_slider.active {
+        transform: translateX(-298px);
+    }
 
-                #radio_progress_bar_two:checked ~ .slider_progress_bar .progress_style_2 {
-                    //position: relative;
-                    //width: 116px;
-                    width: 120px;
-                    height: 6px;
-                    background-color: $orange;
-                    border-radius: 5px;
-                }                
-
-                #radio_progress_bar_two:not(checked) ~ .slider_progress_bar .progress_style_2 {
-                    //position: relative;
-                    //width: 116px;
-                    width: 120px;
-                    height: 6px;
-                    background-color: $light_grey;
-                    border-radius: 5px;
-                }
-
-                .progress_style_2:hover {
-                    cursor: pointer;
-                }
-                
-                #radio_progress_bar_three:checked ~ .slider_progress_bar .progress_style_3 {
-                    //position: relative;
-                    //width: 116px;
-                    width: 120px;
-                    height: 6px;
-                    background-color: $orange;
-                    border-radius: 5px;
-                }
-
-                #radio_progress_bar_three:not(checked) ~ .slider_progress_bar .progress_style_3 {
-                    //position: relative;
-                    //width: 116px;
-                    width: 120px;
-                    height: 6px;
-                    background-color: $light_grey;
-                    border-radius: 5px;
-                }
-                
-                .progress_style_3:hover {
-                    cursor: pointer;
-                }
-
-                #radio_progress_bar_four:checked ~ .slider_progress_bar .progress_style_4 {
-                    //position: relative;
-                    //width: 116px;
-                    width: 120px;
-                    height: 6px;
-                    background-color: $orange;
-                    border-radius: 5px;
-                }
-
-                #radio_progress_bar_four:not(checked) ~ .slider_progress_bar .progress_style_4 {
-                    //position: relative;
-                    //width: 116px;
-                    width: 120px;
-                    height: 6px;
-                    background-color: $light_grey;
-                    border-radius: 5px;
-                }
-                
-                .progress_style_4:hover {
-                    cursor: pointer;
-                }
-
-                #radio_progress_bar_five:checked ~ .slider_progress_bar .progress_style_5 {
-                    //position: relative;
-                    //width: 116px;
-                    width: 120px;
-                    height: 6px;
-                    background-color: $orange;
-                    border-radius: 5px;
-                }
-
-                #radio_progress_bar_five:not(checked) ~ .slider_progress_bar .progress_style_5 {
-                    //position: relative;
-                    //width: 116px;
-                    width: 120px;
-                    height: 6px;
-                    background-color: $light_grey;
-                    border-radius: 5px;
-                }
-                
-                .progress_style_5:hover {
-                    cursor: pointer;
-                }
-
-
-                //testimonials slider movement            
-
+    
 
 
             .button_testimonials {
@@ -4310,497 +4965,17 @@ body {
         }
 
             .testimonials_info {
-                width: 940px;
-                height: 496px;                
-                background-color: #FDFDFF;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                width: 940px;             
             }
 
-            .testimonials_title {
-                width: 206px;
-                height: 47px;
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 36px;
-                line-height: 130%;
-                text-align: center;
-                color: #333B41;
-                margin-bottom: 30px;
-            }
-
-            .testimonials_slider {
-                display: flex;
-                justify-content: space-between;
-                width: 940px;
-                height: 391px;
-                overflow: hidden;
-            }
-
-            .testimonial_one, .testimonial_two, .testimonial_three {
-                width: 293px;
-                height: 387px;
-                background: $pink_gradient;
-                border-radius: 20px;
-                border: 2px solid transparent;  
-                box-shadow: inset 0px 0px 0px 100vw $light_grey;  
-                //padding: 5px;                                            
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;                
-            }
-
-            .testimonial_four {
-                display: none;
+            .testimonials_slider {                
+                transform: translateX(1450px);
+                gap: 9px;
             } 
-
-                .user_info {
-                    width: 237px;
-                    height: 38px;
-                    margin-bottom: 10px;
-                    display: flex;  
-                    justify-content: flex-start;   
-                    align-items: center;                                                      
-                }
-
-                    .user_icon_1 {
-                        width: 37px;
-                        height: 37px;
-                        background-image: url('../refs/icons/user_icon.svg');
-                        margin-right: 10px;
-                    }
-
-                    .user_name_location_1 {
-                        width: 144px;
-                        height: 38px;
-                        display: flex;
-                        flex-direction: column;
-                    }
-
-                        .user_name_one {
-                            width: 97px;
-                            height: 19px;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 16px;
-                            line-height: 120%;
-                            color: $black;
-                        }
-
-                        .where_when_1 {
-                            width: 144px;
-                            height: 18px;
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: space-between;
-                        }
-
-                        .user_country_1 {
-                            width: 87px;
-                            height: 18px;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: 300;
-                            font-size: 15px;
-                            line-height: 120%;
-                            color: $grey;
-                        }
-
-                        .testimonial_date_1 {
-                            width: 41px;
-                            height: 18px;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: 300;
-                            font-size: 15px;
-                            line-height: 120%;
-                            color: $grey;
-                        }
-
-
-                    .user_icon_2 {
-                        width: 37px;
-                        height: 37px;
-                        background-image: url('../refs/icons/user_one.png');
-                        margin-right: 10px;
-                    }
-
-                    .user_name_location_2 {
-                        width: 144px;
-                        height: 38px;
-                        display: flex;
-                        flex-direction: column;
-                    }
-
-                        .user_name_two {
-                            width: 126px;
-                            height: 19px;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 16px;
-                            line-height: 120%;
-                            color: $black;
-                        }
-
-                        .where_when_2 {
-                            width: 168px;
-                            height: 18px;
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: space-between;
-                        }
-
-                        .user_country_2 {
-                            width: 87px;
-                            height: 18px;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: 300;
-                            font-size: 15px;
-                            line-height: 120%;
-                            color: $grey;
-                        }
-
-                        .testimonial_date_2 {
-                            width: 65px;
-                            height: 18px;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: 300;
-                            font-size: 15px;
-                            line-height: 120%;
-                            color: $grey;
-                        }
-
-                    .user_icon_3 {
-                        width: 37px;
-                        height: 37px;
-                        background-image: url('../refs/icons/user_two.png');
-                        margin-right: 10px;
-                    }
-
-                    .user_name_location_3 {
-                        width: 168px;
-                        height: 38px;
-                        display: flex;
-                        flex-direction: column;
-                    }
-
-                        .user_name_three {
-                            width: 139px;
-                            height: 19px;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 16px;
-                            line-height: 120%;
-                            color: $black;
-                        }
-
-                        .where_when_3 {
-                            width: 168px;
-                            height: 18px;
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: space-between;
-                        }
-
-                        .user_country_3 {
-                            width: 87px;
-                            height: 18px;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: 300;
-                            font-size: 15px;
-                            line-height: 120%;
-                            color: $grey;
-                        }
-
-                        .testimonial_date_3 {
-                            width: 65px;
-                            height: 18px;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: 300;
-                            font-size: 15px;
-                            line-height: 120%;
-                            color: $grey;
-                        }
-
-                    .user_icon_4 {
-                        width: 37px;
-                        height: 37px;
-                        background-image: url('../refs/icons/user_three.png');
-                        margin-right: 10px;
-                    }
-
-                    .user_name_location_4 {
-                        width: 168px;
-                        height: 38px;
-                        display: flex;
-                        flex-direction: column;
-                    }
-
-                        .user_name_four {
-                            width: 83px;
-                            height: 19px;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 16px;
-                            line-height: 120%;
-                            color: $black;
-                        }
-
-                        .where_when_4 {
-                            width: 168px;
-                            height: 18px;
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: space-between;
-                        }
-
-                        .user_country_4 {
-                            width: 87px;
-                            height: 18px;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: 300;
-                            font-size: 15px;
-                            line-height: 120%;
-                            color: $grey;
-                        }
-
-                        .testimonial_date_4 {
-                            width: 65px;
-                            height: 18px;
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: 300;
-                            font-size: 15px;
-                            line-height: 120%;
-                            color: $grey;
-                        }
-
-                .testimonial_text {
-                    width: 255px;
-                    height: 307px;
-                    font-family: 'Roboto';
-                    font-style: normal;
-                    font-weight: 300;
-                    font-size: 15px;
-                    line-height: 120%;
-                    color: #767474;
-                    text-align: left;
-                    overflow: hidden;
-                    overflow-y: scroll;
-                    scrollbar-width: none;
-                    -ms-overflow-style: none;
-                }
-                
-                .testimonial_text::-webkit-scrollbar {
-                    width: 0px;
-                    background: transparent;
-                  }
-
-                .testimonial_text:hover {
-                    cursor: auto;
-                }
-
-                .country_date_between_circle {
-                    color: $grey;
-                }
-
-            .slider_progress_bar {
-                width: 390px;
-                height: 8px;
-                box-sizing: border-box;
-                background: $light_grey;
-                border-radius: 5px;
-                border: 2px solid $light_grey;         
-                cursor: pointer;
-                display: flex;
-                flex-direction: row;
-                align-items: space-between;
-            }
-
-    input[type="radio"] {
-        border: 0px;
-        width: 50px;
-        height: 3em;
-        display: none;
-    }
-
-                #radio_progress_bar_one:checked ~ .slider_progress_bar .progress_style_1 {
-                    //position: relative;
-                    //width: 116px;
-                    width: 78px;
-                    height: 6px;
-                    background-color: $orange;
-                    border-radius: 5px;
-                }
-
-                #radio_progress_bar_one:not(checked) ~ .slider_progress_bar .progress_style_1 {
-                    //position: relative;
-                    //width: 116px;
-                    width: 78px;
-                    height: 6px;
-                    background-color: $light_grey;
-                    border-radius: 5px;
-                }
-
-                .progress_style_1:hover {
-                    cursor: pointer;
-                }
-
-                #radio_progress_bar_two:checked ~ .slider_progress_bar .progress_style_2 {
-                    //position: relative;
-                    //width: 116px;
-                    width: 78px;
-                    height: 6px;
-                    background-color: $orange;
-                    border-radius: 5px;
-                }                
-
-                #radio_progress_bar_two:not(checked) ~ .slider_progress_bar .progress_style_2 {
-                    //position: relative;
-                    //width: 116px;
-                    width: 78px;
-                    height: 6px;
-                    background-color: $light_grey;
-                    border-radius: 5px;
-                }
-
-                .progress_style_2:hover {
-                    cursor: pointer;
-                }
-                
-                #radio_progress_bar_three:checked ~ .slider_progress_bar .progress_style_3 {
-                    //position: relative;
-                    //width: 116px;
-                    width: 78px;
-                    height: 6px;
-                    background-color: $orange;
-                    border-radius: 5px;
-                }
-
-                #radio_progress_bar_three:not(checked) ~ .slider_progress_bar .progress_style_3 {
-                    //position: relative;
-                    //width: 116px;
-                    width: 78px;
-                    height: 6px;
-                    background-color: $light_grey;
-                    border-radius: 5px;
-                }
-                
-                .progress_style_3:hover {
-                    cursor: pointer;
-                }
-
-                #radio_progress_bar_four:checked ~ .slider_progress_bar .progress_style_4 {
-                    //position: relative;
-                    //width: 116px;
-                    width: 78px;
-                    height: 6px;
-                    background-color: $orange;
-                    border-radius: 5px;
-                }
-
-                #radio_progress_bar_four:not(checked) ~ .slider_progress_bar .progress_style_4 {
-                    //position: relative;
-                    //width: 116px;
-                    width: 78px;
-                    height: 6px;
-                    background-color: $light_grey;
-                    border-radius: 5px;
-                }
-                
-                .progress_style_4:hover {
-                    cursor: pointer;
-                }
-
-                #radio_progress_bar_five:checked ~ .slider_progress_bar .progress_style_5 {
-                    //position: relative;
-                    //width: 116px;
-                    width: 78px;
-                    height: 6px;
-                    background-color: $orange;
-                    border-radius: 5px;
-                }
-
-                #radio_progress_bar_five:not(checked) ~ .slider_progress_bar .progress_style_5 {
-                    //position: relative;
-                    //width: 116px;
-                    width: 78px;
-                    height: 6px;
-                    background-color: $light_grey;
-                    border-radius: 5px;
-                }
-                
-                .progress_style_5:hover {
-                    cursor: pointer;
-                }
-
-
-                //testimonials slider movement            
-
-
-
+            
             .button_testimonials {
-                width: 298px;
-                height: 54px;
-                background: $orange_gradient_2;
-                border-radius: 5px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                border-color: #FE9013;
-                transition: all 0.2s ease-in;
-                //margin-top: 52px;                                                            
+                transform: translateX(90px);
             }
-
-            .button_testimonials:hover {                
-                background: $button_hover;
-                cursor: pointer;
-                border-color: $button_hover;                               
-            }
-
-            .button_testimonials:active {                
-                background: $green;
-                cursor: pointer;
-                border-color: $green;                               
-            }
-
-            .button_testimonials_content {                
-                width: 298px;
-                height: 22px;            
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 140%;
-                text-align: center;
-                text-transform: uppercase;
-                color: $white;
-                text-decoration: none;
-            }
-
-                .button_testimonials_content:visited {
-                    color: $white;
-                    text-decoration: none;
-                }
-
-                .button_testimonials_content:active {
-                    color: $white;
-                    text-decoration: none;
-                }
 
     .flower_decoration_four {            
         display: flex;
@@ -5545,6 +5720,10 @@ body {
 
 @media screen and (min-width: 640px) and (max-width: 999.9px) {
 
+    .input_range {
+        appearance: none;
+    }
+
     ::-webkit-scrollbar {
         width: 20px;
     }
@@ -5733,7 +5912,6 @@ body {
 .burger_wrapper.active {
     right: 0;
 }
-
     
     .burger_items {
         width: 240px;
@@ -7262,7 +7440,7 @@ body {
                     overflow: hidden;
                 }
     
-                .testimonial_one, .testimonial_two, .testimonial_three {
+                .testimonial {
                     width: 596px;
                     height: 109px;
                     background: $pink_gradient;
@@ -7287,16 +7465,23 @@ body {
                         justify-content: flex-start;   
                         align-items: center;                                                      
                     }
-    
-                        .user_icon_1 {
-                            width: 37px;
-                            height: 37px;
-                            background-image: url('../refs/icons/user_icon.svg');
-                            margin-right: 10px;
-                        }
+
+                    .user_icon {
+                        width: 37px;
+                        height: 37px;                        
+                        margin-right: 10px;
+                        display: inline-block;
+                    }
     
                         .user_name_location_1 {
                             width: 144px;
+                            height: 38px;
+                            display: flex;
+                            flex-direction: column;
+                        }
+
+                        .user_name_location {
+                            width: 168px;
                             height: 38px;
                             display: flex;
                             flex-direction: column;
@@ -7341,22 +7526,7 @@ body {
                                 font-size: 15px;
                                 line-height: 120%;
                                 color: $grey;
-                            }
-    
-    
-                        .user_icon_2 {
-                            width: 37px;
-                            height: 37px;
-                            background-image: url('../refs/icons/user_one.png');
-                            margin-right: 10px;
-                        }
-    
-                        .user_name_location_2 {
-                            width: 144px;
-                            height: 38px;
-                            display: flex;
-                            flex-direction: column;
-                        }
+                            }     
     
                             .user_name_two {
                                 width: 126px;
@@ -7399,20 +7569,6 @@ body {
                                 color: $grey;
                             }
     
-                        .user_icon_3 {
-                            width: 37px;
-                            height: 37px;
-                            background-image: url('../refs/icons/user_two.png');
-                            margin-right: 10px;
-                        }
-    
-                        .user_name_location_3 {
-                            width: 168px;
-                            height: 38px;
-                            display: flex;
-                            flex-direction: column;
-                        }
-    
                             .user_name_three {
                                 width: 139px;
                                 height: 19px;
@@ -7454,19 +7610,7 @@ body {
                                 color: $grey;
                             }
     
-                        .user_icon_4 {
-                            width: 37px;
-                            height: 37px;
-                            background-image: url('../refs/icons/user_three.png');
-                            margin-right: 10px;
-                        }
-    
-                        .user_name_location_4 {
-                            width: 168px;
-                            height: 38px;
-                            display: flex;
-                            flex-direction: column;
-                        }
+                        
     
                             .user_name_four {
                                 width: 83px;
@@ -7539,141 +7683,7 @@ body {
                     }
 
     
-                .slider_progress_bar {
-                    width: 390px;
-                    height: 8px;
-                    box-sizing: border-box;
-                    background: $light_grey;
-                    border-radius: 5px;
-                    border: 2px solid $light_grey;         
-                    cursor: pointer;
-                    display: flex;
-                    flex-direction: row;
-                    align-items: space-between;
-                    display: none;
-                }
-    
-        input[type="radio"] {
-            border: 0px;
-            width: 50px;
-            height: 3em;
-            display: none;
-        }
-    
-                    #radio_progress_bar_one:checked ~ .slider_progress_bar .progress_style_1 {
-                        //position: relative;
-                        //width: 116px;
-                        width: 78px;
-                        height: 6px;
-                        background-color: $orange;
-                        border-radius: 5px;
-                    }
-    
-                    #radio_progress_bar_one:not(checked) ~ .slider_progress_bar .progress_style_1 {
-                        //position: relative;
-                        //width: 116px;
-                        width: 78px;
-                        height: 6px;
-                        background-color: $light_grey;
-                        border-radius: 5px;
-                    }
-    
-                    .progress_style_1:hover {
-                        cursor: pointer;
-                    }
-    
-                    #radio_progress_bar_two:checked ~ .slider_progress_bar .progress_style_2 {
-                        //position: relative;
-                        //width: 116px;
-                        width: 78px;
-                        height: 6px;
-                        background-color: $orange;
-                        border-radius: 5px;
-                    }                
-    
-                    #radio_progress_bar_two:not(checked) ~ .slider_progress_bar .progress_style_2 {
-                        //position: relative;
-                        //width: 116px;
-                        width: 78px;
-                        height: 6px;
-                        background-color: $light_grey;
-                        border-radius: 5px;
-                    }
-    
-                    .progress_style_2:hover {
-                        cursor: pointer;
-                    }
-                    
-                    #radio_progress_bar_three:checked ~ .slider_progress_bar .progress_style_3 {
-                        //position: relative;
-                        //width: 116px;
-                        width: 78px;
-                        height: 6px;
-                        background-color: $orange;
-                        border-radius: 5px;
-                    }
-    
-                    #radio_progress_bar_three:not(checked) ~ .slider_progress_bar .progress_style_3 {
-                        //position: relative;
-                        //width: 116px;
-                        width: 78px;
-                        height: 6px;
-                        background-color: $light_grey;
-                        border-radius: 5px;
-                    }
-                    
-                    .progress_style_3:hover {
-                        cursor: pointer;
-                    }
-    
-                    #radio_progress_bar_four:checked ~ .slider_progress_bar .progress_style_4 {
-                        //position: relative;
-                        //width: 116px;
-                        width: 78px;
-                        height: 6px;
-                        background-color: $orange;
-                        border-radius: 5px;
-                    }
-    
-                    #radio_progress_bar_four:not(checked) ~ .slider_progress_bar .progress_style_4 {
-                        //position: relative;
-                        //width: 116px;
-                        width: 78px;
-                        height: 6px;
-                        background-color: $light_grey;
-                        border-radius: 5px;
-                    }
-                    
-                    .progress_style_4:hover {
-                        cursor: pointer;
-                    }
-    
-                    #radio_progress_bar_five:checked ~ .slider_progress_bar .progress_style_5 {
-                        //position: relative;
-                        //width: 116px;
-                        width: 78px;
-                        height: 6px;
-                        background-color: $orange;
-                        border-radius: 5px;
-                    }
-    
-                    #radio_progress_bar_five:not(checked) ~ .slider_progress_bar .progress_style_5 {
-                        //position: relative;
-                        //width: 116px;
-                        width: 78px;
-                        height: 6px;
-                        background-color: $light_grey;
-                        border-radius: 5px;
-                    }
-                    
-                    .progress_style_5:hover {
-                        cursor: pointer;
-                    }
-    
-    
-                              
-    
-    
+                
     
                 .button_testimonials {
                     width: 240px;
@@ -10207,140 +10217,6 @@ body {
                 .country_date_between_circle {
                     color: $grey;
                 }
-
-            .slider_progress_bar {
-                width: 390px;
-                height: 8px;
-                box-sizing: border-box;
-                background: $light_grey;
-                border-radius: 5px;
-                border: 2px solid $light_grey;         
-                cursor: pointer;
-                display: flex;
-                flex-direction: row;
-                align-items: space-between;
-                display: none;
-            }
-
-    input[type="radio"] {
-        border: 0px;
-        width: 50px;
-        height: 3em;
-        display: none;
-    }
-
-                #radio_progress_bar_one:checked ~ .slider_progress_bar .progress_style_1 {
-                    //position: relative;
-                    //width: 116px;
-                    width: 78px;
-                    height: 6px;
-                    background-color: $orange;
-                    border-radius: 5px;
-                }
-
-                #radio_progress_bar_one:not(checked) ~ .slider_progress_bar .progress_style_1 {
-                    //position: relative;
-                    //width: 116px;
-                    width: 78px;
-                    height: 6px;
-                    background-color: $light_grey;
-                    border-radius: 5px;
-                }
-
-                .progress_style_1:hover {
-                    cursor: pointer;
-                }
-
-                #radio_progress_bar_two:checked ~ .slider_progress_bar .progress_style_2 {
-                    //position: relative;
-                    //width: 116px;
-                    width: 78px;
-                    height: 6px;
-                    background-color: $orange;
-                    border-radius: 5px;
-                }                
-
-                #radio_progress_bar_two:not(checked) ~ .slider_progress_bar .progress_style_2 {
-                    //position: relative;
-                    //width: 116px;
-                    width: 78px;
-                    height: 6px;
-                    background-color: $light_grey;
-                    border-radius: 5px;
-                }
-
-                .progress_style_2:hover {
-                    cursor: pointer;
-                }
-                
-                #radio_progress_bar_three:checked ~ .slider_progress_bar .progress_style_3 {
-                    //position: relative;
-                    //width: 116px;
-                    width: 78px;
-                    height: 6px;
-                    background-color: $orange;
-                    border-radius: 5px;
-                }
-
-                #radio_progress_bar_three:not(checked) ~ .slider_progress_bar .progress_style_3 {
-                    //position: relative;
-                    //width: 116px;
-                    width: 78px;
-                    height: 6px;
-                    background-color: $light_grey;
-                    border-radius: 5px;
-                }
-                
-                .progress_style_3:hover {
-                    cursor: pointer;
-                }
-
-                #radio_progress_bar_four:checked ~ .slider_progress_bar .progress_style_4 {
-                    //position: relative;
-                    //width: 116px;
-                    width: 78px;
-                    height: 6px;
-                    background-color: $orange;
-                    border-radius: 5px;
-                }
-
-                #radio_progress_bar_four:not(checked) ~ .slider_progress_bar .progress_style_4 {
-                    //position: relative;
-                    //width: 116px;
-                    width: 78px;
-                    height: 6px;
-                    background-color: $light_grey;
-                    border-radius: 5px;
-                }
-                
-                .progress_style_4:hover {
-                    cursor: pointer;
-                }
-
-                #radio_progress_bar_five:checked ~ .slider_progress_bar .progress_style_5 {
-                    //position: relative;
-                    //width: 116px;
-                    width: 78px;
-                    height: 6px;
-                    background-color: $orange;
-                    border-radius: 5px;
-                }
-
-                #radio_progress_bar_five:not(checked) ~ .slider_progress_bar .progress_style_5 {
-                    //position: relative;
-                    //width: 116px;
-                    width: 78px;
-                    height: 6px;
-                    background-color: $light_grey;
-                    border-radius: 5px;
-                }
-                
-                .progress_style_5:hover {
-                    cursor: pointer;
-                }
-
-
-                //testimonials slider movement            
 
 
 

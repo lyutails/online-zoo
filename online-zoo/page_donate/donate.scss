@@ -1039,6 +1039,20 @@ body {
             padding: 16px 100px 16px 9px;    
         }
 
+        input[type=number]:active {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: $green;
+            background-color: transparent; 
+            border: 2px solid $green;      
+            width: 140px;
+            height: 20px; 
+            padding: 16px 100px 16px 9px;    
+        }
+
         .text_another_amount {
             position: relative;
           } 
