@@ -6868,6 +6868,18 @@ input:active {
     justify-content: center;
     align-content: flex-start;
   }
+  .popup .shadow .testimonial {
+    width: 268px;
+    height: 391px;
+  }
+  .popup .shadow .testimonial .user_info {
+    width: auto;
+    height: auto;
+  }
+  .popup .shadow .testimonial .testimonial_text {
+    width: auto;
+    height: auto;
+  }
   .testimonial_four {
     display: none;
   }
@@ -8914,6 +8926,18 @@ input:active {
     flex-direction: column;
     justify-content: center;
     align-content: flex-start;
+  }
+  .popup .shadow .testimonial {
+    width: 268px;
+    height: 391px;
+  }
+  .popup .shadow .testimonial .user_info {
+    width: auto;
+    height: auto;
+  }
+  .popup .shadow .testimonial .testimonial_text {
+    width: auto;
+    height: auto;
   }
   .testimonial_four {
     display: none;

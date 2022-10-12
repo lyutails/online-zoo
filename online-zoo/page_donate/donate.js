@@ -33,7 +33,7 @@ if (burgerOverlay) {
 }
 
 
-// another amount four symbols limit
+// another amount 4 symbols limit
 
 function maxLengthCheck(object)
 {
@@ -50,11 +50,3 @@ sumGrade.addEventListener("click", (e) => {
   }
 );
 
-
-
-// const priceBar = document.querySelector(".donation_amount_bar");
-// const amountBar = document.querySelector(".input__amount");
-// priceBar.addEventListener("click", (e) => {
-//   e.target.className = "radio-button" ? amountBar.value = e.target.value : false;
-//   }
-// );
