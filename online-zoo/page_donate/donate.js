@@ -43,10 +43,10 @@ function maxLengthCheck(object)
 
 // input amount number
 
-const sumGrade = document.querySelector(".sum_circles");
-const moneyInput = document.querySelector(".payment");
-sumGrade.addEventListener("click", (e) => {
-  e.target.className = "radiobutton_circle_5000" ? moneyInput.value = e.target.value : false;
-  }
-);
+// const sumGrade = document.querySelector(".sum_circles");
+// const moneyInput = document.querySelector(".payment");
+// sumGrade.addEventListener("click", (e) => {
+//   e.target.className = "radiobutton_circle_5000" ? moneyInput.value = e.target.value : false;
+//   }
+// );
 
