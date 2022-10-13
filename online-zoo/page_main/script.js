@@ -145,9 +145,22 @@ const dotaAnimals = [
         icon: '../refs/icons/meet-fish_icon.png',
         pic: '../',
     },    
+    {
+        title: 'Kangaroo',
+        location: 'Native to Australia',
+        icon: '../refs/icons/banana-bamboo_icon.png',
+        pic: '../',
+    },
+    {
+        title: 'Whale',
+        location: 'Oceans',
+        icon: '../refs/icons/meet-fish_icon.png',
+        pic: '../',
+    },
     ]
 
 
+const sliderPic = document.querySelector('.slider_pic')
 const sliderCards = document.querySelector('.animals_carousel');
 const buttonLeft = document.querySelector('.slider_button_left');
 const buttonRight = document.querySelector('.slider_button_right');
@@ -165,7 +178,7 @@ buttonRight.addEventListener('click', function(e) {
     sliderCards.style.transform=`translateX(${currentTranslate}px)`;    
 })
 
-const sliderPic = document.querySelector('.slider_pic')
+
 
 
 
