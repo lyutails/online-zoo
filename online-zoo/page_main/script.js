@@ -48,117 +48,134 @@ if (burgerOverlay) {
 
 // carousel animals 
 
-const dotaAnimals = [    
+const dataAnimals = [    
     {
         title: 'Flamingo',
         location: 'Native to Africa',
-        icon: '../refs/icons/meet-fish_icon.png',
+        foodIcon: 'food_omnivores',
         pic: '../', 
+        id: 'flamingo',
     },
     {
         title: 'Colibri',
         location: 'Native to America',
-        icon: '../refs/icons/banana-bamboo_icon.png',
+        foodIcon: 'food_vegetarian',
         pic: '../',
+        id: 'kolibri',
     },
     {
         title: 'Polar Owl',
         location: 'North Hemisphere',
-        icon: '../refs/icons/banana-bamboo_icon.png',
+        foodIcon: 'food_vegetarian',
         pic: '../',
+        id: 'polar_owl',
     },
     {
         title: 'Hedgehog',
         location: 'Worldwide',
-        icon: '../refs/icons/meet-fish_icon.png',
+        foodIcon: 'food_omnivores',
         pic: '../',
+        id: 'hedgehog',
     },
     {
         title: 'Polar Fox',
         location: 'North Hemisphere',
-        icon: '../refs/icons/meet-fish_icon.png',
+        foodIcon: 'food_omnivores',
         pic: '../',
+        id: 'polar_fox',
     },
     {
         title: 'Medoed',
         location: 'Native to Africa',
-        icon: '../refs/icons/meet-fish_icon.png',
+        foodIcon: 'food_omnivores',
         pic: '../',
+        id: 'medoed',
     },
     {
         title: 'Cheetahs',
         location: 'Native to Africa',
-        icon: '../refs/icons/meet-fish_icon.png',
+        foodIcon: 'food_omnivores',
         pic: '../',
+        id: 'cheetahs',
     },
     {
         title: 'Giant Pandas',
         location: 'Native to Southwest China',
-        icon: '../refs/icons/banana-bamboo_icon.png',
+        foodIcon: 'food_vegetarian',
         pic: '../',
+        id: 'pandas',
     },
     {
         title: 'Eagles',
         location: 'Native to South America',
-        icon: '../refs/icons/meet-fish_icon.png',
+        foodIcon: 'food_omnivores',
         pic: '../',
+        id: 'eagles',
     },
     {
         title: 'Gorillas',
         location: 'Native to Congo',
-        icon: '../refs/icons/banana-bamboo_icon.png',
+        foodIcon: 'food_vegetarian',
         pic: '../',
+        id: 'gorillas',
     },
     {
         title: 'Gorillas',
         location: 'Native to Congo',
-        icon: '../refs/icons/banana-bamboo_icon.png',
+        foodIcon: 'food_vegetarian',
         pic: '../',
+        id: 'gorilla_2',
     },
     {
         title: 'Two-toed Sloth',
         location: 'Mesoamerica, South America',
-        icon: '../refs/icons/banana-bamboo_icon.png',
+        foodIcon: 'food_vegetarian',
         pic: '../',
+        id: 'sloth',
     },
     {
         title: 'Penguins',
         location: 'Native to Antarctica',
-        icon: '../refs/icons/meet-fish_icon.png',
+        foodIcon: 'food_omnivores',
         pic: '../',
+        id: 'penguins',
     },
     {
         title: 'Kiwi',
         location: 'New Zealand',
-        icon: '../refs/icons/banana-bamboo_icon.png',
+        foodIcon: 'food_vegetarian',
         pic: '../',
+        id: 'kiwi_1',
     },
     {
         title: 'Lemur',
         location: 'Madagaskar',
-        icon: '../refs/icons/banana-bamboo_icon.png',
+        foodIcon: 'food_vegetarian',
         pic: '../',
+        id: 'lemur',
     },
     {
         title: 'Crocodile',
         location: 'Native to Southeastern U. S.',
-        icon: '../refs/icons/meet-fish_icon.png',
+        foodIcon: 'food_omnivores',
         pic: '../',
+        id: 'crocodile',
     },    
     {
         title: 'Kangaroo',
         location: 'Native to Australia',
-        icon: '../refs/icons/banana-bamboo_icon.png',
+        foodIcon: 'food_vegetarian',
         pic: '../',
+        id: 'kangaroo',
     },
     {
         title: 'Whale',
         location: 'Oceans',
-        icon: '../refs/icons/meet-fish_icon.png',
+        foodIcon: 'food_omnivores',
         pic: '../',
+        id: 'whale',
     },
     ]
-
 
 const sliderPic = document.querySelector('.slider_pic')
 const sliderCards = document.querySelector('.animals_carousel');
@@ -166,21 +183,99 @@ const buttonLeft = document.querySelector('.slider_button_left');
 const buttonRight = document.querySelector('.slider_button_right');
 const move = 1180;
 let currentTranslate = -move;
-
-
-buttonLeft.addEventListener('click', function(e) {
-    currentTranslate -= move;
-    sliderCards.style.transform=`translateX(${currentTranslate}px)`;     
-})
+let direction = 1;
 
 buttonRight.addEventListener('click', function(e) {
-    currentTranslate += move;
+    currentTranslate -= move;
+    sliderCards.style.transition=``;
     sliderCards.style.transform=`translateX(${currentTranslate}px)`;    
+    buttonLeft.style.pointerEvents = 'none'; 
+    buttonRight.style.pointerEvents = 'none';
+    direction = 1; 
 })
 
+sliderCards.addEventListener('transitionend', (e) => {
+    if (e.target === e.currentTarget) {
+        sliderCards.style.transition=`none`;
+        buttonLeft.style.pointerEvents = 'all'; 
+        buttonRight.style.pointerEvents = 'all';
+        const slides = shuffle(dataAnimals).map(el => generateCard(el));
+        if (direction === 1) { 
+            currentTranslate += move;
+            [...sliderCards.children].forEach((el, index) => {
+                if (index < 6) {
+                    el.remove();
+                }
+            });                                     
+            sliderCards.append(...slides);    
+            sliderCards.style.transform=`translateX(${currentTranslate}px)`;        
+        } 
+        else { 
+            currentTranslate -= move;                     
+            [...sliderCards.children].forEach((el, index) => {
+                if (index >= 12) {
+                    el.remove();
+                }
+            });                       
+            sliderCards.prepend(...slides);
+            sliderCards.style.transform=`translateX(${currentTranslate}px)`;
+        }               
+    }    
+})
 
+buttonLeft.addEventListener('click', function(e) {
+    currentTranslate += move;
+    sliderCards.style.transition=``;
+    sliderCards.style.transform=`translateX(${currentTranslate}px)`; 
+    buttonLeft.style.pointerEvents = 'none'; 
+    buttonRight.style.pointerEvents = 'none';    
+    direction = -1;
+})
 
+function generateCard ({title, location, id, foodIcon}) {
+    const card = document.createElement('div');
+    card.className = `slider_pic ${id}`;
+    card.innerHTML = `<img class="${id}_pic">
+    <div class="slider_info_icon_${id}">
+        <div class="slider_text_${id}">
+            <p class="${id}_name">${title}</p>
+            <p class="${id}_habitation">${location}</p>
+        </div>
+        <span class="${foodIcon}"></span>
+    </div>    
+`;
+return card;    
+}
 
+function shuffle(array) {
+    let currentIndex = array.length,  randomIndex;
+  
+    // While there remain elements to shuffle.
+    while (currentIndex != 0) {
+  
+      // Pick a remaining element.
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+  
+      // And swap it with the current element.
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+  
+    return array.slice(0, 6);
+  }
+
+  function init() {
+    sliderCards.style.transition='none';
+    sliderCards.innerHTML = '';   
+    const slides1 = shuffle(dataAnimals).map(el => generateCard(el));
+    const slides2 = shuffle(dataAnimals).map(el => generateCard(el));
+    const slides3 = shuffle(dataAnimals).map(el => generateCard(el));
+    sliderCards.append(...slides1, ...slides2, ...slides3);  
+    sliderCards.style.transition=''; 
+  }
+  
+  init();
 
 
 // testimonials
