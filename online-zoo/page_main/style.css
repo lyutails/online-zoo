@@ -1778,6 +1778,170 @@ body {
   color: #000000;
 }
 
+.slider_info_icon_kangaroo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 366px;
+  height: 60px;
+  transition: all 0.4s ease-in-out;
+}
+
+.kangaroo_pic {
+  width: 366px;
+  height: 366px;
+  background-image: url("../refs/pics/animals/1600_slider_pets/kangaroo.png");
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transition: all 0.4s ease-in-out;
+}
+
+.kangaroo_pic:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: multiply;
+}
+.kangaroo_pic:hover + .slider_info_icon_kangaroo {
+  transform: scale(1.05) translateY(8px) translateY(-5px);
+  background-color: rgba(75, 146, 0, 0.4);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  pointer-events: none;
+}
+.kangaroo_pic:hover ~ .kangaroo_name {
+  color: #ffffff;
+}
+.kangaroo_pic:hover ~ .kangaroo_habitation {
+  color: #ffffff;
+}
+
+.kangaroo_name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.kangaroo_habitation {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.slider_text_kangaroo {
+  width: 294px;
+  height: 38px;
+  margin: 8px 0px 14px 16px;
+  display: flex;
+  flex-direction: column;
+}
+.slider_text_kangaroo .kangaroo_name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #000000;
+}
+.slider_text_kangaroo .kangaroo_habitation {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.slider_info_icon_whale {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 366px;
+  height: 60px;
+  transition: all 0.4s ease-in-out;
+}
+
+.whale_pic {
+  width: 366px;
+  height: 366px;
+  background-image: url("../refs/pics/animals/1600_slider_pets/whale.png");
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transition: all 0.4s ease-in-out;
+}
+
+.whale_pic:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: multiply;
+}
+.whale_pic:hover + .slider_info_icon_whale {
+  transform: scale(1.05) translateY(8px) translateY(-5px);
+  background-color: rgba(75, 146, 0, 0.4);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  pointer-events: none;
+}
+.whale_pic:hover ~ .whale_name {
+  color: #ffffff;
+}
+.whale_pic:hover ~ .whale_habitation {
+  color: #ffffff;
+}
+
+.whale_name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.whale_habitation {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.slider_text_whale {
+  width: 294px;
+  height: 38px;
+  margin: 8px 0px 14px 16px;
+  display: flex;
+  flex-direction: column;
+}
+.slider_text_whale .whale_name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #000000;
+}
+.slider_text_whale .whale_habitation {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #000000;
+}
+
 .food_vegetarian {
   width: 33px;
   height: 37px;
