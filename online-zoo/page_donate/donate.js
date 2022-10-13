@@ -128,84 +128,33 @@ twentyFive.addEventListener('click', function(e) {
 })
 
 inputAmount.addEventListener('input', function(e) {
-    if (inputAmount.value != 5000 | inputAmount.value != 2000 | inputAmount.value != 1000 | 
-        inputAmount.value != 500 | inputAmount.value != 250 | inputAmount.value !=100 | 
-        inputAmount.value != 50 | inputAmount.value != 25 | '') {        
+    if (inputAmount.value != 5000 || inputAmount.value != 2000 || inputAmount.value != 1000 || 
+        inputAmount.value != 500 || inputAmount.value != 250 || inputAmount.value !=100 || 
+        inputAmount.value != 50 || inputAmount.value != 25 || '') {        
         outOfGivenAmounts.checked = true;
-    }   
-    else (outOfGivenAmounts.checked = true); 
-})
-
-inputAmount.addEventListener('focus', function(e) {   
-    if (inputAmount.value = 25) {
+    } 
+    if (e.target.value == 25) {
         radiobutton_circle_25.checked = true;
     }
-    else {
-        inputAmount.value = 'Another amount';
-    }
-})
-
-inputAmount.addEventListener('focus', function(e) {   
-    if (inputAmount.value = 50) {
+    if (e.target.value == 50) {
         radiobutton_circle_50.checked = true;
     }
-    else {
-        inputAmount.value = 'Another amount';
-    }
-})
-
-inputAmount.addEventListener('focus', function(e) {   
-    if (inputAmount.value = 100) {
+    if (e.target.value == 100) {
         radiobutton_circle_100.checked = true;
     }
-    else {
-        inputAmount.value = 'Another amount';
-    }
-})
-
-inputAmount.addEventListener('focus', function(e) {   
-    if (inputAmount.value = 250) {
+    if (e.target.value == 250) {
         radiobutton_circle_250.checked = true;
     }
-    else {
-        inputAmount.value = 'Another amount';
-    }
-})
-
-inputAmount.addEventListener('focus', function(e) {   
-    if (inputAmount.value = 500) {
+    if (e.target.value == 500) {
         radiobutton_circle_500.checked = true;
     }
-    else {
-        inputAmount.value = 'Another amount';
-    }
-})
-
-inputAmount.addEventListener('focus', function(e) {   
-    if (inputAmount.value = 1000) {
+    if (e.target.value == 1000) {
         radiobutton_circle_1000.checked = true;
     }
-    else {
-        inputAmount.value = 'Another amount';
-    }
-})
-
-inputAmount.addEventListener('focus', function(e) {   
-    if (inputAmount.value = 2000) {
+    if (e.target.value == 2000) {
         radiobutton_circle_2000.checked = true;
     }
-    else {
-        inputAmount.value = 'Another amount';
-    }
-})
-
-inputAmount.addEventListener('focus', function(e) {   
-    if (inputAmount.value = 5000) {
+    if (e.target.value == 5000) {
         radiobutton_circle_5000.checked = true;
-    }
-    else {
-        inputAmount.value = 'Another amount';
-    }
+    }        
 })
-
-
