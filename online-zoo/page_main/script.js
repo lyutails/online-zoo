@@ -562,6 +562,3 @@ const createPopup = (card) => {
 }
 
 windowSize(translate_value)
-
-
-//alert('привет :) оставляйте, пожалуйста, контакты... работа в процессе завершения');
