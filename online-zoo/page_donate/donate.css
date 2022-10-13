@@ -21,6 +21,10 @@
   font-weight: 100;
   font-style: thin;
 }
+#radiobutton_circle_default {
+  display: none;
+}
+
 #burger_id {
   display: none;
 }

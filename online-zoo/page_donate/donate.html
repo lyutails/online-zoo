@@ -87,6 +87,7 @@
                     <input type="radio" id="radiobutton_circle_100" name="sum_grade" class="payment" checked>
                     <input type="radio" id="radiobutton_circle_50" name="sum_grade" class="payment">
                     <input type="radio" id="radiobutton_circle_25" name="sum_grade" class="payment">
+                    <input type="radio" id="radiobutton_circle_default" name="sum_grade" class="payment">
                     <div class="money_input_grade">
                         <div class="sum_circles">
                             <label class="circle_wrapper_5000" for="radiobutton_circle_5000">
@@ -115,7 +116,7 @@
                             </label>
                         </div>
                         <div class="sum_line"></div>
-                    </div>
+                    </div>                    
                     <div class="money_sum">
                         <div class="first_sum sum">
                             <span class="dollar_5000"></span>
@@ -151,8 +152,10 @@
                         </div>
                     </div>  
                     <div class="another_amount_wrapper"> 
-                        <input type="number" onfocus="this.placeholder=''" onfocusout="this.placeholder='Another amount'" value="Another amount" 
-                        class="text_another_amount" placeholder="Another amount" id="another_amount"
+                        <input type="number" onfocus="this.placeholder=''" 
+                        onfocusout="this.placeholder='Another amount'" 
+                        value="100" class="text_another_amount" 
+                        placeholder="Another amount" id="another_amount"
                         oninput="maxLengthCheck(this)" maxlength="4">
                         <span class="dollar_input"></span>                        
                     </div>       

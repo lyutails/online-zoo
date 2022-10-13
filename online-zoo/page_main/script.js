@@ -169,6 +169,9 @@ const sliderPic = document.querySelector('.slider_pic')
 
 
 
+
+// testimonials
+
 const dataTestimonials = [    
     {
         ava: '../refs/icons/user_icon.svg',
@@ -561,6 +564,4 @@ const createPopup = (card) => {
 windowSize(translate_value)
 
 
-
-alert("привет :) оставляйте, пожалуйста, свои контакты после проведения ревью, спасибо! p.s. работа в процесее завершения");
-
+alert('привет :) оставляйте, пожалуйста, контакты... работа в процессе завершения');
