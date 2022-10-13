@@ -43,10 +43,169 @@ function maxLengthCheck(object)
 
 // input amount number
 
-// const sumGrade = document.querySelector(".sum_circles");
-// const moneyInput = document.querySelector(".payment");
-// sumGrade.addEventListener("click", (e) => {
-//   e.target.className = "radiobutton_circle_5000" ? moneyInput.value = e.target.value : false;
-//   }
-// );
+const moneyButtons = document.querySelectorAll('.payment');
+const inputAmount = document.querySelector('input[type="number"]');
+const outOfGivenAmounts = document.getElementById('radiobutton_circle_default');
+const fiveThousand = document.getElementById('radiobutton_circle_5000');
+const twoThousand = document.getElementById('radiobutton_circle_2000');
+const oneThousand = document.getElementById('radiobutton_circle_1000');
+const fiveHundred = document.getElementById('radiobutton_circle_500');
+const twoHundredFifty = document.getElementById('radiobutton_circle_250');
+const oneHundred = document.getElementById('radiobutton_circle_100');
+const fifty = document.getElementById('radiobutton_circle_50');
+const twentyFive = document.getElementById('radiobutton_circle_25');
+
+fiveThousand.addEventListener('click', function(e) {   
+    if (radiobutton_circle_5000.checked = true) {
+        inputAmount.value = 5000;
+    }    
+    else {
+        inputAmount.value = 'Another amount';        
+    }
+})
+
+twoThousand.addEventListener('click', function(e) {   
+    if (radiobutton_circle_2000.checked = true) {
+        inputAmount.value = 2000;
+    }
+    else {
+        inputAmount.value = 'Another amount';
+    }
+})
+
+oneThousand.addEventListener('click', function(e) {   
+    if (radiobutton_circle_1000.checked = true) {
+        inputAmount.value = 1000;
+    }
+    else {
+        inputAmount.value = 'Another amount';
+    }
+})
+
+fiveHundred.addEventListener('click', function(e) {   
+    if (radiobutton_circle_500.checked = true) {
+        inputAmount.value = 500;
+    }
+    else {
+        inputAmount.value = 'Another amount';
+    }
+})
+
+twoHundredFifty.addEventListener('click', function(e) {   
+    if (radiobutton_circle_250.checked = true) {
+        inputAmount.value = 250;
+    }
+    else {
+        inputAmount.value = 'Another amount';
+    }
+})
+
+oneHundred.addEventListener('click', function(e) {   
+    if (radiobutton_circle_100.checked = true) {
+        inputAmount.value = 100;
+    }
+    else {
+        inputAmount.value = 'Another amount';
+    }
+})
+
+fifty.addEventListener('click', function(e) {   
+    if (radiobutton_circle_50.checked = true) {
+        inputAmount.value = 50;
+    }
+    else {
+        inputAmount.value = 'Another amount';
+    }
+})
+
+twentyFive.addEventListener('click', function(e) {   
+    if (radiobutton_circle_25.checked = true) {
+        inputAmount.value = 25;
+    }
+    else {
+        inputAmount.value = 'Another amount';
+    }
+})
+
+inputAmount.addEventListener('input', function(e) {
+    if (inputAmount.value != 5000 | inputAmount.value != 2000 | inputAmount.value != 1000 | 
+        inputAmount.value != 500 | inputAmount.value != 250 | inputAmount.value !=100 | 
+        inputAmount.value != 50 | inputAmount.value != 25 | '') {        
+        outOfGivenAmounts.checked = true;
+    }   
+    else (outOfGivenAmounts.checked = true); 
+})
+
+inputAmount.addEventListener('focus', function(e) {   
+    if (inputAmount.value = 25) {
+        radiobutton_circle_25.checked = true;
+    }
+    else {
+        inputAmount.value = 'Another amount';
+    }
+})
+
+inputAmount.addEventListener('focus', function(e) {   
+    if (inputAmount.value = 50) {
+        radiobutton_circle_50.checked = true;
+    }
+    else {
+        inputAmount.value = 'Another amount';
+    }
+})
+
+inputAmount.addEventListener('focus', function(e) {   
+    if (inputAmount.value = 100) {
+        radiobutton_circle_100.checked = true;
+    }
+    else {
+        inputAmount.value = 'Another amount';
+    }
+})
+
+inputAmount.addEventListener('focus', function(e) {   
+    if (inputAmount.value = 250) {
+        radiobutton_circle_250.checked = true;
+    }
+    else {
+        inputAmount.value = 'Another amount';
+    }
+})
+
+inputAmount.addEventListener('focus', function(e) {   
+    if (inputAmount.value = 500) {
+        radiobutton_circle_500.checked = true;
+    }
+    else {
+        inputAmount.value = 'Another amount';
+    }
+})
+
+inputAmount.addEventListener('focus', function(e) {   
+    if (inputAmount.value = 1000) {
+        radiobutton_circle_1000.checked = true;
+    }
+    else {
+        inputAmount.value = 'Another amount';
+    }
+})
+
+inputAmount.addEventListener('focus', function(e) {   
+    if (inputAmount.value = 2000) {
+        radiobutton_circle_2000.checked = true;
+    }
+    else {
+        inputAmount.value = 'Another amount';
+    }
+})
+
+inputAmount.addEventListener('focus', function(e) {   
+    if (inputAmount.value = 5000) {
+        radiobutton_circle_5000.checked = true;
+    }
+    else {
+        inputAmount.value = 'Another amount';
+    }
+})
+
 
